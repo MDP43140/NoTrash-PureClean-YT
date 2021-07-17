@@ -1,4 +1,4 @@
-# NoTrash-PureClean-YT
+# No Trash + Pure Clean YouTube
 Makes YouTube Less trashy by removing distracting features, and trash videos (Desktop only)
 Features:
 + Block trashy features, and video recommendation.
