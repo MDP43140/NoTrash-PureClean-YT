@@ -3,6 +3,7 @@
  Next update:
  . Block Hindi (NOT YET) languages.
  . Block [Chinese,Korea,Japan,Russia] languages (bug).
+ . (HELP WANTED) disable animation except loading ring animation (youtube.com##body:style(transition:none !important;animation:none !important;animation-delay:0 !important;animation-duration:0 !important;animation-timing-function:none !important;animation-play-state:paused !important;animation-iteration-count:0 !important))
 
 ===============================
 
