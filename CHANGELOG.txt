@@ -1,10 +1,9 @@
 ———————————————————————————————
 
  Next update:
- . Block "Ragnarok" (Anime)
  . Block Hindi (NOT YET) languages.
- . Block [Chinese,Korea,Japan,Russia] languages (bug).
- . Block MORE kpop, from DandelionSprout/adfilt/TwitterAntiKPopSpam.txt >> (extreme_added >> /(jung|mon)kook|bbylino|loona|jaehyun|yohwin|hongjoong|ryujicy|juyeon|manoban|jennie|j(-| ?)hope/i complex, potential bug >> /@junh|⁷|””|ً|⇆|^mal says/i)                       (this is not required as its already blocked >>  /BTS_twt| bts|kpopstan/i)
+ . Block [Chinese,Korea,Japan,Russia] languages [\u3040-\u30FF\u4E00-\u9FFF\u3400-\u4DBF\uF900-\uFAFF\uFF66-\uFF9F\u3131-\uD79D\uAC00-\uD7AF\u1100-\u11FF\u3130-\u318F\uA960-\uA97F\uD7B0-\uD7FF\u0000-\u0019\u0400-\u04FF] (bug: it blocks everything in search page).
+ . Block MORE kpop, from DandelionSprout/adfilt/TwitterAntiKPopSpam.txt >> (extreme_added >> /(jung|mon)kook|bbylino|loona|jaehyun|yohwin|hongjoong|ryujicy|juyeon|manoban|jennie|j(-| ?)hope/i complex, potential bug >> /@junh|⁷|””|ً|⇆|^mal says/i)
 
 ———————————————————————————————
 
@@ -12,67 +11,69 @@
  - Block Bypassed: [MobileLegends, mobile gen (w/o "le")]
 									 [RockNRoll, rock w/o rol(is false)]
 									 [upinIpin, upin ipin]
- - Block [Chinese,Korea,Japan,Russia] languages. [\u3040-\u30FF\u4E00-\u9FFF\u3400-\u4DBF\uF900-\uFAFF\uFF66-\uFF9F\u3131-\uD79D\uAC00-\uD7AF\u1100-\u11FF\u3130-\u318F\uA960-\uA97F\uD7B0-\uD7FF\u0000-\u0019\u0400-\u04FF]. but it blocks everything (in search page).
- WARNING:
 
 ———————————————————————————————
 
  Changelogs:
+ 26.07.2021_dev:
+ + Removing "YouTube `Disable Polymer` mode" rules, as not alot of people using disable polymer mode. (i think you can't disable polymer mode anymore, other than using extension).
+ + [ContentFilter] Removing Space next to comma: ", " > "," on :upward() just to save storage space.
+ ? [ContentFilter] NOT_YET: beta test for channel blacklist replacement with real "regex"
 
- 24.07.2021_dev:
- + ContentFilter: Removing Space next to comma: ", " > "," on :upward() just to save storage space.
+ 26.07.2021:
+ > some cleanup...
+ > Making filter rules smaller and faster by removing redundant ".style-scope" class (saving 300 worth of bytes). 
+ + [ContentFilter] new string added: [K-Drama,Ragnarok]
+ + [ContentFilter] changed "episod" back to "full episod" because it blocks majority of videos (including minecraft videos from mumbo jumbo, and grian).
 
  24.07.2021:
- + ContentFilter: Filter fixed for "episode"
- + ContentFilter: new string added: "Top-up" (because indo peoples crazily addicted to buying rather EXPENSIVE things JUST FOR the F***ING GAME ?!?!)
- + ContentFilter: some cleanup...
- + ContentFilter: Simplified [Baby,Babies,Bayi,Balita] to "ba(bies|by|yi|lita)"
- + ContentFilter: Simplified "k?anak[-k?anak]" to "k?anak" because its not nessecary anyway.
- + ContentFilter: new string added: murder live,roman(ce|tis),asmara,permission to dance (because its a trend for now).
- + ContentFilter: remove some duplicates.
- + ContentFilter: simplified 3am detection.
+ + [ContentFilter] Filter fixed for "episode"
+ + [ContentFilter] new string added: "Top-up" (because indo peoples crazily addicted to buying rather EXPENSIVE and USELESS things JUST FOR the F***ING GAME ?!?!)
+ > some cleanup...
+ + [ContentFilter] Simplified [Baby,Babies,Bayi,Balita] to "ba(bies|by|yi|lita)"
+ + [ContentFilter] Simplified "k?anak[-k?anak]" to "k?anak" because its not nessecary anyway.
+ + [ContentFilter] new string added: murder live,roman(ce|tis),asmara,permission to dance (because its a trend for now).
+ > [ContentFilter] remove some duplicates.
+ > [ContentFilter] simplified 3am detection.
 
  23.07.2021_extreme:
- + ContentFilter: Block MORE kpop, from DandelionSprout/adfilt/TwitterAntiKPopSpam.txt (jung|mon)kook|bbylino|loona|jaehyun|yohwin|hongjoong|ryujicy|juyeon
-
- 23.07.2021_dev:
- ? ContentFilter: NOT_YET: beta test for channel blacklist replacement with real "regex"
+ + [ContentFilter] Block MORE kpop, from DandelionSprout/adfilt/TwitterAntiKPopSpam.txt (jung|mon)kook|bbylino|loona|jaehyun|yohwin|hongjoong|ryujicy|juyeon
 
  23.07.2021:
- + ContentFilter: Filter Improved for "Nursery" (nursery( rhymes?) > nursery (nursery is "kamar bayi" in indo lmao XD))
- + ContentFilter: new string added: "wrong heads".
+ + [ContentFilter] Filter Improved for "Nursery" (nursery( rhymes?) > nursery (nursery is "kamar bayi" in indo lmao XD))
+ + [ContentFilter] new string added: "wrong heads".
  + Removes the country codes beside youtube logo (improves privacy when screenshoting/recording)
  + Updated channel blacklist description.
  + Updated Original Author.
- × ContentFilter_minor: swap elsa|barbie.
+ × [ContentFilter] swap elsa|barbie.
  
  22.07.2021:
- + ContentFilter: Filter Improved for "bts" (bangtantv > bangtan)
- + ContentFilter: Filter Improved for "preston" (prestonplay(s|z?) > preston)
+ + [ContentFilter] Filter Improved for "bts" (bangtantv > bangtan)
+ + [ContentFilter] Filter Improved for "preston" (prestonplay(s|z?) > preston)
 
  18.07.2021:
- + ContentFilter: Shortened (.?) > .? (saving 240 worth of bytes)
- + ContentFilter: new string added: barbie
- + ContentFilter: new channel blocked: "123 Go" (too many trash videos, with some gets bypassed because less info on title)
+ + [ContentFilter] Shortened (.?) > .? (saving 240 worth of bytes)
+ + [ContentFilter] new string added: barbie
+ + [ContentFilter] new channel blocked: "123 Go" (too many trash videos, with some gets bypassed because less info on title)
 
  10.07.2021:
- + ContentFilter: Change block ≥3-CAP text to block ALL-CAP text.
- + ContentFilter: new channel blocked: "Jester" (3AM Clickbait fake videos).
+ + [ContentFilter] Change block ≥3-CAP text to block ALL-CAP text.
+ + [ContentFilter] new channel blocked: "Jester" (3AM Clickbait fake videos).
 
  07.07.2021:
- + ContentFilter: new string added: [doraemon,dangdut].
- + ContentFilter: Filter improved for "bts" by adding space-detection > b ?t ?s. since some people trying to make different text (still can't block [b._- -_.t._- -_.s])
+ + [ContentFilter] new string added: [doraemon,dangdut].
+ + [ContentFilter] Filter improved for "bts" by adding space-detection > b ?t ?s. since some people trying to make different text (still can't block [b._- -_.t._- -_.s])
  + block 2nd "dual panel" on search page
 
  05.07.2021:
- + ContentFilter: Filter fixed for "UpinIpin".
- + ContentFilter: new string added: [kak ros,ome.tv,galau,bangtantv,bts,push rank,bang bang,mainan].
- + ContentFilter: Better blocking on channel names
- + ContentFilter: Filter improved for "BlackPink" by adding space-detection > black ?pink
+ + [ContentFilter] Filter fixed for "UpinIpin".
+ + [ContentFilter] new string added: [kak ros,ome.tv,galau,bangtantv,bts,push rank,bang bang,mainan].
+ + [ContentFilter] Better blocking on channel names
+ + [ContentFilter] Filter improved for "BlackPink" by adding space-detection > black ?pink
 
  03.07.2021:
- + ContentFilter: BIG UPDATE: Filter lists now works more efficient, faster, and shorter.
- + ContentFilter: new badstring added: b4*0t
+ > [ContentFilter] BIG UPDATE: Filter lists now works more efficient, faster, and shorter.
+ + [ContentFilter] new badstring added: b4*0t
 
  02.07.2021:
  + Some bug fix
