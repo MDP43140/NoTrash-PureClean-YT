@@ -9,4 +9,6 @@ Features:
 + Makes YouTube alot less "tiktok", which is really bad (who even want to watch a freaking potrait video on landscape display anyway).
 
 original author: https://github.com/DandelionSprout/adfilt
-note: specialized for indo peoples, may block something you probably don't wan't.
+               : https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists
+               
+note: content blocker specialized for indo peoples, may block videos/channels you probably don't wan't.
