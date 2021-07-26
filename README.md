@@ -1,5 +1,10 @@
 # No Trash + Pure Clean YouTube
 Makes YouTube Less trashy by removing distracting features, and trash videos (Desktop only)
+![No Trash + Pure Clean YouTube](https://mdp43140.github.io/assets/img/project_ntpcyt.png)
+Before | After
+:-:|:-:
+![not yet]() | ![not yet]()
+
 Features:
 + Block useless features, distracting videos, and trash channels.
 + Makes Youtube home less "bloated" and more pure experience.
