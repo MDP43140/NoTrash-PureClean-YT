@@ -1,13 +1,17 @@
 ———————————————————————————————
 
  Next update:
- . Block Hindi (NOT YET) languages.
- . Block [Chinese,Korea,Japan,Russia] languages [\u3040-\u30FF\u4E00-\u9FFF\u3400-\u4DBF\uF900-\uFAFF\uFF66-\uFF9F\u3131-\uD79D\uAC00-\uD7AF\u1100-\u11FF\u3130-\u318F\uA960-\uA97F\uD7B0-\uD7FF\u0000-\u0019\u0400-\u04FF] (bug: it blocks everything in search page).
+ . Block "Tayo" (old trend, reviewing...)
+ . Mobile compatibility (hard, not all had ytm-* things).
+ . Don't disable spinner animation (tp-yt-paper-spinner, .ytp-spinner), cheat: just don't disable animation.
+ . block video title "#shorts" (tiktok related mostly, needs to be revised).
+ . Block [Chinese,Korea,Japan,Russia,Hindi (NOT YET)] languages [\u3040-\u30FF\u4E00-\u9FFF\u3400-\u4DBF\uF900-\uFAFF\uFF66-\uFF9F\u3131-\uD79D\uAC00-\uD7AF\u1100-\u11FF\u3130-\u318F\uA960-\uA97F\uD7B0-\uD7FF\u0000-\u0019\u0400-\u04FF] (bug: it blocks everything in search page).
  . Block MORE kpop, from DandelionSprout/adfilt/TwitterAntiKPopSpam.txt >> (extreme_added >> /(jung|mon)kook|bbylino|loona|jaehyun|yohwin|hongjoong|ryujicy|juyeon|manoban|jennie|j(-| ?)hope/i complex, potential bug >> /@junh|⁷|””|ً|⇆|^mal says/i)
 
 ———————————————————————————————
 
  Bugs:
+ - (beta) disabling animation also disables loading animation too, only affects rich person thats love animation XD.
  - Block Bypassed: [MobileLegends, mobile gen (w/o "le")]
 									 [RockNRoll, rock w/o rol(is false)]
 									 [upinIpin, upin ipin]
@@ -15,10 +19,20 @@
 ———————————————————————————————
 
  Changelogs:
- 26.07.2021_dev:
- + Removing "YouTube `Disable Polymer` mode" rules, as not alot of people using disable polymer mode. (i think you can't disable polymer mode anymore, other than using extension).
+ 03.08.2021_dev:
+ + Block Auto-playing on channel (That ones is super annonying no joke bruh)
+ + disable animation works now
+ + NEW: Block old video list groups on subscription page.
  + [ContentFilter] Removing Space next to comma: ", " > "," on :upward() just to save storage space.
- ? [ContentFilter] NOT_YET: beta test for channel blacklist replacement with real "regex"
+
+ 30.08.2021:
+ + Changed/Updated anti circumventing ads (update fetched from ABP Anti-Circumvent).
+ + Removing "YouTube `Disable Polymer` mode" rules, as not alot of people using disable polymer mode. (i think you can't disable polymer mode anymore, other than using extension).
+ + [ContentFilter] new string added: [masha,noob vs pro,(boy|girl)friend,pregnant,i love you,minecraft girl].
+ + [ContentFilter] new channel blocked: "Piper Rockelle" (Lazyp*rn Youtuber, from DJ Cook)
+ + [ContentFilter] Reclean the list (later with new content filter lists file commit).
+ + [ContentFilter] append "barat" next to "musik/lagu rohani".
+
 
  26.07.2021:
  > some cleanup...
@@ -31,8 +45,8 @@
  + [ContentFilter] new string added: "Top-up" (because indo peoples crazily addicted to buying rather EXPENSIVE and USELESS things JUST FOR the F***ING GAME ?!?!)
  > some cleanup...
  + [ContentFilter] Simplified [Baby,Babies,Bayi,Balita] to "ba(bies|by|yi|lita)"
- + [ContentFilter] Simplified "k?anak[-k?anak]" to "k?anak" because its not nessecary anyway.
- + [ContentFilter] new string added: murder live,roman(ce|tis),asmara,permission to dance (because its a trend for now).
+ + [ContentFilter] Simplified "k?anak[-k?anak]" to "k?anak" because its not necessary anyway.
+ + [ContentFilter] new string added: murder live (not tested for efficiency),roman(ce|tis),asmara,permission to dance (because its a trend for now).
  > [ContentFilter] remove some duplicates.
  > [ContentFilter] simplified 3am detection.
 
