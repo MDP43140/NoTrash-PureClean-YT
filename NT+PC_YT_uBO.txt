@@ -2,15 +2,15 @@
 ! Title     : No-Trash + Pure-Clean YouTube
 ! Author    : MDP43140
 ! OA        : DandelionSprout
-! Version   : 03.08.2021
+! Version   : 06.08.2021
 ! GitHub    : mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! ——————————————————————————————
 youtube.com##ytd-horizontal-card-list-renderer,ytd-badge-supported-renderer,ytd-rich-section-renderer,ytd-mini-guide-renderer
 
 ! Removes Side Menu Playlists and Subscription List (Can be accessed in library)
-youtube.com###guide-section-title:has-text(/Subscriptions/i):upward(ytd-guide-section-renderer)
-youtube.com##ytd-guide-collapsible-entry-renderer:has-text(/Show more/i):remove()
+youtube.com###guide-section-title:has-text(/subscription/i):upward(ytd-guide-section-renderer)
+youtube.com##ytd-guide-collapsible-entry-renderer:has-text(/show more/i):remove()
 
 ! Put "More from YouTube" somewhere else, since you stuff the important stuff at the BOTTOM.
 youtube.com##ytd-guide-section-renderer:has-text(/(More from|Lainnya dari) YouTube/i)
@@ -81,51 +81,131 @@ youtube.com##a[href^="/user/AldosWorlds" i]:upward(ytd-channel-renderer,ytd-rich
 youtube.com##a[href^="/user/AnimonstaStudios" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
 youtube.com##a[href^="/user/BANGTANTV" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
 youtube.com##a[href^="/BLACKPINKOFFICIAL" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UC3UX8a0QJFBvlQ74NCpKTkw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UCmr_vYKbp98f6kdRoer0iVw" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UCJZam2u1G0syq3kyqrCXrNw" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UCl3MZzAHS8IvaFimp5gv5qQ" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UC-QZWTOtdsm6CNPHUR88irA" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UCBwSufNse8VMBvQM_rCSvgQ" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UCdDzVQvu8tlqZg05-fFhmDg" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UCqsUQhA6UIwSams54bEnCJw" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UCC7iRQ71SWY9KJ4p72RW8YA" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UCgjc6W1oJXZM51nXCNAcDVQ" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UCyTATeB0ejBMon59igN4tVw" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UCqmld-BIYME2i_ooRTo1EOg" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UCfrQsDVP4gnqL6uJD0hARDQ" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
-youtube.com##a[href^="/channel/UCOmHUn--16B90oW2L6FRR3A" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
+youtube.com##a[href^="/channel/UC3UX8a0QJFBvlQ74NCpKTkw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
+youtube.com##a[href^="/channel/UCmr_vYKbp98f6kdRoer0iVw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
+youtube.com##a[href^="/channel/UCJZam2u1G0syq3kyqrCXrNw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
+youtube.com##a[href^="/channel/UCl3MZzAHS8IvaFimp5gv5qQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
+youtube.com##a[href^="/channel/UC-QZWTOtdsm6CNPHUR88irA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
+youtube.com##a[href^="/channel/UCBwSufNse8VMBvQM_rCSvgQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
+youtube.com##a[href^="/channel/UCdDzVQvu8tlqZg05-fFhmDg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
+youtube.com##a[href^="/channel/UCqsUQhA6UIwSams54bEnCJw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
+youtube.com##a[href^="/channel/UCC7iRQ71SWY9KJ4p72RW8YA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
+youtube.com##a[href^="/channel/UCgjc6W1oJXZM51nXCNAcDVQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
+youtube.com##a[href^="/channel/UCyTATeB0ejBMon59igN4tVw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
+youtube.com##a[href^="/channel/UCqmld-BIYME2i_ooRTo1EOg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
+youtube.com##a[href^="/channel/UCfrQsDVP4gnqL6uJD0hARDQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
+youtube.com##a[href^="/channel/UCOmHUn--16B90oW2L6FRR3A"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
 ! ——————————————————————————————
 
 
 
+! ——————————————————————————————
+!
+! Bloat buttons on left-hand menu
+! Includes:
+! - Trending
+! - Subscription (If Not Logged in)
+! - History
+! - My Videos
+! - Liked Videos
+! - Film store
+! - Sign-in Nag
+! - More From YouTube
+! - Unused button (can be found by clicking profile/3dot icon)
+! - Trash footer link
+!
 
-
-! Removes "YouTube Gaming" button in the left-hand menu
-!youtube.com#?#ytd-guide-entry-renderer:has(a[href*="/gaming"])
-
-! Removes "Trending" button in the left-hand menu
+! Removes "Trending" Button
 youtube.com#?#ytd-guide-entry-renderer:has(a[href*="feed/trending"])
 youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href*="feed/trending"])
-
-! Removes "Discover" button in the left-hand menu
+! Removes "Discover" button
 youtube.com#?#ytd-guide-entry-renderer:has(a[href*="feed/guide_builder"])
 
-! Removes "Your videos" button in the left-hand menu
-youtube.com#?#ytd-guide-entry-renderer:has(a[href*="https://studio.youtube.com/channel/*/videos"])
+! Removes "Subscription" Button (if not login)
+youtube.com##:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(3)
 
-! Removes pop-out player button in the video player
-!youtube.com##.ytp-button.ytp-miniplayer-button
+!Removes "History" Button
+youtube.com###section-items > ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(1)
 
-! Removes "Livestream" button in the left-hand menu
+! Removes "Your videos" button
+!youtube.com#?#ytd-guide-entry-renderer:has(a[href*="https://studio.youtube.com/channel/*/videos"])
+youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(2)
+
+! Removes "Liked Videos" Button
+youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:not(:first-child):last-child
+
+! Removes "Film Store" Button
+youtube.com#?#ytd-guide-entry-renderer:has(a[href*=UClgRkhTL3_hImCAmdLfDE4g])
+
+! Removes Sign-in Nag
+youtube.com##ytd-guide-signin-promo-renderer
+
+! Removes "More From YouTube" Section
+youtube.com##tp-yt-app-drawer ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(3)
+
+! Removes Unused Button
+youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(4)
+
+! Removes Trash Footer Link
+youtube.com##tp-yt-app-drawer .ytd-guide-renderer#footer
+
+! Removes "YT Gaming" button
+!youtube.com#?#ytd-guide-entry-renderer:has(a[href*="/gaming"])
+
+! Removes "Livestream" button
 !youtube.com#?#ytd-guide-entry-renderer:has(a[href*=UC4R8DWoMoI7CAwX8_LjQHig])
 
-! Removes "Homepage" button in the left-hand menu
+! Removes "Homepage" button
 !youtube.com#?#ytd-guide-entry-renderer:has(a[href="/"])
 !youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="/"])
 
-! Removes "film store" button in the left-hand menu
-youtube.com#?#ytd-guide-entry-renderer:has(a[href*=UClgRkhTL3_hImCAmdLfDE4g])
+!dk wut this does...
+youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(5)
+youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(6)
+! ——————————————————————————————
+
+
+
+! ——————————————————————————————
+!
+! Bloat buttons next to (dis)like button in video (ytd-watch-flexy)
+! Includes:
+! - Share
+! - Like/Dislike counters
+! - Clip (latest tiktok feature from google)
+! - Save to playlist
+
+! Remove "Share" Button
+youtube.com##ytd-video-primary-info-renderer.ytd-watch-flexy ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer:nth-of-type(1)
+
+! (NEW!) Remove Google's Latest bloat, "Clip" feature, which is ofcourse, tiktok (because again... why not).
+youtube.com##ytd-video-primary-info-renderer.ytd-watch-flexy ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer:nth-of-type(2)
+
+! (NEW!) Remove "Save To Playlist" feature.
+!youtube.com##ytd-video-primary-info-renderer.ytd-watch-flexy ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer:nth-of-type(3)
+
+! ——————————————————————————————
+
+
+
+! ——————————————————————————————
+!
+! Bloat buttons on top-header menu
+! (or so-called "yt-masthead")
+!
+
+! Removes YT Bloat [YT/Google App,Create video] (dont block last element if not logged in, which is settings)
+youtube.com##ytd-masthead #end #buttons ytd-topbar-menu-button-renderer.style-default:not(:nth-of-type(2))
+youtube.com##ytd-masthead #end #buttons:not(:has(ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"])) ytd-topbar-menu-button-renderer.style-default
+
+! Removes voice search button (bloat feature from google, who's even using that feature on a desktop browser?)
+youtube.com##ytd-masthead #center #voice-search-button
+! ——————————————————————————————
+
+
+
+! Removes pop-out player button in the video player
+!youtube.com##.ytp-button.ytp-miniplayer-button
 
 ! Removes the app drawer in the top-right menu
 youtube.com#?##button:has([aria-label*=app])
@@ -141,14 +221,10 @@ youtube.com###related
 ##.ytp-scroll-min
 ##.ytp-pause-overlay
 
-! Removes like/dislike counters
-!youtube.com##ytd-toggle-button-renderer #text
-!youtube.com###sentiment
-
 ! Removes large grey [YT Kids & game info] buttons below descriptions
 youtube.com##ytd-rich-metadata-renderer.ytd-rich-metadata-row-renderer
-youtube.com##ytm-watch-metadata-app-promo-renderer
-youtube.com##ytm-rich-metadata-renderer
+m.youtube.com##ytm-rich-metadata-renderer
+m.youtube.com##ytm-watch-metadata-app-promo-renderer
 
 ! Removes the "Share" button in fullscreen mode & embeds
 youtube.com,youtube-nocookie.com##button[class*=share-button]
@@ -164,6 +240,11 @@ youtube.com##.ytp-ce-element-show
 
 ! Removes a banner that promotes YouTube Premium
 youtube.com###masthead-ad:remove()
+! Removes a relatively large popup that promotes YouTube Premium
+youtube.com##ytd-mealbar-promo-renderer:remove()
+
+! Remove network-based image promo request to gstatic
+!||gstatic.com/youtube/img/promos$images
 
 ! Removes the comment section on livestreams
 !youtube.com##ytd-live-chat-frame
@@ -171,13 +252,12 @@ youtube.com###masthead-ad:remove()
 !youtube.com###watch-discussion
 ! Removes comments on video pages (not recommended, because it loads only when you scroll down to comment section)
 !||youtube.com/live_chat_fragments_ajax?$xmlhttprequest
-!/comment_service_ajax?$domain=youtube.com|youtu.be|youtube-nocookie.com
+!/comment_service_ajax?$domain=youtube.com|youtube-nocookie.com
 !youtube.com###comments
 
-! Remove voice search button (bloat feature from google, who's even using that feature on a desktop browser?)
-youtube.com##.ytd-masthead #center #voice-search-button
-
-! Removes the like/dislike counters (NOT RECOMMENDED)
+! Removes like/dislike counters (NOT RECOMMENDED)
+!youtube.com###sentiment
+!youtube.com##ytd-toggle-button-renderer #text
 !youtube.com##.like-button-renderer-like-button > .yt-uix-button-content
 !youtube.com##.like-button-renderer-dislike-button > .yt-uix-button-content
 !youtube.com##.video-extras-sparkbars
@@ -225,7 +305,7 @@ youtube.com###channel-subscription-promo-in-feed
 youtube.com###head.ytd-compact-autoplay-renderer
 youtube.com##.checkbox-on-off
 youtube.com##.watch-sidebar-head
-youtube.com##.ytm-autonav-bar
+m.youtube.com##.ytm-autonav-bar
 /watch_autoplayrenderer.js$script,domain=youtube.com
 
 ! from fanboy annonyance. prevent circumventing ads
@@ -245,19 +325,3 @@ youtube.com##.ytp-cards-teaser
 
 ! block 2nd "dual panel" on search page
 youtube.com##.ytd-search > .ytd-two-column-search-results-renderer:nth-child(2)
-
-! (maybe) Remove join button
-youtube.com##.ytd-video-owner-renderer#sponsor-button
-
-! tingis
-youtube.com##.ytd-guide-renderer#footer
-youtube.com##ytd-topbar-menu-button-renderer.style-default.ytd-masthead > .ytd-topbar-menu-button-renderer
-youtube.com##ytd-guide-signin-promo-renderer.ytd-guide-renderer
-youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(3)
-youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(4)
-youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(5)
-youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(6)
-youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(2)
-youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(4)
-youtube.com###section-items > ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(1)
-youtube.com##ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer:nth-of-type(1) > .ytd-button-renderer.yt-simple-endpoint
