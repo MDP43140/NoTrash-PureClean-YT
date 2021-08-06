@@ -1,29 +1,38 @@
 ———————————————————————————————
 
- Next update:
- . Block "Tayo" (old trend, reviewing...)
- . Mobile compatibility (hard, not all had ytm-* things).
- . Don't disable spinner animation (tp-yt-paper-spinner, .ytp-spinner), cheat: just don't disable animation.
- . block video title "#shorts" (tiktok related mostly, needs to be revised).
- . Block [Chinese,Korea,Japan,Russia,Hindi (NOT YET)] languages [\u3040-\u30FF\u4E00-\u9FFF\u3400-\u4DBF\uF900-\uFAFF\uFF66-\uFF9F\u3131-\uD79D\uAC00-\uD7AF\u1100-\u11FF\u3130-\u318F\uA960-\uA97F\uD7B0-\uD7FF\u0000-\u0019\u0400-\u04FF] (bug: it blocks everything in search page).
- . Block MORE kpop, from DandelionSprout/adfilt/TwitterAntiKPopSpam.txt >> (extreme_added >> /(jung|mon)kook|bbylino|loona|jaehyun|yohwin|hongjoong|ryujicy|juyeon|manoban|jennie|j(-| ?)hope/i complex, potential bug >> /@junh|⁷|””|ً|⇆|^mal says/i)
+ Features:
+ + Block useless features, distracting videos, and trash channels.
+ + Makes Youtube home less "bloated" and more pure experience.
+ + Block big "YouTube premium promotion banner" on home page.
+ + Saves data for not loading some random-nonsense thumbnails, and icons.
+ + Makes YouTube a safer, non-bloated, non-fanatic, place to just watch videos.
+ + Makes YouTube alot less "tiktok", which is really bad (who even want to watch a freaking potrait video on landscape display anyway).
+ + Makes clicking a button a lot less hassle (less/no scrolling required).
 
 ———————————————————————————————
 
  Bugs:
  - (beta) disabling animation also disables loading animation too, only affects rich person thats love animation XD.
- - Block Bypassed: [MobileLegends, mobile gen (w/o "le")]
-									 [RockNRoll, rock w/o rol(is false)]
-									 [upinIpin, upin ipin]
+ - Content Filter Bypassed: [MobileLegends, mobile gen (w/o "le")]
+														[RockNRoll, rock w/o rol(is false)]
+														[upinIpin, upin ipin]
 
 ———————————————————————————————
 
  Changelogs:
- 03.08.2021_dev:
+ 06.08.2021_dev:
  + Block Auto-playing on channel (That ones is super annonying no joke bruh)
  + disable animation works now
  + NEW: Block old video list groups on subscription page.
  + [ContentFilter] Removing Space next to comma: ", " > "," on :upward() just to save storage space.
+ ? [ContentFilter] NOT-YET_RESEARCH: beta test for channel blacklist replacement with real "regex"
+
+ 06.08.2021:
+ + Only remove some button if user is logged in/out
+ + Clean more things on youtube (too much to say here, just look on the file).
+ + update some channel blacklist
+ + big cleanup...
+ + added description, make some things look better.
 
  30.08.2021:
  + Changed/Updated anti circumventing ads (update fetched from ABP Anti-Circumvent).
