@@ -13,7 +13,7 @@ Video | ![not yet]() | ![not yet]()
 
 [Subscribe to beta version of this filter here](https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/dev/NT%2BPC_YT_uBO.txt&title=NT+PC_YT)
 
-(if you have adblockplus and ublock origin installed, the url wont work, you have to subscribe it manually)
+(if you have adblockplus installed beside ublock origin, the one-click-subscribe url wont work, you have to subscribe it manually)
 
 Features:
 + Block useless features, distracting videos, and trash channels.
