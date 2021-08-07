@@ -20,13 +20,22 @@
 ———————————————————————————————
 
  Changelogs:
- 06.08.2021_dev:
+ 07.08.2021_dev:
  + Block Auto-playing on channel (That ones is super annonying no joke bruh)
  + disable animation works now
  + NEW: Block old video list groups on subscription page.
  + [ContentFilter] Removing Space next to comma: ", " > "," on :upward() just to save storage space.
- ? [ContentFilter] NOT-YET_RESEARCH: beta test for channel blacklist replacement with real "regex"
+ + more cleanup...
+ + Mobile Support (50% Completed, 10% Development).
 
+ 07.08.2021:
+ + [Mobile] Adding Content Filter.
+ + [Mobile] Adding Stop Autoplay.
+ + [Mobile] Remove YouTube Premium Offer.
+ + [Mobile] Remove related content.
+ + Mobile Support (50% Completed).
+
+ 
  06.08.2021:
  + Only remove some button if user is logged in/out
  + Clean more things on youtube (too much to say here, just look on the file).
