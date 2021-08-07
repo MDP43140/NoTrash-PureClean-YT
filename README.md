@@ -9,9 +9,9 @@ top-bar | ![Before]() | ![After]()
 Video | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_without_NTPCYT_watch.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_with_NTPCYT_watch.png)
 
 
-[Subscribe to This Filter Here](https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/NT%2BPC_YT_uBO.txt&title=NT%2BPC_YT)
+[Add this filter to your filter list here](https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/NT%2BPC_YT_uBO.txt&title=NT%2BPC_YT)
 
-[Subscribe to beta version of this filter here](https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/dev/NT%2BPC_YT_uBO.txt&title=NT+PC_YT)
+[Add beta version of this filter to your filter list here](https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/dev/NT%2BPC_YT_uBO.txt&title=NT+PC_YT)
 
 (if you have adblockplus installed beside ublock origin, the one-click-subscribe url wont work, you have to subscribe it manually)
 
