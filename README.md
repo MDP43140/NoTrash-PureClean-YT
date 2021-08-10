@@ -5,7 +5,7 @@ Type | Without NT+PC YT | With NT+PC YT
 :-:|:-:|:-:
 Overall | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_without_NTPCYT.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_with_NTPCYT.png)
 Side-bar | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_without_NTPCYT_lefthandmenu.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_with_NTPCYT_lefthandmenu.png)
-top-bar | ![Before]() | ![After]()
+top-bar | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_without_NTPCYT_topbarmenu.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_with_NTPCYT_topbarmenu.png)
 Video | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_without_NTPCYT_watch.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_with_NTPCYT_watch.png)
 
 
@@ -17,12 +17,13 @@ Video | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-Y
 
 Features:
 + Block useless features, distracting videos, and trash channels.
-+ Makes Youtube home less "bloated" and more pure experience.
 + Block big "YouTube premium promotion banner" on home page.
-+ Saves data for not loading some random-nonsense thumbnails, and icons.
++ Makes YouTube homepage less bloated and more pure experience.
 + Makes YouTube a safer, non-bloated, non-fanatic, place to just watch videos.
 + Makes YouTube alot less "tiktok", which is really bad (who even want to watch a freaking potrait video on landscape display anyway).
 + Makes clicking a button a lot less hassle (less/no scrolling required).
++ Saves data for not loading some random-nonsense video thumbnails, and channel icons.
++ Reduce Lag Spike, And Network traffic/usage.
 
 Original Authors: [DandelionSprout/adfilt](https://github.com/DandelionSprout/adfilt)
                   [WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists](https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists)
