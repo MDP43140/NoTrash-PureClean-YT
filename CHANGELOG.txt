@@ -1,32 +1,46 @@
 ———————————————————————————————
 
- Features:
- + Block useless features, distracting videos, and trash channels.
- + Makes Youtube home less "bloated" and more pure experience.
- + Block big "YouTube premium promotion banner" on home page.
- + Saves data for not loading some random-nonsense thumbnails, and icons.
- + Makes YouTube a safer, non-bloated, non-fanatic, place to just watch videos.
- + Makes YouTube alot less "tiktok", which is really bad (who even want to watch a freaking potrait video on landscape display anyway).
- + Makes clicking a button a lot less hassle (less/no scrolling required).
-
-———————————————————————————————
-
  Bugs:
  - (beta) disabling animation also disables loading animation too, only affects rich person thats love animation XD.
- - Content Filter Bypassed: [MobileLegends, mobile gen (w/o "le")]
-														[RockNRoll, rock w/o rol(is false)]
-														[upinIpin, upin ipin]
+ - Content Filter Bypassed: [MobileLegends, mobile gen (w/o "le"), Temporary Workaround]
+														[RockNRoll, only rock (is false), Temporary Workaround]
+														[upinIpin, upin ipin, Temporary Workaround]
 
 ———————————————————————————————
 
  Changelogs:
- 07.08.2021_dev:
+ 29.08.2021_dev:
+ + Add description on "ytd-masthead" and "ytd-watch-flexy".
  + Block Auto-playing on channel (That ones is super annonying no joke bruh)
  + disable animation works now
  + NEW: Block old video list groups on subscription page.
- + [ContentFilter] Removing Space next to comma: ", " > "," on :upward() just to save storage space.
  + more cleanup...
  + Mobile Support (50% Completed, 10% Development).
+ + Change YTSans Bold Back to Roboto Regular (WHY YouTube?!?!).
+
+ 29.08.2021:
+ + Adding YouTube Premium Section.
+ + Blocks more YTPremium and tutorial-nonsense nag.
+ + Hide Username & Email Address on Account Selection
+ > [ContentFilter] some cleanup, shorten, workarounds, bugfixes...
+ > [ContentFilter] Removing Space next to comma (", " > ",") on :upward() to save some bytes.
+ + Change YTSans Bold to YTSans Regular (WHY YouTube?!?!).
+ + [ContentFilter] Fixed "kpop" (k(orean?)?[- ]?(pop|drama)).
+ + [ContentFilter] Improve "s.x" ("se(x|ks)" > "s[e3](x|ks)").
+ + [ContentFilter] Changing (\{s,d}) to \{s,d}.
+ > [ContentFilter] Changing (-| ) to [- ].
+ + [ContentFilter] Add [tfw no gf,intim,mesum,perkosa,selingkuh,jedag( |-)jedug,toddler,[boiy]{8,8},youtube shorts,#shorts,XXX,boob,retarded,pantek,bokep,v.g.n.(censored due to its "extremeness")].
+ + [ContentFilter] Updated "minecraft girl" to "(minecraft|hot) girl".
+
+ 10.08.2021:
+ + another cleanup...
+ 
+ 09.08.2021:
+ + clean things related to content filtering.
+ + Adding comment container height limit.
+ + Adding "www.youtube.com" to ytd-* related things.
+ + improve country code removing.
+
 
  07.08.2021:
  + [Mobile] Adding Content Filter.
@@ -43,71 +57,52 @@
  + big cleanup...
  + added description, make some things look better.
 
- 30.08.2021:
+ **.08.2021_extreme:
+ + [ContentFilter] block "Khaby Lame" (Tiktoker, mostly appear on yt too)
+ + [ContentFilter] Shrengthen Content Filtering by adding "(ren|xiao)jun"
+ + [ContentFilter] Block MORE kpop, from DandelionSprout/adfilt/TwitterAntiKPopSpam.txt (jung|mon)kook|bbylino|loona|jaehyun|yohwin|hongjoong|ryujicy|juyeon
+
+ **.07.2021:
  + Changed/Updated anti circumventing ads (update fetched from ABP Anti-Circumvent).
- + Removing "YouTube `Disable Polymer` mode" rules, as not alot of people using disable polymer mode. (i think you can't disable polymer mode anymore, other than using extension).
+ + Removing "YouTube `Disable Polymer` mode" rules, as not alot of people using disable polymer mode. (ithink u cant disable polymer mode anymore, other than using extension).
  + [ContentFilter] new string added: [masha,noob vs pro,(boy|girl)friend,pregnant,i love you,minecraft girl].
  + [ContentFilter] new channel blocked: "Piper Rockelle" (Lazyp*rn Youtuber, from DJ Cook)
- + [ContentFilter] Reclean the list (later with new content filter lists file commit).
+ + [ContentFilter] Reclean the list.
  + [ContentFilter] append "barat" next to "musik/lagu rohani".
-
-
- 26.07.2021:
  > some cleanup...
  > Making filter rules smaller and faster by removing redundant ".style-scope" class (saving 300 worth of bytes). 
  + [ContentFilter] new string added: [K-Drama,Ragnarok]
  + [ContentFilter] changed "episod" back to "full episod" because it blocks majority of videos (including minecraft videos from mumbo jumbo, and grian).
-
- 24.07.2021:
- + [ContentFilter] Filter fixed for "episode"
+ + [ContentFilter] fixed "episode".
  + [ContentFilter] new string added: "Top-up" (because indo peoples crazily addicted to buying rather EXPENSIVE and USELESS things JUST FOR the F***ING GAME ?!?!)
  > some cleanup...
  + [ContentFilter] Simplified [Baby,Babies,Bayi,Balita] to "ba(bies|by|yi|lita)"
  + [ContentFilter] Simplified "k?anak[-k?anak]" to "k?anak" because its not necessary anyway.
- + [ContentFilter] new string added: murder live (not tested for efficiency),roman(ce|tis),asmara,permission to dance (because its a trend for now).
+ + [ContentFilter] new string added: murder live,roman(ce|tis),asmara,permission to dance.
  > [ContentFilter] remove some duplicates.
  > [ContentFilter] simplified 3am detection.
-
- 23.07.2021_extreme:
- + [ContentFilter] Block MORE kpop, from DandelionSprout/adfilt/TwitterAntiKPopSpam.txt (jung|mon)kook|bbylino|loona|jaehyun|yohwin|hongjoong|ryujicy|juyeon
-
- 23.07.2021:
- + [ContentFilter] Filter Improved for "Nursery" (nursery( rhymes?) > nursery (nursery is "kamar bayi" in indo lmao XD))
+ + [ContentFilter] Improve "Nursery" (nursery( rhymes?) > nursery (nursery is "kamar bayi" in indo lmao XD))
  + [ContentFilter] new string added: "wrong heads".
  + Removes the country codes beside youtube logo (improves privacy when screenshoting/recording)
  + Updated channel blacklist description.
  + Updated Original Author.
  × [ContentFilter] swap elsa|barbie.
- 
- 22.07.2021:
- + [ContentFilter] Filter Improved for "bts" (bangtantv > bangtan)
- + [ContentFilter] Filter Improved for "preston" (prestonplay(s|z?) > preston)
-
- 18.07.2021:
- + [ContentFilter] Shortened (.?) > .? (saving 240 worth of bytes)
+ + [ContentFilter] Improve "bts" (bangtantv > bangtan)
+ + [ContentFilter] Improve "preston" (prestonplay(s|z?) > preston)
+ + [ContentFilter] Shortened (.?) > .? (saving 240 bytes)
  + [ContentFilter] new string added: barbie
- + [ContentFilter] new channel blocked: "123 Go" (too many trash videos, with some gets bypassed because less info on title)
-
- 10.07.2021:
+ + [ContentFilter] new channel blocked: "123 Go"
  + [ContentFilter] Change block ≥3-CAP text to block ALL-CAP text.
  + [ContentFilter] new channel blocked: "Jester" (3AM Clickbait fake videos).
-
- 07.07.2021:
  + [ContentFilter] new string added: [doraemon,dangdut].
- + [ContentFilter] Filter improved for "bts" by adding space-detection > b ?t ?s. since some people trying to make different text (still can't block [b._- -_.t._- -_.s])
+ + [ContentFilter] Improve "bts" by adding space-detection > b ?t ?s.
  + block 2nd "dual panel" on search page
-
- 05.07.2021:
- + [ContentFilter] Filter fixed for "UpinIpin".
+ + [ContentFilter] fixed "UpinIpin".
  + [ContentFilter] new string added: [kak ros,ome.tv,galau,bangtantv,bts,push rank,bang bang,mainan].
  + [ContentFilter] Better blocking on channel names
- + [ContentFilter] Filter improved for "BlackPink" by adding space-detection > black ?pink
-
- 03.07.2021:
+ + [ContentFilter] Improve "BlackPink" by adding space-detection > black ?pink
  > [ContentFilter] BIG UPDATE: Filter lists now works more efficient, faster, and shorter.
- + [ContentFilter] new badstring added: b4*0t
-
- 02.07.2021:
+ + [ContentFilter] new string added "84*0t"
  + Some bug fix
 
 ———————————————————————————————
