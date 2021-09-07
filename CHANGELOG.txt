@@ -9,16 +9,31 @@
 ———————————————————————————————
 
  Changelogs:
- 29.08.2021_dev:
+ 07.09.2021_dev:
+ + Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
  + Add description on "ytd-masthead" and "ytd-watch-flexy".
- + Block Auto-playing on channel (That ones is super annonying no joke bruh)
+ + Block Auto-playing on channel (That ones is super annonying no joke bruh).
  + disable animation works now
  + NEW: Block old video list groups on subscription page.
  + more cleanup...
  + Mobile Support (50% Completed, 10% Development).
  + Change YTSans Bold Back to Roboto Regular (WHY YouTube?!?!).
 
- 29.08.2021:
+ 07.09.2021:
+ + [ContentFilter] new titles added: [nud(e|ity),cock,kiss(es|ing,(sf)ucky (sf)ucky),drunk,egirl].
+ + [ContentFilter] new channel added: [itsOwen,Oboat,emily is daddy,imZarz,ClewFix,Doal,Clouds] (infos from youtu.be/tTAZaHlYlIQ).
+ + Adding #?# to a line that has ":has()" and ":has-text()" to make sure good compatibity.
+ + "Temporarily" remove annoying "tp-yt-iron-dropdown" popups.
+ + Restore "Fat button" Video Player (change last seen 07/09/21).
+ - DEPRECATE "Removes the homepage link from the upper-left YouTube logo" (because its useless to block it since its not a visual disturbance, its just a link)
+
+ 07.09.2021_extreme:
+ + Add [NCT,Jaemin,Jaehyun,Haechan,Enhypen,Jimin,Renjun].
+
+ 01.09.2021:
+ × [ContentFilter] Fixed certain video (mostly on homepage) not filtered based on the channel name
+
+ **.08.2021:
  + Adding YouTube Premium Section.
  + Blocks more YTPremium and tutorial-nonsense nag.
  + Hide Username & Email Address on Account Selection
@@ -29,28 +44,18 @@
  + [ContentFilter] Improve "s.x" ("se(x|ks)" > "s[e3](x|ks)").
  + [ContentFilter] Changing (\{s,d}) to \{s,d}.
  > [ContentFilter] Changing (-| ) to [- ].
- + [ContentFilter] Add [tfw no gf,intim,mesum,perkosa,selingkuh,jedag( |-)jedug,toddler,[boiy]{8,8},youtube shorts,#shorts,XXX,boob,retarded,pantek,bokep,v.g.n.(censored due to its "extremeness")].
+ + [ContentFilter] new titles added: [tfw no gf,intim,mesum,perkosa,selingkuh,jedag( |-)jedug,toddler,[boiy]{8,8},youtube shorts,#shorts,XXX,boob,retarded,pantek,bokep,v.g.n.(censored due to its "extremeness")].
  + [ContentFilter] Updated "minecraft girl" to "(minecraft|hot) girl".
-
- 10.08.2021:
  + another cleanup...
- 
- 09.08.2021:
  + clean things related to content filtering.
  + Adding comment container height limit.
  + Adding "www.youtube.com" to ytd-* related things.
  + improve country code removing.
-
-
- 07.08.2021:
  + [Mobile] Adding Content Filter.
  + [Mobile] Adding Stop Autoplay.
  + [Mobile] Remove YouTube Premium Offer.
  + [Mobile] Remove related content.
  + Mobile Support (50% Completed).
-
- 
- 06.08.2021:
  + Only remove some button if user is logged in/out
  + Clean more things on youtube (too much to say here, just look on the file).
  + update some channel blacklist
