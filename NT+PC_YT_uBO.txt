@@ -184,12 +184,17 @@ youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(6)
 !
 
 ! (NEW!) Restore big button back to small-medium button (YOUTUBE! STOP CHANGING SHIT!!) (warn:some are buggy)
-youtube.com##ytd-watch-flexy .ytp-chrome-bottom:style(bottom:0!important;height:40px!important;padding-top:3px!important)
-youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-chrome-controls:style(height:40px!important;line-height:40px!important)
-youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-chrome-controls .ytp-button:style(padding:0!important;width:40px!important;cursor:default!important)
-youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-chrome-controls .ytp-play-button:style(width:46px!important;cursor:default!important)
-youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-progress-bar-container:style(bottom:39px!important;height:5px!important)
-youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-time-display:style(line-height:39px!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom:style(bottom:0!important;height:40px!important;padding-top:3px!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls:style(height:40px!important;line-height:40px!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls .ytp-button:style(padding:0!important;width:40px!important;cursor:default!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls .ytp-play-button:style(width:46px!important;cursor:default!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-progress-bar-container:style(bottom:39px!important;height:5px!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-time-display:style(line-height:39px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode:style(height:54px!important;padding-top:4px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-button:style(width:54px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-play-button:style(width:60px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-progress-bar-container:style(bottom:52.5px!important;height:8px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode.ytp-time-display:style(line-height:53px!important)
 
 ! (NEW!) Remove "Scroll to see more" thing when watching video at fullscreen
 www.youtube.com##.ytp-fullerscreen-edu-button
