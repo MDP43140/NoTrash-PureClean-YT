@@ -1,8 +1,9 @@
 # No Trash + Pure Clean YouTube
 Makes YouTube Less trashy by removing distracting features, and trash videos
 ![No Trash + Pure Clean YouTube](https://mdp43140.github.io/assets/img/project_ntpcyt.png)
+
 Type | Without NT+PC YT | With NT+PC YT
-:-:|:-:|:-:
+-|-|-
 Overall | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_without_NTPCYT.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_with_NTPCYT.png)
 Side-bar | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_without_NTPCYT_lefthandmenu.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_with_NTPCYT_lefthandmenu.png)
 top-bar | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_without_NTPCYT_topbarmenu.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_with_NTPCYT_topbarmenu.png)
@@ -38,5 +39,5 @@ Original Authors: [DandelionSprout/adfilt](https://github.com/DandelionSprout/ad
 # Note:
 - Content blocker specialized for indo peoples, may block videos/channels you probably don't want.
 - You need to use browser that supports extension (specifically uBlock Origin).
-- This filter probably not work if you use abp (help wanted).
+- This filter probably not work if you use abp.
 - for now, this list only works on desktop version. mobile version may be added in the future (new commit not uploaded yet, supports content blocker).
