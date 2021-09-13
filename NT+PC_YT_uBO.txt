@@ -190,9 +190,9 @@ youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(6)
 ! Why this added:
 ! - Quota-wasting (because playing high quality video automatically when the video is accidentally hovered).
 ! - Privacy invasion (you are now watching the video instead of seeing the actual preview).
-youtube.com##ytd-rich-grid-renderer ytd-video-preview:remove()
-!youtube.com##ytd-thumbnail-overlay-loading-preview-renderer
-!youtube.com##ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail,ytd-thumbnail-overlay-time-status-renderer,ytd-thumbnail-overlay-toggle-button-renderer,ytd-thumbnail-overlay-endorsement-renderer,ytd-thumbnail-overlay-button-renderer,ytd-thumbnail-overlay-hover-text-renderer:style(display:flex!important)
+www.youtube.com##ytd-rich-grid-renderer ytd-video-preview:remove()
+www.youtube.com##ytd-thumbnail-overlay-loading-preview-renderer
+www.youtube.com##ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail,ytd-thumbnail-overlay-time-status-renderer,ytd-thumbnail-overlay-toggle-button-renderer,ytd-thumbnail-overlay-endorsement-renderer,ytd-thumbnail-overlay-button-renderer,ytd-thumbnail-overlay-hover-text-renderer:style(display:flex!important)
 
 ! (NEW!) Restore big button back to small-medium button (YOUTUBE! STOP CHANGING SHIT!!) (warn:some are buggy)
 youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom:style(bottom:0!important;height:40px!important;padding-top:3px!important)
