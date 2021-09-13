@@ -1,0 +1,25 @@
+!
+! Title  : NT+PC_YT: Premium Nag
+! Author : MDP43140
+! Version: 07.09.2021_dev
+! ——————————————————————————————
+!
+! YouTube Premium
+! Blocks any promotion about YouTube Premium
+!
+
+! Removes a banner that promotes YouTube Premium
+youtube.com###masthead-ad:remove()
+! Removes a relatively large popup that promotes YouTube Premium
+youtube.com##ytd-mealbar-promo-renderer:remove()
+
+! Remove network-based image promo request to gstatic
+!||gstatic.com/youtube/img/promos$images
+
+! stop pushing us your membership offerings.
+youtube.com##a#endpoint[href="/paid_memberships"]
+youtube.com###offer-module
+! Remove "Join Channel" Button (im not an evil person, and this is not related to yt premium, so this option will be disabled for now)
+!youtube.com###sponsor-button
+
+! ——————————————————————————————

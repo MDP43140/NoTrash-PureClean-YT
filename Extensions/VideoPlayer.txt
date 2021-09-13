@@ -1,0 +1,83 @@
+!
+! Title  : NT+PC_YT: Video Player
+! Author : MDP43140
+! Version: 07.09.2021_dev
+! ——————————————————————————————
+!
+! Bloats in youtube video player (ytd-watch-flexy)
+! Includes:
+! - Annotations
+! - Endscreen Recommendations
+! - Big Buttons
+! - "Netflix × TikTok styled" video title font
+! - Share
+! - Like/Dislike counters
+! - Clip (latest tiktok feature from google)
+! - Save to playlist
+! - Large grey buttons below description
+!
+
+! (NEW!) Restore big button back to small-medium button (YOUTUBE! STOP CHANGING SHIT!!) (warn:some are buggy)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom:style(bottom:0!important;height:40px!important;padding-top:3px!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls:style(height:40px!important;line-height:40px!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls .ytp-button:style(padding:0!important;width:40px!important;cursor:default!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls .ytp-play-button:style(width:46px!important;cursor:default!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-progress-bar-container:style(bottom:39px!important;height:5px!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-time-display:style(line-height:39px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode:style(height:54px!important;padding-top:4px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-button:style(width:54px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-play-button:style(width:60px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-progress-bar-container:style(bottom:52.5px!important;height:8px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode.ytp-time-display:style(line-height:53px!important)
+
+! (NEW!) Remove "Scroll to see more" thing when watching video at fullscreen
+www.youtube.com##.ytp-fullerscreen-edu-button
+
+! YouTube, STOP changing things! WHY!? (Change "Netflix × TikTok Style" YTSans Bold Video title back to Material Roboto Regular)
+!www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(font-weight:normal!important;font-family:Roboto!important)
+
+! or atleast if you love new changes but hate the bold, here's some yeety tings (Change YTSans Bold to YTSans regular, hopefully possible)
+www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(font-weight:normal!important)
+
+! Removes pop-out player button in the video player
+!youtube.com##.ytp-button.ytp-miniplayer-button
+
+! Removes annotation in videos
+||youtube.com/annotations_invideo?$object-subrequest
+||youtube.com/annotations_module.js$script
+||youtube.com/annotations$script
+youtube.com,youtube-nocookie.com##.video-annotations
+youtube.com##.watch-sidebar-body > #watch-related > .related-list-item
+
+! Removes recommended and featured videos in the endscreen
+||ytimg.com/yts/swfbin/player-*/endscreen.swf$object-subrequest,domain=youtube.com|youtu.be|youtube-nocookie.com
+youtube.com,youtube-nocookie.com##.html5-endscreen-content
+youtube.com,youtube-nocookie.com##.html5-endscreen
+
+! Remove "Share" Button
+youtube.com##ytd-video-primary-info-renderer.ytd-watch-flexy ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer:nth-of-type(1)
+
+! Remove like/dislike counters
+!youtube.com###sentiment
+!youtube.com##ytd-toggle-button-renderer #text
+!youtube.com##.like-button-renderer-like-button > .yt-uix-button-content
+!youtube.com##.like-button-renderer-dislike-button > .yt-uix-button-content
+!youtube.com##.video-extras-sparkbars
+
+
+! (NEW!) Remove Google's Latest bloat, "Clip" feature, which is ofcourse, tiktok (because again... why not).
+youtube.com##ytd-video-primary-info-renderer.ytd-watch-flexy ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer:nth-of-type(2)
+
+! (NEW!) Remove "Save To Playlist" feature.
+!youtube.com##ytd-video-primary-info-renderer.ytd-watch-flexy ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer:nth-of-type(3)
+
+! Removes large grey [YT Kids & game info] buttons below descriptions
+youtube.com##ytd-rich-metadata-renderer.ytd-rich-metadata-row-renderer
+
+! remove autoplay icon if disabled (you can still hover on same area and enable it back)
+youtube.com##.ytp-chrome-bottom .ytp-chrome-controls button.ytp-button:nth-of-type(6) .ytp-autonav-toggle-button-container .ytp-autonav-toggle-button[aria-checked=false]
+
+! (NEW!) limit comment container maximum height to 100% to prevent very long comment (potential lag spike decrease when loading comments)
+www.youtube.com##ytd-comments:style(max-height:100vh!important;overflow:auto!important)
+
+! ——————————————————————————————

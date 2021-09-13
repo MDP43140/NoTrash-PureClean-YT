@@ -1,0 +1,35 @@
+!
+! Title  : NT+PC_YT: Top-mastheader menu
+! Author : MDP43140
+! Version: 07.09.2021_dev
+! ——————————————————————————————
+!
+! Bloat buttons on top-header menu
+! (or so-called "yt-masthead")
+!
+! Includes:
+! - Homepage link (from upper-left).
+! - Country Code (beside YT Logo).
+! - Profile icon (next to login btn, leaving the "LOGIN" text only).
+! - Google bloats (YT/Google App Drawer,Create video,voice search)
+
+! Removes the homepage link from the upper-left YouTube logo (Not supported by ABP, DEPRECATED. because its useless to block it since its not a visual disturbance, its just a link)
+!www.youtube.com#?#logo:style(pointer-events:none!important;cursor:default!important)
+
+! Removes the country codes beside YouTube logo on the upper-left (improves privacy when screenshoting/recording)
+youtube.com###logo #country-code:remove()
+youtube.com##ytd-topbar-logo-renderer #country-code:remove()
+
+! Removes YT Bloat [YT/Google App Drawer,Create video] (dont block last element if not logged in, which is settings)
+youtube.com##ytd-masthead #end #buttons ytd-topbar-menu-button-renderer.style-default:not(:nth-of-type(2))
+youtube.com#?#ytd-masthead #end #buttons:not(:has(ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"])) ytd-topbar-menu-button-renderer.style-default
+youtube.com#?##button:has([aria-label*=app])
+
+! Remove Profile Icon On Login Button
+! :remove() is required or there will be padding width differences
+youtube.com##ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"] yt-icon:remove()
+
+! Removes voice search button (bloat feature from google, who's even using that feature on a desktop browser?)
+youtube.com##ytd-masthead #center #voice-search-button
+
+! ——————————————————————————————

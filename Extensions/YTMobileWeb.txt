@@ -1,0 +1,57 @@
+!
+! Title      : NT+PC_YT: Mobile
+! Author     : MDP43140
+! Version    : 07.09.2021_dev
+! ——————————————————————————————
+!
+! YouTube Mobile
+! Mobile version of YouTube Web
+!
+
+! Removes large grey [YT Kids & game info] buttons below descriptions
+m.youtube.com##ytm-rich-metadata-renderer
+m.youtube.com##ytm-watch-metadata-app-promo-renderer
+
+! Stop Autoplay on YouTube
+m.youtube.com##.ytm-autonav-bar
+
+! Removes TOS Footer on account menu
+m.youtube.com##ytm-privacy-tos-footer-renderer
+
+! Remove YouTube Premium Offer
+m.youtube.com##ytm-offer-item-renderer
+
+! Remove "rich" bloat on homepage
+m.youtube.com#?#ytm-rich-shelf-renderer:has-text(/Latest YouTube posts|Free to watch|Postingan terbaru YouTube|Gratis untuk ditonton/i)
+
+! Remove related content
+m.youtube.com##ytm-watch ytm-item-section-renderer[data-content-type="related"]:remove()
+
+!!! --- UNSTABLE, MAY CAUSE BUG --- !!!
+!!!
+!!! Remove (trash and addictive) Chip bar on Homepage
+m.youtube.com##ytm-rich-grid-renderer ytm-feed-filter-chip-bar-renderer
+!!!
+!!! Remove "Trending" button (known bug: wont align the rest of the buttons, looks not symetrical)
+m.youtube.com#?#ytm-pivot-bar-item-renderer:has(.pivot-trending)
+!!!
+!!! Remove "Add Video" Button
+m.youtube.com##ytm-active-account-header-renderer > .center
+!!!
+!!! Remove some bloaty yt premium buttons (unverified bug: caused some button missing on libraries)
+!m.youtube.com##ytm-compact-link-renderer:nth-of-type(2)
+!m.youtube.com##ytm-compact-link-renderer:nth-of-type(3)
+!m.youtube.com##ytm-compact-link-renderer:nth-of-type(4)
+!!!
+!!! 
+!m.youtube.com##ytm-settings > .setting-generic-category
+!m.youtube.com##ytm-subscription-products-setting-category-entry-renderer > .setting-generic-category
+!m.youtube.com##ytm-connected-accounts-setting-category-entry-renderer > .setting-generic-category
+!!!
+!!! Content Filter Concept
+m.youtube.com#?#.large-media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok|jedag[- ]jedug|(youtube |#)shorts|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally?) wrong|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|(for|with|untuk|animasi|cerita|dongeng|lagu ?)(kid|child|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car?)toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation|upin|ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling?) ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?ta?|ri?bu?|doll?ar))|m[pd]l[- ]?.* s.*|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|naruto|one punch man|pokemon|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo?) mama|permission to dance|[pm]epe[kx]|s[e3][xks]|b[o0]k[e3]p|p[o0]rn|nud(e|ity)|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|drunk|egirl|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat)|christ/iu):upward(ytm-large-media-item, ytm-rich-item-renderer, ytm-video-with-context-renderer):remove()
+m.youtube.com#?#.compact-media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok|jedag[- ]jedug|(youtube |#)shorts|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally?) wrong|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|(for|with|untuk|animasi|cerita|dongeng|lagu ?)(kid|child|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car?)toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation|upin|ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling?) ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?ta?|ri?bu?|doll?ar))|m[pd]l[- ]?.* s.*|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|naruto|one punch man|pokemon|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo?) mama|permission to dance|[pm]epe[kx]|s[e3][xks]|b[o0]k[e3]p|p[o0]rn|nud(e|ity)|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|drunk|egirl|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat)|christ/iu):upward(ytm-compact-video-renderer,ytm-compact-channel-renderer, ytm-rich-item-renderer, ytm-video-with-context-renderer):remove()
+!m.youtube.com#?#span.small-text.ytm-badge-and-byline-item-byline:nth-of-type(1):has-text(//iu):upward(                       ytm-rich-item-renderer, ytm-video-with-context-renderer)
+!!!
+!!! ------------------------------- !!!
+! ——————————————————————————————

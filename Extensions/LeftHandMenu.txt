@@ -1,0 +1,77 @@
+!
+! Title  : NT+PC_YT: Left-hand menu
+! Author : MDP43140
+! Version: 07.09.2021_dev
+! ——————————————————————————————
+!
+! Bloat buttons on left-hand menu
+! Includes:
+! - Trending
+! - Subscription (If Not Logged in)
+! - History
+! - My Videos
+! - Liked Videos
+! - Film store
+! - Sign-in Nag
+! - More From YouTube
+! - Unused button (can be found by clicking profile/3dot icon)
+! - Trash footer link
+!
+! left-hand menu will be removed if user is not logged in because there's only home button which you can access by clicking yt logo
+!
+
+! remove left-hand menu if not logged in (not done yet)
+!www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) 
+
+! Removes "Trending" Button
+www.youtube.com#?#ytd-guide-entry-renderer:has(a[href^="/feed/trending"])
+www.youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href^="/feed/trending"])
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(2)
+! Removes "Discover" button
+www.youtube.com#?#ytd-guide-entry-renderer:has(a[href^="/feed/guide_builder"])
+
+! Removes "Subscription" Button (if not login)
+www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(3)
+www.youtube.com#?##guide-section-title:has-text(/subscription/i):upward(ytd-guide-section-renderer)
+
+!Removes "History" Button
+www.youtube.com###section-items > ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(1)
+
+! Removes "Your videos" button
+!www.youtube.com#?#ytd-guide-entry-renderer:has(a[href*="studio.youtube.com/channel/*/videos"])
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(2)
+
+! Removes "Liked Videos" Button
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:not(:first-child):last-child
+
+! Removes "Film Store" Button
+www.youtube.com#?#ytd-guide-entry-renderer:has(a[href^="/channel/UClgRkhTL3_hImCAmdLfDE4g"])
+
+! Removes Sign-in Nag
+www.youtube.com##ytd-guide-signin-promo-renderer
+
+! Put that "More From YouTube" section somewhere else, since you put important stuff at the BOTTOM.
+www.youtube.com##tp-yt-app-drawer ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(3)
+www.youtube.com#?#tp-yt-app-drawer ytd-guide-section-renderer:has-text(/(More from|Lainnya dari) YouTube/i)
+
+! Removes Unused Button
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(4)
+
+! Removes Trash Footer Link
+youtube.com##tp-yt-app-drawer .ytd-guide-renderer#footer
+
+! Removes "YT Gaming" button
+!www.youtube.com#?#ytd-guide-entry-renderer:has(a[href$="/gaming"])
+
+! Removes "Livestream" button
+!www.youtube.com#?#ytd-guide-entry-renderer:has(a[href$=UC4R8DWoMoI7CAwX8_LjQHig])
+
+! Removes "Homepage" button
+!youtube.com#?#ytd-guide-entry-renderer:has(a[href="/"])
+!youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="/"])
+
+!dk wut this does...
+youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(5)
+youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(6)
+
+! ——————————————————————————————

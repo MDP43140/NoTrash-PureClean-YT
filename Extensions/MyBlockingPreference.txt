@@ -1,0 +1,28 @@
+!
+! Title  : NT+PC_YT: My Blocking Preference
+! Author : MDP43140
+! Version: 07.09.2021_dev
+! --------------------------------------------------------------------------
+
+!!! --- NOT RECOMMENDED For day-to-day Use! THIS IS BASED of my PREFERENCE --- !!!
+
+! (NEW!) "Temporarily" remove annoying popups
+www.youtube.com##tp-yt-iron-dropdown
+
+! Cleaner UI With Incovinence Tradeoff (Can't see subscription by clicking specific channel, only use if you don't ever check channels)
+youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(2)
+
+! Removes search button (NOT RECOMMENDED IF YOU HAVE TO CLICK SEARCH BUTTON)
+!youtube.com###search > .ytd-searchbox #search-icon-legacy
+
+! Disables animation (incl. loading ring < TODO), for lowends only !!! and its still "build" (dont work lol)
+www.youtube.com##ytd-app *:style(transition:none!important;animation:none!important;animation-delay:0!important;animation-duration:0!important;animation-timing-function:none!important;animation-play-state:paused!important;animation-iteration-count:0!important)
+m.youtube.com##ytm-app *:style(transition:none!important;animation:none!important;animation-delay:0!important;animation-duration:0!important;animation-timing-function:none!important;animation-play-state:paused!important;animation-iteration-count:0!important)
+
+! New: Block old videos on subscription (good for u that is'nt scrolling to weeks ago and ??).
+! Warning: hide instead of removing it because the loadingynthemabob reappears it again
+youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-section-list-renderer:not(:nth-of-type(1)):not(:nth-of-type(2)):not(:nth-of-type(3))
+! Todo: Remove the loadingy after 4th of ^^^ detected to prevent more loading and quotawastinginthemaboby
+
+! -------------------------------------------------------------------------- !!!
+

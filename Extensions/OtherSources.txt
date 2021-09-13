@@ -1,0 +1,55 @@
+!
+! Title  : NT+PC_YT: Other sources
+! Author : MDP43140
+! Version: 07.09.2021_dev
+! ——————————————————————————————
+!
+! here's some lists that i
+! dont know what it does 
+! or just nonsense lol
+!
+
+!nonsense: remove big play button when the video is not started
+youtube.com##.ytd-player .ytp-cued-thumbnail-overlay .ytp-button.ytp-large-play-button
+
+! make sure this domain is only used for that only purpose to prevent cname cloaking
+||fonts.gstatic.com
+@@||fonts.gstatic.com$font
+||yt3.ggpht.com
+@@||yt3.ggpht.com$image
+
+
+! github.com/uBlockOrigin/uAssets/issues/5759
+!#if env_firefox
+youtube.com##.no-scroll #page-manager:style(margin-top:0!important)
+!#endif
+! issued by DandelionSprout - github.com/uBlockOrigin/uAssets/issues/5911
+! Removes a short-lasting note about being logged off
+youtube.com##ytd-popup-container > .ytd-popup-container > #contentWrapper > .ytd-popup-container[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"]
+! Removes a relatively large login nag module
+m.youtube.com###mealbar\:3 > ytm-mealbar.mealbar-promo-renderer
+youtube.com/v/*autoplay
+youtube.com/subscribe_embed?$third-party
+youtube.com/subscribe_widget$third-party
+youtube.com###yt-feedback
+youtube.com###yt-hitchhiker-feedback
+youtube.com###yt-lang-alert-container
+youtube.com##.ytp-ce-playlist
+youtube.com##.ytp-pause-overlay
+youtube.com##.ytp-title-channel
+youtube.com##.ytd-statement-banner-renderer
+! Youtube TV promos
+youtube.com##.ytd-primetime-promo-renderer
+youtube.com###secondary-links
+youtube.com###alert-banner > .ytd-browse > .yt-alert-with-actions-renderer
+youtube.com###notification-footer
+youtube.com##.yt-consent
+youtube.com##div[class^="ytd-consent"]
+youtube.com#@#.show-share
+youtube.com#@#.twitter-icon
+youtube.com#@#.youtube-icon
+youtube.com#@#.youtube_subscribe_module
+youtube.com#@##consent-bump
+youtube.com##.share-panel-services-container > div#share-services-container
+youtube.com##.share-panel
+
