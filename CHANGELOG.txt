@@ -1,34 +1,36 @@
 ———————————————————————————————
 
  Bugs:
- - (beta) disabling animation also disables loading animation too, only affects rich person thats love animation XD.
- - Content Filter Bypassed: [MobileLegends, mobile gen (w/o "le"), Temporary Workaround]
-														[RockNRoll, only rock (is false), Temporary Workaround]
-														[upinIpin, upin ipin, Temporary Workaround]
+ - No bugs so far...
 
 ———————————————————————————————
 
  Changelogs:
- 07.09.2021_dev:
- + Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
+ 14.09.2021_dev:
+ + Block [Chinese,Korea] languages [\uAC00–\uD7AF\u1100–\u11FF\u3130-\uD7FF] (running smooth without bugs so far...)
+ + Fixed loading animation disabled.
+ + Workaround bug disabling animation makes toast on bottom-left >stays in the place< but invisible which blocks cursor from scrubbing the start.
  + Add description on "ytd-masthead" and "ytd-watch-flexy".
- + Block Auto-playing on channel (That ones is super annonying no joke bruh).
- + disable animation works now
- + NEW: Block old video list groups on subscription page.
- + more cleanup...
+ + Remove autoplaying video on channel homepage, which forces you to watch their video and wastes bandwidth (Bug: video still plays in background even when you get away from channel homepage).
+ + Block old video list groups on subscription page.
  + Mobile Support (50% Completed, 10% Development).
- + Change YTSans Bold Back to Roboto Regular (WHY YouTube?!?!).
+ + Change YTSans Bold Back to Roboto Regular.
+ . Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
 
+ 14.09.2021:
+ + (not completely related to this changelog): Extensions released for ease of customization (see /Extensions/Customize.lst for more).
+ + Remove "Comment blocking", you can still block comment by subscribing to the comment extension (/Extensions/Comment.txt).
+ + (NEW!) Block Potentially Quotawasting and privacyinvasion bloat feature: autoplay hd withsound ifyouhoverthevideo (and yes, it had relation with that rich-renderer thing. which sucks).
+ + Changed some description and arranging some things to right places.
+ + Fixed Some content not filtered (subscription page in grid view) by adding "ytd-grid-video-renderer" to content filter upward.
+ 
  07.09.2021:
- + [ContentFilter] new titles added: [nud(e|ity),cock,kiss(es|ing,(sf)ucky (sf)ucky),drunk,egirl].
+ + [ContentFilter] new titles added: [nud(e|ity),cock,kiss(es|ing),(sf)ucky (sf)ucky,drunk,egirl].
  + [ContentFilter] new channel added: [itsOwen,Oboat,emily is daddy,imZarz,ClewFix,Doal,Clouds] (infos from youtu.be/tTAZaHlYlIQ).
  + Adding #?# to a line that has ":has()" and ":has-text()" to make sure good compatibity.
  + "Temporarily" remove annoying "tp-yt-iron-dropdown" popups.
  + Restore "Fat button" Video Player (change last seen 07/09/21).
- - DEPRECATE "Removes the homepage link from the upper-left YouTube logo" (because its useless to block it since its not a visual disturbance, its just a link)
-
- 07.09.2021_extreme:
- + Add [NCT,Jaemin,Jaehyun,Haechan,Enhypen,Jimin,Renjun].
+ + DEPRECATE "Removes the homepage link from the upper-left YouTube logo" (because its useless to block it since its not a visual disturbance, its just a link)
 
  01.09.2021:
  × [ContentFilter] Fixed certain video (mostly on homepage) not filtered based on the channel name
@@ -61,11 +63,6 @@
  + update some channel blacklist
  + big cleanup...
  + added description, make some things look better.
-
- **.08.2021_extreme:
- + [ContentFilter] block "Khaby Lame" (Tiktoker, mostly appear on yt too)
- + [ContentFilter] Shrengthen Content Filtering by adding "(ren|xiao)jun"
- + [ContentFilter] Block MORE kpop, from DandelionSprout/adfilt/TwitterAntiKPopSpam.txt (jung|mon)kook|bbylino|loona|jaehyun|yohwin|hongjoong|ryujicy|juyeon
 
  **.07.2021:
  + Changed/Updated anti circumventing ads (update fetched from ABP Anti-Circumvent).
