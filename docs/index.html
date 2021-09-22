@@ -1,0 +1,327 @@
+<html>
+<head>
+<title>MDP Webpage</title>
+<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<link rel="shortcut icon" href="https://github.com/MDP43140/mdp43140.github.io/raw/master/favicon.png">
+<link rel="stylesheet" href="https://github.com/MDP43140/mdp43140.github.io/raw/master/assets/Normalize.css">
+<style>
+* {box-sizing:border-box;scrollbar-color:#2a2c2e #1c1e1f}
+
+a:not(hover){text-decoration:none}
+
+/* Style the body and html */
+html,body,input,textarea,select,button {
+	font-family:"Product Sans",Arial,Segoe UI;
+	margin:0;
+	border-color:#575757;
+	color:#fff;
+	background:#181818 linear-gradient(90deg,#020d19,#190605);
+}
+
+/* Header/logo Title */
+#header {
+	text-shadow:2px 2px 2px #000;
+	cursor:default;
+	user-select:none;
+	user-drag:none;
+	padding:40px;
+	text-align:center;
+	background:url('../bg.jpg');
+	color:white;
+}
+
+/* Increase the font size of the heading */
+#header h1 {font-size:40px}
+
+/* Increase the font size of the heading */
+#header p {color:#fff}
+
+/* Sticky navbar - toggles between relative and fixed,depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However,for these versions the navbar will inherit default position */
+#navbar {
+	background:#333;
+	background:linear-gradient(135deg,#333,#223 80%);
+	position:sticky;
+	top:0;
+	left:0;
+	right:0;
+	box-shadow:0 3px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	overflow:none;
+	width:100%;
+	min-height:46px;
+	max-height:92px;
+	display:block;
+	z-index:2;
+	transition:top 0.3s;
+}
+
+/* Style the navigation bar links */
+#navbar a {
+	float:left;
+	display:block;
+	color:#fff;
+	text-align:center;
+	padding:14px 20px;
+	text-decoration:none;
+	z-index:2;
+	transition:box-shadow 0.2s;
+}
+
+#navbar a.right {float:right}
+#navbar a.active {background:#666;color:#fff;z-index:3;box-shadow:0 0 2px 0 rgba(0,0,0,0.4),0 0 5px 0 rgba(0,0,0,0.24)}
+#navbar a:hover {background:#ddd;color:#000;z-index:4;box-shadow:0 0 8px 0 rgba(0,0,0,0.4),0 0 10px 0 rgba(0,0,0,0.24)}
+
+/* Column container */
+.row {display:flex;flex-wrap:wrap}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+	flex:50%;
+	background:#181a1b;
+	padding:8px;
+}
+
+/* Main column */
+main {
+	flex:50%;
+	background:#101010;
+	padding:8px;
+}
+
+
+/* Fake image And Fake Small image,just for example */
+.fakeimg {color:#fff;background:#555;min-width:200px;min-height:50px;max-width:100%;max-height:200px;width:200px;height:50px;padding:16px;transition:0.5s ease-in-out;border-radius:4px;box-shadow:0 2px 4px 0 rgba(0,0,0,0.4);text-shadow:2px 2px 2px #000}
+.fakeimg:hover {background:#666;width:360px;height:200px}
+
+.fakeimg:hover .item-thumbnail img{transform:scale(1.1)}
+.fakeimg:hover .filter-item-content{opacity:0.94;padding-top:25%}
+.item-thumbnail{display:inline;float:left;overflow:hidden;width:100%}
+.item-thumbnail img{display:block;max-width:100%;height:auto;transform:scale(1);transition:0.5s}
+.filter-item-content{cursor:default;user-select:none;user-drag:none;position:absolute;left:10px;top:10px;right:10px;bottom:10px;background-color:#000;color:#fff;padding-top:0%;transition:all 0.2s;opacity:0}
+.filter-item-content .title{text-align:center;font-size:18px}
+/*ENDS HERE ----------------------- */
+
+/* Footer */
+footer {padding:20px;text-align:center;background:#333;box-shadow:0 3px -4px 0 rgba(0,0,0,0.4),0 2px -8px 0 rgba(0,0,0,0.4);text-shadow:2px 2px 2px #000}
+
+/* Responsive layout - when the screen is less than 700px wide,make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width:700px) {.row {flex-direction:column}}
+
+/* Responsive layout - when the screen is less than 400px wide,make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width:400px) {#navbar a {float:none;width:100%}}
+
+/* Bright Theme */
+body.bright {color:#000;background:#fff}
+body.bright .side {background:#f1f1f1}
+body.bright main {background:#fff}
+body.bright footer {background:#aaa;text-shadow:none}
+
+#navbar .search-container{float:center}
+#navbar .search-container input[type=text]{
+	display:inline;
+	width:80px;
+	box-sizing:border-box;
+	padding:11.5px;
+	font-size:17px;
+	background:#333;
+	border:1px solid transparent;
+	transition:0.3s;
+}
+
+#navbar .search-container button{
+	float:center;
+	padding:12px 0;
+	background:#ddd;
+	font-size:17px;
+	border:none;
+	cursor:default;
+	opacity:0;
+	margin:0;
+	color:#fff;
+	transition:opacity 0.3s padding 0.3s;
+}
+
+#navbar input[type=text]:not(:focus){cursor:default}
+#navbar input[type=text]:hover {background:#ddd;color:#000;border:1px solid #777}
+#navbar input[type=text]:focus {background:#444;color:#fff;width:25%;border:1px solid #ccc;padding:11.5px 20px}
+#navbar input[type=text]:focus #navbar .search-container button {opacity:1;padding:12px}
+#navbar .search-container button:hover{background:#ccc}
+
+
+
+
+
+/* Great hint from redstapler: (https://redstapler.co/prefers-color-scheme-tutorial)
+@media (prefers-color-scheme:light){
+	.somelightthemecodehere {}
+	.somelightthemecodehere {}
+	.somelightthemecodehere {}
+}
+@media (prefers-color-scheme:dark){
+	.somedarkthemecodehere {}
+	.somedarkthemecodehere {}
+	.somedarkthemecodehere {}
+}
+*/
+
+
+
+.img-comp-container {
+	margin:4px;
+	box-shadow:0 2px 4px 0 rgba(0,0,0,0.4);
+	border-radius:8px;
+	position:relative;
+	overflow:hidden
+}
+.img-comp-container p {
+	color:#fff;
+	position:absolute;
+	top:8px;
+	right:8px;
+	z-index:2;
+	text-shadow:0 0 2px #000;
+	user-select:none;
+	user-drag:none;
+}
+.img-comp-img {
+	position:absolute;
+	width:auto;
+	height:auto;
+	overflow:hidden
+}
+.img-comp-img img {
+	display:block;
+	vertical-align:middle
+}
+.img-comp-img p {
+	position:absolute;
+	top:8px;
+	left:8px;
+	z-index:0;
+	white-space:nowrap;
+}
+.img-comp-slider {
+	position:absolute;
+	z-index:9;
+	cursor:ew-resize;
+	width:40px;
+	height:100%;
+}
+</style>
+<script src="https://polyfill.io/v3/polyfill.js" crossorigin="Anonymous"></script>
+<script src="https://github.com/MDP43140/mdp43140.github.io/raw/master/assets/index.js"></script>
+</head>
+<body>
+<section id="home">
+<nav id="navbar"> <!-- Navigation Bar -->
+	<a href="#">Home</a>
+	<a href="My Website - Projects.html">Projects</a>
+	<a href="javascript:retheme()" class="right" title="Change Theme" id="rethemeBtn" oncontextmenu="retheme();return false">☀️</a>
+	<a href="#aboutme" class="right">About Me</a>
+	<a href="https://github.com/mdp43140" class="right">GitHub</a>
+</nav>
+<header id="header"> <!-- Header Title -->
+	<h1>MDP Website</h1>
+	<p>Welcome To My Website.</p>
+	<!--p>This Site Will Be My <strong>New</strong> Home On The Web.</p-->
+</header>
+<div class="row"> <!-- You Can Customize Here -->
+	<div class="side">
+		<div class="img-comp-container" style="width:640px;height:360px"><p>Homepage</p>
+			<div class="img-comp-img"><p>Without NT+PC_YT</p><img src="https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/YTD_without_NTPCYT.png" width="640" height="360"></div>
+			<div class="img-comp-img img-comp-overlay"><p>With NT+PC_YT</p><img src="https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/YTD_with_NTPCYT.png" width="640" height="360"></div>
+		</div>
+		<div class="img-comp-container" style="width:640px;height:593px"><p>Video Player</p>
+			<div class="img-comp-img"><p>Without NT+PC_YT</p><img src="https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/YTD_without_NTPCYT_watch.png" width="640" height="593"></div>
+			<div class="img-comp-img img-comp-overlay"><p>With NT+PC_YT</p><img src="https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/YTD_with_NTPCYT_watch.png" width="640" height="593"></div>
+		</div>
+		<div class="img-comp-container" style="width:552px;height:418px"><p>Left-hand menu</p>
+			<div class="img-comp-img"><p>Without NT+PC_YT</p><img src="https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/YTD_without_NTPCYT_lefthandmenu.png" width="552" height="418"></div>
+			<div class="img-comp-img img-comp-overlay"><p>With NT+PC_YT</p><img src="https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/YTD_with_NTPCYT_lefthandmenu.png" width="552" height="418"></div>
+		</div>
+		<div class="img-comp-container" style="width:552px;height:47px"><p>Top-bar menu</p>
+			<div class="img-comp-img"><p>Without NT+PC_YT</p><img src="https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/YTD_without_NTPCYT_topbarmenu.png" width="552" height="47"></div>
+			<div class="img-comp-img img-comp-overlay"><p>With NT+PC_YT</p><img src="https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/YTD_with_NTPCYT_topbarmenu.png" width="552" height="47"></div>
+		</div>
+	</div>
+	<main> <!-- Left Side Page -->
+		<div>
+			<h1><a style="color:#fff;text-shadow:0 0 2px #000" href="https://github.com/mdp43140/NoTrash-PureClean-YT">No Trash + Pure Clean YouTube</a></h1>
+			<p>
+Features:<ul>
+<li>Block useless features, distracting videos, and trash channels.</li>
+<li>Block big "YouTube premium promotion banner" on homepage.</li>
+<li>Makes YouTube homepage less bloated and more pure experience.</li>
+<li>Makes YouTube a safer, non-bloated, non-fanatic, place to just watch videos.</li>
+<li>Makes YouTube alot less "tiktok", which is really bad (who even want to watch a freaking potrait video on landscape display anyway, or even have a very big button on desktop sites).</li>
+<li>Makes clicking a button a lot less hassle (less/no scrolling required).</li>
+<li>Saves data for not loading some random-nonsense video thumbnails, and channel icons.</li>
+<li>Reduce Lag Spike, And Network traffic/usage.</li>
+</ul><br>
+Why i make this?<br><ul>
+Because i <b>REALLY</b> Hate what YouTube does recently (on year 2021).
+YouTube now is heavy, full with bloated, network-chugging, and now mostly tiktok-related features and videos
+While there's "uBlock Annonyances", "Fanboy Annonyances", "Anti-cancer", and others that blocks some "annonying features/alert",
+This script reduces Trash Contents (video, channel, already watched video), and useless features (recently youtube added clip feature, and changing video title font from Roboto Regular to YTSans Bold),
+Making YouTube more clean, faster to load & navigate around, and less trashy & bloated.<br></ul>
+Original Authors:<br>
+<a href="https://github.com/DandelionSprout/adfilt">DandelionSprout/adfilt</a><br>
+<a href="https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists">WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists</a>
+<br><br>Subscribe to this filter list (ABP is kinda incompatible):<br>
+<a href="https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/NT%2BPC_YT_uBO.txt&title=NT%2BPC_YT">Stable</a><br>
+<a href="https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/dev/NT%2BPC_YT_uBO.txt&title=NT%2BPC_YT">Dev</a>
+<br><a href="https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/CHANGELOG.txt">Changelog</a>
+<br><br>Note:<ul>
+<li>The content blocker is specialized for indo peoples, may block videos/channels you probably don't want.</li>
+<li>You will need to use browser that supports extension (specifically uBlock Origin).</li>
+<li>You need to use supported extension (currently uBlock Origin). This filter probably not work if you use AdBlockPlus (help wanted).</li>
+<li>for now, this list fully works on desktop version. mobile version is in "experiment state".</li>
+<li>and the last, this site's repo is still in build, so there's possibly a bug.</li>
+</ul>
+			</p>
+		</div>
+	</main>
+</div>
+<footer class="footer">
+	<p>Made With ❤️ By MDP43140</p>
+</footer>
+<script>
+elt=(t,at,...ch)=>{
+	let c,d=document.createElement(t);if(at)for(a in at)if(at.hasOwnProperty(a))d.setAttribute(a,at[a]);
+	for(c of ch){if(typeof c == 'string')c=document.createTextNode(c);d.append(c)};return d;
+}
+var compareImages=((img)=>{
+	let slider,clicked=0,interacted=0,w=img.offsetWidth,h=img.offsetHeight;
+	img.style.width = (w/2)+"px";
+	slider = elt("div",{class:"img-comp-slider",style:"will-change:left"});
+	img.parentElement.insertBefore(slider,img);
+	slider.style.top = (h/2)-(slider.offsetHeight/2)+"px";
+	slider.style.left = (w/2)-(slider.offsetWidth/2)+"px";
+	slider.addEventListener("pointerdown",slideReady,{passive:true});
+	window.addEventListener("pointerup",slideFinish,{passive:true});
+	function slideReady(e){
+		e.preventDefault();
+		interacted=1
+		clicked=1;
+		window.addEventListener("pointermove",slideMove,{passive:true});
+	}
+	function slideFinish(){clicked=0}
+	function slideMove(e){if (clicked) slide(Math.min(Math.max(0,getCursorPos(e)),w))}
+	function getCursorPos(e){return (e.changedTouches?e.changedTouches[0]:e).pageX-img.getBoundingClientRect().left-window.pageXOffset}
+	function slide(x){img.style.width=x+"px";slider.style.left=img.offsetWidth-(slider.offsetWidth/2)+"px"}
+	let dir = 4,
+			curMoveDir = img.getBoundingClientRect().left-window.pageXOffset,
+			tmp0 = function(){
+		if (interacted) clearAnimationFrame(tmp1)
+		curMoveDir += dir;
+		let curPos = curMoveDir - window.pageXOffset
+		if (curPos < 1 || curPos > w){dir*=-1;setTimeout(tmp0,1e3);clearAnimationFrame(tmp1)}
+		slide(curMoveDir)
+		tmp1 = requestAnimationFrame(tmp0)
+	};
+	tmp0();
+})
+for (let i of document.querySelectorAll(".img-comp-overlay")) compareImages(i)
+</script>
+</body>
+</html>
