@@ -1,14 +1,15 @@
 ———————————————————————————————
 
  Bugs:
- - No bugs so far...
+ - No Bugs Encontered Yet...
 
 ———————————————————————————————
 
  Changelogs:
- 14.09.2021_dev:
+ 22.09.2021_dev:
+ + block web-animations-next-lite.min.js (disable animation possibly?? BETA)
  + Block [Chinese,Korea] languages [\uAC00–\uD7AF\u1100–\u11FF\u3130-\uD7FF] (running smooth without bugs so far...)
- + Fixed loading animation disabled.
+ + Fixed loading animation disabled (uhh nope...).
  + Workaround bug disabling animation makes toast on bottom-left >stays in the place< but invisible which blocks cursor from scrubbing the start.
  + Add description on "ytd-masthead" and "ytd-watch-flexy".
  + Remove autoplaying video on channel homepage, which forces you to watch their video and wastes bandwidth (Bug: video still plays in background even when you get away from channel homepage).
@@ -16,6 +17,12 @@
  + Mobile Support (50% Completed, 10% Development).
  + Change YTSans Bold Back to Roboto Regular.
  . Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
+
+ 22.09.2021:
+ + Added section "Design changes" (anything youtube did to make its design more bulky and bloated for desktop site).
+ + Fixed annotations.js request not blocked.
+ + Restore Big button on searchbox (change last seen 22/09/21).
+ × removed duplicate filter.
 
  14.09.2021:
  + (not completely related to this changelog): Extensions released for ease of customization (see /Extensions/Customize.lst for more).
@@ -29,7 +36,7 @@
  + [ContentFilter] new channel added: [itsOwen,Oboat,emily is daddy,imZarz,ClewFix,Doal,Clouds] (infos from youtu.be/tTAZaHlYlIQ).
  + Adding #?# to a line that has ":has()" and ":has-text()" to make sure good compatibity.
  + "Temporarily" remove annoying "tp-yt-iron-dropdown" popups.
- + Restore "Fat button" Video Player (change last seen 07/09/21).
+ + Restore Big button on Video Player (change last seen 07/09/21).
  + DEPRECATE "Removes the homepage link from the upper-left YouTube logo" (because its useless to block it since its not a visual disturbance, its just a link)
 
  01.09.2021:
