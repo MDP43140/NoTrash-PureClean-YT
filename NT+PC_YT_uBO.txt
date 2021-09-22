@@ -2,7 +2,7 @@
 ! Title     : No-Trash + Pure-Clean YouTube
 ! Author    : MDP43140
 ! OA        : DandelionSprout
-! Version   : 14.09.2021
+! Version   : 22.09.2021
 ! GitHub    : mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! ——————————————————————————————
@@ -177,7 +177,6 @@ youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(6)
 ! - (NEW!) Quotawasting Highqualityvideowithsound Whenhovered ?? long name...
 ! - Annotations
 ! - Endscreen Recommendations
-! - Big Buttons
 ! - "Netflix × TikTok styled" video title font
 ! - Share
 ! - Like/Dislike counters
@@ -187,39 +186,24 @@ youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(6)
 !
 
 ! (NEW!) Block Quotawasting bloat feature: autoplay highquality withsound ifyouhoverthevideo
+! and restore old thumbnail ui (including watch later and save to button, except the lightweight preview thing ;c. why youtube...)
 ! Why this added:
 ! - Quota-wasting (because playing high quality video automatically when the video is accidentally hovered).
 ! - Privacy invasion (you are now watching the video instead of seeing the actual preview).
 www.youtube.com##ytd-rich-grid-renderer ytd-video-preview:remove()
 www.youtube.com##ytd-thumbnail-overlay-loading-preview-renderer
-www.youtube.com##ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail,ytd-thumbnail-overlay-time-status-renderer,ytd-thumbnail-overlay-toggle-button-renderer,ytd-thumbnail-overlay-endorsement-renderer,ytd-thumbnail-overlay-button-renderer,ytd-thumbnail-overlay-hover-text-renderer:style(display:flex!important)
-
-! (NEW!) Restore big button back to small-medium button (YOUTUBE! STOP CHANGING SHIT!!) (warn:some are buggy)
-youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom:style(bottom:0!important;height:40px!important;padding-top:3px!important)
-youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls:style(height:40px!important;line-height:40px!important)
-youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls .ytp-button:style(padding:0!important;width:40px!important;cursor:default!important)
-youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls .ytp-play-button:style(width:46px!important;cursor:default!important)
-youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-progress-bar-container:style(bottom:39px!important;height:5px!important)
-youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-time-display:style(line-height:39px!important)
-youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode:style(height:54px!important;padding-top:4px!important)
-youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-button:style(width:54px!important)
-youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-play-button:style(width:60px!important)
-youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-progress-bar-container:style(bottom:52.5px!important;height:8px!important)
-youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode.ytp-time-display:style(line-height:53px!important)
+www.youtube.com##ytd-thumbnail[now-playing] ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-toggle-button-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-endorsement-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-button-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-hover-text-renderer.ytd-thumbnail:style(display:flex!important)
 
 ! (NEW!) Remove "Scroll to see more" thing when watching video at fullscreen
 www.youtube.com##.ytp-fullerscreen-edu-button
-
-! YouTube, STOP changing things! WHY!? (Change "Netflix × TikTok Style" YTSans Bold to YTSans regular)
-www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(font-weight:normal!important)
 
 ! Removes pop-out player button in the video player
 !youtube.com##.ytp-button.ytp-miniplayer-button
 
 ! Removes annotation in videos
 ||youtube.com/annotations_invideo?$object-subrequest
-||youtube.com/annotations_module.js$script
-||youtube.com/annotations$script
+/annotations_module.js$script,domain=youtube.com
+/annotations$script,domain=youtube.com
 youtube.com,youtube-nocookie.com##.video-annotations
 youtube.com##.watch-sidebar-body > #watch-related > .related-list-item
 
@@ -310,6 +294,39 @@ youtube.com###offer-module
 !youtube.com###sponsor-button
 
 ! ——————————————————————————————
+!
+! Design Changes 
+! Restore anything bad YouTube changes on desktop website (latest changes, most changes suck and tiktoky)
+! ps: restoring button size is not recommended for touch user or mobile user that uses desktop version
+!
+
+! YouTube, STOP changing things! WHY!? (Change "Netflix × TikTok Style" YTSans Bold Video title back to Material Roboto Regular)
+!www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(font-weight:normal!important;font-family:Roboto!important)
+
+! or atleast if you love new changes but hate the bold, here's "YTSans regular" (instead of "Roboto regular", hopefully possible)
+www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(font-weight:normal!important)
+
+! Below are big button changes —
+
+! (NEW!) Restore big button back to small-medium button (YOUTUBE! STOP CHANGING SHIT!!)
+! WatchFlexy
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom:style(bottom:0!important;height:40px!important;padding-top:3px!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls:style(height:40px!important;line-height:40px!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls .ytp-button:style(padding:0!important;width:40px!important;cursor:default!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls .ytp-play-button:style(width:46px!important;cursor:default!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-progress-bar-container:style(bottom:39px!important;height:5px!important)
+youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-time-display:style(line-height:39px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode:style(height:54px!important;padding-top:4px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-button:style(width:54px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-play-button:style(width:60px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-progress-bar-container:style(bottom:52.5px!important;height:8px!important)
+youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode.ytp-time-display:style(line-height:53px!important)
+! SearchBox
+youtube.com##ytd-masthead #center ytd-searchbox #search-form:style(height:32px!important)
+youtube.com##ytd-masthead #center ytd-searchbox #search-icon-legacy:style(height:32px!important)
+youtube.com##ytd-masthead #center ytd-searchbox #search-icon:style(height:32px!important)
+
+! ——————————————————————————————
 
 
 ! Remove bloat section on homepage (you probably (10%) don't want this if you are into news things)
@@ -377,7 +394,6 @@ youtube.com###channel-subscription-promo-in-feed
 youtube.com###head.ytd-compact-autoplay-renderer
 youtube.com##.checkbox-on-off
 youtube.com##.watch-sidebar-head
-/watch_autoplayrenderer.js$script,domain=youtube.com
 
 ! from fanboy annonyance. prevent circumventing ads
 ||youtube.com^$csp=worker-src 'none'
@@ -403,8 +419,6 @@ youtube.com##.ytd-search > .ytd-two-column-search-results-renderer:nth-child(2)
 
 ! hide username and email address on account selection
 youtube.com##.ytd-account-section-list-renderer > .ytd-google-account-header-renderer
-
-
 
 ! ——————————————————————————————
 !
@@ -435,4 +449,3 @@ m.youtube.com##ytm-watch ytm-item-section-renderer[data-content-type="related"]:
 m.youtube.com##.large-media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok|jedag[- ]jedug|(youtube |#)shorts|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally?) wrong|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|(for|with|untuk|animasi|cerita|dongeng|lagu ?)(kid|child|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car?)toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation|upin|ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling?) ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?ta?|ri?bu?|doll?ar))|m[pd]l[- ]?.* s.*|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|naruto|one punch man|pokemon|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo?) mama|permission to dance|[pm]epe[kx]|s[e3][xks]|b[o0]k[e3]p|p[o0]rn|nud(e|ity)|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|pussy|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|drunk|egirl|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat)|christ/iu):upward(ytm-large-media-item, ytm-rich-item-renderer, ytm-video-with-context-renderer):remove()
 m.youtube.com##.compact-media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok|jedag[- ]jedug|(youtube |#)shorts|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally?) wrong|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|(for|with|untuk|animasi|cerita|dongeng|lagu ?)(kid|child|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car?)toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation|upin|ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling?) ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?ta?|ri?bu?|doll?ar))|m[pd]l[- ]?.* s.*|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|naruto|one punch man|pokemon|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo?) mama|permission to dance|[pm]epe[kx]|s[e3][xks]|b[o0]k[e3]p|p[o0]rn|nud(e|ity)|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|pussy|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|drunk|egirl|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat)|christ/iu):upward(ytm-compact-video-renderer,ytm-compact-channel-renderer, ytm-rich-item-renderer, ytm-video-with-context-renderer):remove()
 ! ——————————————————————————————
-
