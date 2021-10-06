@@ -40,4 +40,4 @@ Original Authors: [DandelionSprout/adfilt](https://github.com/DandelionSprout/ad
 - Content blocker specialized for indo peoples, may block videos/channels you probably don't want.
 - You need to use browser that supports extension (specifically uBlock Origin).
 - This filter probably not work if you use abp.
-- for now, this list only works on desktop version. mobile version may be added in the future (new commit not uploaded yet, supports content blocker).
+- for now, this list only works on desktop version. mobile version may be added in the future (dev version has content blocker).
