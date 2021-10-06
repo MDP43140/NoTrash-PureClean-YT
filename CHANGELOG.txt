@@ -1,14 +1,19 @@
 ———————————————————————————————
 
  Bugs:
- - No Bugs Encontered Yet...
+ - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
+ - (Dev) Blocking chinese/korea language also blocks "—".
+ - (Workaround) yt player control thing is small, and buggy.
+ - (PS) more might come when youtube brings more hell...
 
 ———————————————————————————————
 
  Changelogs:
- 22.09.2021_dev:
+ 07.10.2021_dev:
+ + Add Remove "Recommencation less accurate? enablle history!" nudge on homepage (which had "rich" bloathing again).
+ + add ytpremium nag (last seen appear: 22/09/21_22.45 (text: change subtitle tutorial)) [youtube.com##.ytp-promotooltip-wrapper]
  + block web-animations-next-lite.min.js (disable animation possibly?? BETA)
- + Block [Chinese,Korea] languages [\uAC00–\uD7AF\u1100–\u11FF\u3130-\uD7FF] (running smooth without bugs so far...)
+ + Block [Chinese,Korea] languages [\uAC00–\uD7AF\u1100–\u11FF\u3130-\uD7FF] (found a bug that blocks "—")
  + Fixed loading animation disabled (uhh nope...).
  + Workaround bug disabling animation makes toast on bottom-left >stays in the place< but invisible which blocks cursor from scrubbing the start.
  + Add description on "ytd-masthead" and "ytd-watch-flexy".
@@ -18,6 +23,14 @@
  + Change YTSans Bold Back to Roboto Regular.
  . Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
 
+ 07.10.2021:
+ + uBlock user: remove "big-butt" class using scriptlet (may also fix buggy button. NOT compatible with ABP... yet)
+ + BIG: "Unmobilify" design changes back to older desktop design.
+ + [ContentFilter] new titles added: [p***y,Squid Game (korea trend that spread mostly through roblox),{beaning,beaned,tide pods}(3 of these are from that sucky tiktok)]
+
+ 23.09.2021:
+ + [ContentFilter] new titles added: "Devious Lick" (Malicious tiktok trend).
+ 
  22.09.2021:
  + Added section "Design changes" (anything youtube did to make its design more bulky and bloated for desktop site).
  + Fixed annotations.js request not blocked.
