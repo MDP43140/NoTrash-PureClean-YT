@@ -8,10 +8,16 @@
 ———————————————————————————————
 
  Changelogs:
+ 31.10.2021:
+ + Remove Universal Big Card on search result (mobile).
+ + Fixed media player buttons getting bigger again (block .ytp-larger-tap-buttons)
+ + [ContentFilter] Improve "s[e3]x > s[e3\*] (also blocks comment bot: s*x)"
+ + [ContentFilter] Add [sensual,dating].
+ + Adding feature to remove bad comment (Im REALLY SICK of S*XUAL COMMENT BOTS WHYYYY YOUTUBE ?!?!??!). 
+
  18.10.2021_dev:
  + Remove homepage button on mobile (disabled and should'nt enabled)
  + block web-animations-next-lite.min.js (disable animation possibly?? BETA)
- + Fixed loading animation disabled (uhh nope...).
  + Workaround bug disabling animation makes toast on bottom-left >stays in the place< but invisible which blocks cursor from scrubbing the start.
  + Add description on "ytd-masthead" and "ytd-watch-flexy".
  + Remove autoplaying video on channel homepage, which forces you to watch their video and wastes bandwidth (Bug: video still plays in background even when you get away from channel homepage).
