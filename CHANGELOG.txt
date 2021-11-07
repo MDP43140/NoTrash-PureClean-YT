@@ -8,6 +8,9 @@
 ———————————————————————————————
 
  Changelogs:
+ 07.11.2021:
+ + Fixed Remove Share,Clip,Save to button when using new layout (last seen: today).
+ 
  31.10.2021:
  + Remove Universal Big Card on search result (mobile).
  + Fixed media player buttons getting bigger again (block .ytp-larger-tap-buttons)
