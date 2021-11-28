@@ -8,17 +8,12 @@
 ———————————————————————————————
 
  Changelogs:
- 07.11.2021:
+ 12.11.2021:
+ + Fixed "Autoplay next video" button reshowing up when disabled for user without sponsorblock extension.
  + Fixed Remove Share,Clip,Save to button when using new layout (last seen: today).
+ + Now will remove the dislike counter if there's no number (just dislike text only).
  
- 31.10.2021:
- + Remove Universal Big Card on search result (mobile).
- + Fixed media player buttons getting bigger again (block .ytp-larger-tap-buttons)
- + [ContentFilter] Improve "s[e3]x > s[e3\*] (also blocks comment bot: s*x)"
- + [ContentFilter] Add [sensual,dating].
- + Adding feature to remove bad comment (Im REALLY SICK of S*XUAL COMMENT BOTS WHYYYY YOUTUBE ?!?!??!). 
-
- 18.10.2021_dev:
+ 12.11.2021_dev:
  + Remove homepage button on mobile (disabled and should'nt enabled)
  + block web-animations-next-lite.min.js (disable animation possibly?? BETA)
  + Workaround bug disabling animation makes toast on bottom-left >stays in the place< but invisible which blocks cursor from scrubbing the start.
@@ -27,7 +22,15 @@
  + Block old video list groups on subscription page.
  + Mobile Support (50% Completed, 10% Development).
  + Change YTSans Bold Back to Roboto Regular.
+ + Remove (dis)like counter when there's no number, only "(Dis)like" text. this is related to YouTube's latest changes to (dis)like button.
  . Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
+
+ 31.10.2021:
+ + Remove Universal Big Card on search result (mobile).
+ + Fixed media player buttons getting bigger again (block .ytp-larger-tap-buttons)
+ + [ContentFilter] Improve "s[e3]x > s[e3\*] (also blocks comment bot: s*x)"
+ + [ContentFilter] Add [sensual,dating].
+ + Adding feature to remove bad comment (Im REALLY SICK of S*XUAL COMMENT BOTS WHYYYY YOUTUBE ?!?!??!). 
 
  18.10.2021:
  + added some commit from adfilt/yt.
