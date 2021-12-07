@@ -4,10 +4,10 @@ Makes YouTube Less trashy by removing distracting features, and trash videos
 
 Type | Without NT+PC YT | With NT+PC YT
 -|-|-
-Overall | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_without_NTPCYT.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_with_NTPCYT.png)
-Side-bar | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_without_NTPCYT_lefthandmenu.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_with_NTPCYT_lefthandmenu.png)
-top-bar | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_without_NTPCYT_topbarmenu.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_with_NTPCYT_topbarmenu.png)
-Video | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_without_NTPCYT_watch.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/YTD_with_NTPCYT_watch.png)
+Overall | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_without_NTPCYT.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_with_NTPCYT.png)
+Side-bar | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_without_NTPCYT_lefthandmenu.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_with_NTPCYT_lefthandmenu.png)
+top-bar | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_without_NTPCYT_topbarmenu.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_with_NTPCYT_topbarmenu.png)
+Video | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_without_NTPCYT_watch.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_with_NTPCYT_watch.png)
 
 
 [Add this filter to your filter list here](https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/NT%2BPC_YT_uBO.txt&title=NT%2BPC_YT)

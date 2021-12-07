@@ -1,0 +1,385 @@
+!
+! This regex list blocks:
+! Clickbait (fake video, tiktok, 3AM, prank video)
+! Kids content (cartoons)
+! Adult & violence content (Fighting,Terrorism,Murder,Politics,P*m,s*×,love relationship,human/animal abuse,Toxic)
+! Game (MLBB,GenshinImpact)
+! Anime (Pokemon,Naruto,1PunchMan)
+! Korean-related Content (BTS,Blackpink)
+!
+! Warning: these list may not complete
+!
+! last modified: 31.10.2021
+! last "cmpld": 31.10.2021
+! last merged to ntpcyt: 31.10.2021
+! 4 commit ahead:
+! . brnstrim...[nothings gonna change my love for you,my love].
+! . Improve "porn" by adding cryptic "Ѳ" (thats not zer0 btw) ("porn" > "pѲrn")
+! + Improve "s[e3]x > s[e3\*] (also blocks comment bot: s*x)"
+! + Add [sensual,dating].
+! + Improve "pussy" > "(puss|sizz)y".
+! - Add [lagu pop,gebetan,beer,bir,[\[ ]m\/?v[ \]].
+! - Improve "squid game" > squid ?game (reports say seen #squidgame on tiktok).
+! - Add "Squid Game" (real-world korean-pop styled "game" trend that got spread through movies and roblox game).
+! - Add things from timeworks [beaning,beaned,tide pods,devious lick (these 4 strings are evil tiktok trend),censord(p***y)].
+! - shorten "ju?ta?|ri?bu?" > "ju?t|ri?b".
+! - Fix  kpop string (k(orean?)?[- ]?(pop|drama)).
+! - Changing (\{s,d}) > \{s,d}.
+! - Improve "sex" > "s[e3]x".
+! - slightbigchanges: Changing (-| ) > [- ] (saving, well... just 5 bytes. from DandelionSprout :has() from twitterantipolitic tingi).
+! - Add [tfw no gf,intim,mesum,perkosa,selingkuh,jedag( |-)jedug,toddler,[boiy]{8,8},youtube shorts,#shorts,XXX,boob,retarded,pantek,bokep,v.g.n.(censored due to its "extremeness")].
+! - Updated (minecraft|hot) girl.
+! - Shorten [3AM,skin blablabla juta,StuckInElevator].
+! - Temporary Workaround on some string: [MobileLegends,RockNRoll,UpinIpin,kpop].
+! - Add [DJ Sholawat,Sholawat Versi DJ] because its a discrimination to muslim peoples in form of tiktok.
+! - changed "episod" back to "full episod" because it blocks majority of videos, including minecraft videos.
+!
+
+!not added yet 2 list
+|ome\.tv
+|superstar
+|idola
+|(lagu|musik) (rohani|barat|pop)
+|christ
+
+
+! ———————————————————————————————
+! Clickbait
+! ———————————————————————————————
+|[03:]+\s*A.?M
+|tik[- ]?tok
+|jedag[- ]jedug
+|(youtube |#)shorts
+|24 hour overnight
+|challenge
+|[ck]lic?k[- ]?bait
+|expose
+|fortnite
+|giveaway
+|go(ne|es)( totally?) wrong
+|life hack
+|omg
+|orbeez
+|prank
+|wrong heads
+|noob vs pro
+|(minecraft|hot) girl
+|dj sholawat
+|sholawat versi dj
+|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)
+|beaning
+|beaned
+|tide pods
+
+! ———————————————————————————————
+! Kids
+! ———————————————————————————————
+|(for|with|untuk|animasi|cerita|dongeng|lagu ?)
+(
+	kid
+	|child
+	|ba(bies|by|yi|lita)
+	|toddler
+	|k?anak
+)
+|attacked by bacteria
+|baby shark
+|barbie
+|bloody hand
+|[boiy]{8,8}
+|(car?)toon
+|disney
+|doraemon
+|elsa
+|family finger
+|fingers? family
+|fortnite
+|full episod
+|gets stabbed
+|hero
+|hulk
+|jigsaw puzzles
+|kak ros
+|kartun
+|learn color
+|mainan
+|masha
+|mi(ckey|nnie)
+|nerf wars
+|nursery
+|paw patrol
+|peppa
+|princess
+|rimas infantiles
+|roblox
+|slime (bath|in the pool)
+|snot rocket
+|sonic
+|(spider|iron|bat) ?man
+|spinning wheel game
+|spongebob
+|stuck in an? ?elevator
+|superzoo
+|tasmil
+|tom (and|n|&) jerry
+|transforms with animation
+|upin|ipin
+|venom
+|webs & tiaras
+
+! ———————————————————————————————
+! Game
+! ———————————————————————————————
+|moba?[ie]le? ?l?e?[jg]end?s?
+|se?kin ((ter|paling?) ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?t|ri?b|doll?ar))
+|m[pd]l[- ]?.* s.*
+|top[- ]?up
+|bang[- ]?bang
+|push[- ]?rank
+|mlbb
+|moba
+|moonton
+|gat?cha
+|ragnarok
+|brawl stars
+|clash of clans
+|genshin impact
+|state of survival
+
+! ———————————————————————————————
+! Anime
+! ———————————————————————————————
+|anime
+|naruto
+|one punch man
+|pokemon
+
+! ———————————————————————————————
+! Korean-related
+! ———————————————————————————————
+|b ?t ?s
+|black ?pink
+|bangtan
+|k(orean?)?[- ]?(pop|drama)
+|hey( yo?) mama
+|permission to dance
+|squid ?game
+|[\[ ]m\/?v[ \]]
+
+! ———————————————————————————————
+! Adult & Violence
+! ———————————————————————————————
+|[pm]epe[kx]
+|s[e3\*][xks]
+|b[o0]k[e3]p
+|p[o0]rn
+|nud(e|ity)
+|sensual
+|xxx
+|ko?nto?l
+|pantek
+|boob
+|cock
+|penis
+|vagina
+|sperm
+|retarded
+|(boy|girl)friend
+|pregnant
+|i love you
+|tfw no gf
+|(puss|sizz)y
+|intim
+|mesum
+|perkosa
+|selingkuh
+|roman(ce|tis)
+|dating
+|asmara
+|cinta
+|galau
+|mantan
+|pacar
+|gebetan
+|tawuran
+|bacot
+|bajingan
+|ideologi
+|justin bieber
+|murder live
+|bollywood
+|dangdut
+|ngentot
+|politi[kc]
+| (and|n|&) (roll?)
+|terr?or
+|kiss(es|ing)
+|[sf]ucky [sf]ucky
+|drunk
+|b(i|ee)r
+|egirl
+
+
+! ———————————————————————————————
+! All Compiled
+! ———————————————————————————————
+/
+[03:]+\s*A.?M
+|tik[- ]?tok
+|jedag[- ]jedug
+|(youtube |#)shorts
+|24 hour overnight
+|challenge
+|[ck]lic?k[- ]?bait
+|expose
+|fortnite
+|giveaway
+|go(ne|es)( totally?) wrong
+|life hack
+|omg
+|orbeez
+|prank
+|wrong heads
+|noob vs pro
+|(minecraft|hot) girl
+|dj sholawat
+|sholawat versi dj
+|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)
+|beaning
+|beaned
+|tide pods
+|(for|with|untuk|animasi|cerita|dongeng|lagu ?)
+(
+	kid
+	|child
+	|ba(bies|by|yi|lita)
+	|toddler
+	|k?anak
+)
+|attacked by bacteria
+|baby shark
+|barbie
+|bloody hand
+|[boiy]{8,8}
+|(car?)toon
+|disney
+|doraemon
+|elsa
+|family finger
+|fingers? family
+|fortnite
+|full episod
+|gets stabbed
+|hero
+|hulk
+|jigsaw puzzles
+|kak ros
+|kartun
+|learn color
+|mainan
+|masha
+|mi(ckey|nnie)
+|nerf wars
+|nursery
+|paw patrol
+|peppa
+|princess
+|rimas infantiles
+|roblox
+|slime (bath|in the pool)
+|snot rocket
+|sonic
+|(spider|iron|bat) ?man
+|spinning wheel game
+|spongebob
+|stuck in an? ?elevator
+|superzoo
+|tasmil
+|tom (and|n|&) jerry
+|transforms with animation
+|upin|ipin
+|venom
+|webs & tiaras
+|moba?[ie]le? ?l?e?[jg]end?s?
+|se?kin ((ter|paling?) ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?t|ri?b|doll?ar))
+|m[pd]l[- ]?.* s.*
+|top[- ]?up
+|bang[- ]?bang
+|push[- ]?rank
+|mlbb
+|moba
+|moonton
+|gat?cha
+|ragnarok
+|brawl stars
+|clash of clans
+|genshin impact
+|state of survival
+|anime
+|naruto
+|one punch man
+|pokemon
+|b ?t ?s
+|black ?pink
+|bangtan
+|k(orean?)?[- ]?(pop|drama)
+|hey( yo?) mama
+|permission to dance
+|squid ?game
+|[\[ ]m\/?v[ \]]
+|[pm]epe[kx]
+|s[e3\*][xks]
+|b[o0]k[e3]p
+|p[o0]rn
+|nud(e|ity)
+|sensual
+|xxx
+|ko?nto?l
+|pantek
+|boob
+|cock
+|penis
+|vagina
+|sperm
+|retarded
+|(boy|girl)friend
+|pregnant
+|i love you
+|tfw no gf
+|pussy
+|intim
+|mesum
+|perkosa
+|selingkuh
+|roman(ce|tis)
+|dating
+|asmara
+|cinta
+|galau
+|mantan
+|pacar
+|gebetan
+|tawuran
+|bacot
+|bajingan
+|ideologi
+|justin bieber
+|murder live
+|bollywood
+|dangdut
+|ngentot
+|politi[kc]
+| (and|n|&) (roll?)
+|terr?or
+|kiss(es|ing)
+|[sf]ucky [sf]ucky
+|drunk
+|b(i|ee)r
+|egirl
+|ome\.tv
+|superstar
+|idola
+|(lagu|musik) (rohani|barat|pop)
+|christ
+/ui
+! ———————————————————————————————

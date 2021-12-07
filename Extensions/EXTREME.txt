@@ -3,7 +3,7 @@
 ! Author     : MDP43140
 ! Version    : 07.09.2021
 ! Description: This 📄️ 🛑️ EVEN MORE 🗑️ 📺️ (eg. all K-Pop, K-Drama, 🎵️er, 📷️gram, F😀️B📘️er, Politicians (mostly 🇮🇩️. rest of the list which may include 🇺🇸️ is fetched from DandelionSprout/🐦️AntiPolitic), names) (and will 🛑️ some features)
-! Warning    : May overblock contents, and works best on desktop website, no mobile compatibility
+! Warning    : May overblock contents, works best on desktop website, no mobile compatibility, and buggy (for other blocking).
 ! ______________________________
 
 ! EXTREME Content blocker thats advanced and blocks literally EVERYTHING BAD (BETA)
@@ -16,17 +16,10 @@ youtube.com###description-text:has-text(/(jung|mon)kook|(ren|xiao)jun|bbylino|lo
 www.youtube.com#?##video-title:has-text(/[\uAC00–\uD7AF\u1100–\u11FF\u3130-\uD7FF]/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
 www.youtube.com#?##description-text:has-text(/[\uAC00–\uD7AF\u1100–\u11FF\u3130-\uD7FF]/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
 
-
-
-
-
-
+! Removes the homepage link from the upper-left YouTube logo (Not supported by ABP, DEPRECATED. because its useless to block it since its not a visual disturbance, its just a link)
+www.youtube.com#?#logo:style(pointer-events:none!important;cursor:default!important)
 
 ! Not Recommended, May Break Some Things
-! remove disctracting [related,other people watch/search,latest from (CHANNEL_NAME),news,etc...] on search page
+! remove distracting [related,other people watch/search,latest from (CHANNEL_NAME),news,etc...] on search page
 youtube.com##ytd-shelf-renderer.ytd-item-section-renderer > .ytd-shelf-renderer
-! Not Recommended For Day-To-Day Use! This Is Based Of My Preference.
-! Cleaner UI With Incovinence Tradeoff (Can't see subscription by clicking specific channel, only use if you don't ever check channels)
-youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(2)
-! Removes search button (NOT RECOMMENDED IF YOU HAVE TO CLICK SEARCH BUTTON)
-youtube.com###search > .ytd-searchbox #search-icon-legacy
+!#include MyBlockingPreference.txt

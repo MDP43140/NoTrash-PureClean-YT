@@ -6,7 +6,7 @@
 
 !!! --- NOT RECOMMENDED For day-to-day Use! THIS IS BASED of my PREFERENCE --- !!!
 
-! (NEW!) "Temporarily" remove annoying popups
+! "Temporarily" remove annoying popups
 www.youtube.com##tp-yt-iron-dropdown
 
 ! Cleaner UI With Incovinence Tradeoff (Can't see subscription by clicking specific channel, only use if you don't ever check channels)
@@ -15,9 +15,13 @@ youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(2)
 ! Removes search button (NOT RECOMMENDED IF YOU HAVE TO CLICK SEARCH BUTTON)
 !youtube.com###search > .ytd-searchbox #search-icon-legacy
 
-! Disables animation (incl. loading ring < TODO), for lowends only !!! and its still "build" (dont work lol)
-www.youtube.com##ytd-app *:style(transition:none!important;animation:none!important;animation-delay:0!important;animation-duration:0!important;animation-timing-function:none!important;animation-play-state:paused!important;animation-iteration-count:0!important)
+! Disables animation (incl. loading ring < TODO), for lowends only !!! and had some minor bug
+! Workaround:
+! tp-yt-paper-toast: disabling animation makes toast on bottom-left >stays in the place< but invisible (makes scrubbing the start harder)
+! tp-yt-paper-spinner, ytp-spinner: loading animation, should be enabled by default.
+www.youtube.com##ytd-app *:not(.ytp-spinner,tp-yt-paper-spinner,tp-yt-paper-toast):style(transition:none!important;animation:none!important;animation-delay:0!important;animation-duration:0!important;animation-timing-function:none!important;animation-play-state:paused!important;animation-iteration-count:0!important)
 m.youtube.com##ytm-app *:style(transition:none!important;animation:none!important;animation-delay:0!important;animation-duration:0!important;animation-timing-function:none!important;animation-play-state:paused!important;animation-iteration-count:0!important)
+/web-animations-next-lite.min.js$script,domain=youtube.com
 
 ! New: Block old videos on subscription (good for u that is'nt scrolling to weeks ago and ??).
 ! Warning: hide instead of removing it because the loadingynthemabob reappears it again

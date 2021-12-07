@@ -1,15 +1,18 @@
 !
 ! Title  : NT+PC_YT: Comments 
 ! Author : MDP43140
-! Version: 07.09.2021_dev
+! Version: 17.10.2021_dev
 ! ——————————————————————————————
-!
+
+! Removes the comment section on mobile website
+m.youtube.com##ytm-comment-section-renderer
+
 ! Removes the comment section on livestreams
 youtube.com##ytd-live-chat-frame
-!
+
 ! Removes the comment section on livestream VoDs
 youtube.com###watch-discussion
-!
+
 ! Removes comments on video pages (not recommended, because it loads only when you scroll down to comment section)
 ||youtube.com/live_chat_fragments_ajax?$xmlhttprequest
 /comment_service_ajax?$domain=youtube.com|youtube-nocookie.com
