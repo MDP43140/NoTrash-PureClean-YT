@@ -2,12 +2,13 @@
 
  Bugs:
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
- - (Workaround) yt player control thing is small, and buggy.
- - (PS) hell awaits when youtube bring more bad stuff... (which can break ntpcyt)
 
 ———————————————————————————————
 
  Changelogs:
+ 12.12.2021:
+ + remove some space-eating icon nonsense
+
  12.11.2021:
  + Fixed "Autoplay next video" button reshowing up when disabled for user without sponsorblock extension.
  + Fixed Remove Share,Clip,Save to button when using new layout (last seen: today).
