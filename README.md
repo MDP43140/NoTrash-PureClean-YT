@@ -29,8 +29,12 @@ Video | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-Y
 # Why i make this?
 Because i REALLY hate what YouTube does recently (on year 2021).
 YouTube now is heavy, full with bloated, network-chugging, and now mostly tiktok-related features and videos (H3LL, now YouTube tries to wreck useful thing on the platform by removing public dislike count, which this filter list can't even restore)
+
+
 While there's "uBlock Annonyances", "Fanboy Annonyances", "Anti-cancer", and others that blocks some "annonying features/alert",
+
 This script reduces trash contents (video, channel, already watched video), and useless features (recently youtube added clip feature, and changing video title font from Roboto Regular to YTSans Bold),
+
 Making YouTube more clean, faster to load & navigate around, and less trashy & bloated.
 
 Original Authors: [DandelionSprout/adfilt](https://github.com/DandelionSprout/adfilt)
