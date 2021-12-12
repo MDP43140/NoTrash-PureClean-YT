@@ -2,7 +2,7 @@
 ! Title     : No-Trash + Pure-Clean YouTube
 ! Author    : MDP43140
 ! OA        : DandelionSprout
-! Version   : 12.11.2021
+! Version   : 12.12.2021
 ! GitHub    : mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! ——————————————————————————————
@@ -186,7 +186,7 @@ youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(6)
 !
 ! Bloats in youtube video player (ytd-watch-flexy)
 ! Includes:
-! - (NEW!) New hover preview
+! - New hover preview
 ! - Annotations
 ! - Endscreen Recommendations
 ! - "Netflix × TikTok styled" video title font
@@ -197,10 +197,13 @@ youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(6)
 ! - Large grey buttons below description
 !
 
+! (NEW!) remove some space-eating icon nonsense
+www.youtube.com##ytd-player .ytp-popup.ytp-settings-menu#ytp-id-17 .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-icon svg:remove()
+
 ! remove sponsored description links inserted by rights holders
 www.youtube.com##ytd-metadata-row-renderer
 
-! (NEW!) Block Quota wasting bloat feature: new hover preview
+! Block Quota wasting bloat feature: new hover preview
 ! and restore old thumbnail ui (including watch later and save to button, except the lightweight preview thing ;c. why youtube...)
 ! Why this added:
 ! - Quota-wasting (because playing high quality video automatically when the video is accidentally hovered).
