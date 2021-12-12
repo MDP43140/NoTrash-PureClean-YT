@@ -37,8 +37,10 @@ This script reduces trash contents (video, channel, already watched video), and 
 
 Making YouTube more clean, faster to load & navigate around, and less trashy & bloated.
 
-Original Authors: [DandelionSprout/adfilt](https://github.com/DandelionSprout/adfilt)
-									[WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists](https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists)
+
+
+Based from: [DandelionSprout/adfilt](https://github.com/DandelionSprout/adfilt)
+						[WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists](https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists)
 
 # Note:
 - Content blocker specialized for indo peoples, may block videos/channels you probably don't want.
