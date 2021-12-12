@@ -26,7 +26,7 @@ Video | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-Y
 
 (Assuming you have uBlock Origin installed. If not, install it. Or if you use ABP, you can install it manually, but some features might not work)
 
-# Why i make this?
+# Why do i make this?
 Because i REALLY hate what YouTube does recently (on year 2021).
 YouTube now is heavy, full with bloated, network-chugging, and now mostly tiktok-related features and videos (H3LL, now YouTube tries to wreck useful thing on the platform by removing public dislike count, which this filter list can't even restore)
 
@@ -39,10 +39,12 @@ Making YouTube more clean, faster to load & navigate around, and less trashy & b
 
 
 
-Based from: [DandelionSprout/adfilt](https://github.com/DandelionSprout/adfilt)
-						[WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists](https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists)
+# Based from
+[DandelionSprout/adfilt](https://github.com/DandelionSprout/adfilt)
 
-# Note:
+[WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists](https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists)
+
+# Note
 - Content blocker specialized for indo peoples, may block videos/channels you probably don't want.
 - (for Android users) You need to use browser that supports extension (specifically uBlock Origin).
 - This filter may not work if you use AdBlock Plus.
