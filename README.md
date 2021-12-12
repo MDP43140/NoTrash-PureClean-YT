@@ -1,5 +1,5 @@
 # No Trash + Pure Clean YouTube
-Makes YouTube Less trashy by removing distracting features, and trash videos
+Makes YouTube Less trashy by removing distracting features, and trash videos/channels
 ![No Trash + Pure Clean YouTube](https://mdp43140.github.io/assets/img/project_ntpcyt.png)
 
 Type | Without NT+PC YT | With NT+PC YT
@@ -8,13 +8,6 @@ Overall | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean
 Side-bar | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_without_NTPCYT_lefthandmenu.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_with_NTPCYT_lefthandmenu.png)
 top-bar | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_without_NTPCYT_topbarmenu.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_with_NTPCYT_topbarmenu.png)
 Video | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_without_NTPCYT_watch.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_with_NTPCYT_watch.png)
-
-
-[Add this filter to your filter list here](https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/NT%2BPC_YT_uBO.txt&title=NT%2BPC_YT)
-
-[Add beta version of this filter to your filter list here](https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/dev/NT%2BPC_YT_uBO.txt&title=NT+PC_YT)
-
-(if you have adblockplus installed beside ublock origin, the one-click-subscribe url wont work, you have to subscribe it manually)
 
 # Features:
 + Block useless features, distracting videos, and trash channels.
@@ -25,12 +18,19 @@ Video | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-Y
 + Makes clicking a button a lot less hassle (less/no scrolling required).
 + Saves data for not loading some random-nonsense video thumbnails, and channel icons.
 + Reduce Lag Spike, And Network traffic/usage.
++ Reduce wasted times just to get rid of popups, loading bloats, etc...
+
+[Add this filter to your filter list here](https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/NT%2BPC_YT_uBO.txt&title=NT%2BPC_YT)
+
+[Add beta version of this filter to your filter list here](https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/dev/NT%2BPC_YT_uBO.txt&title=NT+PC_YT)
+
+(Assuming you have uBlock Origin installed. If not, install it. Or if you use ABP, you can install it manually, but some features might not work)
 
 # Why i make this?
-Because i REALLY Hate what YouTube does recently (on year 2021).
-YouTube now is heavy, full with bloated, network-chugging, and now mostly tiktok-related features and videos
+Because i REALLY hate what YouTube does recently (on year 2021).
+YouTube now is heavy, full with bloated, network-chugging, and now mostly tiktok-related features and videos (H3LL, now YouTube tries to wreck useful thing on the platform by removing public dislike count, which this filter list can't even restore)
 While there's "uBlock Annonyances", "Fanboy Annonyances", "Anti-cancer", and others that blocks some "annonying features/alert",
-This script reduces Trash Contents (video, channel, already watched video), and useless features (recently youtube added clip feature, and changing video title font from Roboto Regular to YTSans Bold),
+This script reduces trash contents (video, channel, already watched video), and useless features (recently youtube added clip feature, and changing video title font from Roboto Regular to YTSans Bold),
 Making YouTube more clean, faster to load & navigate around, and less trashy & bloated.
 
 Original Authors: [DandelionSprout/adfilt](https://github.com/DandelionSprout/adfilt)
@@ -38,6 +38,6 @@ Original Authors: [DandelionSprout/adfilt](https://github.com/DandelionSprout/ad
 
 # Note:
 - Content blocker specialized for indo peoples, may block videos/channels you probably don't want.
-- You need to use browser that supports extension (specifically uBlock Origin).
-- This filter probably not work if you use abp.
-- for now, this list only works on desktop version. mobile version may be added in the future (dev version has content blocker).
+- (for Android users) You need to use browser that supports extension (specifically uBlock Origin).
+- This filter may not work if you use AdBlock Plus.
+- This list primarily supports desktop version. mobile version also supported, but not really much.
