@@ -18,7 +18,7 @@ Video | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-Y
 + Makes clicking a button a lot less hassle (less/no scrolling required).
 + Saves data for not loading some random-nonsense video thumbnails, and channel icons.
 + Reduce Lag Spike, And Network traffic/usage.
-+ Reduce wasted times just to get rid of popups, loading bloats, etc...
++ Reduce wasted times just to get rid of popups, pausing forced-autoplay stuffs, loading bloats, etc. and watch more video or do positive stuff...
 
 [Add this filter to your filter list here](https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/NT%2BPC_YT_uBO.txt&title=NT%2BPC_YT)
 
