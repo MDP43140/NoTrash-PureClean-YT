@@ -6,6 +6,14 @@
 ———————————————————————————————
 
  Changelogs:
+ 22.12.2021:
+ + [ContentFilter] Add [telanjang,bucin,montok,l[ou]bang pntt,my love]
+ + [ContentFilter] Remove dupes (fortnite).
+ + [ContentFilter] Improve "p[o0]rn" > "p[o0Ѳ\*]rn"
+ + [ContentFilter] Improve "s[e3]x > s[e3\*] (also blocks comment bot: s*x)"
+ + [ContentFilter] Add [sensual,dating].
+ + [ContentFilter] Improve "pussy" > "(puss|sizz)y". 
+ 
  12.12.2021:
  + remove some space-eating icon nonsense
 
