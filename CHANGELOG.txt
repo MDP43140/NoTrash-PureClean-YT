@@ -6,23 +6,31 @@
 ———————————————————————————————
 
  Changelogs:
- 22.12.2021:
+ 12.01.2022_dev:
+ + Add some #?# to ContentFilter to ensure compatibility.
+ + Simplify some things on YT Desktop for mobile.
+ + Forcing some desktop-specific things to use www.youtube.com.
+ . Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
+ 
+ 12.01.2022:
+ + Happy new year everyone (lol too late).
+ + Minor bug fix to prevent YouTube from doing clever number change stuff (now the nonsense blocking is reinforced)
+ + [EXTREME] will block any video/channel with korean,chinese character
+ + [EXTREME] EXPERIMENTAL: blocks any video/channel with potentially bad emojis.
+ 
+ **.12.2021:
  + [ContentFilter] Add [telanjang,bucin,montok,l[ou]bang pntt,my love]
  + [ContentFilter] Remove dupes (fortnite).
  + [ContentFilter] Improve "p[o0]rn" > "p[o0Ѳ\*]rn"
  + [ContentFilter] Improve "s[e3]x > s[e3\*] (also blocks comment bot: s*x)"
  + [ContentFilter] Add [sensual,dating].
  + [ContentFilter] Improve "pussy" > "(puss|sizz)y". 
- 
- 12.12.2021:
- + remove some space-eating icon nonsense
+ + remove some space-eating icon nonsense.
 
- 12.11.2021:
+ **.11.2021:
  + Fixed "Autoplay next video" button reshowing up when disabled for user without sponsorblock extension.
  + Fixed Remove Share,Clip,Save to button when using new layout (last seen: today).
  + Now will remove the dislike counter if there's no number (just dislike text only).
- 
- 12.11.2021_dev:
  + Remove homepage button on mobile (disabled and should'nt enabled)
  + block web-animations-next-lite.min.js (disable animation possibly?? BETA)
  + Workaround bug disabling animation makes toast on bottom-left >stays in the place< but invisible which blocks cursor from scrubbing the start.
@@ -32,16 +40,13 @@
  + Mobile Support (50% Completed, 10% Development).
  + Change YTSans Bold Back to Roboto Regular.
  + Remove (dis)like counter when there's no number, only "(Dis)like" text. this is related to YouTube's latest changes to (dis)like button.
- . Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
 
- 31.10.2021:
+ **.10.2021:
  + Remove Universal Big Card on search result (mobile).
  + Fixed media player buttons getting bigger again (block .ytp-larger-tap-buttons)
  + [ContentFilter] Improve "s[e3]x > s[e3\*] (also blocks comment bot: s*x)"
  + [ContentFilter] Add [sensual,dating].
  + Adding feature to remove bad comment (Im REALLY SICK of S*XUAL COMMENT BOTS WHYYYY YOUTUBE ?!?!??!). 
-
- 18.10.2021:
  + added some commit from adfilt/yt.
 	 + Remove sponsored description links inserted by right holders (ytd-metadata-row-renderer).
 	 + remove like/dislike counter on mobile (disabled).
@@ -61,8 +66,6 @@
  + keep big buttons if using mobile/touch devices in desktop mode (because its harder to click on small mobile screen).
  + Remove "Explore" button (and deprecate older Trending/Discover button).
  + Block [Chinese,Korea] languages [\uAC00-\uD7AF\u1100-\u11FF\u3130-\uD7FF]
- 
- 07.10.2021:
  + uBlock user: remove "big-butt" class using scriptlet (may also fix buggy button. NOT compatible with ABP... yet)
  + BIG: "Unmobilify" design changes back to older desktop design.
  + [ContentFilter] new titles added: [p***y,Squid Game (korea trend that spread mostly through roblox),{beaning,beaned,tide pods}(3 of these are from that sucky tiktok)]
