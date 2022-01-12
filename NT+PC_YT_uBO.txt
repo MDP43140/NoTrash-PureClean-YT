@@ -2,7 +2,7 @@
 ! Title     : No-Trash + Pure-Clean YouTube
 ! Author    : MDP43140
 ! OA        : DandelionSprout
-! Version   : 22.12.2021
+! Version   : 12.01.2022
 ! GitHub    : mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! ——————————————————————————————
@@ -201,7 +201,7 @@ youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(6)
 !
 
 ! (NEW!) remove some space-eating icon nonsense
-www.youtube.com##ytd-player .ytp-popup.ytp-settings-menu#ytp-id-17 .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-icon svg:remove()
+www.youtube.com##ytd-player .ytp-popup.ytp-settings-menu .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-icon svg:remove()
 
 ! remove sponsored description links inserted by rights holders
 www.youtube.com##ytd-metadata-row-renderer
