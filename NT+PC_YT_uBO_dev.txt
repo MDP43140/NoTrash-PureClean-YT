@@ -2,7 +2,7 @@
 ! Title     : No-Trash + Pure-Clean YouTube
 ! Author    : MDP43140
 ! OA        : DandelionSprout
-! Version   : 12.01.2022_dev
+! Version   : 15.01.2022_dev
 ! GitHub    : mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! commit    : adding new rules from other source
@@ -288,10 +288,14 @@ www.youtube.com##.ytp-chrome-bottom .ytp-right-controls button.ytp-button:nth-of
 ! limit comment container maximum height to 100% to prevent very long comment (potential lag spike decrease when loading comments)
 www.youtube.com##ytd-comments:style(max-height:100vh!important;overflow:auto!important)
 
+! just DONT give a button if you cant even click it
+!www.youtube.com##.ytp-subtitles-button[aria-pressed=false]
+
 ! Make video-watching experience less-cluttered by tweaking some transparencies
+! Bug: this makes some disappearing stuff wont dissappear (especially chrome-bottom)
 youtube.com###movie_player div.ytp-suggested-action
 youtube.com###movie_player div.ytp-chrome-top:style(opacity:0.8!important)
-youtube.com###movie_player div.ytp-chrome-bottom:style(opacity:0.9!important)
+!youtube.com###movie_player div.ytp-chrome-bottom:style(opacity:0.9)
 youtube.com###movie_player div.ytp-spinner:style(opacity:0.7!important)
 
 ! ——————————————————————————————
