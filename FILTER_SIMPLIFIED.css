@@ -9,12 +9,12 @@
 !
 ! Warning: these list may not complete
 !
-! last modified: 22.12.2021
-! last "cmpld": 22.12.2021
-! last merged to ntpcyt: 31.10.2021
+! last modified: 22.01.2022
+! last "cmpld": 22.01.2022
+! last merged to ntpcyt: 22.01.2022
 ! 6 commit ahead:
-! . Add [door kick,kesha]
-! + Add [telanjang,bucin,montok,l[ou]bang pntt,my love]
+! + Add [wibu,waifu,aduhai,ciwai,door kick,kesha].
+! + Add [telanjang,bucin,montok,l[ou]bang pntt,my love].
 ! + Remove dupes (fortnite).
 ! + Improve "p[o0]rn" > "p[o0Ѳ\*]rn"
 ! + Improve "s[e3]x > s[e3\*] (also blocks comment bot: s*x)"
@@ -27,6 +27,8 @@
 ! ———————————————————————————————
 |[03:]+\s*A.?M
 |tik[- ]?tok
+|door ?kick
+|kesha
 |jedag[- ]jedug
 |(youtube |#)shorts
 |24 hour overnight
@@ -128,9 +130,12 @@
 ! Anime
 ! ———————————————————————————————
 |anime
+|ciwai
 |naruto
 |one punch man
 |pokemon
+|wibu
+|waifu
 
 ! ———————————————————————————————
 ! Korean-related
@@ -153,6 +158,7 @@
 |p[o0Ѳ\*]rn
 |nud(e|ity)
 |sensual
+|aduhai
 |xxx
 |ko?nto?l
 |pantek
@@ -219,6 +225,8 @@
 /
 [03:]+\s*A.?M
 |tik[- ]?tok
+|door ?kick
+|kesha
 |jedag[- ]jedug
 |(youtube |#)shorts
 |24 hour overnight
@@ -309,9 +317,12 @@
 |genshin impact
 |state of survival
 |anime
+|ciwai
 |naruto
 |one punch man
 |pokemon
+|wibu
+|waifu
 |b ?t ?s
 |black ?pink
 |bangtan
@@ -326,6 +337,7 @@
 |p[o0Ѳ\*]rn
 |nud(e|ity)
 |sensual
+|aduhai
 |xxx
 |ko?nto?l
 |pantek
