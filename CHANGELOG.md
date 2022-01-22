@@ -9,14 +9,16 @@
  22.01.2022:
  + [ContentFilter] 
  
- 12.01.2022_dev:
- + Add some #?# to ContentFilter to ensure compatibility.
+ 22.01.2022_dev:
+ + (try to) Restore the watch-flexy width a little bit (on new design)
+ + Restore the old watch and upload time stat opacity (if you had new design like me...)
  + Simplify some things on YT Desktop for mobile.
  + Forcing some desktop-specific things to use www.youtube.com.
  . Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
  
  12.01.2022:
  + Happy new year everyone (lol too late).
+ + Add some #?# to ContentFilter to ensure compatibility.
  + Minor bug fix to prevent YouTube from doing clever number change stuff (now the nonsense blocking is reinforced)
  + [EXTREME] will block any video/channel with korean,chinese character
  + [EXTREME] EXPERIMENTAL: blocks any video/channel with potentially bad emojis.
