@@ -1,29 +1,25 @@
-———————————————————————————————
-
- Bugs:
+# Bugs:
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
 
-———————————————————————————————
-
- Changelogs:
- 22.01.2022:
- + [ContentFilter] 
+# Changelogs:
+### 22.01.2022:
+ + [ContentFilter] Add [wibu,waifu,aduhai,ciwai,door kick,kesha].
  
- 22.01.2022_dev:
+###  22.01.2022_dev:
  + (try to) Restore the watch-flexy width a little bit (on new design)
  + Restore the old watch and upload time stat opacity (if you had new design like me...)
  + Simplify some things on YT Desktop for mobile.
  + Forcing some desktop-specific things to use www.youtube.com.
  . Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
  
- 12.01.2022:
+###  12.01.2022:
  + Happy new year everyone (lol too late).
- + Add some #?# to ContentFilter to ensure compatibility.
+ > Add some #?# to ContentFilter to ensure compatibility.
  + Minor bug fix to prevent YouTube from doing clever number change stuff (now the nonsense blocking is reinforced)
  + [EXTREME] will block any video/channel with korean,chinese character
  + [EXTREME] EXPERIMENTAL: blocks any video/channel with potentially bad emojis.
  
- **.12.2021:
+###  **.12.2021:
  + [ContentFilter] Add [telanjang,bucin,montok,l[ou]bang pntt,my love]
  + [ContentFilter] Remove dupes (fortnite).
  + [ContentFilter] Improve "p[o0]rn" > "p[o0Ѳ\*]rn"
@@ -32,7 +28,7 @@
  + [ContentFilter] Improve "pussy" > "(puss|sizz)y". 
  + remove some space-eating icon nonsense.
 
- **.11.2021:
+###  **.11.2021:
  + Fixed "Autoplay next video" button reshowing up when disabled for user without sponsorblock extension.
  + Fixed Remove Share,Clip,Save to button when using new layout (last seen: today).
  + Now will remove the dislike counter if there's no number (just dislike text only).
@@ -46,7 +42,7 @@
  + Change YTSans Bold Back to Roboto Regular.
  + Remove (dis)like counter when there's no number, only "(Dis)like" text. this is related to YouTube's latest changes to (dis)like button.
 
- **.10.2021:
+###  **.10.2021:
  + Remove Universal Big Card on search result (mobile).
  + Fixed media player buttons getting bigger again (block .ytp-larger-tap-buttons)
  + [ContentFilter] Improve "s[e3]x > s[e3\*] (also blocks comment bot: s*x)"
@@ -75,7 +71,7 @@
  + BIG: "Unmobilify" design changes back to older desktop design.
  + [ContentFilter] new titles added: [p***y,Squid Game (korea trend that spread mostly through roblox),{beaning,beaned,tide pods}(3 of these are from that sucky tiktok)]
 
- **.09.2021:
+###  **.09.2021:
  + [ContentFilter] new titles added: "Devious Lick" (Malicious tiktok trend).
  + Added section "Design changes" (anything youtube did to make its design more bulky and bloated for desktop site).
  + Fixed annotations.js request not blocked.
@@ -94,7 +90,7 @@
  + DEPRECATE "Removes the homepage link from the upper-left YouTube logo" (because its useless to block it since its not a visual disturbance, its just a link)
  × [ContentFilter] Fixed certain video (mostly on homepage) not filtered based on the channel name
 
- **.08.2021:
+###  **.08.2021:
  + Adding YouTube Premium Section.
  + Blocks more YTPremium and tutorial-nonsense nag.
  + Hide Username & Email Address on Account Selection
@@ -123,7 +119,7 @@
  + big cleanup...
  + added description, make some things look better.
 
- **.07.2021:
+###  **.07.2021:
  + Changed/Updated anti circumventing ads (update fetched from ABP Anti-Circumvent).
  + Removing "YouTube `Disable Polymer` mode" rules, as not alot of people using disable polymer mode. (ithink u cant disable polymer mode anymore, other than using extension).
  + [ContentFilter] new string added: [masha,noob vs pro,(boy|girl)friend,pregnant,i love you,minecraft girl].
