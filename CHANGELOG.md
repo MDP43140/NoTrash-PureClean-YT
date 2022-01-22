@@ -6,6 +6,9 @@
 ———————————————————————————————
 
  Changelogs:
+ 22.01.2022:
+ + [ContentFilter] 
+ 
  12.01.2022_dev:
  + Add some #?# to ContentFilter to ensure compatibility.
  + Simplify some things on YT Desktop for mobile.
