@@ -373,6 +373,7 @@ youtube.com###offer-module
 ! (NEW!) unmobilify the design (revert youtube mobile-like changes back to desktop)
 ! Remove Comment Teaser (YOUTUBE WHY, THERE'S ALREADY COMMENT JUST COUPLE INCHES BELOW THE SCREEN!!)
 www.youtube.com##ytd-watch-metadata #comment-teaser
+www.youtube.com###teaser.ytd-comments-entry-point-header-renderer
 ! Revert Video owner/channel back to older design
 www.youtube.com##ytd-watch-metadata #owner:style(border:none!important;background:none!important)
 ! Put back like/dislike/share video info thing (from center position) to old position (right position), because some people has ocd...
