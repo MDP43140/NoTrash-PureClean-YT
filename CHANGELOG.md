@@ -4,7 +4,8 @@
 # Changelogs:
 ### 22.01.2022:
  + [ContentFilter] Add [wibu,waifu,aduhai,ciwai,door kick,kesha].
- 
+ + Add comment teaser filter from [DandelionSprout/adfilt/commit/abcae57](https://github.com/DandelionSprout/adfilt/commit/abcae57)
+
 ###  22.01.2022_dev:
  + (try to) Restore the watch-flexy width a little bit (on new design)
  + Restore the old watch and upload time stat opacity (if you had new design like me...)
