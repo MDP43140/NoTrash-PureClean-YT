@@ -145,6 +145,7 @@ youtube.com##a[href^="/channel/UCbPMGqN8KctqpnbVdtWRrUQ"]:upward(ytd-channel-ren
 
 ! remove left-hand menu if not logged in (not tested yet, also its unnessecary because we already hide the guide button [look below on "bloat on masthead" for some info])
 !www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) .tp-yt-app-drawer
+!www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) ytd-masthead #start #guide-button
 
 ! make sure 2nd button (explore) explore is removed
 www.youtube.com##ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(2)
