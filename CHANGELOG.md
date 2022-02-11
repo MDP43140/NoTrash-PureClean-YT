@@ -3,30 +3,28 @@
 
 # Changelogs:
 ### 11.02.2022:
+ + Restore the old watch and upload time stat opacity (if you had new design like me...)
  + [ContentFilter] Changed some "?)" > ")?"
  + [ContentFilter] Add [fell in love,sangek,desah,crush,moment? (hot|panas),(hot|panas) moment?,mantap[- ]mantap,huggy wuggy,kissy missy (TOO MUCH CLICKBAIT BUZZWORD !!!!!)].
  + Get rid of the nonsense icon beside searchbox that does NOTHING AT ALL.
  + Now will Remove any yt shorts video that didnt have #shorts in title (by detecting shorts styling in the video duration)
  + Remove ANY form of shorts player.
 
-### 22.01.2022:
- + [ContentFilter] Add [wibu,waifu,aduhai,ciwai,door kick,kesha].
- + Add comment teaser filter from [DandelionSprout/adfilt/commit/abcae57](https://github.com/DandelionSprout/adfilt/commit/abcae57)
-
-###  22.01.2022_dev:
+### 11.02.2022_dev:
  + (try to) Restore the watch-flexy width a little bit (on new design)
- + Restore the old watch and upload time stat opacity (if you had new design like me...)
  + Simplify some things on YT Desktop for mobile.
  + Forcing some desktop-specific things to use www.youtube.com.
  . Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
- 
-###  12.01.2022:
+
+### **.01.2022:
+ + [ContentFilter] Add [wibu,waifu,aduhai,ciwai,door kick,kesha].
+ + Add comment teaser filter from [DandelionSprout/adfilt/commit/abcae57](https://github.com/DandelionSprout/adfilt/commit/abcae57)
  + Happy new year everyone (lol too late).
  > Add some #?# to ContentFilter to ensure compatibility.
  + Minor bug fix to prevent YouTube from doing clever number change stuff (now the nonsense blocking is reinforced)
  + [EXTREME] will block any video/channel with korean,chinese character
  + [EXTREME] EXPERIMENTAL: blocks any video/channel with potentially bad emojis.
- 
+
 ###  **.12.2021:
  + [ContentFilter] Add [telanjang,bucin,montok,l[ou]bang pntt,my love]
  + [ContentFilter] Remove dupes (fortnite).
