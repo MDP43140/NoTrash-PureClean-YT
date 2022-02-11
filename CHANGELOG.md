@@ -2,6 +2,13 @@
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
 
 # Changelogs:
+### 11.02.2022:
+ + [ContentFilter] Changed some "?)" > ")?"
+ + [ContentFilter] Add [fell in love,sangek,desah,crush,moment? (hot|panas),(hot|panas) moment?,mantap[- ]mantap,huggy wuggy,kissy missy (TOO MUCH CLICKBAIT BUZZWORD !!!!!)].
+ + Get rid of the nonsense icon beside searchbox that does NOTHING AT ALL.
+ + Now will Remove any yt shorts video that didnt have #shorts in title (by detecting shorts styling in the video duration)
+ + Remove ANY form of shorts player.
+
 ### 22.01.2022:
  + [ContentFilter] Add [wibu,waifu,aduhai,ciwai,door kick,kesha].
  + Add comment teaser filter from [DandelionSprout/adfilt/commit/abcae57](https://github.com/DandelionSprout/adfilt/commit/abcae57)
