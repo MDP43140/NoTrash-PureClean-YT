@@ -9,11 +9,13 @@
 !
 ! Warning: these list may not complete
 !
-! last modified: 22.01.2022
-! last "cmpld": 22.01.2022
-! last merged to ntpcyt: 22.01.2022
+! last modified: 11.02.2022
+! last "cmpld": 11.02.2022
+! last merged to ntpcyt: 11.02.2022
 ! 1 commit ahead:
-! + Add [wibu,waifu,aduhai,ciwai,door kick,kesha].
+! + Changed some "?)" > ")?"
+! + Add [fell in love,sangek,desah,crush,moment? (hot|panas),(hot|panas) moment?]
+! + Add [mantap[- ]mantap,huggy wuggy,kissy missy (reason: TOO MUCH CLICKBAIT !!!!!)].
 !
 
 ! ———————————————————————————————
@@ -31,7 +33,7 @@
 |expose
 |fortnite
 |giveaway
-|go(ne|es)( totally?) wrong
+|go(ne|es)( totally)? wrong
 |life hack
 |omg
 |orbeez
@@ -44,12 +46,15 @@
 |(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)
 |beaning
 |beaned
+|(hugg|kiss)y (wugg|miss)y
 |tide pods
+|momen memalukan
+| anu(nya)?
 
 ! ———————————————————————————————
 ! Kids
 ! ———————————————————————————————
-|(for|with|untuk|animasi|cerita|dongeng|lagu ?)
+|(for|with|untuk|animasi|cerita|dongeng|lagu )?
 (
 	kid
 	|child
@@ -62,7 +67,7 @@
 |barbie
 |bloody hand
 |[boiy]{8,8}
-|(car?)toon
+|(car)?toon
 |disney
 |doraemon
 |elsa
@@ -105,7 +110,7 @@
 ! Game
 ! ———————————————————————————————
 |moba?[ie]le? ?l?e?[jg]end?s?
-|se?kin ((ter|paling?) ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?t|ri?b|doll?ar))
+|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?t|ri?b|doll?ar))
 |m[pd]l[- ]?.* s.*
 |top[- ]?up
 |bang[- ]?bang
@@ -138,7 +143,7 @@
 |black ?pink
 |bangtan
 |k(orean?)?[- ]?(pop|drama)
-|hey( yo?) mama
+|hey( yo)? mama
 |permission to dance
 |squid ?game
 |[\[ ]m\/?v[ \]]
@@ -189,6 +194,7 @@
 |dangdut
 |ngentot
 |politi[kc]
+|mantap[- ]mantap
 | (and|n|&) (roll?)
 |terr?or
 |kiss(es|ing)
@@ -201,6 +207,12 @@
 |drunk
 |b(i|ee)r
 |egirl
+|fell in love
+|sangek
+|desah
+|crush
+|moment? (hot|panas)
+|(hot|panas) moment?
 
 
 ! ———————————————————————————————
@@ -216,8 +228,7 @@
 ! ———————————————————————————————
 ! All Compiled
 ! ———————————————————————————————
-/
-[03:]+\s*A.?M
+/[03:]+\s*A.?M
 |tik[- ]?tok
 |door ?kick
 |kesha
@@ -229,7 +240,7 @@
 |expose
 |fortnite
 |giveaway
-|go(ne|es)( totally?) wrong
+|go(ne|es)( totally)? wrong
 |life hack
 |omg
 |orbeez
@@ -242,9 +253,12 @@
 |(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)
 |beaning
 |beaned
+|(hugg|kiss)y (wugg|miss)y
 |tide pods
+|momen memalukan
+| anu(nya)?
 
-|(for|with|untuk|animasi|cerita|dongeng|lagu ?)
+|(for|with|untuk|animasi|cerita|dongeng|lagu )?
 (
 	kid
 	|child
@@ -257,7 +271,7 @@
 |barbie
 |bloody hand
 |[boiy]{8,8}
-|(car?)toon
+|(car)?toon
 |disney
 |doraemon
 |elsa
@@ -296,7 +310,7 @@
 |venom
 |webs & tiaras
 |moba?[ie]le? ?l?e?[jg]end?s?
-|se?kin ((ter|paling?) ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?t|ri?b|doll?ar))
+|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?t|ri?b|doll?ar))
 |m[pd]l[- ]?.* s.*
 |top[- ]?up
 |bang[- ]?bang
@@ -321,7 +335,7 @@
 |black ?pink
 |bangtan
 |k(orean?)?[- ]?(pop|drama)
-|hey( yo?) mama
+|hey( yo)? mama
 |permission to dance
 |squid ?game
 |[\[ ]m\/?v[ \]]
@@ -368,6 +382,7 @@
 |dangdut
 |ngentot
 |politi[kc]
+|mantap[- ]mantap
 | (and|n|&) (roll?)
 |terr?or
 |kiss(es|ing)
@@ -380,6 +395,12 @@
 |drunk
 |b(i|ee)r
 |egirl
+|fell in love
+|sangek
+|desah
+|crush
+|moment? (hot|panas)
+|(hot|panas) moment?
 |ome\.tv
 |superstar
 |idola
