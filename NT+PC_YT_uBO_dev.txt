@@ -2,7 +2,7 @@
 ! Title     : No-Trash + Pure-Clean YouTube
 ! Author    : MDP43140
 ! OA        : DandelionSprout
-! Version   : 11.02.2022_dev
+! Version   : 18.02.2022_dev
 ! GitHub    : mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! commit    : adding new rules from other source
@@ -538,9 +538,13 @@ youtube.com##.checkbox-on-off
 youtube.com##.watch-sidebar-head
 
 ! from fanboy annonyance. prevent circumventing ads
-||youtube.com^$csp=worker-src 'none'
-youtube.com##+js(json-prune, 0.playerResponse.adPlacements 0.playerResponse.playerAds 1.playerResponse.adPlacements 1.playerResponse.playerAds 2.playerResponse.adPlacements 2.playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds ytInitialPlayerResponse.playerAds)
+youtube.com##+js(json-prune, 0.playerResponse.adPlacements 0.playerResponse.playerAds 1.playerResponse.adPlacements 1.playerResponse.playerAds 2.playerResponse.adPlacements 2.playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds ytInitialPlayerResponse.adPlacements ytInitialPlayerResponse.playerAds adPlacements playerAds)
+youtube.com##+js(set, playerResponse.adPlacements, null)
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
+!waiting for uBO syntax update XD
+!youtube.com##+js(simulate-event-poc, click, button.ytp-ad-skip-button)
+!youtube.com##+js(simulate-event-poc, click, span.ytp-ad-skip-button-container)
+||youtube.com^$csp=worker-src 'none'
 ||googlevideo.com/videoplayback?*&ctier=*$xmlhttprequest,domain=youtube.com|youtube-nocookie.com
 @@||googlevideo.com/videoplayback?*&pfa=*$xmlhttprequest,domain=youtube.com|youtube-nocookie.com
 @@||googlevideo.com/videoplayback?*yt_live_broadcast&$xmlhttprequest,domain=youtube.com|youtube-nocookie.com

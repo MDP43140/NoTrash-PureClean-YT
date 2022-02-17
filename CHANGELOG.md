@@ -2,6 +2,16 @@
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
 
 # Changelogs:
+### 18.02.2022:
+ + Improved Anti ad circumvent method.
+
+### 18.02.2022_dev:
+ + Improved AntiCV (+ some codes from ABP AntiCV that is'nt available on uBO syntax, waiting 4 syntax update XD).
+ + (try to) Restore the watch-flexy width a little bit (on new design)
+ + Simplify some things on YT Desktop for mobile.
+ + Forcing some desktop-specific things to use www.youtube.com.
+ . Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
+
 ### 11.02.2022:
  + Restore the old watch and upload time stat opacity (if you had new design like me...)
  + [ContentFilter] Changed some "?)" > ")?"
@@ -9,12 +19,6 @@
  + Get rid of the nonsense icon beside searchbox that does NOTHING AT ALL.
  + Now will Remove any yt shorts video that didnt have #shorts in title (by detecting shorts styling in the video duration)
  + Remove ANY form of shorts player.
-
-### 11.02.2022_dev:
- + (try to) Restore the watch-flexy width a little bit (on new design)
- + Simplify some things on YT Desktop for mobile.
- + Forcing some desktop-specific things to use www.youtube.com.
- . Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
 
 ### **.01.2022:
  + [ContentFilter] Add [wibu,waifu,aduhai,ciwai,door kick,kesha].
