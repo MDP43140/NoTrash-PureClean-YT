@@ -2,7 +2,7 @@
 ! Title     : No-Trash + Pure-Clean YouTube
 ! Author    : MDP43140
 ! OA        : DandelionSprout
-! Version   : 18.02.2022_dev
+! Version   : 20.02.2022_dev
 ! GitHub    : mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! commit    : adding new rules from other source
@@ -127,6 +127,7 @@ youtube.com##a[href^="/channel/UCbPMGqN8KctqpnbVdtWRrUQ"]:upward(ytd-channel-ren
 ! Bloat buttons on left-hand menu
 ! Includes:
 ! - Trending/Discover/Explore
+! - Shorts
 ! - Subscription (If Not Logged in)
 ! - History
 ! - My Videos
@@ -153,6 +154,9 @@ www.youtube.com##ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type
 !www.youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="feed/guide_builder"])
 www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="feed/explore"])
 www.youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="feed/explore"])
+
+! (NEW!) Removes Shorts Button (YOUTUBE WHY I HATE SHORTS AND TIKTOK SOO MUCH ;( )
+www.youtube.com#?#.ytd-guide-entry-renderer:has(yt-formatted-string:has-text(Shorts))
 
 ! Removes "Subscription" Button (if not login)
 www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(3)
@@ -266,6 +270,9 @@ www.youtube.com##ytd-watch-metadata ytd-menu-renderer ytd-button-renderer:nth-of
 
 ! (NEW!) remove (dis)like counter when there's no number and only "(Dis)Like" text
 www.youtube.com#?#ytd-menu-renderer ytd-toggle-button-renderer #text:not(:has-text(/\d+/))
+
+! only show icon, no text on the buttons
+www.youtube.com##ytd-video-primary-info-renderer .ytd-menu-renderer.top-level-buttons ytd-button-renderer #text
 
 ! Remove YouTube's bloat, "Clip" feature, which is ofcourse, tiktok (because again... why not).
 www.youtube.com##ytd-video-primary-info-renderer.ytd-watch-flexy ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer:nth-of-type(2)

@@ -2,6 +2,9 @@
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
 
 # Changelogs:
+### 20.02.2022:
+ + Remove shorts button on the left-hand panel?? (Last seen: 18.02.2022, when i want to open youtube)
+
 ### 18.02.2022:
  + Improved Anti ad circumvent method.
 
