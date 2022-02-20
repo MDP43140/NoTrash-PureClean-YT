@@ -1,40 +1,61 @@
-IGN                      - Their "reviews" are basically just marketing
-HLN                      - King of fake news
-Jimmy Kimmel and Fallon  - Unlikable b**t*ds
-Preston                  - Clichobaito
-Van Official             - Toxic Hate Indonesian Channel
-AldosWorld               - The most childish youtuber
-N&A Production           - The most childish youtuber
-itsOwen                  - GodOfClickbait (Gross Sexual youtuber)
-Oboat                    - Same as "itsOwen"
-Morgz                    - Childish B***ards
-elisocray                - nasty piece of $#!t
-Les Copaque              - popular for-baby channel (in indo)
-(Mini|AnimaSEA -) Monsta - yuno childish channel bruf
-CocoMelon                - childish stuffs there
-LoL Mobile Gaming        - their fwkang annonying & buggy ads dude. like really?, why not block right?
-[Blackpink,BTS]          - stupid corean p00p
-Piper Rockelle           - Lazyp*rn youtuber
-emily is daddy           - Weird Sexual/Fortnite youtuber
-imZarz                   - Weird Sexual/Fortnite youtuber
-ClewFix                  - Weird Sexual/Fortnite youtuber
-Doal                     - fake free Robux streamer
-Clouds                   - GF Fortnite video (not checked, possibly sexual related)
-Willytube                - 
-Nilanjana Dhar           - 
-Plasmonix                - 
-Eystreem                 - 
-Cracky                   - generic compilation and fake video
-Top10Speed               - generic compilation and fake video
-Perplexify               - generic compilation and fake video
-Shaya Jacobs             - 
-Dorito's Reaction        - 
-DavidsTV                 - 
-The (Royalty|ACE) Family - Clickbait from richies
-Yode plays               - 
-Dominic Schmidt          - Eww, u dont want to see this
-ALICE SPY NINJAS AT 3AM  - you know from the names...
-Rebecca Zamolo           - 
-Matt and Rebecca         - 
-Pr Pny Slr 69 (Censored) - Very Very Clear Porn Channel
-(i forget this one lol)  - /1MILLIONDanceStudioofficial
+Block state | Channel name - (Channel link) Description
+-----------------------------------------------------
+? | Carl(aylee|ie) H[Dd]( [Gaming|Shorts])? ??
+? | Carter Sharer            - (/c/cartersharer)
+? | Collins Key              - (/user/CollinsKey)
+? | HYPELABELS               - (Kpop ,/c/HYBELABELS | /user/ibighit)
+? | (It[zs](Duh)?)?Morgan (ItzDuhMorgan) - ?
+? | Kayzz                    - (/channel/UCieJKtFIpVmbGjC8pBIxReA) Fornite scam, same as BoostyPop.
+? | Labrant Fam              - (/channel/UC4-CH0epzZpD_ARhxCx6LaQ)
+? | La Familia Diamond       - (/c/FamiliaDiamond)
+? | Mo Vlogs                 - ?
+? | My Two Earthlings        - ?
+? | Norris Nuts              - (/c/TheNorrisNuts)
+? | Norris Nuts Do Stuff     - (/c/NorrisNutsDoStuff)
+? | PawZam Dogs              - (/channel/UC0ufW3qv1DDE8ucnwK6jvTA)
+? | Savetion                 - (idk, porn channel??)
+? | The Real GameMaster      - (/channel/UCX-EPC5_NsFmRFkfzTFaP9Q_
+V | 1 MILLION Dance Studio   - (/1MILLIONDanceStudioofficial) might be one of the channel that owns the video that contains "Hey Mama" in the title?
+V | AldosWorld               - The most childish youtuber
+V | ALICE SPY NINJAS AT 3AM  - (/channel/UCqI5bEWJUWr9TJ3vv4xNHwg) you know from the names...
+V | [Blackpink,BTS]          - stupid corean p00p
+V | ClewFix                  - (channel/UCGHVMWyTjDCBXg2-Y49aZCg) Weird Sexual/Fortnite youtuber
+V | Clouds                   - GF Fortnite video (not checked, possibly sexual related)
+V | CocoMelon                - childish stuffs there
+V | Cracky                   - (/channel/UC4WxQSBRG1wPIndKV_psLSw) generic compilation and fake video
+V | DavidsTV                 - (/c/DavidsTV)
+V | Doal                     - fake free Robux streamer
+V | Dominic Schmidt          - (/channel/UC3cjo_8Q5lOMdmpfPo1wAag) Eww, you dont want to ever see this!
+V | Dorito's Reaction        - (/c/DoritosReaction)
+V | elisocray                - nasty piece of $#!t
+V | emily is daddy           - Weird Sexual/Fortnite youtuber
+V | Eystreem                 - (/c/eystreem)
+V | HLN                      - King of fake news
+V | IGN                      - Their "reviews" are basically just marketing
+V | imZarz( x)?              - Weird Sexual/Fortnite youtuber
+V | itsOwen                  - GodOfClickbait (Gross Sexual youtuber)
+V | Jimmy Kimmel and Fallon  - Unlikable b**t*ds
+V | Les Copaque              - popular for-baby channel (in indo)
+V | LoL Mobile Gaming        - their fwkang annonying & buggy ads dude. like really?, why not block right?
+V | Matt and Rebecca         - (/c/mattandrebecca)
+V | (Mini|AnimaSEA -) Monsta - yuno childish channel bruf
+V | Morgz                    - Childish B***ards
+V | N&A Production           - The most childish youtuber
+V | Nilanjana Dhar           - (/c/nilanjanadhar)
+V | Perplexify               - (/c/Perplexify) generic compilation and fake video
+V | Piper Rockelle           - (/c/PiperRockelle) Lazy and ridicilous p*rn youtuber
+V | Plasmonix                - (/c/Plasmonix)
+V | Preston                  - Clichobaito
+V | Pr Pny Slr 69 (Censored) - Very Very Clear Porn Channel
+V | Rebecca Zamolo           - (/c/rebeccazamolo1)
+V | Shaya Jacobs             - (/channel/UC42Wu_Mwdfomf5uNgSKvmfA)
+V | The (Royalty|ACE) Family - (/c/{royaltyfam,TheACEFamily}) Clickbait from richies
+V | Top10Speed               - (/c/Top10Speed) generic compilation and fake video
+V | Van Official             - Toxic Hate Indonesian Channel
+V | Willytube                - (/c/WillytubeToo)
+V | Yode plays               - (/c/YodePlays) Robux scam
+✔️ | BoostyPop               - (might be Banned..) Fornite scam
+✔️ | Creepo                  - (Banned)
+✔️ | ImJayStation            - (Banned) Clickbait 3AM Videos
+✔️ | Oboat                   - (Banned) Same as "itsOwen"
+PS: beware that /c/ can also be /user/ and vice-versa.
