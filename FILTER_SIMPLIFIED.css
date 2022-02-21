@@ -9,19 +9,19 @@
 !
 ! Warning: these list may not complete
 !
-! last modified: 20.02.2022
-! last "cmpld": 11.02.2022
-! last merged to ntpcyt: 11.02.2022
+! last modified: 21.02.2022
+! last "cmpld": 21.02.2022
+! last merged to ntpcyt: 21.02.2022
 ! 1 commit ahead:
-! + Add [jomblo,berduaan]
-! - Changed some "?)" > ")?"
-! - Add [fell in love,sangek,desah,crush,moment? (hot|panas),(hot|panas) moment?,mantap[- ]mantap,huggy wuggy,kissy missy (reason: TOO MUCH CLICKBAIT !!!!!)].
+! + Improved some "for kids" filtering stuff.
+! + Fix [sesuatu,sekarang] getting filtered (caused by ses/sek in "s[e3\*][xks]").
+! + Add [jomblo,berduaan].
 !
 
 ! ———————————————————————————————
 ! Clickbait
 ! ———————————————————————————————
-|[03:]+\s*A.?M
+[03:]+\s*A.?M
 |tik[- ]?tok
 |door ?kick
 |kesha
@@ -54,7 +54,7 @@
 ! ———————————————————————————————
 ! Kids
 ! ———————————————————————————————
-|(for|with|untuk|animasi|cerita|dongeng|lagu )?
+|(for|with|untuk|animasi|cerita|dongeng|lagu)? ?
 (
 	kid
 	|child
@@ -152,7 +152,7 @@
 ! Adult & Violence
 ! ———————————————————————————————
 |[pm]epe[kx]
-|s[e3\*][xks]
+|s[e3\*](x|ks)[yi]?
 |b[o0Ѳ]k[e3]p
 |p[o0Ѳ\*]rn
 |nud(e|ity)
@@ -259,8 +259,7 @@
 |tide pods
 |momen memalukan
 | anu(nya)?
-
-|(for|with|untuk|animasi|cerita|dongeng|lagu )?
+|(for|with|untuk|animasi|cerita|dongeng|lagu)? ?
 (
 	kid
 	|child
@@ -342,10 +341,12 @@
 |squid ?game
 |[\[ ]m\/?v[ \]]
 |[pm]epe[kx]
-|s[e3\*][xks]
+|s[e3\*](x|ks)[yi]?
 |b[o0Ѳ]k[e3]p
 |p[o0Ѳ\*]rn
 |nud(e|ity)
+|jomblo
+|berduaan
 |sensual
 |aduhai
 |xxx
