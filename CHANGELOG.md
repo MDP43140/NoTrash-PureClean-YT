@@ -2,18 +2,23 @@
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
 
 # Changelogs:
-### 20.02.2022:
- + Remove shorts button on the left-hand panel?? (Last seen: 18.02.2022, when i want to open youtube)
+### 21.02.2022:
+ + Content filtering for mobile now considered stable enough.
+ + [ContentFilter] Improved some "for kids" filtering stuff.
+ + [ContentFilter] Fix [sesuatu,sekarang] getting filtered (caused by ses/sek in "s[e3\*][xks]").
+ + [ContentFilter] Add [jomblo,berduaan].                                                ^---^
 
-### 18.02.2022:
- + Improved Anti ad circumvent method.
-
-### 18.02.2022_dev:
- + Improved AntiCV (+ some codes from ABP AntiCV that is'nt available on uBO syntax, waiting 4 syntax update XD).
+### 21.02.2022_dev:
  + (try to) Restore the watch-flexy width a little bit (on new design)
  + Simplify some things on YT Desktop for mobile.
+ + Removed Side-bar if not logged in (because nothing on there other than a Home button which you can access by clicking YT logo on upper-left).
+
+### 20.02.2022:
+ + Remove shorts button on the "guide" panel (Last seen: 18.02.2022, when i want to open youtube)
+
+### 18.02.2022:
  + Forcing some desktop-specific things to use www.youtube.com.
- . Removing Side-bar because there's will be nothing there other than home button which you can access by clicking yt logo on upper-left.
+ + Improved Anti ad circumvent method.
 
 ### 11.02.2022:
  + Restore the old watch and upload time stat opacity (if you had new design like me...)
