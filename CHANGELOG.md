@@ -2,6 +2,10 @@
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
 
 # Changelogs:
+### 25.02.2022:
+ + [ContentFilter] fixed [accomplished ,complete ] getting filtered because "MPL " filter (m[pd]l[- ]?.* s.*)
+ + replaced more 2 spaces with tabs for more storage space
+
 ### 21.02.2022:
  + Content filtering for mobile now considered stable enough.
  + [ContentFilter] Improved some "for kids" filtering stuff.
