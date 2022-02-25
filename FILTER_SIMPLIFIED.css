@@ -9,11 +9,14 @@
 !
 ! Warning: these list may not complete
 !
-! last modified: 21.02.2022
-! last "cmpld": 21.02.2022
-! last merged to ntpcyt: 21.02.2022
+! last modified: 25.02.2022
+! last "cmpld": 25.02.2022
+! last merged to ntpcyt: 25.02.2022
 ! 1 commit ahead:
 ! + Improved some "for kids" filtering stuff.
+! + Bug fixed: [accomplished ,complete ] getting filtered
+!	 - Cause: m[pd]l[- ]?.* s.*
+!	 + Patch: m[pd]l[- ]?\w\w s\d+
 ! + Fix [sesuatu,sekarang] getting filtered (caused by ses/sek in "s[e3\*][xks]").
 ! + Add [jomblo,berduaan].
 !
@@ -111,7 +114,7 @@
 ! ———————————————————————————————
 |moba?[ie]le? ?l?e?[jg]end?s?
 |se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?t|ri?b|doll?ar))
-|m[pd]l[- ]?.* s.*
+|m[pd]l[- ]?\w\w s\d+
 |top[- ]?up
 |bang[- ]?bang
 |push[- ]?rank
@@ -259,6 +262,7 @@
 |tide pods
 |momen memalukan
 | anu(nya)?
+
 |(for|with|untuk|animasi|cerita|dongeng|lagu)? ?
 (
 	kid
@@ -312,7 +316,7 @@
 |webs & tiaras
 |moba?[ie]le? ?l?e?[jg]end?s?
 |se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?t|ri?b|doll?ar))
-|m[pd]l[- ]?.* s.*
+|m[pd]l[- ]?\w\w s\d+
 |top[- ]?up
 |bang[- ]?bang
 |push[- ]?rank
