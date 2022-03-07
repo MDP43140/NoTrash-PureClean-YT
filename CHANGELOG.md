@@ -2,6 +2,12 @@
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
 
 # Changelogs:
+### 08.03.2022:
++ [ContantFilter] added [dunia olahraga( (wanita|cewek))?,(wanita|cewek) cantik,moment? (lucu|hot|panas|memalukan|langka( t(id)?ak terlupakan)?),berhasil terekam kamera,hot moment?,doki doki literature club]
++ [ContantFilter] removed dupes that contained "momen".
++ [ContantFilter] Bug Fixed: [grouping,wiping] get filtered because of "|upin|ipin" filter.
+- [ContantFilter] (temporarily) remove some filters that caused false positives.
+
 ### 25.02.2022:
  + [ContentFilter] fixed [accomplished ,complete ] getting filtered because "MPL " filter (m[pd]l[- ]?.* s.*)
  + replaced more 2 spaces with tabs for more storage space

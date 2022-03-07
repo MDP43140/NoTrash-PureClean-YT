@@ -9,11 +9,23 @@
 !
 ! Warning: these list may not complete
 !
-! last modified: 25.02.2022
-! last "cmpld": 25.02.2022
-! last merged to ntpcyt: 25.02.2022
+! last modified: 08.03.2022
+! last "cmpld": 08.03.2022
+! last merged to ntpcyt: 08.03.2022
 ! 1 commit ahead:
 ! + Improved some "for kids" filtering stuff.
+! - Bug found: "updating" getting filtered
+!  - Cause: dating
+!  - Patch: None yet.
+!  - Workaround: temporarily remove it.
+! - Bug found: [grouping,wiping] getting filtered
+!  - Cause: |upin|ipin (@L~120)
+!  - Patch: "| upin | ipin " (potentially)
+!  - Workaround: temporarily remove it.
+! - Bug found: "Thunderbird" getting filtered
+!  - Cause: b(i|ee)r
+!  - Patch: none yet.
+!  - Workaround: temporarily remove it.
 ! + Bug fixed: [accomplished ,complete ] getting filtered
 !	 - Cause: m[pd]l[- ]?.* s.*
 !	 + Patch: m[pd]l[- ]?\w\w s\d+
@@ -37,6 +49,8 @@
 |fortnite
 |giveaway
 |go(ne|es)( totally)? wrong
+|dunia olahraga( (wanita|cewek))?
+|(wanita|cewek) cantik
 |life hack
 |omg
 |orbeez
@@ -51,7 +65,9 @@
 |beaned
 |(hugg|kiss)y (wugg|miss)y
 |tide pods
-|momen memalukan
+|moment? (lucu|hot|panas|memalukan|langka)
+|berhasil terekam (kamera|cctv)
+|(hot|panas|girl) moment?
 | anu(nya)?
 
 ! ———————————————————————————————
@@ -105,7 +121,7 @@
 |tasmil
 |tom (and|n|&) jerry
 |transforms with animation
-|upin|ipin
+| upin | ipin 
 |venom
 |webs & tiaras
 
@@ -155,6 +171,7 @@
 ! Adult & Violence
 ! ———————————————————————————————
 |[pm]epe[kx]
+|doki doki literature club
 |s[e3\*](x|ks)[yi]?
 |b[o0Ѳ]k[e3]p
 |p[o0Ѳ\*]rn
@@ -182,7 +199,6 @@
 |perkosa
 |selingkuh
 |roman(ce|tis)
-|dating
 |asmara
 |cinta
 |galau
@@ -210,14 +226,11 @@
 |l[ou]bang pantat
 |my love
 |drunk
-|b(i|ee)r
 |egirl
 |fell in love
 |sangek
 |desah
 |crush
-|moment? (hot|panas)
-|(hot|panas) moment?
 
 
 ! ———————————————————————————————
@@ -246,6 +259,8 @@
 |fortnite
 |giveaway
 |go(ne|es)( totally)? wrong
+|dunia olahraga( (wanita|cewek))?
+|(wanita|cewek) cantik
 |life hack
 |omg
 |orbeez
@@ -260,7 +275,9 @@
 |beaned
 |(hugg|kiss)y (wugg|miss)y
 |tide pods
-|momen memalukan
+|moment? (lucu|hot|panas|memalukan|langka)
+|berhasil terekam (kamera|cctv)
+|(hot|panas|girl) moment?
 | anu(nya)?
 
 |(for|with|untuk|animasi|cerita|dongeng|lagu)? ?
@@ -311,7 +328,7 @@
 |tasmil
 |tom (and|n|&) jerry
 |transforms with animation
-|upin|ipin
+| upin | ipin 
 |venom
 |webs & tiaras
 |moba?[ie]le? ?l?e?[jg]end?s?
@@ -345,6 +362,7 @@
 |squid ?game
 |[\[ ]m\/?v[ \]]
 |[pm]epe[kx]
+|doki doki literature club
 |s[e3\*](x|ks)[yi]?
 |b[o0Ѳ]k[e3]p
 |p[o0Ѳ\*]rn
@@ -372,7 +390,6 @@
 |perkosa
 |selingkuh
 |roman(ce|tis)
-|dating
 |asmara
 |cinta
 |galau
@@ -400,14 +417,11 @@
 |l[ou]bang pantat
 |my love
 |drunk
-|b(i|ee)r
 |egirl
 |fell in love
 |sangek
 |desah
 |crush
-|moment? (hot|panas)
-|(hot|panas) moment?
 |ome\.tv
 |superstar
 |idola
@@ -415,3 +429,6 @@
 |christ
 /ui
 ! ———————————————————————————————
+
+! [TINY COMPILE]
+/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) moment?| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)? ?(kid|child|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?t|ri?b|doll?ar))|m[pd]l[- ]?\w\w s\d+|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|nud(e|ity)|jomblo|berduaan|sensual|aduhai|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sangek|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui
