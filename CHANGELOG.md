@@ -2,35 +2,32 @@
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
 
 # Changelogs:
+### 13.03.2022:
+ + Remove excessive blank spaces (using Geany).
+ + [ContantFilter] Add [hnti,gagal fokus].
+ + [ContantFilter] Improved some "for kids" and MLBB filtering stuff.
+
+### 13.03.2022_dev:
+ + (try to) Restore the watch-flexy width a little bit (on new design)
+ + Simplify some things on YT Desktop for mobile.
+ + Removed Side-bar if not logged in (because nothing on there other than a Home button which you can access by clicking YT logo on upper-left).
+
 ### 08.03.2022:
 + [ContantFilter] added [dunia olahraga( (wanita|cewek))?,(wanita|cewek) cantik,moment? (lucu|hot|panas|memalukan|langka( t(id)?ak terlupakan)?),berhasil terekam kamera,hot moment?,doki doki literature club]
 + [ContantFilter] removed dupes that contained "momen".
 + [ContantFilter] Bug Fixed: [grouping,wiping] get filtered because of "|upin|ipin" filter.
 - [ContantFilter] (temporarily) remove some filters that caused false positives.
 
-### 25.02.2022:
+### **.02.2022:
  + [ContentFilter] fixed [accomplished ,complete ] getting filtered because "MPL " filter (m[pd]l[- ]?.* s.*)
  + replaced more 2 spaces with tabs for more storage space
-
-### 21.02.2022:
  + Content filtering for mobile now considered stable enough.
  + [ContentFilter] Improved some "for kids" filtering stuff.
  + [ContentFilter] Fix [sesuatu,sekarang] getting filtered (caused by ses/sek in "s[e3\*][xks]").
  + [ContentFilter] Add [jomblo,berduaan].                                                ^---^
-
-### 21.02.2022_dev:
- + (try to) Restore the watch-flexy width a little bit (on new design)
- + Simplify some things on YT Desktop for mobile.
- + Removed Side-bar if not logged in (because nothing on there other than a Home button which you can access by clicking YT logo on upper-left).
-
-### 20.02.2022:
  + Remove shorts button on the "guide" panel (Last seen: 18.02.2022, when i want to open youtube)
-
-### 18.02.2022:
  + Forcing some desktop-specific things to use www.youtube.com.
  + Improved Anti ad circumvent method.
-
-### 11.02.2022:
  + Restore the old watch and upload time stat opacity (if you had new design like me...)
  + [ContentFilter] Changed some "?)" > ")?"
  + [ContentFilter] Add [fell in love,sangek,desah,crush,moment? (hot|panas),(hot|panas) moment?,mantap[- ]mantap,huggy wuggy,kissy missy (TOO MUCH CLICKBAIT BUZZWORD !!!!!)].
@@ -53,7 +50,7 @@
  + [ContentFilter] Improve "p[o0]rn" > "p[o0Ѳ\*]rn"
  + [ContentFilter] Improve "s[e3]x > s[e3\*] (also blocks comment bot: s*x)"
  + [ContentFilter] Add [sensual,dating].
- + [ContentFilter] Improve "pussy" > "(puss|sizz)y". 
+ + [ContentFilter] Improve "pussy" > "(puss|sizz)y".
  + remove some space-eating icon nonsense.
 
 ###  **.11.2021:
@@ -75,7 +72,7 @@
  + Fixed media player buttons getting bigger again (block .ytp-larger-tap-buttons)
  + [ContentFilter] Improve "s[e3]x > s[e3\*] (also blocks comment bot: s*x)"
  + [ContentFilter] Add [sensual,dating].
- + Adding feature to remove bad comment (Im REALLY SICK of S*XUAL COMMENT BOTS WHYYYY YOUTUBE ?!?!??!). 
+ + Adding feature to remove bad comment (Im REALLY SICK of S*XUAL COMMENT BOTS WHYYYY YOUTUBE ?!?!??!).
  + added some commit from adfilt/yt.
 	 + Remove sponsored description links inserted by right holders (ytd-metadata-row-renderer).
 	 + remove like/dislike counter on mobile (disabled).
@@ -155,7 +152,7 @@
  + [ContentFilter] Reclean the list.
  + [ContentFilter] append "barat" next to "musik/lagu rohani".
  > some cleanup...
- > Making filter rules smaller and faster by removing redundant ".style-scope" class (saving 300 worth of bytes). 
+ > Making filter rules smaller and faster by removing redundant ".style-scope" class (saving 300 worth of bytes).
  + [ContentFilter] new string added: [K-Drama,Ragnarok]
  + [ContentFilter] changed "episod" back to "full episod" because it blocks majority of videos (including minecraft videos from mumbo jumbo, and grian).
  + [ContentFilter] fixed "episode".
