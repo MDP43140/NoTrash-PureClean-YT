@@ -2,6 +2,9 @@
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
 
 # Changelogs:
+### 14.03.2022:
+ + Improved shorts guide panel blocking (simply).
+
 ### 13.03.2022:
  + Remove excessive blank spaces (using Geany).
  + [ContantFilter] Add [hnti,gagal fokus].

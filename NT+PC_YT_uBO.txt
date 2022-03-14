@@ -2,7 +2,7 @@
 ! Title		  : No-Trash + Pure-Clean YouTube
 ! Author		: MDP43140
 ! OA				: DandelionSprout
-! Version 	: 13.03.2022
+! Version 	: 14.03.2022
 ! GitHub		: mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! ——————————————————————————————
@@ -161,7 +161,7 @@ www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="feed/explore"])
 www.youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="feed/explore"])
 
 ! (NEW!) Removes Shorts Button (YOUTUBE WHY I HATE SHORTS AND TIKTOK SOO MUCH ;( )
-www.youtube.com#?#.ytd-guide-entry-renderer:has(yt-formatted-string:has-text(Shorts))
+www.youtube.com#?#ytd-guide-entry-renderer:has(yt-formatted-string:has-text(Shorts))
 
 ! Removes "Subscription" Button (if not login)
 www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(3)
