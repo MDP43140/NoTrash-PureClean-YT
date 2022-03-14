@@ -1,5 +1,8 @@
 Block state | Channel name - (Channel link) Description
 -----------------------------------------------------
+? | Jester                   - 3AM Fake Videos
+? | Guava Juice              - 3AM Fake Videos (Fraud)
+? | Moe Sargi                - First 3AM video (but DJ cook says not fake)
 ? | Carl(aylee|ie) H[Dd]( [Gaming|Shorts])? ??
 ? | Carter Sharer            - (/c/cartersharer)
 ? | Collins Key              - (/user/CollinsKey)
