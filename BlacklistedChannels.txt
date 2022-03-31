@@ -1,5 +1,17 @@
 Block state | Channel name - (Channel link) Description
 -----------------------------------------------------
+? | WooHoo                   - Copycat 5MC
+? | Multi Do Challenge       - Copycat 5MC
+? | ZOOM GO                  - Copycat 5MC
+? | Gotcha!                  - Copycat 5MC
+? | La La Life               - Copycat 5MC
+? | RATATA POWER             - Copycat 5MC
+? | RATATA BRILIANT          - Copycat 5MC
+? | TIM TIN                  - Copycat 5MC
+? | Troom Oki Toki           - Copycat 5MC
+? | DeltaDie?                - Copycat 5MC
+? | Troom Troom Select       - Copycat 5MC
+? | 5 Minute Crafts          - Copycat Troom Troom
 ? | Jester                   - 3AM Fake Videos
 ? | Guava Juice              - 3AM Fake Videos (Fraud)
 ? | Moe Sargi                - First 3AM video (but DJ cook says not fake)
