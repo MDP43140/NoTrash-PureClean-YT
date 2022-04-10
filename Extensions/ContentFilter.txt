@@ -23,42 +23,4 @@ www.youtube.com##ytd-thumbnail-overlay-resume-playback-renderer:not(:upward(ytd-
 www.youtube.com###video-title-link[href*="start_radio=1"]:upward(ytd-rich-item-renderer)
 www.youtube.com##ytd-radio-renderer,ytd-compact-radio-renderer
 
-! ——————————————————————————————
-!
-! Blacklist for channels with varied and
-! simplified titles to filter with regexes.
-!
-!
-
-youtube.com##a[href^="/IGN" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/HLN" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/JimmyKimmelLive" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/fallontonight" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/PrestonPlayz" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/TBNRfrags" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/AldosWorlds" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/AnimonstaStudios" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/BANGTANTV" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/BLACKPINKOFFICIAL" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/CheatGang" i]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UC3UX8a0QJFBvlQ74NCpKTkw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCmr_vYKbp98f6kdRoer0iVw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCJZam2u1G0syq3kyqrCXrNw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCl3MZzAHS8IvaFimp5gv5qQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UC-QZWTOtdsm6CNPHUR88irA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCBwSufNse8VMBvQM_rCSvgQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCdDzVQvu8tlqZg05-fFhmDg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCqsUQhA6UIwSams54bEnCJw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCC7iRQ71SWY9KJ4p72RW8YA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCgjc6W1oJXZM51nXCNAcDVQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCyTATeB0ejBMon59igN4tVw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCqmld-BIYME2i_ooRTo1EOg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCfrQsDVP4gnqL6uJD0hARDQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCOmHUn--16B90oW2L6FRR3A"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCSaUFXLe3d9WqGp7TA4FKZA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCGHVMWyTjDCBXg2-Y49aZCg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCbadeiRL4r48aK6Y-a3YDfA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UC5d0de51vIZzB7YEFiKUhvA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-youtube.com##a[href^="/channel/UCbPMGqN8KctqpnbVdtWRrUQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
-
-! ——————————————————————————————
+!#include ChannelBlacklists.txt
