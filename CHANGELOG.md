@@ -1,7 +1,19 @@
 # Bugs:
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
+ - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
 
 # Changelogs:
+### 10.04.2022_dev:
+ + Remove ridicilously nonsense indicator when you search using searchbox (bug: when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put).
+ + (try to) Restore the watch-flexy width a little bit (on new design)
+ + Simplify some things on YT Desktop for mobile.
+ + revert remove sidebar changes (now Side-bar wont be removed if not logged in, also the code is'nt removed, just commented out so if you want to use it just uncomment it).
+
+### 10.04.2022:
+ + Blacklisted bunch of trash channels (see #a05d3ed BlacklistedChannels.txt commit for the lists (kinda messy i know))
+ + [Mobile] Fixed some trash videos not blocked.
+ + [Mobile] now will block short videos without #shorts in the title.
+
 ### 14.03.2022:
  + Improved shorts guide panel blocking (simply).
 
@@ -9,11 +21,6 @@
  + Remove excessive blank spaces (using Geany).
  + [ContantFilter] Add [hnti,gagal fokus].
  + [ContantFilter] Improved some "for kids" and MLBB filtering stuff.
-
-### 13.03.2022_dev:
- + (try to) Restore the watch-flexy width a little bit (on new design)
- + Simplify some things on YT Desktop for mobile.
- + Removed Side-bar if not logged in (because nothing on there other than a Home button which you can access by clicking YT logo on upper-left).
 
 ### 08.03.2022:
 + [ContantFilter] added [dunia olahraga( (wanita|cewek))?,(wanita|cewek) cantik,moment? (lucu|hot|panas|memalukan|langka( t(id)?ak terlupakan)?),berhasil terekam kamera,hot moment?,doki doki literature club]
