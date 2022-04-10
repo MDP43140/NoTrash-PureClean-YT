@@ -2,7 +2,7 @@
 ! Title		  : No-Trash + Pure-Clean YouTube
 ! Author		: MDP43140
 ! OA				: DandelionSprout
-! Version 	: 14.03.2022
+! Version 	: 10.04.2022
 ! GitHub		: mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! ——————————————————————————————
@@ -75,6 +75,20 @@ youtube.com##a[href^="/c/YodePlays"]:upward(ytd-channel-renderer,ytd-rich-item-r
 youtube.com##a[href^="/c/rebeccazamolo1"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 youtube.com##a[href^="/c/mattandrebecca"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 youtube.com##a[href^="/c/PiperRockelle"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/JYPEntertainment"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/nctsmtown"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/HYBELABELS"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/user/ibighit"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/JesseBaron"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/cartersharer"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/CollinsKey"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/FamiliaDiamond"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/MoVlogs"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/MyTwoEarthlings"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/TheNorrisNuts"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/NorrisNutsDoStuff"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/LaLaLife"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/c/5MinuteCraftsYouTube"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 
 youtube.com##a[href^="/user/IGN"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 youtube.com##a[href^="/user/HLN"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
@@ -99,10 +113,25 @@ youtube.com##a[href^="/user/YodePlays"]:upward(ytd-channel-renderer,ytd-rich-ite
 youtube.com##a[href^="/user/rebeccazamolo1"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 youtube.com##a[href^="/user/mattandrebecca"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 youtube.com##a[href^="/user/PiperRockelle"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/JYPEntertainment"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/nctsmtown"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/c/HYBELABELS"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/ibighit"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/JesseBaron"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/cartersharer"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/CollinsKey"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/FamiliaDiamond"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/MoVlogs"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/MyTwoEarthlings"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/TheNorrisNuts"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/NorrisNutsDoStuff"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/LaLaLife"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/user/5MinuteCraftsYouTube"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 
 youtube.com##a[href^="/BLACKPINKOFFICIAL"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 youtube.com##a[href^="/CheatGang"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 youtube.com##a[href^="/1MILLIONDanceStudioofficial"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/aynakoitsroi"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 
 youtube.com##a[href^="/channel/UCtgsaWQM32Va8r-bLLhdy7Q"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 youtube.com##a[href^="/channel/UC4WxQSBRG1wPIndKV_psLSw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
@@ -128,6 +157,23 @@ youtube.com##a[href^="/channel/UCGHVMWyTjDCBXg2-Y49aZCg"]:upward(ytd-channel-ren
 youtube.com##a[href^="/channel/UCbadeiRL4r48aK6Y-a3YDfA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 youtube.com##a[href^="/channel/UC5d0de51vIZzB7YEFiKUhvA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 youtube.com##a[href^="/channel/UCbPMGqN8KctqpnbVdtWRrUQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UC41GHsi-F40DiDT2DFAWW0w"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UCmEm-e21vzohLlZ5ha6xytw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UCPSHYrLBml2qEv4xyUBbnnA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UCpDZ6GHn0iVscFje6mxU3LA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UCtxqQnLgj-1rAVtjpSgPS5A"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UC_3XOROtfTC0-Qo-QJmBSEw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UC8pbndgm8wzZlqZC9ejfBgw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UCahTAYi2kWY-YVOYUf12YhA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UCz7TiLOhZzVLe0XnTZGf17g"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UCRXJaBvhynZMqVCbHVkzkNw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UChkZElwBp90FQHJZwmhBPxA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UCWwqHwqLSrdWMgp5DZG5Dzg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UCIJ44QRtVGm_gBh_deuL5ow"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UCieJKtFIpVmbGjC8pBIxReA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UC4-CH0epzZpD_ARhxCx6LaQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UC0ufW3qv1DDE8ucnwK6jvTA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
+youtube.com##a[href^="/channel/UCX-EPC5_NsFmRFkfzTFaP9Q_"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()
 
 ! ——————————————————————————————
 
@@ -149,9 +195,6 @@ youtube.com##a[href^="/channel/UCbPMGqN8KctqpnbVdtWRrUQ"]:upward(ytd-channel-ren
 ! - Unused button (can be found by clicking profile/3dot icon)
 ! - Trash footer link
 !
-
-! remove left-hand menu if not logged in (not tested yet)
-!www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"])
 
 ! make sure 2nd button (explore) explore is removed
 www.youtube.com##ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(2)
@@ -311,7 +354,7 @@ www.youtube.com##.ytp-chrome-bottom .ytp-left-controls .ytp-time-display:style(u
 ! Includes:
 ! - Homepage link (from upper-left).
 ! - Country Code (beside YT Logo).
-! - Profile icon (next to login btn, leaving the "LOGIN" text only).
+! - Profile icon (inside login button, next to login text, leaving the "LOGIN" text only).
 ! - Google bloats (YT/Google App Drawer,Create video,voice search)
 
 ! Remove Guide button (3 horizontal line) if not logged in
@@ -604,8 +647,39 @@ m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
 ! Remove (trash and addictive) Chip bar on Homepage
 m.youtube.com##ytm-feed-filter-chip-bar-renderer:upward(.rich-grid-renderer-header)
 
+! Remove disturbing studio,music,kids , ytp,purchasesandsubscriptions,yourdatainyt , and additional nonsense extra button
+m.youtube.com##ytm-multi-page-menu-section-renderer:nth-of-type(5)
+m.youtube.com##ytm-multi-page-menu-section-renderer:nth-of-type(2)
+m.youtube.com##ytm-multi-page-menu-section-renderer:nth-of-type(1) ytm-compact-link-renderer:nth-of-type(2)
+
+! make {channel lists in subscription tab,top bar,and sections tab whatever} floating, 50% transparent, and eats less screen space
+m.youtube.com##ytm-mobile-topbar-renderer:style(background-color:#181b1cdd!important)
+m.youtube.com##ytm-pivot-bar-renderer:style(background-color:#191c1cdd!important)
+m.youtube.com##ytm-channel-list-sub-menu-renderer:style(background-color:#0B0C0Ddd!important;position:absolute;z-index:1;border:none!important)
+
+! This is supposed to remove recommended video that are in watch later playlist because its just hell of nonsense
+m.youtube.com#?#.media-item-endorsement-container:upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
+
+! Remove any shorts reel nonsense on homepage
+m.youtube.com##ytm-reel-shelf-renderer:remove()
+m.youtube.com##.ytm-reel-shelf-renderer:remove()
+m.youtube.com##ytm-shorts:remove()
+m.youtube.com##ytm-shorts-player-controls:remove()
+m.youtube.com##.ytm-reel-video-renderer:remove()
+m.youtube.com##ytm-reel-player-overlay-renderer:remove()
+m.youtube.com##ytm-reel-player-header-renderer:remove()
+m.youtube.com##.ytm-reel-player-overlay-renderer:remove()
+m.youtube.com##.ytm-shorts:remove()
+m.youtube.com##ytm-reel-description-sheet-renderer:remove()
+m.youtube.com##.ytm-item-section-renderer > .ytm-reel-shelf-renderer
+
 ! Content Filter
 m.youtube.com#?#.large-media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) moment?| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l[- ]?\w\w s(eason )?\d+|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|nud(e|ity)|jomblo|berduaan|sensual|aduhai|hentai|gagal fokus|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sangek|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
 m.youtube.com#?#.compact-media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) moment?| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l[- ]?\w\w s(eason )?\d+|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|nud(e|ity)|jomblo|berduaan|sensual|aduhai|hentai|gagal fokus|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sangek|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytm-compact-video-renderer,ytm-compact-channel-renderer,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
+m.youtube.com#?#.media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) moment?| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l[- ]?\w\w s(eason )?\d+|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|nud(e|ity)|jomblo|berduaan|sensual|aduhai|hentai|gagal fokus|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sangek|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytm-compact-video-renderer,ytm-compact-channel-renderer,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
+
+! Prevent any shorts video from appearing even if the video does'nt have #shorts in the title by detecting shorts style thumbnail
+m.youtube.com#?#a[href^="/shorts"]:upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
+m.youtube.com#?#ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
 ! ——————————————————————————————
 
