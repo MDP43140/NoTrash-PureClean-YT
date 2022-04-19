@@ -3,6 +3,9 @@
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
 
 # Changelogs:
+### 20.04.2022:
+ + [EXTREME] block more tiktok nonsense (Flip Bottle ❌ Flip galon ✅).
+ 
 ### 10.04.2022_dev:
  + Remove ridicilously nonsense indicator when you search using searchbox (bug: when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put).
  + (try to) Restore the watch-flexy width a little bit (on new design)
@@ -14,19 +17,15 @@
  + [Mobile] Fixed some trash videos not blocked.
  + [Mobile] now will block short videos without #shorts in the title.
 
-### 14.03.2022:
+### **.03.2022:
  + Improved shorts guide panel blocking (simply).
-
-### 13.03.2022:
  + Remove excessive blank spaces (using Geany).
  + [ContantFilter] Add [hnti,gagal fokus].
  + [ContantFilter] Improved some "for kids" and MLBB filtering stuff.
-
-### 08.03.2022:
-+ [ContantFilter] added [dunia olahraga( (wanita|cewek))?,(wanita|cewek) cantik,moment? (lucu|hot|panas|memalukan|langka( t(id)?ak terlupakan)?),berhasil terekam kamera,hot moment?,doki doki literature club]
-+ [ContantFilter] removed dupes that contained "momen".
-+ [ContantFilter] Bug Fixed: [grouping,wiping] get filtered because of "|upin|ipin" filter.
-- [ContantFilter] (temporarily) remove some filters that caused false positives.
+ + [ContantFilter] added [dunia olahraga( (wanita|cewek))?,(wanita|cewek) cantik,moment? (lucu|hot|panas|memalukan|langka( t(id)?ak terlupakan)?),berhasil terekam kamera,hot moment?,doki doki literature club]
+ + [ContantFilter] removed dupes that contained "momen".
+ + [ContantFilter] Bug Fixed: [grouping,wiping] get filtered because of "|upin|ipin" filter.
+ - [ContantFilter] (temporarily) remove some filters that caused false positives.
 
 ### **.02.2022:
  + [ContentFilter] fixed [accomplished ,complete ] getting filtered because "MPL " filter (m[pd]l[- ]?.* s.*)
