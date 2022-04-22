@@ -3,20 +3,23 @@ Block state | Channel name - (Channel link) Description
 - | John Flora               - Fake video dark web fishes (wont be added because other videos not really a fake video, channel/UCPx3SVYin7OZ4JGVkRjpWbg)
 H | Cursed Urban             - Dark web usual clickbait (c/CursedUrban)
 H | Crypto NWO               - Dark web usual clickbait (atleast at the time of writing..., c/CryptoNWO)
+H | DeltaDie?                - Copycat 5MC (channel name unconfirmed, fetched from DJ Cook)
 H | Moe Sargi                - First 3AM video (but DJ cook says not fake, c/moesargi)
-W | RATATA COOL              - Copycat 5MC
-W | RATATA BRILIANT          - Copycat 5MC
-W | DeltaDie?                - Copycat 5MC
-W | Savetion                 - (idk, porn channel??)
-W | Carl(aylee|ie) H[Dd]( [Gaming|Shorts])? ??
-W | (It[zs](Duh)?)?Morgan (ItzDuhMorgan) - ?
 + | 1 MILLION Dance Studio   - (/1MILLIONDanceStudioofficial) might be one of the channel that owns the video that contains "Hey Mama" in the title?
++ | 5 Minute Crafts          - Copycat Troom Troom (c/5MinuteCraftsYouTube)
 + | AldosWorld               - The most childish youtuber
 + | ALICE SPY NINJAS AT 3AM  - (/channel/UCqI5bEWJUWr9TJ3vv4xNHwg) you know from the names...
 + | [Blackpink,BTS]          - stupid corean p00p
++ | Carlaylee HD             - CarlayleeHD nonsense (c/Carlaylee).
++ | Carlaylee HD Gaming      - CarlayleeHD nonsense (channel/UC7t7rlZ0nMsSmDPWJm3J0Zw).
++ | Carlaylee Hd Shorts      - CarlayleeHD nonsense (channel/UCGxymjcbIoObYBJ7eNf9MHw).
++ | Carlie HD                - CarlayleeHD nonsense (c/CarlieHD).
++ | Carter Sharer            - (/c/cartersharer)
 + | ClewFix                  - (channel/UCGHVMWyTjDCBXg2-Y49aZCg) Weird Sexual/Fortnite youtuber
 + | Clouds                   - GF Fortnite video (not checked, possibly sexual related)
 + | CocoMelon                - childish stuffs there
++ | Coin                     - Terrible & disgusting Minecraft animation channel (c/CoinMinecraftFunnyAnimation)
++ | Collins Key              - (/user/CollinsKey)
 + | Cracky                   - (/channel/UC4WxQSBRG1wPIndKV_psLSw) generic compilation and fake video
 + | DavidsTV                 - (/c/DavidsTV)
 + | Doal                     - fake free Robux streamer
@@ -25,61 +28,75 @@ W | (It[zs](Duh)?)?Morgan (ItzDuhMorgan) - ?
 + | elisocray                - nasty piece of $#!t
 + | emily is daddy           - Weird Sexual/Fortnite youtuber
 + | Eystreem                 - (/c/eystreem)
++ | Gotcha!                  - Copycat 5MC (channel/UCtxqQnLgj-1rAVtjpSgPS5A)
++ | Guava Juice              - 3AM Fake Videos (Fraud, /aynakoitsroi)
++ | HD Fam                   - CarlayleeHD nonsense (channel/UC62zYQbJExfrC1owto9AN9A).
 + | HLN                      - King of fake news
++ | HYPELABELS               - (Kpop ,/c/HYBELABELS | /user/ibighit)
 + | IGN                      - Their (gaming, mostly...) "reviews" are basically just marketing
 + | imZarz( x)?              - Weird Sexual/Fortnite youtuber
++ | ItzDuhMorgan             - Morgz nonsense (channel/UC17R_dRJCCipEHbJaIwp5Rw).
 + | itsOwen                  - GodOfClickbait (Gross Sexual youtuber)
++ | Jack Wrath               - (Part of Savetion, channel/UCDwnDUfWDLlNnyLsL2poBmw)
++ | Jester                   - 3AM Fake Videos (c/JesseBaron)
 + | Jimmy Kimmel and Fallon  - Unlikable b**t*ds
++ | JYP Entertainment        - kpop Nonsense (c/JYPEntertainment)
++ | Kayzz                    - (/channel/UCieJKtFIpVmbGjC8pBIxReA) Fornite scam, same as BoostyPop.
++ | Labrant Fam              - (/channel/UC4-CH0epzZpD_ARhxCx6LaQ)
++ | La Familia Diamond       - (/c/FamiliaDiamond)
++ | La La Life               - Copycat 5MC (c/LaLaLife)
 + | Les Copaque              - popular for-baby channel (in indo)
++ | LINH-ASMR                - ASMR Eating Disorder Clickbait nonsense (channel/UCNMpL6nzo_kOftvXOugQeBQ)
++ | Loki                     - CarlayleeHD nonsense (channel/UCO54UyKKelmib2GbsrXCMVQ).
 + | LoL Mobile Gaming        - their fwkang annonying & buggy ads dude. like really?, why not block right?
 + | Matt and Rebecca         - (/c/mattandrebecca)
 + | (Mini|AnimaSEA -) Monsta - yuno childish channel bruf
-+ | Morgz                    - Childish B***ards
++ | Morgz                    - childish B***ards (c/ItsMorgz).
++ | Morgz Clips              - childish Morgz fam (channel/UCC7iRQ71SWY9KJ4p72RW8YA).
++ | MorgzFest                - childish Morgz fam (channel/UCqQGY0gH1IzbRbcqk1Tk62Q).
++ | Morgz Live               - childish Morgz fam (channel/UCe8KUUjbDut26Q183VpZGUg).
++ | Morgz Mum                - childish Morgz fam (channel/UCqsUQhA6UIwSams54bEnCJw).
++ | Mo Vlogs                 - crazy rich flex showoff nonsense channel (according to dj cook though... c/MoVlogs)
++ | Multi Do Challenge ID    - Copycat 5MC (channel/UCPSHYrLBml2qEv4xyUBbnnA)
++ | My Two Earthlings        - Kids clickbait (c/MyTwoEarthlings)
 + | N&A Production           - The most childish youtuber
++ | NCT                      - even more korean nonsense (c/nctsmtown)
 + | Nilanjana Dhar           - (/c/nilanjanadhar)
++ | Norris Nuts              - (/c/TheNorrisNuts)
++ | Norris Nuts Do Stuff     - (/c/NorrisNutsDoStuff)
++ | PawZam Dogs              - (/channel/UC0ufW3qv1DDE8ucnwK6jvTA)
 + | Perplexify               - (/c/Perplexify) generic compilation and fake video
 + | Piper Rockelle           - (/c/PiperRockelle) Lazy and ridicilous p*rn youtuber
 + | Plasmonix                - (/c/Plasmonix)
 + | Preston                  - Clichobaito
-+ | Rebecca Zamolo           - (/c/rebeccazamolo1)
-+ | Shaya Jacobs             - (/channel/UC42Wu_Mwdfomf5uNgSKvmfA)
-+ | The (Royalty|ACE) Family - (/c/{royaltyfam,TheACEFamily}) Clickbait from richies
-+ | Top10Speed               - (/c/Top10Speed) generic compilation and fake video
-+ | Van Official             - Toxic Hate Indonesian Channel
-+ | Willytube                - (/c/WillytubeToo)
-+ | Yode plays               - (/c/YodePlays) Robux scam
-+ | JYP Entertainment        - kpop Nonsense (c/JYPEntertainment)
-+ | NCT                      - even more korean nonsense (c/nctsmtown)
-+ | HYPELABELS               - (Kpop ,/c/HYBELABELS | /user/ibighit)
-+ | Jester                   - 3AM Fake Videos (c/JesseBaron)
-+ | Guava Juice              - 3AM Fake Videos (Fraud, /aynakoitsroi)
-+ | Carter Sharer            - (/c/cartersharer)
-+ | Collins Key              - (/user/CollinsKey)
-+ | La Familia Diamond       - (/c/FamiliaDiamond)
-+ | Mo Vlogs                 - crazy rich flex showoff nonsense channel (according to dj cook though... c/MoVlogs)
-+ | My Two Earthlings        - Kids clickbait (c/MyTwoEarthlings)
-+ | Norris Nuts              - (/c/TheNorrisNuts)
-+ | Norris Nuts Do Stuff     - (/c/NorrisNutsDoStuff)
-+ | La La Life               - Copycat 5MC (c/LaLaLife)
-+ | 5 Minute Crafts          - Copycat Troom Troom (c/5MinuteCraftsYouTube)
-+ | WooHoo                   - Copycat 5MC (channel/UC41GHsi-F40DiDT2DFAWW0w)
-+ | WooHoo ID                - Copycat 5MC (channel/UCmEm-e21vzohLlZ5ha6xytw)
-+ | Multi Do Challenge ID    - Copycat 5MC (channel/UCPSHYrLBml2qEv4xyUBbnnA)
-+ | ZOOM GO                  - Copycat 5MC (channel/UCpDZ6GHn0iVscFje6mxU3LA)
-+ | Gotcha!                  - Copycat 5MC (channel/UCtxqQnLgj-1rAVtjpSgPS5A)
++ | Pr Pny Slr 69 (Censored) - Very Very Clear Porn Channel
++ | RATATA BRILIANT          - Copycat 5MC (channel/UC-4XBNXB8hi8SjiljzoqEyA)
++ | RATATA BRILIANT ID       - Copycat 5MC (channel/UCz7TiLOhZzVLe0XnTZGf17g)
++ | RATATA BRILIANT (PT)     - Copycat 5MC Portuguese (channel/UCuZzv6qPcPYWF_mQQ9GLnlw)
++ | RATATA COOL              - Copycat 5MC (channel/UCWj10BWkvjXBS_MZsTbylRw)
++ | RATATA COOL ID           - Copycat 5MC (channel/UCahTAYi2kWY-YVOYUf12YhA)
 + | RATATA POWER!            - Copycat 5MC (channel/UC_3XOROtfTC0-Qo-QJmBSEw)
 + | RATATA POWER ID          - Copycat 5MC (channel/UC8pbndgm8wzZlqZC9ejfBgw)
-+ | RATATA COOL ID           - Copycat 5MC (channel/UCahTAYi2kWY-YVOYUf12YhA)
-+ | RATATA BRILIANT ID       - Copycat 5MC (channel/UCz7TiLOhZzVLe0XnTZGf17g)
++ | Rebecca Zamolo           - (/c/rebeccazamolo1)
++ | Savetion 2               - (Part of Savetion, channel/UCPXSNPhsfKKJGLmxYqfkvXg)
++ | Savetion 3               - (Part of Savetion, channel/UCZCcGZQq15BIei-HAdmtynw)
++ | Savetion                 - (idk, porn?? bot channel, mostly... c/Savetion_-X)
++ | Shaya Jacobs             - (/channel/UC42Wu_Mwdfomf5uNgSKvmfA)
++ | The Prince Family CH     - clubhouse of above (channel/UCqONv8hrKKTd0ELJcxOVNJQ)
++ | The Prince Family        - clickbait sh!t (channel/UC5LGPvoUOfwcLi4Ck8LiR4A)
++ | The Real GameMaster      - (/channel/UCX-EPC5_NsFmRFkfzTFaP9Q_)
++ | The (Royalty|ACE) Family - (/c/{royaltyfam,TheACEFamily}) Clickbait from richies
 + | TIM TIN                  - Copycat 5MC (channel/UCRXJaBvhynZMqVCbHVkzkNw)
++ | Top10Speed               - (/c/Top10Speed) generic compilation and fake video
 + | Troom Oki Toki           - Copycat 5MC (channel/UChkZElwBp90FQHJZwmhBPxA)
 + | Troom Troom              - Ridicilously weird love videos (SOG says that, so should be bloX, channel/UCWwqHwqLSrdWMgp5DZG5Dzg)
 + | Troom Troom Select       - Copycat 5MC (channel/UCIJ44QRtVGm_gBh_deuL5ow)
-+ | Kayzz                    - (/channel/UCieJKtFIpVmbGjC8pBIxReA) Fornite scam, same as BoostyPop.
-+ | Labrant Fam              - (/channel/UC4-CH0epzZpD_ARhxCx6LaQ)
-+ | PawZam Dogs              - (/channel/UC0ufW3qv1DDE8ucnwK6jvTA)
-+ | The Real GameMaster      - (/channel/UCX-EPC5_NsFmRFkfzTFaP9Q_)
-R | Pr Pny Slr 69 (Censored) - Very Very Clear Porn Channel
++ | Van Official             - Toxic Hate Indonesian Channel
++ | Willytube                - (/c/WillytubeToo)
++ | WooHoo                   - Copycat 5MC (channel/UC41GHsi-F40DiDT2DFAWW0w)
++ | WooHoo ID                - Copycat 5MC (channel/UCmEm-e21vzohLlZ5ha6xytw)
++ | Yode plays               - (/c/YodePlays) Robux scam
++ | ZOOM GO                  - Copycat 5MC (channel/UCpDZ6GHn0iVscFje6mxU3LA)
 ✔ | BoostyPop                - (might be Banned..) Fornite scam
 ✔ | Creepo                   - (Banned)
 ✔ | ImJayStation             - (Banned) Clickbait 3AM Videos
@@ -91,9 +108,4 @@ Status:
 H | Hold, More review required (not blocked yet).
 W | Waiting...
 + | added to ntpcyt
-R | added to ntpcyt, but i suggest reporting this user (mostly the reason is 18+ stuff).
 ✔ | Banned (aka. its done for and should be removed), or the channel owner cleans up their channel and promise not to upload trash videos.
-
-
-
-
