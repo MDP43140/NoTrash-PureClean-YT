@@ -3,10 +3,27 @@
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
 
 # Changelogs:
-### 20.04.2022:
+### 23.04.2022:
+ + Blacklisted bunch of trash channels: [Carlaylee HD,Carlaylee HD Gaming,Carlaylee Hd Shorts,Carlie HD,HD Fam,Jack Wrath,Loki,Morgz,Morgz Clips,MorgzFest,Morgz Live,Morgz Mum,RATATA BRILIANT,RATATA COOL,Savetion,Savetion 2,Savetion 3,The Prince Family,The Prince Family Clubhouse]
+ + Channel blacklist order cleanup, addition and dupes removed.
+ + [ContentFilter] improved mpl filtering to block "mpl (ricuh|playoff)".
+ + [ContentFilter] Add /p[e3]rk[o0Ѳ\*]s[a4]/gi
+ + [ContentFilter] Add /g[o0Ѳ\*]bl[o0Ѳ\*]k/gi
+ + [ContentFilter] Add /an?j(in|\*(\*)?)?g/gi
+ + [ContentFilter] Add [night club,klub malam,stripper,lgbt].
+ + [ContentFilter] Add /(fart|poop)s (a )?(baby|shit|poop?)/gi
+ + [ContentFilter] Add /((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan/gi
  + [EXTREME] block more tiktok nonsense (Flip Bottle ❌ Flip galon ✅).
- 
-### 10.04.2022_dev:
+ + [EXTREME] [ContentFilter] Added "ISIS" (yet this extremist facesbooky politic terrorism nonsense again, get the f outta here! we dont want politic, where were going?).
+
+### 23.04.2022_dev:
+ + Now also removes mini-guide (that smol button, can be seen if you use desktop site with smol window size).
+ + Remove event tickets nonsense.
+ + less-bloated member-only message.
+ + Removes (new and different) big banner on homepage.
+ + Remove channel store (images for now).
+ + Remove useless unclickable button (mostly seen in member-only videos).
+ + Now will remove nonsense films.
  + Remove ridicilously nonsense indicator when you search using searchbox (bug: when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put).
  + (try to) Restore the watch-flexy width a little bit (on new design)
  + Simplify some things on YT Desktop for mobile.
@@ -20,12 +37,12 @@
 ### **.03.2022:
  + Improved shorts guide panel blocking (simply).
  + Remove excessive blank spaces (using Geany).
- + [ContantFilter] Add [hnti,gagal fokus].
- + [ContantFilter] Improved some "for kids" and MLBB filtering stuff.
- + [ContantFilter] added [dunia olahraga( (wanita|cewek))?,(wanita|cewek) cantik,moment? (lucu|hot|panas|memalukan|langka( t(id)?ak terlupakan)?),berhasil terekam kamera,hot moment?,doki doki literature club]
- + [ContantFilter] removed dupes that contained "momen".
- + [ContantFilter] Bug Fixed: [grouping,wiping] get filtered because of "|upin|ipin" filter.
- - [ContantFilter] (temporarily) remove some filters that caused false positives.
+ + [ContentFilter] Add [hnti,gagal fokus].
+ + [ContentFilter] Improved some "for kids" and MLBB filtering stuff.
+ + [ContentFilter] added [dunia olahraga( (wanita|cewek))?,(wanita|cewek) cantik,moment? (lucu|hot|panas|memalukan|langka( t(id)?ak terlupakan)?),berhasil terekam kamera,hot moment?,doki doki literature club]
+ + [ContentFilter] removed dupes that contained "momen".
+ + [ContentFilter] Bug Fixed: [grouping,wiping] get filtered because of "|upin|ipin" filter.
+ - [ContentFilter] (temporarily) remove some filters that caused false positives.
 
 ### **.02.2022:
  + [ContentFilter] fixed [accomplished ,complete ] getting filtered because "MPL " filter (m[pd]l[- ]?.* s.*)
