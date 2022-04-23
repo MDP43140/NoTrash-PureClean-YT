@@ -4,7 +4,7 @@
 
 # Changelogs:
 ### 24.04.2022:
- + Blacklisted eating disorder,and roblox nonsense channels: [Lisa Gaming ROBLOX,More Nikocado,Nikocado Avocado,Nikocado Avocado 2,Nikocado Avocado 3,Nikocado Shorts,Noodle King] (how did i ever not see nikocado channel and block it bruh... now its blocked get outta here eating disorder :).
+ + Blacklisted eating disorder,and roblox nonsense channels: [BoostyPop (i thought hes banned),Lisa Gaming ROBLOX,More Nikocado,Nikocado Avocado,Nikocado Avocado 2,Nikocado Avocado 3,Nikocado Shorts,Noodle King] (how did i ever not see nikocado channel and block it bruh... now its blocked get outta here eating disorder :).
 
 ### 23.04.2022:
  + Blacklisted bunch of trash channels: [Carlaylee HD,Carlaylee HD Gaming,Carlaylee Hd Shorts,Carlie HD,HD Fam,Jack Wrath,Loki,Morgz,Morgz Clips,MorgzFest,Morgz Live,Morgz Mum,RATATA BRILIANT,RATATA COOL,Savetion,Savetion 2,Savetion 3,The Prince Family,The Prince Family Clubhouse]
