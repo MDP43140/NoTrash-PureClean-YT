@@ -495,10 +495,10 @@ www.youtube.com##ytd-masthead #center ytd-searchbox from#search-form yt-icon#sea
 
 ! YouTube, STOP changing things! WHY!? (Change "Netflix × TikTok Style" YTSans Bold Video title back to Material Roboto Regular)
 www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(font-weight:normal!important;font-family:Roboto!important)
-www.youtube.com##.ytd-watch-flexy #above-the-fold yt-formatted-string:style(font-weight:normal!important;font-family:Roboto!important)
+www.youtube.com##.ytd-watch-flexy #above-the-fold:style(font-weight:normal!important;font-family:Roboto!important)
 ! or atleast if you love new changes but hate the bold, here's "YTSans regular" (instead of "Roboto regular", hopefully possible)
 !www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(font-weight:normal!important)
-!www.youtube.com##.ytd-watch-flexy #above-the-fold yt-formatted-string:style(font-weight:normal!important)
+!www.youtube.com##.ytd-watch-flexy #above-the-fold:style(font-weight:normal!important)
 
 ! Restore the old watch and upload time stat opacity on new design
 www.youtube.com###above-the-fold #description #plain-snippet-text:style(opacity:75%)
