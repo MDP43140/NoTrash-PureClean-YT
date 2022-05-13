@@ -3,6 +3,10 @@
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
 
 # Changelogs:
+### 13.05.2022:
+ + Fixed normalize thicc title font on new youtube design.
+ + Now will both normalize and change font to roboto.
+
 ### 24.04.2022:
  + Blacklisted eating disorder,and roblox nonsense channels: [BoostyPop (i thought hes banned),Lisa Gaming ROBLOX,More Nikocado,Nikocado Avocado,Nikocado Avocado 2,Nikocado Avocado 3,Nikocado Shorts,Noodle King] (how did i ever not see nikocado channel and block it bruh... now its blocked get outta here eating disorder :).
 
