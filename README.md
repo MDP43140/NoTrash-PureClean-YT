@@ -9,7 +9,7 @@ Side-bar | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClea
 top-bar | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_without_NTPCYT_topbarmenu.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_with_NTPCYT_topbarmenu.png)
 Video | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_without_NTPCYT_watch.png) | ![After](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/YTD_with_NTPCYT_watch.png)
 
-# Features:
+### Features:
 + Block useless features, distracting videos, and trash channels.
 + Block big "YouTube premium promotion banner" on homepage.
 + Makes YouTube homepage less bloated and more pure experience.
@@ -26,7 +26,7 @@ Video | ![Before](https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-Y
 
 (Assuming you have uBlock Origin installed. If not, install it. Or if you use ABP, you can install it manually, but some features might not work)
 
-# Why do i make this?
+### Why do i make this?
 Because i REALLY hate what YouTube does recently (on year 2021).
 YouTube now is heavy, full with bloated, network-chugging, and now mostly tiktok-related features and videos (H3LL, now YouTube tries to wreck useful thing on the platform by removing public dislike count, which this filter list can't even restore)
 
@@ -44,8 +44,8 @@ Making YouTube more clean, faster to load & navigate around, and less trashy & b
 
 [WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists](https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists)
 
-### Note
+#### Note
 - (for Phone users) You need to use browser that supports extension (specifically uBlock Origin, eg. Firefox).
-- This filter may not work if you use ABP because this filter designed specifically for uBO.
+- This filter may not work if you use ABP because this filter was designed specifically for uBO.
 - This list primarily supports desktop version. mobile version also supported, but not really much.
 - Content blocker specialized for indo peoples, may block videos/channels you probably don't want.
