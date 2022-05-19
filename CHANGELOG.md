@@ -3,6 +3,33 @@
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
 
 # Changelogs:
+### 19.05.2022:
+ + [ContentFilter] Add "nafsuan".
+ + [ContentFilter] Improved "sngk" > "sng" (cnsord).
+ + [Mobile] Remove feed nudge on homepage.
+ + [Mobile] Remove giant text of nonsense that comes from "engagement panel".
+ + [Mobile] Remove "duplicate" login button (can be found in context menu).
+ + [Mobile] Remove useless share button.
+ + [Mobile] large grey game info buttons below descriptions removal is updated for new design with "engagement-panel".
+ + [Mobile] Remove Big universal card on search result.
+ + "Dechonkify" ytd-masthead.
+ + (try to) Block video Autoplay on channel (only removes the video element).
+ + Fixed tabs and spaces on the title.
+ + Remove event tickets nonsense.
+ + less-bloated member-only message.
+ + Remove channel store (only removes bandwidth-consuming part, aka. images, for now).
+
+### 19.05.2022_dev:
+ + adding description on the yt mobile setting thing at the very bottom.
+ + Now also removes mini-guide (that 5 smol buttons on tiny left-panel, can be seen if you use desktop site with smol window size).
+ + Removes (new and different) big banner on homepage.
+ + Remove useless unclickable button (mostly seen in member-only videos).
+ + Now will remove nonsense films.
+ + Remove ridicilously nonsense indicator when you search using searchbox (bug: when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon used to be).
+ + (try to) Restore the watch-flexy width a little bit (on new design)
+ + Simplify some things on YT Desktop for mobile.
+ + revert remove sidebar changes (now Side-bar wont be removed if not logged in, also the code is'nt removed, just commented out so if you want to use it just uncomment it).
+
 ### 13.05.2022:
  + Fixed normalize thicc title font on new youtube design.
  + Now will both normalize and change font to roboto.
@@ -22,19 +49,6 @@
  + [ContentFilter] Add /((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan/gi
  + [EXTREME] block more tiktok nonsense (Flip Bottle ❌ Flip galon ✅).
  + [EXTREME] [ContentFilter] Added "ISIS" (yet this extremist facesbooky politic terrorism nonsense again, get the f outta here! we dont want politic, where were going?).
-
-### 23.04.2022_dev:
- + Now also removes mini-guide (that smol button, can be seen if you use desktop site with smol window size).
- + Remove event tickets nonsense.
- + less-bloated member-only message.
- + Removes (new and different) big banner on homepage.
- + Remove channel store (images for now).
- + Remove useless unclickable button (mostly seen in member-only videos).
- + Now will remove nonsense films.
- + Remove ridicilously nonsense indicator when you search using searchbox (bug: when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put).
- + (try to) Restore the watch-flexy width a little bit (on new design)
- + Simplify some things on YT Desktop for mobile.
- + revert remove sidebar changes (now Side-bar wont be removed if not logged in, also the code is'nt removed, just commented out so if you want to use it just uncomment it).
 
 ### 10.04.2022:
  + Blacklisted bunch of trash channels (see #a05d3ed BlacklistedChannels.txt commit for the lists (kinda messy i know))
