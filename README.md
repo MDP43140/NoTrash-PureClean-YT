@@ -1,6 +1,6 @@
 # No Trash + Pure Clean YouTube
 Makes YouTube Less trashy by removing distracting features, and trash videos/channels
-![No Trash + Pure Clean YouTube](https://mdp43140.github.io/assets/img/project_ntpcyt.png)
+![No Trash + Pure Clean YouTube](https://repository-images.githubusercontent.com/386935074/dbf15c90-6bab-4d34-880c-1103c16ee50d)
 
 Type | Without NT+PC YT | With NT+PC YT
 -|-|-
@@ -31,7 +31,7 @@ Because i REALLY hate what YouTube does recently (on year 2021).
 YouTube now is heavy, full with bloated, network-chugging, and now mostly tiktok-related features and videos (H3LL, now YouTube tries to wreck useful thing on the platform by removing public dislike count, which this filter list can't even restore)
 
 
-While there's "uBlock Annonyances", "Fanboy Annonyances", "Anti-cancer", and others that blocks some "annonying features/alert",
+While there's "uBlock Annonyances", "Fanboy Annonyances", "Anti-cancer", and others that blocks some "annonying features/alert" on youtube,
 
 This script reduces trash contents (video, channel, already watched video), and useless features (recently youtube added clip feature, and changing video title font from Roboto Regular to YTSans Bold),
 
@@ -45,7 +45,7 @@ Making YouTube more clean, faster to load & navigate around, and less trashy & b
 [WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists](https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists)
 
 ### Note
-- Content blocker specialized for indo peoples, may block videos/channels you probably don't want.
-- (for Android users) You need to use browser that supports extension (specifically uBlock Origin).
-- This filter may not work if you use AdBlock Plus.
+- (for Phone users) You need to use browser that supports extension (specifically uBlock Origin, eg. Firefox).
+- This filter may not work if you use ABP because this filter designed specifically for uBO.
 - This list primarily supports desktop version. mobile version also supported, but not really much.
+- Content blocker specialized for indo peoples, may block videos/channels you probably don't want.
