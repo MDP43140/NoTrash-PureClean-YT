@@ -3,6 +3,31 @@
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
 
 # Changelogs:
+### 23.05.2022_dev:
+ + Alot of improvement on guide-panel.
+	 + Now blocking elements on guide-panel is slightly faster because optimized css selectors thingy (this means you will see less element flickers on guide-panel).
+	 + Now removing unused settings button (again can be found on that 3dot/profile icon) will use `last-child` instead of `nth-of-type` because it wont get removed on non-login session.
+	 + Removed 360 view thingy (not enabled coz its unnesecary and already gone anyway... but well i comment it anyway just in case its needed someday...)
+	 + remove "dk wut this does" (yep thats actual title of it).
+ + Removed some unnesecary :remove()
+	 + now :remove() will only be used if:
+		 + Element is bandwidth-heavy (mostly fetching images, especially if theres many of them to be fetched, yep my cellular quota is really screamin right now irl).
+		 + causes problem if it not used (like scaling, grid stuff, or whatnot).
+ + "Remove join button" now will be placed in bloat in ytplayer (because its located next to subscribe button).
+ + Shorten some titles and descriptions and stuff...
+ + now "Remove netbased image promo to gstatic" is enabled by default (since im moving house and only got quota now).
+ + Normalize that giant ytsans title on some users that got the new title changes.
+ + [Mobile] Hide Autoplay icon if disabled.
+ + adding description on the yt mobile setting thing at the very bottom.
+ + Now also removes mini-guide (that 5 smol buttons on tiny left-panel, can be seen if you use desktop site with smol window size).
+ + Removes (new and different) big banner on homepage.
+ + Remove useless unclickable button (mostly seen in member-only videos).
+ + Now will remove nonsense films.
+ + Remove ridicilously nonsense indicator when you search using searchbox (bug: when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon used to be).
+ + (try to) Restore the watch-flexy width a little bit (on new design)
+ + Simplify some things on YT Desktop for mobile.
+ + revert remove sidebar changes (now Side-bar wont be removed if not logged in, also the code is'nt removed, just commented out so if you want to use it just uncomment it).
+
 ### 19.05.2022:
  + [ContentFilter] Add "nafsuan".
  + [ContentFilter] Improved "sngk" > "sng" (cnsord).
@@ -18,17 +43,6 @@
  + Remove event tickets nonsense.
  + less-bloated member-only message.
  + Remove channel store (only removes bandwidth-consuming part, aka. images, for now).
-
-### 19.05.2022_dev:
- + adding description on the yt mobile setting thing at the very bottom.
- + Now also removes mini-guide (that 5 smol buttons on tiny left-panel, can be seen if you use desktop site with smol window size).
- + Removes (new and different) big banner on homepage.
- + Remove useless unclickable button (mostly seen in member-only videos).
- + Now will remove nonsense films.
- + Remove ridicilously nonsense indicator when you search using searchbox (bug: when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon used to be).
- + (try to) Restore the watch-flexy width a little bit (on new design)
- + Simplify some things on YT Desktop for mobile.
- + revert remove sidebar changes (now Side-bar wont be removed if not logged in, also the code is'nt removed, just commented out so if you want to use it just uncomment it).
 
 ### 13.05.2022:
  + Fixed normalize thicc title font on new youtube design.

@@ -2,7 +2,7 @@
 ! Title			: No-Trash + Pure-Clean YouTube
 ! Author		: MDP43140
 ! OA				: DandelionSprout
-! Version 	: 19.05.2022_dev
+! Version 	: 23.05.2022_dev
 ! GitHub		: mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! commit		: adding new rules from other source
@@ -206,37 +206,42 @@ youtube.com##a[href^="/channel/UCX-EPC5_NsFmRFkfzTFaP9Q_"]:upward(ytd-channel-re
 ! - Trash footer link
 !
 
-! remove left-hand menu if not logged in (not tested yet, also its unnessecary because we already hide the guide button [look below on "bloat on masthead" for some info])
+! remove "guide" menu if not login (not tested yet, also its unnessecary because we already hide the guide button [look below on "bloat on masthead" for some info])
+!www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) ytd-guide-renderer
 !www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) .tp-yt-app-drawer
 !www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) ytd-masthead #start #guide-button
 !www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) ytd-mini-guide-renderer
-! make sure 2nd button (explore) explore is removed
-www.youtube.com##ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(2)
-! Removes Explore Button
-!www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/feed/trending"])
-!www.youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="/feed/trending"])
-!www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/feed/guide_builder"])
-!www.youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="feed/guide_builder"])
-www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="feed/explore"])
-www.youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="feed/explore"])
 
-! (NEW!) Removes Shorts Button (YOUTUBE WHY I HATE SHORTS AND TIKTOK SOO MUCH ;( )
+! Removes "Explore" Button (old link used to be /feed/trending)
+www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/feed/explore"])
+!www.youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="/feed/explore"])
+! Removes "Explore Channels" button (seen when youre not logged in)
+www.youtube.com#?#ytd-guide-section-renderer.ytd-guide-renderer:has(a[href="/feed/guide_builder"])
+! make sure its removed
+!www.youtube.com##ytd-guide-section-renderer:nth-of-type(1) ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(2)
+www.youtube.com##ytd-mini-guide-entry-renderer:nth-of-type(2)
+
+! Removes "Shorts" Button
+www.youtube.com##ytd-guide-section-renderer:nth-of-type(1) ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(3)
 www.youtube.com#?#ytd-guide-entry-renderer:has(yt-formatted-string:has-text(Shorts))
+www.youtube.com##ytd-mini-guide-entry-renderer:nth-of-type(3)
 
 ! Removes "Subscription" Button (if not login)
-www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(3)
-www.youtube.com#?##guide-section-title:has-text(/subscription/i):upward(ytd-guide-section-renderer)
+!www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) ytd-guide-section-renderer:nth-of-type(1) ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(4)
+www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) ytd-guide-entry-renderer:has(a[href="/feed/subscriptions"])
+www.youtube.com##ytd-mini-guide-entry-renderer:nth-of-type(4)
 
-!Removes "History" Button
-www.youtube.com###section-items > ytd-guide-entry-renderer:nth-of-type(1)
-www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="feed/history"])
+! Removes "History" Button
+www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/feed/history"])
+www.youtube.com##ytd-mini-guide-entry-renderer:nth-of-type(6)
 
 ! Removes "Your videos" button
-!www.youtube.com#?#ytd-guide-entry-renderer:has(a[href*="studio.youtube.com/channel/*/videos"])
 www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(2)
+! Removes "Your clips" button (i didnt get this bloat on any of my acc yet, i just seen it on other peoples video)
+!www.youtube.com##ytd-guide-section-renderer:nth-of-type(2) ytd-guide-entry-renderer:nth-of-type(5)
 
 ! Removes "Liked Videos" Button
-www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:not(:first-child):last-child
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(4)
 
 ! Removes "Film Store" Button
 www.youtube.com#?#ytd-guide-entry-renderer:has(a[href^="/channel/UClgRkhTL3_hImCAmdLfDE4g"])
@@ -244,29 +249,24 @@ www.youtube.com#?#ytd-guide-entry-renderer:has(a[href^="/channel/UClgRkhTL3_hImC
 ! Removes Sign-in Nag
 www.youtube.com##ytd-guide-signin-promo-renderer
 
-! Put that "More From YouTube" bloat somewhere else, since you put important stuff at the BOTTOM.
-www.youtube.com##tp-yt-app-drawer ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(3)
-www.youtube.com#?#tp-yt-app-drawer ytd-guide-section-renderer:has-text(/(More from|Lainnya dari) YouTube/i)
+! Removes Settings,ReportHistory,Help,Feedback Button (can be found by clicking profile picture/3dots on the top-left/masthead)
+www.youtube.com##ytd-guide-section-renderer:last-child
 
-! Removes Unused Button
-www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(4)
+! Removes Footer
+www.youtube.com##ytd-guide-renderer #footer
 
-! Removes Trash Footer Link
-www.youtube.com##tp-yt-app-drawer .ytd-guide-renderer#footer
-
-! Removes "YT Gaming" button
+! Put that "More/Best From YouTube" bloat somewhere else, since youtube put BLOAT at the TOP.
+www.youtube.com##ytd-guide-section-renderer:nth-of-type(3)
+www.youtube.com#?#ytd-guide-section-renderer:has-text(/(More from|Lainnya dari) YouTube/i)
+! Removes Gaming,Live,360video from "More/Best from YouTube section"
 !www.youtube.com#?#ytd-guide-entry-renderer:has(a[href$="/gaming"])
-
-! Removes "Livestream" button
 !www.youtube.com#?#ytd-guide-entry-renderer:has(a[href$=UC4R8DWoMoI7CAwX8_LjQHig])
+!www.youtube.com#?#ytd-guide-entry-renderer:has(a[href$=UCzuqhhs6NWbgTzMuM09WKDQ])
 
 ! Removes "Homepage" button
-!youtube.com#?#ytd-guide-entry-renderer:has(a[href="/"])
-!youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="/"])
-
-!dk wut this does...
-www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(5)
-www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(6)
+!www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/"])
+!www.youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="/"])
+!www.youtube.com##ytd-guide-section-renderer:nth-of-type(1) ytd-guide-entry-renderer:nth-of-type(1)
 
 ! ——————————————————————————————
 
@@ -286,10 +286,11 @@ www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(6)
 ! - Save to playlist
 ! - Large grey buttons below description
 ! - Concert Ticket
+! - Join button (disabled by default)
 !
 
 ! (NEW!) remove some space-eating icon nonsense
-www.youtube.com##ytd-player .ytp-popup.ytp-settings-menu .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-icon svg:remove()
+www.youtube.com##ytd-player .ytp-popup.ytp-settings-menu .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-icon svg
 
 ! remove sponsored description links inserted by rights holders
 www.youtube.com##ytd-metadata-row-renderer
@@ -387,6 +388,9 @@ www.youtube.com##ytp-pyc-player-content html5-ypc-thumbnail
 www.youtube.com##ytp-pyc-player-content html5-ypc-description
 www.youtube.com##ytp-pyc-player-content html5-ypc-purchase
 
+! Remove "Join Channel" Button (disabled by default cus then how viewer can support the content creator then? lol, also its not annonying, or huge-banner, or ytpremium-related anyway)
+!youtube.com###sponsor-button
+
 ! ——————————————————————————————
 
 
@@ -406,8 +410,8 @@ www.youtube.com##ytp-pyc-player-content html5-ypc-purchase
 www.youtube.com#?##ytd-masthead:has(#end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) #start #guide-button
 
 ! Removes the country codes beside YouTube logo on the upper-left (improves privacy when screenshoting/recording)
-youtube.com###logo #country-code:remove()
-www.youtube.com##ytd-topbar-logo-renderer #country-code:remove()
+youtube.com###logo #country-code
+www.youtube.com##ytd-topbar-logo-renderer #country-code
 
 ! Removes YT Bloat [YT/Google App Drawer,Create video] (dont block last element if not logged in, which is settings)
 www.youtube.com##ytd-masthead #end #buttons ytd-topbar-menu-button-renderer.style-default:not(:nth-of-type(2))
@@ -435,23 +439,22 @@ www.youtube.com##ytd-masthead #center ytd-searchbox yt-icon#search-icon
 ! Blocks any promotion about YouTube Premium
 !
 
-! Removes a banner that promotes YouTube Premium
+! Removes a banner & big popup that promotes YouTube Premium
 youtube.com###masthead-ad:remove()
-! Removes a relatively large popup that promotes YouTube Premium
 www.youtube.com##ytd-mealbar-promo-renderer:remove()
 
-! Remove network-based image promo request to gstatic
-!||gstatic.com/youtube/img/promos$images
+! Remove network-based image promo request to gstatic (mostly unnesecary bandwidth-eating ytpremium nonsense)
+||gstatic.com/youtube/img/promos$images
+||gstatic.com/youtube/img/unlimited$images
 
-! (last seen: 22/09/21_22.45 (text: change subtitle tutorial, in a blue small popup. when using other subtitle, moving to other page, and toggling subtitle on and off))
+! (last seen: 22/09/21_22:45 (text: change subtitle tutorial, in a blue small popup. when using other subtitle, moving to other page, and toggling subtitle on and off))
 ! but can be used for youtube premium nag as the class is sus (promo ?? or promote a tool/utility ??)
 youtube.com##.ytp-promotooltip-wrapper
 
-! stop pushing us your membership offerings.
+! stop pushing us youtube premium.
 youtube.com##a#endpoint[href="/paid_memberships"]
+youtube.com##yt-offer-item-renderer
 youtube.com###offer-module
-! Remove "Join Channel" Button (im not an evil person, and this is not related to yt premium, so this option will be disabled for now)
-!youtube.com###sponsor-button
 
 ! ——————————————————————————————
 !
@@ -491,7 +494,7 @@ www.youtube.com##ytd-watch-metadata #description-and-actions #actions:style(widt
 www.youtube.com##ytd-two-column-browse-results-renderer#primary ytd-section-list-renderer[engagement-panel] #contents.ytd-section-list-renderer:style(overflow-y:inherit!important)
 
 ! Get rid of the nonsense icon beside searchbox that does NOTHING AT ALL!
-www.youtube.com##ytd-masthead #center ytd-searchbox from#search-form yt-icon#search-icon:remove()
+www.youtube.com##ytd-masthead #center ytd-searchbox from#search-form yt-icon#search-icon
 
 ! YouTube, STOP changing things! WHY!? (Change "Netflix × TikTok Style" YTSans Bold Video title back to Material Roboto Regular)
 www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(font-weight:normal!important;font-family:Roboto!important)
@@ -499,6 +502,8 @@ www.youtube.com##.ytd-watch-flexy #above-the-fold:style(font-weight:normal!impor
 ! or atleast if you love new changes but hate the bold, here's "YTSans regular" (instead of "Roboto regular", hopefully possible)
 !www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(font-weight:normal!important)
 !www.youtube.com##.ytd-watch-flexy #above-the-fold:style(font-weight:normal!important)
+! for titles, youtube even made it ginormous, so we normalize it again.
+www.youtube.com##h1.ytd-watch-metadata:style(font-size:1.8rem!important;line-height:2.6rem!important;font-weight:400!important;white-space:normal!important)
 
 ! Restore the old watch and upload time stat opacity on new design
 www.youtube.com###above-the-fold #description #plain-snippet-text:style(opacity:75%)
@@ -550,9 +555,9 @@ www.youtube.com##ytd-vertical-product-card-renderer *[src]
 
 ! ——————————————————————————————
 
-! (NEW!) Remove "enable history" nudge on homepage
-www.youtube.com##ytd-feed-nudge-renderer > ytd-rich-item-renderer:remove()
-www.youtube.com##ytd-feed-nudge-renderer:remove()
+! Remove "enable history" nudge on homepage
+www.youtube.com##ytd-feed-nudge-renderer > ytd-rich-item-renderer
+www.youtube.com##ytd-feed-nudge-renderer
 
 ! Block Auto-generated and mixed playlists
 www.youtube.com#?#ytd-compact-radio-renderer:has(ytd-thumbnail-overlay-bottom-panel-renderer)
@@ -577,7 +582,7 @@ www.youtube.com##ytd-horizontal-card-list-renderer,ytd-badge-supported-renderer,
 www.youtube.com##ytd-feed-filter-chip-bar-renderer:upward(1)
 www.youtube.com#?#ytd-rich-shelf-renderer:has-text(/Latest YouTube posts|Free to watch|Postingan terbaru YouTube|Gratis untuk ditonton/)
 
-! prevent preview frame (i think so) from diming when scrubbing
+! prevent preview frame from dimming when scrubbing
 youtube.com##.ytp-storyboard-framepreview-img:style(opacity:1!important)
 youtube.com##.ytp-storyboard-framepreview:style(background:none!important;transition:none!important)
 
@@ -701,6 +706,9 @@ m.youtube.com##ytm-video-description-gaming-section-renderer
 
 ! Stop Autoplay on YouTube
 m.youtube.com##.ytm-autonav-bar
+
+! Hide Autoplay icon if disabled (you can still click on same area to enable it)
+m.youtube.com##.spanner-icon-off:upward(.ytm-autonav-toggle-button-container):style(opacity:0)
 
 ! Removes TOS Footer on account menu
 m.youtube.com##ytm-privacy-tos-footer-renderer
