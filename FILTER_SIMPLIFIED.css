@@ -17,12 +17,8 @@
 ! + Improved "sangek" > "sange".
 ! + now blocks #short (the s is optional, youtube also detects even just #short video as shorts, seen on Meot videos).
 ! + mpl filter improved to block "mpl (ricuh|playoff)".
-! + Add /p[e3]rk[o0Ѳ\*]s[a4]/gi
-! + Add /g[o0Ѳ\*]bl[o0Ѳ\*]k/gi
-! + Add /an?j(in|\*(\*)?)?g/gi
 ! + Add [night club,klub malam,stripper,lgbt,hot outfit (title from piperockele),extreme chewy eating sounds (title from eating disorder channel)].
-! + Add /(fart|poop)s (a )?(baby|shit|poop?)/gi
-! + Add /((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan/gi
+! + Add /p[e3]rk[o0Ѳ\*]s[a4]|g[o0Ѳ\*]bl[o0Ѳ\*]k|an?j(in|\*(\*)?)?g|(fart|poop)s (a )?(baby|shit|poop?)|((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan/gi
 ! - Bug found: "updating" getting filtered
 !  - Cause: dating
 !  - Patch: None yet.
