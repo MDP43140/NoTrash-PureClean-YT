@@ -1,14 +1,12 @@
-[Adblock Plus 1.1]
-! ——————————————————————————————
-! Title			: No-Trash + Pure-Clean YouTube
-! Author		: MDP43140
-! OA				: DandelionSprout
-! Version 	: 25.05.2022_EXP
-! GitHub		: mdp43140/NoTrash-PureClean-YT
-! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
+[Adblock Plus 2.0]
+! Title: NoTrash + PureClean YouTube
+! Author: MDP43140
+! OA: DandelionSprout
+! Updated: 2022-05-25
+! Expires: 2 days
+! Homepage: mdp43140/NoTrash-PureClean-YT
 ! commit		: First version
 !						 Convert some rule according to "https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md"
-! ——————————————————————————————
 
 
 
