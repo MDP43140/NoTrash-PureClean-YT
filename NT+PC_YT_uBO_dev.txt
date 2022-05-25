@@ -36,7 +36,7 @@ www.youtube.com#?##video-title:has-text(/^[^a-z]*$/):upward(ytd-compact-video-re
 
 ! Removes already played videos from feed; will not remove if on the creator's channel & history page.
 www.youtube.com##ytd-thumbnail-overlay-resume-playback-renderer:not(:upward(ytd-section-list-renderer[page-subtype="history"],ytd-browse[page-subtype="channels"])):upward(ytd-rich-item-renderer,ytd-compact-video-renderer,ytd-video-renderer,ytd-grid-video-renderer):remove()
-! (NEW!) Only remove if watched 100%
+! Only remove if watched 100%
 www.youtube.com##ytd-thumbnail-overlay-resume-playback-renderer #progress[style="width: 100%;"]:not(:upward(ytd-section-list-renderer[page-subtype="history"],ytd-browse[page-subtype="channels"])):upward(ytd-rich-item-renderer,ytd-compact-video-renderer,ytd-video-renderer,ytd-grid-video-renderer):remove()
 
 ! this 1 is'nt working... any1 know how2 block certain search suggestion?
@@ -289,7 +289,7 @@ www.youtube.com#?#ytd-guide-section-renderer:has-text(/(More from|Lainnya dari) 
 ! - Join button (disabled by default)
 !
 
-! (NEW!) remove some space-eating icon nonsense
+! remove some space-eating icon nonsense
 www.youtube.com##ytd-player .ytp-popup.ytp-settings-menu .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-icon svg
 
 ! remove sponsored description links inserted by rights holders
@@ -307,7 +307,7 @@ www.youtube.com##ytd-rich-grid-renderer ytd-video-preview:remove()
 www.youtube.com##ytd-thumbnail-overlay-loading-preview-renderer
 www.youtube.com##ytd-thumbnail[now-playing] ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-toggle-button-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-endorsement-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-button-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-hover-text-renderer.ytd-thumbnail:style(display:flex!important)
 
-! (NEW!) Remove "Scroll to see more" thing when watching video at fullscreen
+! Remove "Scroll to see more" thing when watching video at fullscreen
 www.youtube.com##.ytp-fullerscreen-edu-button
 
 ! Removes pop-out player button in the video player
@@ -335,7 +335,7 @@ www.youtube.com##ytd-watch-metadata ytd-menu-renderer ytd-button-renderer:nth-of
 !m.youtube.com##.slim-video-metadata-actions > [data-button-id]:first-of-type .button-renderer-text
 !m.youtube.com##.slim-video-metadata-actions > [data-button-id]:nth-of-type(2) .button-renderer-text
 
-! (NEW!) remove (dis)like counter when there's no number and only "(Dis)Like" text
+! remove (dis)like counter when there's no number and only "(Dis)Like" text
 www.youtube.com#?#ytd-menu-renderer ytd-toggle-button-renderer #text:not(:has-text(/\d+/))
 
 ! only show icon, no text on the buttons
@@ -376,10 +376,10 @@ youtube.com###movie_player div.ytp-spinner:style(opacity:0.7!important)
 ! will prevent u from lagging (make the time position unselectable, and uses default cursor) :)
 www.youtube.com##.ytp-chrome-bottom .ytp-left-controls .ytp-time-display:style(user-select:none!important;cursor:default!important)
 
-! (NEW!) Remove event tickets nonsense
+! Remove event tickets nonsense
 www.youtube.com##ytd-ticket-shelf-renderer
 
-! (NEW!) less-bloated member-only message
+! less-bloated member-only message
 www.youtube.com##ytp-pyc-player-content ytp-player-content
 www.youtube.com##ytp-pyc-player-content ytp-drawer
 www.youtube.com##ytp-pyc-player-content html5-stop-propagation
@@ -482,7 +482,7 @@ www.youtube.com##.ytd-item-section-renderer > .ytd-reel-shelf-renderer
 ! Remove any clever bastard that can slip shorts video without putting #shorts in title
 www.youtube.com##ytd-thumbnail #overlays:has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
 
-! (NEW!) unmobilify the design (revert youtube mobile-like changes back to desktop)
+! unmobilify the design (revert youtube mobile-like changes back to desktop)
 ! Remove Comment Teaser (YOUTUBE WHY, THERE'S ALREADY COMMENT JUST COUPLE INCHES BELOW THE SCREEN!!)
 www.youtube.com##ytd-watch-metadata #comment-teaser
 www.youtube.com###teaser.ytd-comments-entry-point-header-renderer
@@ -513,7 +513,7 @@ www.youtube.com##ytd-watch-flexy #columns #primary:style(margin-left:0!important
 
 ! Below are big button changes —
 
-! (NEW!) Restore big button back to small-medium button (YOUTUBE! STOP CHANGING SHIT!!)
+! Restore big button back to small-medium button (YOUTUBE! STOP CHANGING SHIT!!)
 !#if !env_mobile
 ! Remove "big-butt" class
 www.youtube.com##+js(rc, ytp-exp-bigger-button-like-mobile, ytd-player #container #movie_player)

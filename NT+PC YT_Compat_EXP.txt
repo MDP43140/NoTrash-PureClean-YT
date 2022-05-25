@@ -1,0 +1,721 @@
+[Adblock Plus 1.1]
+! ——————————————————————————————
+! Title			: No-Trash + Pure-Clean YouTube
+! Author		: MDP43140
+! OA				: DandelionSprout
+! Version 	: 25.05.2022_EXP
+! GitHub		: mdp43140/NoTrash-PureClean-YT
+! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
+! commit		: First version
+!						 Convert some rule according to "https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md"
+! ——————————————————————————————
+
+
+
+! ——————————————————————————————
+!
+! Content Filtering based on title/description/channel name. Indonesia + English Filtering
+! P.rn/Trash (incl. Kids content, Adult & violence content (P.rn,Fighting,Terrorism,Ideologic,Politics,s.x,human/animal abuse), Trend Addictive Content (incl. Game, Anime, Korean Music & Drama Content, Unicode characters (except arabian and emojis) ))/Toxic/Clickbait
+!
+
+! Remove trash video based on title/description/channel name
+www.youtube.com#?##video-title:-abp-contains(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts?|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|(fart|poop)s (a )?(baby|shit|poop?)|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|extreme chewy eating sounds|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) (moment?|outfit)| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l([- ]?\w\w s(eason )?\d+| (ricuh|playoff))|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|p[e3]rk[o0Ѳ\*]s[a4]|g[o0Ѳ\*]bl[o0Ѳ\*]k|an?j(in|\*(\*)?)?g|nud(e|ity)|stripper|lgbt|jomblo|berduaan|sensual|aduhai|hentai|nafsuan|gagal fokus|night club|klub malam|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sange|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer)
+www.youtube.com#?##description-text:-abp-contains(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts?|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|(fart|poop)s (a )?(baby|shit|poop?)|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|extreme chewy eating sounds|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) (moment?|outfit)| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l([- ]?\w\w s(eason )?\d+| (ricuh|playoff))|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|p[e3]rk[o0Ѳ\*]s[a4]|g[o0Ѳ\*]bl[o0Ѳ\*]k|an?j(in|\*(\*)?)?g|nud(e|ity)|stripper|lgbt|jomblo|berduaan|sensual|aduhai|hentai|nafsuan|gagal fokus|night club|klub malam|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sange|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer)
+www.youtube.com#?#ytd-grid-video-renderer:-abp-has(.ytd-channel-name:-abp-contains(/life hack|tik( |-?)tok|expose|giveaway|fortnite|roblox|mainan|masha|gat?cha|disney|politi(k|c)|bts|black ?pink|bangtan|christ|challenge|jess no limit|cocomelon|les copaque|monsta|jimmy kimmel and fallon|preston|van official|aldosWorld|n&a production|itsowen|morgz|elisocray|lol mobile gaming|jester|123 go|piper rockelle/iu)):upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer)
+www.youtube.com#?#ytd-channel-name:-abp-contains(/life hack|tik( |-?)tok|expose|giveaway|fortnite|roblox|mainan|masha|gat?cha|disney|politi(k|c)|bts|black ?pink|bangtan|moba?(i|e)le? ?(le?)(j|g)end?s?|christ|challenge|jess no limit|cocomelon|les copaque|monsta|jimmy kimmel and fallon|preston|van official|aldosWorld|n&a production|itsowen|morgz|elisocray|lol mobile gaming|jester|123 go|piper rockelle/iu):upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-video-renderer)
+
+! Remove The Video With ALL CAPS (because its mostly a clickbait video)
+www.youtube.com#?##video-title:-abp-contains(/^[^a-z]*$/):upward(ytd-compact-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer)
+
+! Removes already played videos from feed; will not remove if on the creator's channel & history page.
+www.youtube.com##ytd-thumbnail-overlay-resume-playback-renderer:not(:upward(ytd-section-list-renderer[page-subtype="history"],ytd-browse[page-subtype="channels"])):upward(ytd-rich-item-renderer,ytd-compact-video-renderer,ytd-video-renderer,ytd-grid-video-renderer)
+
+! remove 'mixed' playlist.
+www.youtube.com###video-title-link[href*="start_radio=1"]:upward(ytd-rich-item-renderer)
+www.youtube.com##ytd-radio-renderer,ytd-compact-radio-renderer
+
+! remove korean,chinese character (1 bug fixed)
+www.youtube.com#?##video-title:-abp-contains(/[\uAC00-\uD7AF\u1100-\u11FF\u3130-\uD7FF]/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer)
+www.youtube.com#?##description-text:-abp-contains(/[\uAC00-\uD7AF\u1100-\u11FF\u3130-\uD7FF]/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer)
+
+! remove bad comments (if you wants to use comment ofcourse...)
+www.youtube.com#?#ytd-comments ytd-comment-renderer:-abp-has(#body #main #header-author:-abp-contains(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally?) wrong|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|tide pods|(for|with|untuk|animasi|cerita|dongeng|lagu ?)(kid|child|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car?)toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation|upin|ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling?) ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?t|ri?b|doll?ar))|m[pd]l[- ]?.* s.*|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo?) mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|s[e3\*][xks]|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|nud(e|ity)|sensual|aduhai|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|dating|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|b(i|ee)r|egirl|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui))
+www.youtube.com#?#ytd-comments ytd-comment-renderer:-abp-has(#body #main #content-text:-abp-contains(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally?) wrong|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|tide pods|(for|with|untuk|animasi|cerita|dongeng|lagu ?)(kid|child|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car?)toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation|upin|ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling?) ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?t|ri?b|doll?ar))|m[pd]l[- ]?.* s.*|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo?) mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|s[e3\*][xks]|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|nud(e|ity)|sensual|aduhai|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|dating|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|b(i|ee)r|egirl|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui))
+
+! remove bad live chat messages (if you wants to use live chat ofcourse...)
+www.youtube.com#?##message:-abp-contains(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally?) wrong|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|tide pods|(for|with|untuk|animasi|cerita|dongeng|lagu ?)(kid|child|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car?)toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation|upin|ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling?) ?(murah|mahal|epic|legend|rare|langka)|\d* ?(ju?t|ri?b|doll?ar))|m[pd]l[- ]?.* s.*|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo?) mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|s[e3\*][xks]|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|nud(e|ity)|sensual|aduhai|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|dating|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|b(i|ee)r|egirl|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(yt-live-chat-text-message-renderer)
+
+! ——————————————————————————————
+
+
+
+! ——————————————————————————————
+!
+! Blacklist for channels with varied and
+! simplified titles to filter with regexes.
+!
+
+youtube.com##a[href^="/1MILLIONDanceStudioofficial"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/5MinuteCraftsYouTube"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/AldosWorlds"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/AnimonstaStudios"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/aynakoitsroi"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/BANGTANTV"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/BLACKPINKOFFICIAL"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/Carlaylee"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/CarlieHD"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/cartersharer"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/CheatGang"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/CoinMinecraftFunnyAnimation"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/CollinsKey"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/DavidsTV"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/DoritosReaction"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/eystreem"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/fallontonight"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/FamiliaDiamond"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/HLN"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/HYBELABELS"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/ibighit"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/IGN"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/ItsMorgz"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/JesseBaron"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/JimmyKimmelLive"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/JYPEntertainment"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/LaLaLife"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/LisaGamingROBLOX"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/mattandrebecca"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/MoVlogs"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/MyTwoEarthlings"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/nctsmtown"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/NikocadoAvocado"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/nilanjanadhar"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/NorrisNutsDoStuff"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/OmaDesalasOrlin"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/Perplexify"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/PiperRockelle"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/Plasmonix"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/PrestonPlayz"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/rebeccazamolo1"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/royaltyfam"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/Savetion_-X"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/TBNRfrags"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/TheACEFamily"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/TheNorrisNuts"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/Top10Speed"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/WillytubeToo"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/YodePlays"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC0ufW3qv1DDE8ucnwK6jvTA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC3cjo_8Q5lOMdmpfPo1wAag"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC3UX8a0QJFBvlQ74NCpKTkw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC_3XOROtfTC0-Qo-QJmBSEw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC41GHsi-F40DiDT2DFAWW0w"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC42Wu_Mwdfomf5uNgSKvmfA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC4-CH0epzZpD_ARhxCx6LaQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC4WxQSBRG1wPIndKV_psLSw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC-4XBNXB8hi8SjiljzoqEyA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC5d0de51vIZzB7YEFiKUhvA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC5LGPvoUOfwcLi4Ck8LiR4A"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC62zYQbJExfrC1owto9AN9A"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC7t7rlZ0nMsSmDPWJm3J0Zw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC8pbndgm8wzZlqZC9ejfBgw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCahTAYi2kWY-YVOYUf12YhA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCbadeiRL4r48aK6Y-a3YDfA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCbPMGqN8KctqpnbVdtWRrUQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCBwSufNse8VMBvQM_rCSvgQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCC7iRQ71SWY9KJ4p72RW8YA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCdDzVQvu8tlqZg05-fFhmDg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCDwnDUfWDLlNnyLsL2poBmw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCe8KUUjbDut26Q183VpZGUg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCfrQsDVP4gnqL6uJD0hARDQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCGHVMWyTjDCBXg2-Y49aZCg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCgjc6W1oJXZM51nXCNAcDVQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCGxymjcbIoObYBJ7eNf9MHw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UChkZElwBp90FQHJZwmhBPxA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCieJKtFIpVmbGjC8pBIxReA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCIJ44QRtVGm_gBh_deuL5ow"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCJZam2u1G0syq3kyqrCXrNw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCl3MZzAHS8IvaFimp5gv5qQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCmEm-e21vzohLlZ5ha6xytw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCmr_vYKbp98f6kdRoer0iVw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCNMpL6nzo_kOftvXOugQeBQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCO54UyKKelmib2GbsrXCMVQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCOmHUn--16B90oW2L6FRR3A"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCpDZ6GHn0iVscFje6mxU3LA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCPSHYrLBml2qEv4xyUBbnnA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCPXSNPhsfKKJGLmxYqfkvXg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCqI5bEWJUWr9TJ3vv4xNHwg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCqmld-BIYME2i_ooRTo1EOg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCqONv8hrKKTd0ELJcxOVNJQ"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCqQGY0gH1IzbRbcqk1Tk62Q"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCqsUQhA6UIwSams54bEnCJw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UC-QZWTOtdsm6CNPHUR88irA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCRXJaBvhynZMqVCbHVkzkNw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCSaUFXLe3d9WqGp7TA4FKZA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCtgsaWQM32Va8r-bLLhdy7Q"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCtxqQnLgj-1rAVtjpSgPS5A"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCuZzv6qPcPYWF_mQQ9GLnlw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCWj10BWkvjXBS_MZsTbylRw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCWwqHwqLSrdWMgp5DZG5Dzg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCyTATeB0ejBMon59igN4tVw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCz7TiLOhZzVLe0XnTZGf17g"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCZCcGZQq15BIei-HAdmtynw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCM5v93rV1sazitUpB47hVrA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCBzE8s7espH9Esy0FO_iTSg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCQjZNr8QT0oUL1Z0kUbqrvg"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCy_CO4AG7JY-PRd5xd6hlRw"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCrsiAD8zDTqtRdSeuxy5VxA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UClQpQYzvYq0mH8M2w3zEdGA"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+youtube.com##a[href^="/channel/UCX-EPC5_NsFmRFkfzTFaP9Q_"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+
+! ——————————————————————————————
+
+
+
+! ——————————————————————————————
+!
+! Bloat buttons on left-hand menu (aka. Guide panel)
+! Includes:
+! - Explore
+! - Shorts
+! - Subscription (If Not Logged in)
+! - History
+! - My Videos
+! - Liked Videos
+! - Film store
+! - Sign-in Nag
+! - More From YouTube
+! - Unused button (can be found by clicking profile/3dot icon)
+! - Trash footer link
+!
+
+! make sure 2nd button (explore) explore is removed
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(2)
+! Removes Explore Button
+www.youtube.com#?#ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(2)
+www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href="feed/explore"])
+www.youtube.com#?#ytd-mini-guide-entry-renderer:-abp-has(a[href="feed/explore"])
+
+! Removes Shorts Button (YOUTUBE WHY I HATE SHORTS AND TIKTOK SOO MUCH ;( )
+www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(yt-formatted-string:-abp-contains(Shorts))
+
+! Removes "Subscription" Button (if not login)
+www.youtube.com#?#:-abp-has(ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(3)
+www.youtube.com#?##guide-section-title:-abp-contains(/subscription/i):upward(ytd-guide-section-renderer)
+
+!Removes "History" Button
+www.youtube.com###section-items > ytd-guide-entry-renderer:nth-of-type(1)
+www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href="feed/history"])
+
+! Removes "Your videos" button
+!www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href*="studio.youtube.com/channel/*/videos"])
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(2)
+
+! Removes "Liked Videos" Button
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:not(:first-child):last-child
+
+! Removes "Film Store" Button
+www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href^="/channel/UClgRkhTL3_hImCAmdLfDE4g"])
+
+! Removes Sign-in Nag
+www.youtube.com##ytd-guide-signin-promo-renderer
+
+! Put that "More From YouTube" bloat somewhere else, since you put important stuff at the BOTTOM.
+www.youtube.com##tp-yt-app-drawer ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(3)
+www.youtube.com#?#tp-yt-app-drawer ytd-guide-section-renderer:-abp-contains(/(More from|Lainnya dari) YouTube/i)
+
+! Removes Unused Button
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(4)
+
+! Removes Trash Footer Link
+www.youtube.com##tp-yt-app-drawer .ytd-guide-renderer#footer
+
+! Removes "YT Gaming" button
+!www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href$="/gaming"])
+
+! Removes "Livestream" button
+!www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href$=UC4R8DWoMoI7CAwX8_LjQHig])
+
+! Removes "Homepage" button
+!youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href="/"])
+!youtube.com#?#ytd-mini-guide-entry-renderer:-abp-has(a[href="/"])
+
+!dk wut this does...
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(5)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(6)
+
+! ——————————————————————————————
+
+
+
+! ——————————————————————————————
+!
+! Bloats in youtube video player (ytd-watch-flexy)
+! Includes:
+! - New hover preview
+! - Annotations
+! - Endscreen Recommendations
+! - "Netflix × TikTok styled" video title font
+! - Share
+! - Like/Dislike counters
+! - Clip (latest tiktok feature from google)
+! - Save to playlist
+! - Large grey buttons below description
+! - Concert Ticket
+!
+
+! remove some space-eating icon nonsense
+www.youtube.com##ytd-player .ytp-popup.ytp-settings-menu .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-icon svg
+
+! remove sponsored description links inserted by rights holders
+www.youtube.com##ytd-metadata-row-renderer
+
+! Block Quota wasting bloat feature: new hover preview
+! and restore old thumbnail ui (including watch later and save to button, except the lightweight preview thing ;c. why youtube...)
+! Why this added:
+! - Quota-wasting (because playing high quality video automatically when the video is accidentally hovered).
+! - Slowing down (because its loading a full-blown *embed-like* video player which can slowdown lowend devices).
+! - Privacy invasion (you are now watching the actual video itself (which affects history) instead of seeing just the preview).
+! but there are drawbacks if your account/session had this feature: you cannot see previews.
+! accounts/session that did'nt have this feature is in luck because old preview still work.
+www.youtube.com##ytd-rich-grid-renderer ytd-video-preview
+www.youtube.com##ytd-thumbnail-overlay-loading-preview-renderer
+www.youtube.com#$#ytd-thumbnail[now-playing] ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-toggle-button-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-endorsement-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-button-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-hover-text-renderer.ytd-thumbnail{display:flex!important}
+
+! Remove "Scroll to see more" thing when watching video at fullscreen
+www.youtube.com##.ytp-fullerscreen-edu-button
+
+! Removes pop-out player button in the video player
+!youtube.com##.ytp-button.ytp-miniplayer-button
+
+! Removes annotation in videos
+||youtube.com/annotations_invideo?$object-subrequest
+/annotations_module.js$script,domain=youtube.com
+/annotations$script,domain=youtube.com
+youtube.com,youtube-nocookie.com##.video-annotations
+youtube.com##.watch-sidebar-body > #watch-related > .related-list-item
+
+! Removes recommended and featured videos in the endscreen
+||ytimg.com/yts/swfbin/player-*/endscreen.swf$object-subrequest,domain=youtube.com|youtu.be|youtube-nocookie.com
+youtube.com,youtube-nocookie.com##.html5-endscreen-content
+youtube.com,youtube-nocookie.com##.html5-endscreen
+
+! Remove "Share" Button
+www.youtube.com##ytd-video-primary-info-renderer.ytd-watch-flexy ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer:nth-of-type(1)
+www.youtube.com##ytd-watch-metadata ytd-menu-renderer ytd-button-renderer:nth-of-type(1)
+
+! Remove like/dislike counters
+!youtube.com###sentiment
+!www.youtube.com##ytd-menu-renderer ytd-toggle-button-renderer #text
+!m.youtube.com##.slim-video-metadata-actions > [data-button-id]:first-of-type .button-renderer-text
+!m.youtube.com##.slim-video-metadata-actions > [data-button-id]:nth-of-type(2) .button-renderer-text
+
+! remove (dis)like counter when there's no number and only "(Dis)Like" text
+www.youtube.com#?#ytd-menu-renderer ytd-toggle-button-renderer #text:not(:-abp-contains(/\d+/))
+
+! only show icon, no text on the buttons
+www.youtube.com##ytd-video-primary-info-renderer .ytd-menu-renderer.top-level-buttons ytd-button-renderer #text
+
+! Remove YouTube's bloat, "Clip" feature, which is ofcourse, tiktok (because again... why not).
+www.youtube.com##ytd-video-primary-info-renderer.ytd-watch-flexy ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer:nth-of-type(2)
+www.youtube.com##ytd-watch-metadata ytd-menu-renderer ytd-button-renderer:nth-of-type(2)
+
+! Remove "Save To Playlist" feature.
+!www.youtube.com##ytd-video-primary-info-renderer.ytd-watch-flexy ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer:nth-of-type(3)
+www.youtube.com##ytd-watch-metadata ytd-menu-renderer ytd-button-renderer:nth-of-type(3)
+
+! Removes large grey [YT Kids & game info] buttons below descriptions
+www.youtube.com##ytd-rich-metadata-renderer.ytd-rich-metadata-row-renderer
+
+! hide autoplay icon if disabled (you can still hover on same area and enable it back)
+www.youtube.com##.ytp-chrome-bottom .ytp-right-controls button.ytp-button:nth-of-type(1) .ytp-autonav-toggle-button-container .ytp-autonav-toggle-button[aria-checked=false]
+! bug fix for sponsorblock user
+www.youtube.com##.ytp-chrome-bottom .ytp-right-controls button.ytp-button:nth-of-type(6) .ytp-autonav-toggle-button-container .ytp-autonav-toggle-button[aria-checked=false]
+
+! limit comment container maximum height to 100% to prevent very long comment (potential lag spike decrease when loading comments)
+www.youtube.com#$#ytd-comments{max-height:100vh!important;overflow:auto!important}
+
+
+! will prevent u from lagging (make the time position unselectable, and uses default cursor) :)
+www.youtube.com#$#.ytp-chrome-bottom .ytp-left-controls .ytp-time-display{user-select:none!important;cursor:default!important}
+
+! Remove event tickets nonsense
+www.youtube.com##ytd-ticket-shelf-renderer
+
+! less-bloated member-only message
+www.youtube.com##ytp-pyc-player-content ytp-player-content
+www.youtube.com##ytp-pyc-player-content ytp-drawer
+www.youtube.com##ytp-pyc-player-content html5-stop-propagation
+www.youtube.com##ytp-pyc-player-content html5-ypc-action-heading
+www.youtube.com##ytp-pyc-player-content html5-ypc-thumbnail
+www.youtube.com##ytp-pyc-player-content html5-ypc-description
+www.youtube.com##ytp-pyc-player-content html5-ypc-purchase
+
+! ——————————————————————————————
+
+
+
+! ——————————————————————————————
+!
+! Bloat buttons on top-header menu
+! (or so-called "yt-masthead")
+!
+! Includes:
+! - Homepage link (from upper-left).
+! - Country Code (beside YT Logo).
+! - Profile icon (inside login button, next to login text, leaving the "LOGIN" text only).
+! - Google bloats (YT/Google App Drawer,Create video,voice search)
+
+! Remove Guide button (3 horizontal line) if not logged in
+www.youtube.com#?##ytd-masthead:-abp-has(#end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"]) #start #guide-button
+
+! Removes the country codes beside YouTube logo on the upper-left (improves privacy when screenshoting/recording)
+youtube.com###logo #country-code
+www.youtube.com##ytd-topbar-logo-renderer #country-code
+
+! Removes YT Bloat [YT/Google App Drawer,Create video] (dont block last element if not logged in, which is settings)
+www.youtube.com##ytd-masthead #end #buttons ytd-topbar-menu-button-renderer.style-default:not(:nth-of-type(2))
+www.youtube.com#?#ytd-masthead #end #buttons:not(:-abp-has(ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"])) ytd-topbar-menu-button-renderer.style-default
+youtube.com#?##button:-abp-has([aria-label*=app])
+
+! Remove Profile Icon On Login Button
+!	is required or there will be padding width differences
+www.youtube.com##ytd-masthead #end #buttons ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"] yt-icon
+
+! Removes voice search button (bloat feature from google, who's even using that feature on a desktop browser?)
+www.youtube.com##ytd-masthead #center #voice-search-button
+
+! ——————————————————————————————
+
+
+
+! ——————————————————————————————
+!
+! YouTube Premium
+! Blocks any promotion about YouTube Premium
+!
+
+! Removes a banner that promotes YouTube Premium
+youtube.com###masthead-ad
+! Removes a relatively large popup that promotes YouTube Premium
+www.youtube.com##ytd-mealbar-promo-renderer
+
+! Remove network-based image promo request to gstatic
+!||gstatic.com/youtube/img/promos$images
+
+! (last seen: 22/09/21_22.45 (text: change subtitle tutorial, in a blue small popup. when using other subtitle, moving to other page, and toggling subtitle on and off))
+! but can be used for youtube premium nag as the class is sus (promo ?? or promote a tool/utility ??)
+youtube.com##.ytp-promotooltip-wrapper
+
+! stop pushing us your membership offerings.
+youtube.com##a#endpoint[href="/paid_memberships"]
+youtube.com###offer-module
+! Remove "Join Channel" Button (im not an evil person, and this is not related to yt premium, so this option will be disabled for now)
+!youtube.com###sponsor-button
+
+! ——————————————————————————————
+!
+! Design Changes
+! Restore anything bad YouTube changes on desktop website (latest changes, most changes are big button, mobile-like design, and tiktoky)
+! ps: restoring button size is not recommended for touch user or mobile user that uses desktop version
+!
+
+! Remove ANY form of shorts player (basically TikTok + IG Reels + YouTube Shorts Mobile design combined)
+youtube.com##a[href^="/shorts"]:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer)
+www.youtube.com##ytd-shorts
+www.youtube.com##ytd-shorts-player-controls
+www.youtube.com##.ytd-reel-video-renderer
+www.youtube.com##.ytd-reel-video-renderer #reel-video-in-sequence
+www.youtube.com##ytd-reel-player-overlay-renderer
+www.youtube.com##ytd-reel-player-header-renderer
+www.youtube.com##.ytd-reel-player-overlay-renderer
+www.youtube.com###shorts-container
+www.youtube.com###shorts-player
+www.youtube.com##.ytd-shorts
+www.youtube.com##ytd-reel-description-sheet-renderer
+www.youtube.com##ytd-reel-shelf-renderer, .ytd-reel-shelf-renderer
+www.youtube.com##.ytd-item-section-renderer > .ytd-reel-shelf-renderer
+
+! Remove any clever bastard that can slip shorts video without putting #shorts in title
+www.youtube.com##ytd-thumbnail #overlays:-abp-has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer)
+
+! unmobilify the design (revert youtube mobile-like changes back to desktop)
+! Remove Comment Teaser (YOUTUBE WHY, THERE'S ALREADY COMMENT JUST COUPLE INCHES BELOW THE SCREEN!!)
+www.youtube.com##ytd-watch-metadata #comment-teaser
+www.youtube.com###teaser.ytd-comments-entry-point-header-renderer
+! Revert Video owner/channel back to older design
+www.youtube.com#$#ytd-watch-metadata #owner{border:none!important;background:none!important}
+! Put back like/dislike/share video info thing (from center position) to old position (right position), because some people has ocd...
+www.youtube.com#$#ytd-watch-metadata #description-and-actions #actions{width:100%!important}
+! Fix overflow on subscription page for some user with "engagement-panel tag"
+www.youtube.com#$#ytd-two-column-browse-results-renderer#primary ytd-section-list-renderer[engagement-panel] #contents.ytd-section-list-renderer{overflow-y:inherit!important}
+
+! Get rid of the nonsense icon beside searchbox that does NOTHING AT ALL!
+www.youtube.com##ytd-masthead #center ytd-searchbox from#search-form yt-icon#search-icon
+
+! YouTube, STOP changing things! WHY!? (Change "Netflix × TikTok Style" YTSans Bold Video title back to Material Roboto Regular)
+www.youtube.com#$#.ytd-watch-flexy .ytd-video-primary-info-renderer.title{font-weight:normal!important;font-family:Roboto!important}
+www.youtube.com#$#.ytd-watch-flexy #above-the-fold{font-weight:normal!important;font-family:Roboto!important}
+! or atleast if you love new changes but hate the bold, here's "YTSans regular" (instead of "Roboto regular", hopefully possible)
+!www.youtube.com#$#.ytd-watch-flexy .ytd-video-primary-info-renderer.title{font-weight:normal!important}
+!www.youtube.com#$#.ytd-watch-flexy #above-the-fold{font-weight:normal!important}
+
+! Restore the old watch and upload time stat opacity on new design
+www.youtube.com#$##above-the-fold #description #plain-snippet-text{opacity:75%}
+
+! Below are big button changes —
+
+! Restore big button back to small-medium button (YOUTUBE! STOP CHANGING SHIT!!)
+!#if !env_mobile
+! Remove "big-butt" class
+www.youtube.com##+js(rc, ytp-exp-bigger-button-like-mobile, ytd-player #container #movie_player)
+www.youtube.com##+js(rc, ytp-larger-tap-buttons, ytd-player #container #movie_player)
+www.youtube.com##+js(rc, chunked, ytd-masthead)
+! WatchFlexy
+www.youtube.com#$#ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom{bottom:0!important;height:40px!important;padding-top:3px!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls{height:40px!important;line-height:40px!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls .ytp-button{padding:0!important;width:40px!important;cursor:default!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls .ytp-play-button{width:46px!important;cursor:default!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-progress-bar-container{bottom:39px!important;height:5px!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-time-display{line-height:39px!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-larger-tap-buttons .ytp-chrome-bottom{bottom:0!important;height:40px!important;padding-top:3px!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-larger-tap-buttons .ytp-chrome-bottom .ytp-chrome-controls{height:40px!important;line-height:40px!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-larger-tap-buttons .ytp-chrome-bottom .ytp-chrome-controls .ytp-button{padding:0!important;width:40px!important;cursor:default!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-larger-tap-buttons .ytp-chrome-bottom .ytp-chrome-controls .ytp-play-button{width:46px!important;cursor:default!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-larger-tap-buttons .ytp-chrome-bottom .ytp-progress-bar-container{bottom:39px!important;height:5px!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-larger-tap-buttons .ytp-chrome-bottom .ytp-time-display{line-height:39px!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode{height:54px!important;padding-top:4px!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-button{width:54px!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-play-button{width:60px!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-progress-bar-container{bottom:52.5px!important;height:8px!important}
+www.youtube.com#$#ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode.ytp-time-display{line-height:53px!important}
+! SearchBox
+www.youtube.com#$#ytd-masthead #center ytd-searchbox #search-form{height:32px!important}
+www.youtube.com#$#ytd-masthead #center ytd-searchbox #search-icon-legacy{height:32px!important}
+www.youtube.com#$#ytd-masthead #center ytd-searchbox #search-icon{height:32px!important}
+!#endif
+
+! Remove channel store (for now only block the bandwidth-consuming part, images)
+www.youtube.com##ytd-vertical-product-card-renderer img
+www.youtube.com##ytd-vertical-product-card-renderer *[src]
+
+! ——————————————————————————————
+
+! Remove "enable history" nudge on homepage
+www.youtube.com##ytd-feed-nudge-renderer > ytd-rich-item-renderer
+www.youtube.com##ytd-feed-nudge-renderer
+
+! Block Auto-generated and mixed playlists
+www.youtube.com#?#ytd-compact-radio-renderer:-abp-has(ytd-thumbnail-overlay-bottom-panel-renderer)
+www.youtube.com#?#ytd-rich-item-renderer:-abp-has(ytd-thumbnail-overlay-bottom-panel-renderer)
+
+! Same as above, but in the window after you finish a video. This does leave black squares where they were (but this is already blocked??.).
+www.youtube.com#?#a.ytp-suggestion-set.ytp-videowall-still:-abp-has(.ytp-videowall-still-listlabel-mix:not(:matches-css(display: none)))
+
+! Remove "Experiencing interruption" toast in the bottom left when bufferring.
+www.youtube.com#?##toast:-abp-has(#text-container:-abp-contains(/experiencing interruptions/i))
+
+! Playlist recommendations under videos
+www.youtube.com#?#ytd-compact-playlist-renderer:-abp-has(ytd-thumbnail-overlay-side-panel-renderer)
+
+! Remove bloat section on homepage (you probably (10%) don't want this if you are into news things)
+www.youtube.com##ytd-horizontal-card-list-renderer,ytd-badge-supported-renderer,ytd-rich-section-renderer,ytd-mini-guide-renderer
+
+! The overlays that are visible when you hover over a video for "Watch later" and "Add to queue"
+!www.youtube.com###hover-overlays
+
+! Just let the user search for god sake... (remove "rich" bloat on homepage)
+www.youtube.com##ytd-feed-filter-chip-bar-renderer:upward(1)
+www.youtube.com#?#ytd-rich-shelf-renderer:-abp-contains(/Latest YouTube posts|Free to watch|Postingan terbaru YouTube|Gratis untuk ditonton/)
+
+! prevent preview frame (i think so) from diming when scrubbing
+youtube.com#$#.ytp-storyboard-framepreview-img{opacity:1!important}
+youtube.com#$#.ytp-storyboard-framepreview{background:none!important;transition:none!important}
+
+! Removes video suggestions
+youtube.com##.ytp-endscreen-content
+youtube.com###related
+! Seems to remove "Recommended for you" suggestions
+||youtube.com/related_ajax^
+
+! prevent video suggestions when pausing embed videos (generic block must be enabled on ublock settings)
+##.ytp-scroll-min
+##.ytp-pause-overlay
+youtube.com##.ytp-scroll-min
+youtube.com##.ytp-pause-overlay
+youtube-nocookie.com##.ytp-scroll-min
+youtube-nocookie.com##.ytp-pause-overlay
+
+! Removes the "Share" button in fullscreen mode & embeds
+youtube.com,youtube-nocookie.com##button[class*=share-button]
+
+! Removes video epilogue suggestion overlays
+youtube.com##.ytp-ce-element-show
+!new
+youtube.com##.ytp-ce-playlist
+
+! Removes most video suggestions in TV mode
+! Sadly, at least one suggestion had to remain in each row, or else you couldn't browse down to the Home and Search buttons.
+youtube.com##.exp-enable-live-seeking > #leanback > #app-markup > #watch > #bottom-half .pivot-row .watchable-tile:nth-of-type(1n+2)
+
+! Removes the Trending button in the top bar. At least I think it's the Trending button.
+youtube.com##div.top-nav-tab:nth-of-type(2)
+
+! Removes the Gaming button in the top bar
+youtube.com#?#div.top-nav-tab:contains(/^Gaming$/)
+
+! Removes recommended channels on homepage, susbcriptions page and feed
+youtube.com##.home .branded-page-v2-secondary-col
+youtube.com##.feed .branded-page-v2-secondary-col
+youtube.com##.guide-builder-v2 .branded-page-v2-secondary-col
+
+! Removes sharing tab below videos
+||youtube.com/share_ajax$xmlhttprequest
+youtube.com##.action-panel-trigger[role="button"][data-trigger-for="action-panel-share"]
+youtube.com##.yt-uix-button[data-trigger-for="action-panel-share"]
+
+! Removes related/featured/popular channels on channel pages
+youtube.com##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip
+youtube.com##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip + .branded-page-related-channels-list
+
+! "Subscribe to see more videos from this channel" on homepage after watching some video of a channel
+youtube.com###channel-subscription-promo-in-feed
+
+! Aims to remove the "Recommended" tickers on top of YouTube embeds
+youtube.com##.ytp-cards-teaser
+##.ytp-cards-teaser
+
+! Stop Autoplay on YouTube
+! Note: Video suggestions after the video is finished, will not be shown.
+/endscreen.js$script,domain=youtube.com|youtube-nocookie.com
+/watch_autoplayrenderer.js$script,domain=youtube.com
+www.youtube.com###head.ytd-compact-autoplay-renderer
+youtube.com##.checkbox-on-off
+youtube.com##.watch-sidebar-head
+
+! from fanboy annonyance. prevent circumventing ads
+youtube.com##+js(json-prune, 0.playerResponse.adPlacements 0.playerResponse.playerAds 1.playerResponse.adPlacements 1.playerResponse.playerAds 2.playerResponse.adPlacements 2.playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds ytInitialPlayerResponse.adPlacements ytInitialPlayerResponse.playerAds adPlacements playerAds)
+youtube.com##+js(set, playerResponse.adPlacements, null)
+youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
+||youtube.com^$csp=worker-src 'none'
+||googlevideo.com/videoplayback?*&ctier=*$xmlhttprequest,domain=youtube.com|youtube-nocookie.com
+@@||googlevideo.com/videoplayback?*&pfa=*$xmlhttprequest,domain=youtube.com|youtube-nocookie.com
+@@||googlevideo.com/videoplayback?*yt_live_broadcast&$xmlhttprequest,domain=youtube.com|youtube-nocookie.com
+@@||googlevideo.com/videoplayback?*yt_premiere_broadcast&$xmlhttprequest,domain=youtube.com|youtube-nocookie.com
+
+
+www.youtube.com###columns #primary .ytd-clarification-renderer.source
+www.youtube.com###columns #primary #clarify-box .size-default.style-suggestive.ytd-clarification-renderer > .yt-button-renderer.yt-simple-endpoint
+www.youtube.com###columns #primary #clarify-box .ytd-clarification-renderer > .ytd-menu-renderer.dropdown-trigger
+youtube.com##.annotation.iv-branding
+youtube.com##.annotation.iv-promo
+youtube.com##.iv-promo-video
+youtube.com##.video-annotations
+
+! block 2nd "dual panel" on search page
+www.youtube.com##.ytd-search > .ytd-two-column-search-results-renderer:nth-child(2)
+
+! Block Auto-playing on channel (That ones is super annonying no joke bruh, bug: autoplay still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video)
+www.youtube.com##ytd-browse[page-subtype="channels"] ytd-channel-video-player-renderer ytd-player video
+
+! hide username and email address on account selection
+www.youtube.com##.ytd-account-section-list-renderer > .ytd-google-account-header-renderer
+
+! ——————————————————————————————
+!
+! YouTube Mobile
+! Mobile version of YouTube Web
+!
+
+! don't nudge shit on our homepage yt!
+m.youtube.com##ytm-feed-nudge-renderer
+
+! remove that giant text of likes,watches,upload time nonsense that comes from "engagement panel" (its already below video title w/o engagement panell)ll))l
+m.youtube.com##ytm-video-description-header-renderer .factoids
+
+! hide unnecessary login button (already in "context menu/3 dots" button) (dont remove it coz we might need it soon for login detect crap: m.youtube.com#?#:-abp-has(.mobile-topbar-header-sign-in-button))
+m.youtube.com##.mobile-topbar-header-sign-in-button
+
+! remove useless share button (when you can just copy paste the URL bruvugg)
+m.youtube.com##.slim-video-action-bar-actions > c3-material-button.compact.button-renderer:nth-of-type(1)
+
+! Removes large grey [YT Kids & game info] buttons below descriptions
+m.youtube.com##ytm-rich-metadata-renderer
+m.youtube.com##ytm-watch-metadata-app-promo-renderer
+! for new design (the one that have "engagement panel" on it)
+m.youtube.com##ytm-video-description-gaming-section-renderer
+
+! Stop Autoplay on YouTube
+m.youtube.com##.ytm-autonav-bar
+
+! Removes TOS Footer on account menu
+m.youtube.com##ytm-privacy-tos-footer-renderer
+
+! Remove YouTube Premium Offer
+m.youtube.com##ytm-offer-item-renderer
+
+! Remove "rich" bloat on homepage
+m.youtube.com#?#ytm-rich-shelf-renderer:-abp-contains(/Latest YouTube posts|Free to watch|Postingan terbaru YouTube|Gratis untuk ditonton/i)
+
+! Remove related content
+m.youtube.com##ytm-watch ytm-item-section-renderer[data-content-type="related"]
+m.youtube.com##ytm-watch ytm-compact-video-renderer
+m.youtube.com##[section-identifier=related-items]
+
+! Remove that sad avatar icon beside login text
+m.youtube.com##.mobile-topbar-header-sign-in-button .button-renderer-icon
+
+! dont "force" the user to login, just say "You are not logged in" with image, and thats it
+! dont give that login header, and some nonsense description.
+m.youtube.com##ytm-sign-in-promo-with-background-renderer .sign-in-header
+m.youtube.com##ytm-sign-in-promo-with-background-renderer .promo-subtitle
+
+! f👺️ off yt shorts!
+m.youtube.com###player-shorts-container
+
+! Remove "Trending" button
+m.youtube.com##.scbrr-tab[href="/feed/trending"]
+m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
+
+! Remove (trash and addictive) Chip bar on Homepage
+m.youtube.com##ytm-feed-filter-chip-bar-renderer:upward(.rich-grid-renderer-header)
+
+! Remove disturbing studio,music,kids , ytp,purchasesandsubscriptions,yourdatainyt , and additional nonsense extra button
+m.youtube.com##ytm-multi-page-menu-section-renderer:nth-of-type(5)
+m.youtube.com##ytm-multi-page-menu-section-renderer:nth-of-type(2)
+m.youtube.com##ytm-multi-page-menu-section-renderer:nth-of-type(1) ytm-compact-link-renderer:nth-of-type(2)
+
+! make {channel lists in subscription tab,top bar,and sections tab whatever} floating, 50% transparent, and eats less screen space
+m.youtube.com#$#ytm-mobile-topbar-renderer{background-color:#181b1cdd!important}
+m.youtube.com#$#ytm-pivot-bar-renderer{background-color:#191c1cdd!important}
+m.youtube.com#$#ytm-channel-list-sub-menu-renderer{background-color:#0B0C0Ddd!important;position:absolute;z-index:1;border:none!important}
+
+! This is supposed to remove recommended video that are in watch later playlist because its just hell of nonsense
+m.youtube.com#?#.media-item-endorsement-container:upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer)
+
+! Remove any shorts reel nonsense on homepage
+m.youtube.com##ytm-reel-shelf-renderer
+m.youtube.com##.ytm-reel-shelf-renderer
+m.youtube.com##ytm-shorts
+m.youtube.com##ytm-shorts-player-controls
+m.youtube.com##.ytm-reel-video-renderer
+m.youtube.com##ytm-reel-player-overlay-renderer
+m.youtube.com##ytm-reel-player-header-renderer
+m.youtube.com##.ytm-reel-player-overlay-renderer
+m.youtube.com##.ytm-shorts
+m.youtube.com##ytm-reel-description-sheet-renderer
+m.youtube.com##.ytm-item-section-renderer > .ytm-reel-shelf-renderer
+
+! Content Filter
+m.youtube.com#?#.large-media-item-headline:-abp-contains(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts?|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|(fart|poop)s (a )?(baby|shit|poop?)|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|extreme chewy eating sounds|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) (moment?|outfit)| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l([- ]?\w\w s(eason )?\d+| (ricuh|playoff))|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|p[e3]rk[o0Ѳ\*]s[a4]|g[o0Ѳ\*]bl[o0Ѳ\*]k|an?j(in|\*(\*)?)?g|nud(e|ity)|stripper|lgbt|jomblo|berduaan|sensual|aduhai|hentai|nafsuan|gagal fokus|night club|klub malam|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sange|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer)
+m.youtube.com#?#.compact-media-item-headline:-abp-contains(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts?|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|(fart|poop)s (a )?(baby|shit|poop?)|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|extreme chewy eating sounds|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) (moment?|outfit)| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l([- ]?\w\w s(eason )?\d+| (ricuh|playoff))|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|p[e3]rk[o0Ѳ\*]s[a4]|g[o0Ѳ\*]bl[o0Ѳ\*]k|an?j(in|\*(\*)?)?g|nud(e|ity)|stripper|lgbt|jomblo|berduaan|sensual|aduhai|hentai|nafsuan|gagal fokus|night club|klub malam|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sange|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytm-compact-video-renderer,ytm-compact-channel-renderer,ytm-rich-item-renderer,ytm-video-with-context-renderer)
+m.youtube.com#?#.media-item-headline:-abp-contains(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts?|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|(fart|poop)s (a )?(baby|shit|poop?)|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|extreme chewy eating sounds|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) (moment?|outfit)| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l([- ]?\w\w s(eason )?\d+| (ricuh|playoff))|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|p[e3]rk[o0Ѳ\*]s[a4]|g[o0Ѳ\*]bl[o0Ѳ\*]k|an?j(in|\*(\*)?)?g|nud(e|ity)|stripper|lgbt|jomblo|berduaan|sensual|aduhai|hentai|nafsuan|gagal fokus|night club|klub malam|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sange|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytm-compact-video-renderer,ytm-compact-channel-renderer,ytm-rich-item-renderer,ytm-video-with-context-renderer)
+
+! Prevent any shorts video from appearing even if the video does'nt have #shorts in the title by detecting shorts style thumbnail
+m.youtube.com#?#a[href^="/shorts"]:upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer)
+m.youtube.com#?#ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer)
+
+! Remove Big universal card on search result
+m.youtube.com##ytm-universal-watch-card-renderer
+m.youtube.com##ytm-horizontal-card-list-renderer
+! ——————————————————————————————
+

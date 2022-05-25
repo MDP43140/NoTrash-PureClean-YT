@@ -7,7 +7,7 @@
 !!! --- NOT RECOMMENDED For day-to-day Use! THIS IS BASED of my PREFERENCE --- !!!
 
 ! "Temporarily" remove annoying popups
-www.youtube.com##tp-yt-iron-dropdown
+!www.youtube.com##tp-yt-iron-dropdown
 
 ! Cleaner UI With Incovinence Tradeoff (Can't see subscription by clicking specific channel, only use if you don't ever check channels)
 youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(2)
@@ -22,6 +22,8 @@ youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(2)
 www.youtube.com##ytd-app *:not(.ytp-spinner,tp-yt-paper-spinner,tp-yt-paper-toast):style(transition:none!important;animation:none!important;animation-delay:0!important;animation-duration:0!important;animation-timing-function:none!important;animation-play-state:paused!important;animation-iteration-count:0!important)
 m.youtube.com##ytm-app *:style(transition:none!important;animation:none!important;animation-delay:0!important;animation-duration:0!important;animation-timing-function:none!important;animation-play-state:paused!important;animation-iteration-count:0!important)
 /web-animations-next-lite.min.js$script,domain=youtube.com
+www.youtube.com##+js(ra, animate-miniplayer, ytd-miniplayer)
+www.youtube.com##+js(ra, split-subtitle, ytd-miniplayer)
 
 ! New: Block old videos on subscription (good for u that is'nt scrolling to weeks ago and ??).
 ! Warning: hide instead of removing it because the loadingynthemabob reappears it again

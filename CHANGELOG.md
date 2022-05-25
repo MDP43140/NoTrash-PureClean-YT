@@ -3,6 +3,14 @@
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
 
 # Changelogs:
+### 25.05.2022:
+ + Removed old (NEW!)s.
+ + [Ext.MyBlockingPreference] added more animation disable thingy, and comment remove annonying popup, because it broke 3dots menu (replaced by yt-bubble-hint-renderer thingy anyway).
+ + [EXP] First (Experimental) release that supports AdblockPlus (minimal 1.1). but there will be some problems:
+	 - [EXP] Didn't have ":remove()" syntax, so it wont save your bandwidth, but atleast can hide it.
+	 - [EXP] :has-text > :-abp-contains.
+	 - [EXP] :has      > :-abp-has.
+	 - [EXP] ##selector:style(css) > #$#selector{css} (untested, may not working).
 ### 23.05.2022_dev:
  + Alot of improvement on guide-panel.
 	 + Now blocking elements on guide-panel is slightly faster because optimized css selectors thingy (this means you will see less element flickers on guide-panel).
