@@ -28,10 +28,6 @@ www.youtube.com#?##video-title:-abp-contains(/^[^a-z]*$/):upward(ytd-compact-vid
 ! Removes already played videos from feed; will not remove if on the creator's channel & history page.
 www.youtube.com##ytd-thumbnail-overlay-resume-playback-renderer:not(:upward(ytd-section-list-renderer[page-subtype="history"],ytd-browse[page-subtype="channels"])):upward(ytd-rich-item-renderer,ytd-compact-video-renderer,ytd-video-renderer,ytd-grid-video-renderer)
 
-! remove 'mixed' playlist.
-www.youtube.com###video-title-link[href*="start_radio=1"]:upward(ytd-rich-item-renderer)
-www.youtube.com##ytd-radio-renderer,ytd-compact-radio-renderer
-
 ! remove korean,chinese character (1 bug fixed)
 www.youtube.com#?##video-title:-abp-contains(/[\uAC00-\uD7AF\u1100-\u11FF\u3130-\uD7FF]/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer)
 www.youtube.com#?##description-text:-abp-contains(/[\uAC00-\uD7AF\u1100-\u11FF\u3130-\uD7FF]/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer)
@@ -189,7 +185,6 @@ youtube.com##a[href^="/channel/UCX-EPC5_NsFmRFkfzTFaP9Q_"]:upward(ytd-channel-re
 ! make sure 2nd button (explore) explore is removed
 www.youtube.com##ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(2)
 ! Removes Explore Button
-www.youtube.com#?#ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(2)
 www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href="feed/explore"])
 www.youtube.com#?#ytd-mini-guide-entry-renderer:-abp-has(a[href="feed/explore"])
 
@@ -287,7 +282,6 @@ www.youtube.com##.ytp-fullerscreen-edu-button
 
 ! Removes annotation in videos
 ||youtube.com/annotations_invideo?$object-subrequest
-/annotations_module.js$script,domain=youtube.com
 /annotations$script,domain=youtube.com
 youtube.com,youtube-nocookie.com##.video-annotations
 youtube.com##.watch-sidebar-body > #watch-related > .related-list-item
@@ -422,7 +416,6 @@ youtube.com##a[href^="/shorts"]:upward(ytd-channel-renderer,ytd-rich-item-render
 www.youtube.com##ytd-shorts
 www.youtube.com##ytd-shorts-player-controls
 www.youtube.com##.ytd-reel-video-renderer
-www.youtube.com##.ytd-reel-video-renderer #reel-video-in-sequence
 www.youtube.com##ytd-reel-player-overlay-renderer
 www.youtube.com##ytd-reel-player-header-renderer
 www.youtube.com##.ytd-reel-player-overlay-renderer
@@ -431,7 +424,6 @@ www.youtube.com###shorts-player
 www.youtube.com##.ytd-shorts
 www.youtube.com##ytd-reel-description-sheet-renderer
 www.youtube.com##ytd-reel-shelf-renderer, .ytd-reel-shelf-renderer
-www.youtube.com##.ytd-item-section-renderer > .ytd-reel-shelf-renderer
 
 ! Remove any clever bastard that can slip shorts video without putting #shorts in title
 www.youtube.com##ytd-thumbnail #overlays:-abp-has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer)
@@ -499,12 +491,12 @@ www.youtube.com##ytd-vertical-product-card-renderer *[src]
 ! ——————————————————————————————
 
 ! Remove "enable history" nudge on homepage
-www.youtube.com##ytd-feed-nudge-renderer > ytd-rich-item-renderer
 www.youtube.com##ytd-feed-nudge-renderer
 
-! Block Auto-generated and mixed playlists
-www.youtube.com#?#ytd-compact-radio-renderer:-abp-has(ytd-thumbnail-overlay-bottom-panel-renderer)
+! Remove Auto-generated and mixed playlists
 www.youtube.com#?#ytd-rich-item-renderer:-abp-has(ytd-thumbnail-overlay-bottom-panel-renderer)
+www.youtube.com###video-title-link[href*="start_radio=1"]:upward(ytd-rich-item-renderer)
+www.youtube.com##ytd-radio-renderer,ytd-compact-radio-renderer
 
 ! Same as above, but in the window after you finish a video. This does leave black squares where they were (but this is already blocked??.).
 www.youtube.com#?#a.ytp-suggestion-set.ytp-videowall-still:-abp-has(.ytp-videowall-still-listlabel-mix:not(:matches-css(display: none)))
@@ -600,14 +592,12 @@ youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 @@||googlevideo.com/videoplayback?*yt_live_broadcast&$xmlhttprequest,domain=youtube.com|youtube-nocookie.com
 @@||googlevideo.com/videoplayback?*yt_premiere_broadcast&$xmlhttprequest,domain=youtube.com|youtube-nocookie.com
 
-
 www.youtube.com###columns #primary .ytd-clarification-renderer.source
 www.youtube.com###columns #primary #clarify-box .size-default.style-suggestive.ytd-clarification-renderer > .yt-button-renderer.yt-simple-endpoint
 www.youtube.com###columns #primary #clarify-box .ytd-clarification-renderer > .ytd-menu-renderer.dropdown-trigger
 youtube.com##.annotation.iv-branding
 youtube.com##.annotation.iv-promo
 youtube.com##.iv-promo-video
-youtube.com##.video-annotations
 
 ! block 2nd "dual panel" on search page
 www.youtube.com##.ytd-search > .ytd-two-column-search-results-renderer:nth-child(2)
@@ -629,9 +619,6 @@ m.youtube.com##ytm-feed-nudge-renderer
 
 ! remove that giant text of likes,watches,upload time nonsense that comes from "engagement panel" (its already below video title w/o engagement panell)ll))l
 m.youtube.com##ytm-video-description-header-renderer .factoids
-
-! hide unnecessary login button (already in "context menu/3 dots" button) (dont remove it coz we might need it soon for login detect crap: m.youtube.com#?#:-abp-has(.mobile-topbar-header-sign-in-button))
-m.youtube.com##.mobile-topbar-header-sign-in-button
 
 ! remove useless share button (when you can just copy paste the URL bruvugg)
 m.youtube.com##.slim-video-action-bar-actions > c3-material-button.compact.button-renderer:nth-of-type(1)
@@ -659,8 +646,10 @@ m.youtube.com##ytm-watch ytm-item-section-renderer[data-content-type="related"]
 m.youtube.com##ytm-watch ytm-compact-video-renderer
 m.youtube.com##[section-identifier=related-items]
 
-! Remove that sad avatar icon beside login text
-m.youtube.com##.mobile-topbar-header-sign-in-button .button-renderer-icon
+! remove unnecessary login button (already in "context menu/3 dots" button) (dont remove it coz we might need it soon for login detect crap: m.youtube.com#?#:-abp-has(.mobile-topbar-header-sign-in-button))
+m.youtube.com##.mobile-topbar-header-sign-in-button
+! Or atleast remove just the icon
+!m.youtube.com##.mobile-topbar-header-sign-in-button .button-renderer-icon
 
 ! dont "force" the user to login, just say "You are not logged in" with image, and thats it
 ! dont give that login header, and some nonsense description.
@@ -701,7 +690,6 @@ m.youtube.com##ytm-reel-player-header-renderer
 m.youtube.com##.ytm-reel-player-overlay-renderer
 m.youtube.com##.ytm-shorts
 m.youtube.com##ytm-reel-description-sheet-renderer
-m.youtube.com##.ytm-item-section-renderer > .ytm-reel-shelf-renderer
 
 ! Content Filter
 m.youtube.com#?#.large-media-item-headline:-abp-contains(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts?|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|(fart|poop)s (a )?(baby|shit|poop?)|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|extreme chewy eating sounds|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) (moment?|outfit)| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l([- ]?\w\w s(eason )?\d+| (ricuh|playoff))|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|p[e3]rk[o0Ѳ\*]s[a4]|g[o0Ѳ\*]bl[o0Ѳ\*]k|an?j(in|\*(\*)?)?g|nud(e|ity)|stripper|lgbt|jomblo|berduaan|sensual|aduhai|hentai|nafsuan|gagal fokus|night club|klub malam|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sange|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer)

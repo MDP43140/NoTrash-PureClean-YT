@@ -2,10 +2,9 @@
 ! Title			: No-Trash + Pure-Clean YouTube
 ! Author		: MDP43140
 ! OA				: DandelionSprout
-! Version 	: 23.05.2022_dev
+! Version 	: 26.05.2022_dev
 ! GitHub		: mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
-! commit		: adding new rules from other source
 ! ——————————————————————————————
 
 
@@ -41,10 +40,6 @@ www.youtube.com##ytd-thumbnail-overlay-resume-playback-renderer #progress[style=
 
 ! this 1 is'nt working... any1 know how2 block certain search suggestion?
 !youtube.com#?##sbsb_c:has-text(/tik( |-?)tok/i):upward(sbsb_b):style(cursor:default!important;opacity:0.5!important;color:#000!important;background:#f00!important)
-
-! remove 'mixed' playlist.
-www.youtube.com###video-title-link[href*="start_radio=1"]:upward(ytd-rich-item-renderer)
-www.youtube.com##ytd-radio-renderer,ytd-compact-radio-renderer
 
 ! remove korean,chinese character (1 bug fixed)
 www.youtube.com#?##video-title:has-text(/[\uAC00-\uD7AF\u1100-\u11FF\u3130-\uD7FF]/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):style(cursor:default!important;opacity:0.5!important;color:#000!important;background:#690!important)
@@ -193,7 +188,7 @@ youtube.com##a[href^="/channel/UCX-EPC5_NsFmRFkfzTFaP9Q_"]:upward(ytd-channel-re
 !
 ! Bloat buttons on left-hand menu (aka. Guide panel)
 ! Includes:
-! - Trending/Discover/Explore
+! - Explore
 ! - Shorts
 ! - Subscription (If Not Logged in)
 ! - History
@@ -215,11 +210,11 @@ youtube.com##a[href^="/channel/UCX-EPC5_NsFmRFkfzTFaP9Q_"]:upward(ytd-channel-re
 ! Removes "Explore" Button (old link used to be /feed/trending)
 www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/feed/explore"])
 !www.youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="/feed/explore"])
-! Removes "Explore Channels" button (seen when youre not logged in)
-www.youtube.com#?#ytd-guide-section-renderer.ytd-guide-renderer:has(a[href="/feed/guide_builder"])
 ! make sure its removed
 !www.youtube.com##ytd-guide-section-renderer:nth-of-type(1) ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(2)
 www.youtube.com##ytd-mini-guide-entry-renderer:nth-of-type(2)
+! Removes "Explore Channels" button (seen when youre not logged in)
+www.youtube.com#?#ytd-guide-section-renderer.ytd-guide-renderer:has(a[href="/feed/guide_builder"])
 
 ! Removes "Shorts" Button
 www.youtube.com##ytd-guide-section-renderer:nth-of-type(1) ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(3)
@@ -232,8 +227,9 @@ www.youtube.com#?#:has(ytd-masthead #end #buttons ytd-button-renderer a[href^="h
 www.youtube.com##ytd-mini-guide-entry-renderer:nth-of-type(4)
 
 ! Removes "History" Button
-www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/feed/history"])
+!www.youtube.com###section-items > ytd-guide-entry-renderer:nth-of-type(1)
 www.youtube.com##ytd-mini-guide-entry-renderer:nth-of-type(6)
+www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/feed/history"])
 
 ! Removes "Your videos" button
 www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(2)
@@ -266,7 +262,7 @@ www.youtube.com#?#ytd-guide-section-renderer:has-text(/(More from|Lainnya dari) 
 ! Removes "Homepage" button
 !www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/"])
 !www.youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="/"])
-!www.youtube.com##ytd-guide-section-renderer:nth-of-type(1) ytd-guide-entry-renderer:nth-of-type(1)
+!www.youtube.com##ytd-guide-section-renderer:nth-of-type(1) > ytd-guide-entry-renderer:nth-of-type(1)
 
 ! ——————————————————————————————
 
@@ -425,8 +421,8 @@ www.youtube.com##ytd-masthead #end #buttons ytd-button-renderer a[href^="https:/
 ! Removes voice search button (bloat feature from google, who's even using that feature on a desktop browser?)
 www.youtube.com##ytd-masthead #center #voice-search-button
 
-! Remove ridicilously nonsense indicator when you search using searchbox
-www.youtube.com##ytd-masthead #center ytd-searchbox yt-icon#search-icon
+! Remove "extra-bloat indicator search icon" when you search (click/focus the search input) using searchbox
+www.youtube.com##ytd-masthead #center ytd-searchbox from#search-form yt-icon#search-icon
 
 
 ! ——————————————————————————————
@@ -476,8 +472,8 @@ www.youtube.com###shorts-container:remove()
 www.youtube.com###shorts-player:remove()
 www.youtube.com##.ytd-shorts:remove()
 www.youtube.com##ytd-reel-description-sheet-renderer:remove()
-www.youtube.com##ytd-reel-shelf-renderer, .ytd-reel-shelf-renderer
-www.youtube.com##.ytd-item-section-renderer > .ytd-reel-shelf-renderer
+www.youtube.com##ytd-reel-shelf-renderer:remove()
+www.youtube.com##.ytd-reel-shelf-renderer:remove()
 
 ! Remove any clever bastard that can slip shorts video without putting #shorts in title
 www.youtube.com##ytd-thumbnail #overlays:has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
@@ -492,9 +488,6 @@ www.youtube.com##ytd-watch-metadata #owner:style(border:none!important;backgroun
 www.youtube.com##ytd-watch-metadata #description-and-actions #actions:style(width:100%!important)
 ! Fix overflow on subscription page for some user with "engagement-panel tag"
 www.youtube.com##ytd-two-column-browse-results-renderer#primary ytd-section-list-renderer[engagement-panel] #contents.ytd-section-list-renderer:style(overflow-y:inherit!important)
-
-! Get rid of the nonsense icon beside searchbox that does NOTHING AT ALL!
-www.youtube.com##ytd-masthead #center ytd-searchbox from#search-form yt-icon#search-icon
 
 ! YouTube, STOP changing things! WHY!? (Change "Netflix × TikTok Style" YTSans Bold Video title back to Material Roboto Regular)
 www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(font-weight:normal!important;font-family:Roboto!important)
@@ -553,18 +546,27 @@ www.youtube.com##ytd-rich-grid-renderer ytd-statement-banner-renderer
 www.youtube.com##ytd-vertical-product-card-renderer img
 www.youtube.com##ytd-vertical-product-card-renderer *[src]
 
+! Make consent popup less intrusive (less scroll required, for now remove only "A Google Company" text, and sign in buttons)
+www.youtube.com##ytd-consent-bump-v2-lightbox #logoandaside yt-formatted-string
+www.youtube.com##ytd-consent-bump-v2-lightbox #topbar .top-buttons
+
 ! ——————————————————————————————
 
 ! Remove "enable history" nudge on homepage
-www.youtube.com##ytd-feed-nudge-renderer > ytd-rich-item-renderer
 www.youtube.com##ytd-feed-nudge-renderer
+www.youtube.com##ytd-feed-nudge-renderer:upward(ytd-rich-item-renderer)
 
-! Block Auto-generated and mixed playlists
-www.youtube.com#?#ytd-compact-radio-renderer:has(ytd-thumbnail-overlay-bottom-panel-renderer)
+! Remove Auto-generated & mixed playlists
+www.youtube.com###video-title-link[href*="start_radio=1"]:upward(ytd-rich-item-renderer)
 www.youtube.com#?#ytd-rich-item-renderer:has(ytd-thumbnail-overlay-bottom-panel-renderer)
+www.youtube.com##ytd-radio-renderer,ytd-compact-radio-renderer
 
 ! Same as above, but in the window after you finish a video. This does leave black squares where they were (but this is already blocked??.).
 www.youtube.com#?#a.ytp-suggestion-set.ytp-videowall-still:has(.ytp-videowall-still-listlabel-mix:not(:matches-css(display: none)))
+
+! We already know YouTube, please we dont want that Annonying nagging hints (eg subscribe,join,add to playlist,etc...)
+www.youtube.com##yt-bubble-hint-renderer
+www.youtube.com##yt-bubble-hint-renderer:upward(tp-yt-iron-dropdown)
 
 ! Remove "Experiencing interruption" toast in the bottom left when bufferring.
 www.youtube.com#?##toast:has(#text-container:has-text(/experiencing interruptions/i))
@@ -667,7 +669,6 @@ www.youtube.com###columns #primary #clarify-box .ytd-clarification-renderer > .y
 youtube.com##.annotation.iv-branding
 youtube.com##.annotation.iv-promo
 youtube.com##.iv-promo-video
-youtube.com##.video-annotations
 
 ! block 2nd "dual panel" on search page
 www.youtube.com##.ytd-search > .ytd-two-column-search-results-renderer:nth-child(2)
@@ -691,9 +692,6 @@ m.youtube.com##ytm-feed-nudge-renderer
 
 ! remove that giant text of likes,watches,upload time nonsense that comes from "engagement panel" (its already below video title w/o engagement panell)ll))l
 m.youtube.com##ytm-video-description-header-renderer .factoids
-
-! hide unnecessary login button (already in "context menu/3 dots" button) (dont remove it coz we might need it soon for login detect crap: m.youtube.com#?#:has(.mobile-topbar-header-sign-in-button))
-m.youtube.com##.mobile-topbar-header-sign-in-button
 
 ! remove useless share button (when you can just copy paste the URL bruvugg)
 m.youtube.com##.slim-video-action-bar-actions > c3-material-button.compact.button-renderer:nth-of-type(1)
@@ -724,8 +722,10 @@ m.youtube.com##ytm-watch ytm-item-section-renderer[data-content-type="related"]:
 m.youtube.com##ytm-watch ytm-compact-video-renderer:remove()
 m.youtube.com##[section-identifier=related-items]
 
-! Remove that sad avatar icon beside login text
-m.youtube.com##.mobile-topbar-header-sign-in-button .button-renderer-icon
+! remove unnecessary login button (already in "context menu/3 dots" button) (dont remove it coz we might need it soon for login detect crap: m.youtube.com#?#:-abp-has(.mobile-topbar-header-sign-in-button))
+m.youtube.com##.mobile-topbar-header-sign-in-button
+! Or atleast remove just the icon
+!m.youtube.com##.mobile-topbar-header-sign-in-button .button-renderer-icon
 
 ! dont "force" the user to login, just say "You are not logged in" with image, and thats it
 ! dont give that login header, and some nonsense description.
@@ -770,7 +770,6 @@ m.youtube.com##ytm-reel-player-header-renderer:remove()
 m.youtube.com##.ytm-reel-player-overlay-renderer:remove()
 m.youtube.com##.ytm-shorts:remove()
 m.youtube.com##ytm-reel-description-sheet-renderer:remove()
-m.youtube.com##.ytm-item-section-renderer > .ytm-reel-shelf-renderer
 
 ! Content Filter
 m.youtube.com#?#.large-media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts?|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|(fart|poop)s (a )?(baby|shit|poop?)|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|extreme chewy eating sounds|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) (moment?|outfit)| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l([- ]?\w\w s(eason )?\d+| (ricuh|playoff))|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|p[e3]rk[o0Ѳ\*]s[a4]|g[o0Ѳ\*]bl[o0Ѳ\*]k|an?j(in|\*(\*)?)?g|nud(e|ity)|stripper|lgbt|jomblo|berduaan|sensual|aduhai|hentai|nafsuan|gagal fokus|night club|klub malam|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sange|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
@@ -816,4 +815,3 @@ m.youtube.com##ytm-connected-accounts-setting-category-entry-renderer > .setting
 !!!
 !!! ------------------------------- !!!
 ! ——————————————————————————————
-
