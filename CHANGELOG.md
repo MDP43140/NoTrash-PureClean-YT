@@ -3,15 +3,26 @@
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
 
 # Changelogs:
-### 25.05.2022:
+### 26.05.2022:
+ + removed redundant "commit" at the header part.
+ + Remove alot of redundant and duplicate rules (using https://abpvn.com/ruleChecker/redundantRuleChecker.html great tool even tho its designed for abp but still kinda works with ubo filter lol).
+ + simplify "Trending/Discover/Explore" to just "explore".
+ + rearrange/move Removes "Explore Channels".
+ + changing remove bloat indicator description.
+ + Make consent popup less intrusive (less scroll required, useful in some countries/if you use Tor) (Desktop only, mobile version will redirect you to consent.youtube.com, which really does suck).
+ + Improved 'ytd-reel-shelf-renderer' blocking (that ytshorts again...).
+ + Improved removing mixed playlist.
+ + Improved 'enable history' nudge removal.
+ + Remove (some?) annonying nagging hints.
  + Removed old (NEW!)s.
+ + Now will remove film/movie nonsense.
  + [Ext.MyBlockingPreference] added more animation disable thingy, and comment remove annonying popup, because it broke 3dots menu (replaced by yt-bubble-hint-renderer thingy anyway).
- + [EXP] First (Experimental) release that supports AdblockPlus (minimal 1.1). but there will be some problems:
+ + [EXP] First (Experimental) release that supports AdblockPlus (minimal 1.1). but there are some problems...
+	 + [EXP] :has-text > :-abp-contains.
+	 + [EXP] :has      > :-abp-has.
 	 - [EXP] Didn't have ":remove()" syntax, so it wont save your bandwidth, but atleast can hide it.
-	 - [EXP] :has-text > :-abp-contains.
-	 - [EXP] :has      > :-abp-has.
 	 - [EXP] ##selector:style(css) > #$#selector{css} (untested, may not working).
-### 23.05.2022_dev:
+ + [Mobile] Hide Autoplay icon if disabled.
  + Alot of improvement on guide-panel.
 	 + Now blocking elements on guide-panel is slightly faster because optimized css selectors thingy (this means you will see less element flickers on guide-panel).
 	 + Now removing unused settings button (again can be found on that 3dot/profile icon) will use `last-child` instead of `nth-of-type` because it wont get removed on non-login session.
@@ -25,12 +36,12 @@
  + Shorten some titles and descriptions and stuff...
  + now "Remove netbased image promo to gstatic" is enabled by default (since im moving house and only got quota now).
  + Normalize that giant ytsans title on some users that got the new title changes.
- + [Mobile] Hide Autoplay icon if disabled.
- + adding description on the yt mobile setting thing at the very bottom.
+
+### 23.05.2022_dev:
++ adding description on the yt mobile setting thing at the very bottom.
  + Now also removes mini-guide (that 5 smol buttons on tiny left-panel, can be seen if you use desktop site with smol window size).
  + Removes (new and different) big banner on homepage.
  + Remove useless unclickable button (mostly seen in member-only videos).
- + Now will remove nonsense films.
  + Remove ridicilously nonsense indicator when you search using searchbox (bug: when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon used to be).
  + (try to) Restore the watch-flexy width a little bit (on new design)
  + Simplify some things on YT Desktop for mobile.
@@ -56,10 +67,8 @@
  + Fixed normalize thicc title font on new youtube design.
  + Now will both normalize and change font to roboto.
 
-### 24.04.2022:
+### **.04.2022:
  + Blacklisted eating disorder,and roblox nonsense channels: [BoostyPop (i thought hes banned),Lisa Gaming ROBLOX,More Nikocado,Nikocado Avocado,Nikocado Avocado 2,Nikocado Avocado 3,Nikocado Shorts,Noodle King] (how did i ever not see nikocado channel and block it bruh... now its blocked get outta here eating disorder :).
-
-### 23.04.2022:
  + Blacklisted bunch of trash channels: [Carlaylee HD,Carlaylee HD Gaming,Carlaylee Hd Shorts,Carlie HD,HD Fam,Jack Wrath,Loki,Morgz,Morgz Clips,MorgzFest,Morgz Live,Morgz Mum,RATATA BRILIANT,RATATA COOL,Savetion,Savetion 2,Savetion 3,The Prince Family,The Prince Family Clubhouse]
  + Channel blacklist order cleanup, addition and dupes removed.
  + [ContentFilter] improved mpl filtering to block "mpl (ricuh|playoff)".
@@ -71,8 +80,6 @@
  + [ContentFilter] Add /((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan/gi
  + [EXTREME] block more tiktok nonsense (Flip Bottle ❌ Flip galon ✅).
  + [EXTREME] [ContentFilter] Added "ISIS" (yet this extremist facesbooky politic terrorism nonsense again, get the f outta here! we dont want politic, where were going?).
-
-### 10.04.2022:
  + Blacklisted bunch of trash channels (see #a05d3ed BlacklistedChannels.txt commit for the lists (kinda messy i know))
  + [Mobile] Fixed some trash videos not blocked.
  + [Mobile] now will block short videos without #shorts in the title.
