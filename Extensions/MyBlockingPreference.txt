@@ -1,19 +1,21 @@
 !
 ! Title  : NT+PC_YT: My Blocking Preference
 ! Author : MDP43140
-! Version: 26.05.2022
+! Version: 01.06.2022
 ! --------------------------------------------------------------------------
 
-!!! --- NOT RECOMMENDED For day-to-day Use! THIS IS BASED of my PREFERENCE --- !!!
+!!! --- Not Recommended For day-to-day Use! This Is Based of my Preference --- !!!
 
 ! "Temporarily" remove annoying popups
 !www.youtube.com##tp-yt-iron-dropdown
 
 ! Cleaner UI With Incovinence Tradeoff (Can't see subscription by clicking specific channel, only use if you don't ever check channels)
-youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(2)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(2)
 
 ! Removes search button (NOT RECOMMENDED IF YOU HAVE TO CLICK SEARCH BUTTON)
-!youtube.com###search > .ytd-searchbox #search-icon-legacy
+www.youtube.com###search > .ytd-searchbox #search-icon-legacy
+! Or Completely Remove it (if you dont use search feature like my primary account did)
+!www.youtube.com##ytd-masthead #center ytd-searchbox
 
 ! Disables animation (incl. loading ring < TODO), for lowends only !!! and had some minor bug
 ! Workaround:
@@ -22,13 +24,18 @@ youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(2)
 www.youtube.com##ytd-app *:not(.ytp-spinner,tp-yt-paper-spinner,tp-yt-paper-toast):style(transition:none!important;animation:none!important;animation-delay:0!important;animation-duration:0!important;animation-timing-function:none!important;animation-play-state:paused!important;animation-iteration-count:0!important)
 m.youtube.com##ytm-app *:style(transition:none!important;animation:none!important;animation-delay:0!important;animation-duration:0!important;animation-timing-function:none!important;animation-play-state:paused!important;animation-iteration-count:0!important)
 /web-animations-next-lite.min.js$script,domain=youtube.com
-www.youtube.com##+js(ra, animate-miniplayer, ytd-miniplayer)
-www.youtube.com##+js(ra, split-subtitle, ytd-miniplayer)
+www.youtube.com##+js(ra,animate-miniplayer,ytd-miniplayer)
+www.youtube.com##+js(ra,split-subtitle,ytd-miniplayer)
 
-! New: Block old videos on subscription (good for u that is'nt scrolling to weeks ago and ??).
+! Block old videos on subscription (good for u that is'nt scrolling to weeks ago and eating your bandwidth).
 ! Warning: hide instead of removing it because the loadingynthemabob reappears it again
-youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-section-list-renderer:not(:nth-of-type(1)):not(:nth-of-type(2)):not(:nth-of-type(3))
-! Todo: Remove the loadingy after 4th of ^^^ detected to prevent more loading and quotawastinginthemaboby
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-section-list-renderer:not(:nth-of-type(1)):not(:nth-of-type(2)):not(:nth-of-type(3))
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-section-list-renderer:not(:nth-of-type(1)):not(:nth-of-type(2)):not(:nth-of-type(3)) img:remove()
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-section-list-renderer:not(:nth-of-type(1)):not(:nth-of-type(2)):not(:nth-of-type(3)) [src]:remove()
+! Todo: Remove the loadingy after 4th of ^^^ detected to prevent more loading and quotawastinginthemaboby (by checking if `ytd-browse[page-subtype="subscriptions"] .ytd-section-list-renderer:nth-of-type(3)` exists and remove the loader)
 
-! -------------------------------------------------------------------------- !!!
+! sadly the youtube always loading when some videos removed so add the width to prevent that
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-section-list-renderer:nth-of-type(3):style(height:100vh)
+
+!!! -------------------------------------------------------------------------- !!!
 

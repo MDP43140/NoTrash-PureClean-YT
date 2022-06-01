@@ -1,7 +1,7 @@
 !
 ! Title      : NT+PC_YT: EXTREME
 ! Author     : MDP43140
-! Version    : 23.04.2022
+! Version    : 01.06.2022
 ! Description: This 📄️ 🛑️ EVEN MORE 🗑️ 📺️ (eg. all K-Pop, K-Drama, 🎵️er, 📷️gram, F😀️B📘️er, Politicians (mostly 🇮🇩️. rest of the list which may include 🇺🇸️ is fetched from DandelionSprout/🐦️AntiPolitic), names) (and will 🛑️ some features)
 ! Warning    : May overblock contents, works best on desktop website, no mobile compatibility, and buggy (for other blocking).
 ! ______________________________
@@ -29,6 +29,9 @@ www.youtube.com#?##description-text:has-text(/[방탄소년단|💋|🍑|🍆|�
 
 ! Removes the homepage link from the upper-left YouTube logo (Not supported by ABP, DEPRECATED. because its useless to block it since its not a visual disturbance, its just a link)
 www.youtube.com#?#logo:style(pointer-events:none!important;cursor:default!important)
+
+! Remove that huge grid boxes of recommended bloat channel (experiment)
+www.youtube.com##ytd-grid-channel-renderer
 
 ! Not Recommended, May Break Some Things
 ! remove distracting [related,other people watch/search,latest from (CHANNEL_NAME),news,etc...] on search page
