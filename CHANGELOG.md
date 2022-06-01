@@ -3,7 +3,33 @@
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
 
 # Changelogs:
-### 26.05.2022:
+### 01.06.2022:
+ + Fix a bug where expanding subscription list on guide panel removes it instead (caused by ##ytd-guide-section-renderer.ytd-guide-renderer:has(a[href="/feed/guide_builder"]))
+	 - but it introduces another another visual annoyances (that blank 2 strip lines... its annonying why, or maybe somehow fixable w/ :only-of-type syntax?)
+ + Limit description container maximum height to 100%.
+ + Updated remove google bloat on ytd-masthead to remove a new upload button (spotted today on my primary account again... why youtube ;( )
+ + Now title font will be kept as YTSans (why? because its similiar to Ubuntu font, but slightly compact and little bit smaller) (font size/weight still restored to older normalized regular size).
+ + trying to replace :upward with :has (the problem is: now it needs #?#for compatibility reason, and does it even compatible with ABP/-abp-has??).
+ + more annonying hints now removed (yt-tooltip-renderer).
+ + [Ext.MyBlockingPreference] Font-capitalization formatting fixed.
+ + [Ext.MyBlockingPreference] ytd-* stuff now only applies to www.youtube.com.
+ + [Ext.MyBlockingPreference] Now theres commented option to remove search bar altogether instead of just remove the search button.
+ + [Ext.MyBlockingPreference] 2 bytes saved by replacing ", " to ",".
+ + [Ext.MyBlockingPreference] removing some NEWs (lol).
+ + [Ext.MyBlockingPreference] now videos in subscription not only hidden, but the hidden bandwidth-consuming part (hidden images) are removed now.
+ + [EXTREME] Remove huge grid boxes of "recommended" bloat channel (experiment).
+
+### 01.06.2022_dev:
+ + adding description on the yt mobile setting thing at the very bottom.
+ + Now also removes mini-guide (that 5 smol buttons on tiny left-panel, can be seen if you use desktop site with smol window size).
+ + Removes (new and different) big banner on homepage.
+ + Remove useless unclickable button (mostly seen in member-only videos).
+ + Remove ridicilously nonsense indicator when you search using searchbox (bug: when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon used to be).
+ + (try to) Restore the watch-flexy width a little bit (on new design)
+ + Simplify some things on YT Desktop for mobile.
+ + revert remove sidebar changes (now Side-bar wont be removed if not logged in, also the code is'nt removed, just commented out so if you want to use it just uncomment it).
+
+### **.05.2022:
  + removed redundant "commit" at the header part.
  + Remove alot of redundant and duplicate rules (using https://abpvn.com/ruleChecker/redundantRuleChecker.html great tool even tho its designed for abp but still kinda works with ubo filter lol).
  + simplify "Trending/Discover/Explore" to just "explore".
@@ -17,10 +43,10 @@
  + Removed old (NEW!)s.
  + Now will remove film/movie nonsense.
  + [Ext.MyBlockingPreference] added more animation disable thingy, and comment remove annonying popup, because it broke 3dots menu (replaced by yt-bubble-hint-renderer thingy anyway).
- + [EXP] First (Experimental) release that supports AdblockPlus (minimal 1.1). but there are some problems...
+ + [EXP] First (Experimental) release that supports AdblockPlus (minimal 2.0). but there are some problems...
 	 + [EXP] :has-text > :-abp-contains.
-	 + [EXP] :has      > :-abp-has.
-	 - [EXP] Didn't have ":remove()" syntax, so it wont save your bandwidth, but atleast can hide it.
+	 + [EXP] :has      > :-abp-has (much prefered to use :upward for abp version).
+	 - [EXP] Didn't have ":remove()"/"#$?#selector{remove:true}" syntax, so it wont save your bandwidth, but atleast can hide it.
 	 - [EXP] ##selector:style(css) > #$#selector{css} (untested, may not working).
  + [Mobile] Hide Autoplay icon if disabled.
  + Alot of improvement on guide-panel.
@@ -36,18 +62,6 @@
  + Shorten some titles and descriptions and stuff...
  + now "Remove netbased image promo to gstatic" is enabled by default (since im moving house and only got quota now).
  + Normalize that giant ytsans title on some users that got the new title changes.
-
-### 23.05.2022_dev:
-+ adding description on the yt mobile setting thing at the very bottom.
- + Now also removes mini-guide (that 5 smol buttons on tiny left-panel, can be seen if you use desktop site with smol window size).
- + Removes (new and different) big banner on homepage.
- + Remove useless unclickable button (mostly seen in member-only videos).
- + Remove ridicilously nonsense indicator when you search using searchbox (bug: when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon used to be).
- + (try to) Restore the watch-flexy width a little bit (on new design)
- + Simplify some things on YT Desktop for mobile.
- + revert remove sidebar changes (now Side-bar wont be removed if not logged in, also the code is'nt removed, just commented out so if you want to use it just uncomment it).
-
-### 19.05.2022:
  + [ContentFilter] Add "nafsuan".
  + [ContentFilter] Improved "sngk" > "sng" (cnsord).
  + [Mobile] Remove feed nudge on homepage.
@@ -62,8 +76,6 @@
  + Remove event tickets nonsense.
  + less-bloated member-only message.
  + Remove channel store (only removes bandwidth-consuming part, aka. images, for now).
-
-### 13.05.2022:
  + Fixed normalize thicc title font on new youtube design.
  + Now will both normalize and change font to roboto.
 
