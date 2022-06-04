@@ -3,6 +3,12 @@
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
 
 # Changelogs:
+### 04.06.2022:
+ + fixed some YTPremium nagging potentially not blocked (because some ytpremium links look like /paid_memberships?whatever=crap_here).
+ + remove "Your Clips" nonsense on guide panel.
+ + Shorts video removal improved on YT mobile & desktop site.
+ + Remove "attention-grabbing" red shining "LIVE" text on live videos (live "indicator" can be seen on watch count, it will say "N is watching", or "N Hour Premiere").
+
 ### 01.06.2022:
  + Fix a bug where expanding subscription list on guide panel removes it instead (caused by ##ytd-guide-section-renderer.ytd-guide-renderer:has(a[href="/feed/guide_builder"]))
 	 - but it introduces another another visual annoyances (that blank 2 strip lines... its annonying why, or maybe somehow fixable w/ :only-of-type syntax?)

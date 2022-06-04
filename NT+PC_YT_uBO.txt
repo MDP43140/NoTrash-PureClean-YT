@@ -2,7 +2,7 @@
 ! Title			: No-Trash + Pure-Clean YouTube
 ! Author		: MDP43140
 ! OA				: DandelionSprout
-! Version 	: 01.06.2022
+! Version 	: 04.06.2022
 ! GitHub		: mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! ——————————————————————————————
@@ -255,6 +255,9 @@ www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/feed/history"])
 ! Removes "Your videos" button
 www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(2)
 
+! Removes "Your clips" button
+www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/feed/clips"])
+
 ! Removes "Liked Videos" Button
 www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(4)
 
@@ -454,7 +457,7 @@ www.youtube.com##ytd-mealbar-promo-renderer:remove()
 youtube.com##.ytp-promotooltip-wrapper
 
 ! stop pushing us youtube premium.
-youtube.com##a#endpoint[href="/paid_memberships"]
+youtube.com##a#endpoint[href^="/paid_memberships"]
 youtube.com##yt-offer-item-renderer
 youtube.com###offer-module
 
@@ -481,8 +484,8 @@ www.youtube.com##ytd-reel-description-sheet-renderer:remove()
 www.youtube.com##ytd-reel-shelf-renderer:remove()
 www.youtube.com##.ytd-reel-shelf-renderer:remove()
 
-! Remove any clever bastard that can slip shorts video without putting #shorts in title
-www.youtube.com##ytd-thumbnail #overlays:has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
+! Prevent any shorts video from appearing even if the video does'nt have #shorts in the title by detecting shorts style thumbnail
+www.youtube.com##ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]:upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
 
 ! unmobilify the design (revert youtube mobile-like changes back to desktop)
 ! Remove Comment Teaser (YOUTUBE WHY, THERE'S ALREADY COMMENT JUST COUPLE INCHES BELOW THE SCREEN!!)
@@ -746,7 +749,7 @@ m.youtube.com##ytm-channel-list-sub-menu-renderer:style(background-color:#0B0C0D
 ! This is supposed to remove recommended video that are in watch later playlist because its just hell of nonsense
 m.youtube.com#?#.media-item-endorsement-container:upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
 
-! Remove any shorts reel nonsense on homepage
+! Remove any shorts reel nonsense
 m.youtube.com##ytm-reel-shelf-renderer:remove()
 m.youtube.com##.ytm-reel-shelf-renderer:remove()
 m.youtube.com##ytm-shorts:remove()
@@ -764,11 +767,13 @@ m.youtube.com#?#.compact-media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok
 m.youtube.com#?#.media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts?|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|(fart|poop)s (a )?(baby|shit|poop?)|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|extreme chewy eating sounds|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) (moment?|outfit)| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l([- ]?\w\w s(eason )?\d+| (ricuh|playoff))|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|p[e3]rk[o0Ѳ\*]s[a4]|g[o0Ѳ\*]bl[o0Ѳ\*]k|an?j(in|\*(\*)?)?g|nud(e|ity)|stripper|lgbt|jomblo|berduaan|sensual|aduhai|hentai|nafsuan|gagal fokus|night club|klub malam|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sange|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytm-compact-video-renderer,ytm-compact-channel-renderer,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
 
 ! Prevent any shorts video from appearing even if the video does'nt have #shorts in the title by detecting shorts style thumbnail
-m.youtube.com#?#a[href^="/shorts"]:upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
-m.youtube.com#?#ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
+m.youtube.com#?#a[href^="/shorts"]:upward(ytm-large-media-item,ytm-compact-video-renderer,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
+m.youtube.com#?#ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-large-media-item,ytm-compact-video-renderer,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
+
+! Remove attention-grabbing "LIVE" text
+m.youtube.com##ytm-thumbnail-overlay-time-status-renderer[data-style="LIVE"]
 
 ! Remove Big universal card on search result
 m.youtube.com##ytm-universal-watch-card-renderer:remove()
 m.youtube.com##ytm-horizontal-card-list-renderer:remove()
 ! ——————————————————————————————
-

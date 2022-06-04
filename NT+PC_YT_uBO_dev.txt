@@ -2,7 +2,7 @@
 ! Title			: No-Trash + Pure-Clean YouTube
 ! Author		: MDP43140
 ! OA				: DandelionSprout
-! Version 	: 01.06.2022_dev
+! Version 	: 04.06.2022_dev
 ! GitHub		: mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! ——————————————————————————————
@@ -16,7 +16,7 @@
 !
 ! Reference Regex: /([\d:]+\s*((.?)(A|P)(.?)M(.?))|([\d,]+)|((.+)to(.+)))/i
 ! Regex List
-! [$€£元₩₹₽₺฿₪₱]?[\d,]+	 - idk what this actually does, but if i see, it blocks ([weirdo character here]?[some digit here]), or does it block money values??. Block <blank> videos (or let's say, 0-width character).
+! [$€£元₩₹₽₺฿₪₱]?[\d,]+ - idk what this actually does, but if i see, it blocks ([weirdo character here]?[some digit here]), or does it block money values??. Block <blank> videos (or let's say, 0-width character).
 ! [\d:]+\s*.?AM					 - Block 3AM videos (Bug: also detects [AnyNumber]( ?)AM|PM, it should only detect 0?3(A|P)M? ).
 ! \b([A-Z\s]{3,}){3,}\b	 - Block ≥3 cap worded videos (DEPRECATED!).
 ! ^[^a-z]*$							 - Outright Block ALL-CAPS videos.
@@ -36,7 +36,7 @@ www.youtube.com#?##video-title:has-text(/^[^a-z]*$/):upward(ytd-compact-video-re
 ! Removes already played videos from feed; will not remove if on the creator's channel & history page.
 www.youtube.com##ytd-thumbnail-overlay-resume-playback-renderer:not(:upward(ytd-section-list-renderer[page-subtype="history"],ytd-browse[page-subtype="channels"])):upward(ytd-rich-item-renderer,ytd-compact-video-renderer,ytd-video-renderer,ytd-grid-video-renderer):remove()
 ! Only remove if watched 100%
-www.youtube.com##ytd-thumbnail-overlay-resume-playback-renderer #progress[style="width: 100%;"]:not(:upward(ytd-section-list-renderer[page-subtype="history"],ytd-browse[page-subtype="channels"])):upward(ytd-rich-item-renderer,ytd-compact-video-renderer,ytd-video-renderer,ytd-grid-video-renderer):remove()
+!www.youtube.com##ytd-thumbnail-overlay-resume-playback-renderer #progress[style="width: 100%;"]:not(:upward(ytd-section-list-renderer[page-subtype="history"],ytd-browse[page-subtype="channels"])):upward(ytd-rich-item-renderer,ytd-compact-video-renderer,ytd-video-renderer,ytd-grid-video-renderer):remove()
 
 ! this 1 is'nt working... any1 know how2 block certain search suggestion?
 !youtube.com#?##sbsb_b:has(sbsb_c:has-text(/tik( |-?)tok/i)):style(cursor:default!important;opacity:0.5!important;color:#000!important;background:#f00!important)
@@ -233,8 +233,10 @@ www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/feed/history"])
 
 ! Removes "Your videos" button
 www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(2)
+
 ! Removes "Your clips" button (i didnt get this bloat on any of my acc yet, i just seen it on other peoples video)
 !www.youtube.com##ytd-guide-section-renderer:nth-of-type(2) ytd-guide-entry-renderer:nth-of-type(5)
+www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/feed/clips"])
 
 ! Removes "Liked Videos" Button
 www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-of-type(4)
@@ -451,7 +453,7 @@ www.youtube.com##ytd-mealbar-promo-renderer:remove()
 youtube.com##.ytp-promotooltip-wrapper
 
 ! stop pushing us youtube premium.
-youtube.com##a#endpoint[href="/paid_memberships"]
+youtube.com##a#endpoint[href^="/paid_memberships"]
 youtube.com##yt-offer-item-renderer
 youtube.com###offer-module
 
@@ -478,8 +480,8 @@ www.youtube.com##ytd-reel-description-sheet-renderer:remove()
 www.youtube.com##ytd-reel-shelf-renderer:remove()
 www.youtube.com##.ytd-reel-shelf-renderer:remove()
 
-! Remove any clever bastard that can slip shorts video without putting #shorts in title
-www.youtube.com##ytd-thumbnail #overlays:has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
+! Prevent any shorts video from appearing even if the video does'nt have #shorts in the title by detecting shorts style thumbnail
+www.youtube.com##ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]:upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
 
 ! unmobilify the design (revert youtube mobile-like changes back to desktop)
 ! Remove Comment Teaser (YOUTUBE WHY, THERE'S ALREADY COMMENT JUST COUPLE INCHES BELOW THE SCREEN!!)
@@ -761,7 +763,7 @@ m.youtube.com##ytm-channel-list-sub-menu-renderer:style(background-color:#0B0C0D
 ! This is supposed to remove recommended video that are in watch later playlist because its just hell of nonsense
 m.youtube.com#?#.media-item-endorsement-container:upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
 
-! Remove any shorts reel nonsense on homepage
+! Remove any shorts reel nonsense
 m.youtube.com##ytm-reel-shelf-renderer:remove()
 m.youtube.com##.ytm-reel-shelf-renderer:remove()
 m.youtube.com##ytm-shorts:remove()
@@ -780,8 +782,11 @@ m.youtube.com#?#.media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok|door ?k
 !m.youtube.com#?#span.small-text.ytm-badge-and-byline-item-byline:nth-of-type(1):has-text(//iu):upward(ytm-rich-item-renderer,ytm-video-with-context-renderer)
 
 ! Prevent any shorts video from appearing even if the video does'nt have #shorts in the title by detecting shorts style thumbnail
-m.youtube.com#?#a[href^="/shorts"]:upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
-m.youtube.com#?#ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
+m.youtube.com#?#a[href^="/shorts"]:upward(ytm-large-media-item,ytm-compact-video-renderer,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
+m.youtube.com#?#ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-large-media-item,ytm-compact-video-renderer,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
+
+! Remove attention-grabbing "LIVE" text (live "indicator" can be seen on watch count, it will say "N is watching", or "N Hour Premiere")
+m.youtube.com##ytm-thumbnail-overlay-time-status-renderer[data-style="LIVE"]
 
 ! Remove Big universal card on search result
 m.youtube.com##ytm-universal-watch-card-renderer:remove()
@@ -814,7 +819,5 @@ m.youtube.com##ytm-active-account-header-renderer > .center
 !m.youtube.com##ytm-subscription-products-setting-category-entry-renderer > .setting-generic-category
 m.youtube.com##ytm-connected-accounts-setting-category-entry-renderer > .setting-generic-category
 !!!
-!!!
 !!! ------------------------------- !!!
 ! ——————————————————————————————
-
