@@ -3,6 +3,10 @@
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
 
 # Changelogs:
+### 13.06.2022:
+ + Replaced :nth-of-type(1) > :first-child (saved 2 byte for each).
+ + Blacklisted more clickbaity nonsense channels (see #c854256 BlacklistedChannels.txt commit for the lists (its messy i know, but its too much to type here lol)).
+
 ### 04.06.2022:
  + fixed some YTPremium nagging potentially not blocked (because some ytpremium links look like /paid_memberships?whatever=crap_here).
  + remove "Your Clips" nonsense on guide panel.
