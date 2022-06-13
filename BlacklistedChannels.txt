@@ -1,8 +1,8 @@
 Block state | Channel name - (Channel link) Description (or other description, comma and Channel Link)
 -----------------------------------------------------
-- | John Flora               - Fake video dark web fishes (wont be added because other videos not really a fake video, channel/UCPx3SVYin7OZ4JGVkRjpWbg)
+✗ | John Flora               - Fake video dark web fishes (wont be added because other videos not really a fake video, channel/UCPx3SVYin7OZ4JGVkRjpWbg)
+H | Ross Smith               - kinda weird grandma???
 H | tanboy kun               - indonesian asmr (eating-disorder?) youtuber (bruh i knew him for long time, and he's not considered bad (at least not as bad as nikocado)), but yeah... just put him on hold list for now just in case his videos starting to affect something...
-H | That Vegan Teacher       - (c/ThatVeganTeacherYouTube) idk wut this?? this isnt considered bad channel. btw fetched from DJCook, but details aren't shown. we're gonna wait for the actual info to get shown
 H | Cursed Urban             - (c/CursedUrban) Dark web usual clickbait
 H | Crypto NWO               - Dark web usual clickbait (atleast at the time of writing..., c/CryptoNWO)
 H | Moe Sargi                - First 3AM video (but DJ cook says not fake, c/moesargi)
@@ -13,6 +13,7 @@ H | ZutiGang                 - worst yt short
 H | notjake                  - worst yt short
 H | Cam Casey                - worst yt short
 H | PANDA BOI                - worst yt short
+W | That Vegan Teacher       - (c/ThatVeganTeacherYouTube) idk wut this?? this isnt considered bad channel. btw fetched from DJCook, but details aren't shown. we're gonna wait for the actual info to get shown
 W | Mia DeLeon Xo            - worst yt short
 W | Rebecca Zamolo Shorts    - worst yt short
 W | The Norris Nuts          - (channel/UCYd0us2OtW4d4-1cfpT2ktw) is this norris nuts?
@@ -123,7 +124,7 @@ W | The Norris Nuts          - (channel/UCYd0us2OtW4d4-1cfpT2ktw) is this norris
 ==================================================================
 PS: beware that /c/ can also be /user/ and vice-versa.
 Status:
-- | not blocked (wont be added to ntpcyt because certain makes-sense reason).
+✗ | not blocked (wont be added to ntpcyt because certain makes-sense reason).
 H | Hold, More review required (not blocked yet).
 W | Waiting...
 + | added to ntpcyt
