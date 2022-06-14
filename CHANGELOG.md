@@ -1,8 +1,16 @@
-# Bugs:
+# Bugs/Todos:
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
+ . Reduce settings opacity button if it links to (youtube.com/account, aka. login), yeah youtube now started to do this annonying shit where we need our account just for that... why ;(
 
 # Changelogs:
+### 14.06.2022:
+ + Revert some :first-child changes (it broke some stuff. it actually checks if the element is actually on 1st element, instead of 1st type, i guess im wrong lol)
+ + Bug fix home button wasnt removed when theres no login button (disabled by default).
+ + (try to) Restore the watch-flexy width a little bit (on new design, but causes visual bug if theres no side menu, but because this had too long reside in dev, i decided to actually push this to main "branch").
+ + Removes (some new and different) big banner on homepage (this changes was too long sitting in dev "branch", so i put this on main "branch" too lol).
+ + Revert enforcing YTSans font (because some people didnt get that change yet, and because that the "YouTube Sans" font isn't loaded, so wont work even using !important).
+
 ### 13.06.2022:
  + Replaced :nth-of-type(1) > :first-child (saved 2 byte for each).
  + Blacklisted more clickbaity nonsense channels (see #c854256 BlacklistedChannels.txt commit for the lists (its messy i know, but its too much to type here lol)).
@@ -30,13 +38,8 @@
  + [EXTREME] Remove huge grid boxes of "recommended" bloat channel (experiment).
 
 ### 01.06.2022_dev:
- + adding description on the yt mobile setting thing at the very bottom.
- + Now also removes mini-guide (that 5 smol buttons on tiny left-panel, can be seen if you use desktop site with smol window size).
- + Removes (new and different) big banner on homepage.
  + Remove useless unclickable button (mostly seen in member-only videos).
  + Remove ridicilously nonsense indicator when you search using searchbox (bug: when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon used to be).
- + (try to) Restore the watch-flexy width a little bit (on new design)
- + Simplify some things on YT Desktop for mobile.
  + revert remove sidebar changes (now Side-bar wont be removed if not logged in, also the code is'nt removed, just commented out so if you want to use it just uncomment it).
 
 ### **.05.2022:

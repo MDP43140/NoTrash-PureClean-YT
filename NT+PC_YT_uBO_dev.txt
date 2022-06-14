@@ -2,7 +2,7 @@
 ! Title			: No-Trash + Pure-Clean YouTube
 ! Author		: MDP43140
 ! OA				: DandelionSprout
-! Version 	: 13.06.2022_dev
+! Version 	: 14.06.2022_dev
 ! GitHub		: mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! ——————————————————————————————
@@ -282,7 +282,7 @@ www.youtube.com#?#ytd-guide-section-renderer:has-text(/(More from|Lainnya dari) 
 ! Removes "Homepage" button
 !www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/"])
 !www.youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="/"])
-!www.youtube.com##ytd-guide-section-renderer:first-child > ytd-guide-entry-renderer:first-child
+!www.youtube.com##ytd-guide-section-renderer:first-child > #items > ytd-guide-entry-renderer:first-child
 
 ! ——————————————————————————————
 
@@ -342,8 +342,8 @@ youtube.com,youtube-nocookie.com##.html5-endscreen-content
 youtube.com,youtube-nocookie.com##.html5-endscreen
 
 ! Remove "Share" Button
-www.youtube.com##ytd-video-primary-info-renderer.ytd-watch-flexy ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer:first-child
-www.youtube.com##ytd-watch-metadata ytd-menu-renderer ytd-button-renderer:first-child
+www.youtube.com##ytd-video-primary-info-renderer.ytd-watch-flexy ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer:nth-of-type(1)
+www.youtube.com##ytd-watch-metadata ytd-menu-renderer ytd-button-renderer:nth-of-type(1)
 
 ! Remove like/dislike counters
 !youtube.com###sentiment
@@ -372,7 +372,7 @@ www.youtube.com##ytd-watch-metadata ytd-menu-renderer ytd-button-renderer.style-
 www.youtube.com##ytd-rich-metadata-renderer.ytd-rich-metadata-row-renderer
 
 ! hide autoplay icon if disabled (you can still hover on same area and enable it back)
-www.youtube.com##.ytp-chrome-bottom .ytp-right-controls button.ytp-button:first-child .ytp-autonav-toggle-button-container .ytp-autonav-toggle-button[aria-checked=false]
+www.youtube.com##.ytp-chrome-bottom .ytp-right-controls button.ytp-button:nth-of-type(1) .ytp-autonav-toggle-button-container .ytp-autonav-toggle-button[aria-checked=false]
 ! bug fix for sponsorblock user
 www.youtube.com##.ytp-chrome-bottom .ytp-right-controls button.ytp-button:nth-of-type(6) .ytp-autonav-toggle-button-container .ytp-autonav-toggle-button[aria-checked=false]
 
@@ -435,7 +435,7 @@ www.youtube.com##ytd-topbar-logo-renderer #country-code
 www.youtube.com##ytd-masthead #end #buttons > ytd-topbar-menu-button-renderer:first-child
 www.youtube.com#?#ytd-masthead #end #buttons:not(:has(ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"])) ytd-topbar-menu-button-renderer.style-default
 youtube.com#?##button:has([aria-label*=app])
-www.youtube.com##ytd-masthead #end #buttons > ytd-button-renderer:not(:has(a[href^="https://accounts.google.com/ServiceLogin"])):first-child
+www.youtube.com##ytd-masthead #end #buttons > ytd-button-renderer:not(:has(a[href^="https://accounts.google.com/ServiceLogin"])):nth-of-type(1)
 
 ! Remove Profile Icon On Login Button
 ! :remove() is required or there will be padding width differences
@@ -517,13 +517,13 @@ www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(f
 www.youtube.com##.ytd-watch-flexy #above-the-fold:style(font-weight:normal!important)
 www.youtube.com##h1.ytd-watch-metadata:style(font-size:1.8rem!important;line-height:2.6rem!important;font-weight:400!important;white-space:normal!important)
 
-! Change Title font in fullscreen from Roboto to YTSans (why u might ask? because its horizontally-compact (like SegoeUI))
-www.youtube.com##.ytp-title:style(font-family:"YouTube Sans"!important)
+! Change Title font in fullscreen from Roboto to YTSans (why u might ask? because its horizontally-compact (like SegoeUI), also this only applies to user that got the new font update (if the font isnt loaded, it wont work))
+www.youtube.com##.ytp-title:style(font-family:"YouTube Sans")
 
 ! Restore the old watch and upload time stat opacity on new design
 www.youtube.com###above-the-fold #description #plain-snippet-text:style(opacity:75%)
 
-! Try to restore the watch-flexy thingy width a little bit (on new design, but causes visual problem if theres no side menu things).
+! Try to restore the watch-flexy thingy width a little bit (on new design, but causes visual bug if theres no side menu things).
 www.youtube.com##ytd-watch-flexy #columns #primary:style(margin-left:0!important)
 
 ! Below are big button changes —
@@ -676,8 +676,8 @@ youtube.com##+js(json-prune, 0.playerResponse.adPlacements 0.playerResponse.play
 youtube.com##+js(set, playerResponse.adPlacements, null)
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 !waiting for uBO syntax update XD
-!youtube.com##+js(simulate-event-poc, click, button.ytp-ad-skip-button)
-!youtube.com##+js(simulate-event-poc, click, span.ytp-ad-skip-button-container)
+!youtube.com##+js(simulate-event-poc,click,button.ytp-ad-skip-button)
+!youtube.com##+js(simulate-event-poc,click,span.ytp-ad-skip-button-container)
 ||youtube.com^$csp=worker-src 'none'
 ||googlevideo.com/videoplayback?*&ctier=*$xmlhttprequest,domain=youtube.com|youtube-nocookie.com
 @@||googlevideo.com/videoplayback?*&pfa=*$xmlhttprequest,domain=youtube.com|youtube-nocookie.com
@@ -716,7 +716,7 @@ m.youtube.com##ytm-feed-nudge-renderer
 m.youtube.com##ytm-video-description-header-renderer .factoids
 
 ! remove useless share button (when you can just copy paste the URL bruvugg)
-m.youtube.com##.slim-video-action-bar-actions > c3-material-button.compact.button-renderer:first-child
+m.youtube.com##.slim-video-action-bar-actions > c3-material-button.compact.button-renderer:nth-of-type(1)
 
 ! Removes large grey [YT Kids & game info] buttons below descriptions
 m.youtube.com##ytm-rich-metadata-renderer
@@ -757,10 +757,6 @@ m.youtube.com##ytm-sign-in-promo-with-background-renderer .promo-subtitle
 ! f👺️ off yt shorts!
 m.youtube.com###player-shorts-container
 
-! Remove homepage Button
-!m.youtube.com##.scbrr-tab[href="/"]
-!m.youtube.com##ytm-pivot-bar-item-renderer:first-of-type
-
 ! Remove "Trending" button
 m.youtube.com##.scbrr-tab[href="/feed/trending"]
 m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
@@ -771,7 +767,7 @@ m.youtube.com##ytm-feed-filter-chip-bar-renderer:upward(.rich-grid-renderer-head
 ! Remove disturbing studio,music,kids , ytp,purchasesandsubscriptions,yourdatainyt , and additional nonsense extra button
 m.youtube.com##ytm-multi-page-menu-section-renderer:nth-of-type(5)
 m.youtube.com##ytm-multi-page-menu-section-renderer:nth-of-type(2)
-m.youtube.com##ytm-multi-page-menu-section-renderer:first-child ytm-compact-link-renderer:nth-of-type(2)
+m.youtube.com##ytm-multi-page-menu-section-renderer:nth-of-type(1) ytm-compact-link-renderer:nth-of-type(2)
 
 ! make {channel lists in subscription tab,top bar,and sections tab whatever} floating, 50% transparent, and eats less screen space
 m.youtube.com##ytm-mobile-topbar-renderer:style(background-color:#181b1cdd!important)
@@ -797,7 +793,7 @@ m.youtube.com##ytm-reel-description-sheet-renderer:remove()
 m.youtube.com#?#.large-media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts?|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|(fart|poop)s (a )?(baby|shit|poop?)|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|extreme chewy eating sounds|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) (moment?|outfit)| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l([- ]?\w\w s(eason )?\d+| (ricuh|playoff))|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|p[e3]rk[o0Ѳ\*]s[a4]|g[o0Ѳ\*]bl[o0Ѳ\*]k|an?j(in|\*(\*)?)?g|nud(e|ity)|stripper|lgbt|jomblo|berduaan|sensual|aduhai|hentai|nafsuan|gagal fokus|night club|klub malam|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sange|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytm-large-media-item,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
 m.youtube.com#?#.compact-media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts?|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|(fart|poop)s (a )?(baby|shit|poop?)|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|extreme chewy eating sounds|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) (moment?|outfit)| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l([- ]?\w\w s(eason )?\d+| (ricuh|playoff))|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|p[e3]rk[o0Ѳ\*]s[a4]|g[o0Ѳ\*]bl[o0Ѳ\*]k|an?j(in|\*(\*)?)?g|nud(e|ity)|stripper|lgbt|jomblo|berduaan|sensual|aduhai|hentai|nafsuan|gagal fokus|night club|klub malam|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sange|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytm-compact-video-renderer,ytm-compact-channel-renderer,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
 m.youtube.com#?#.media-item-headline:has-text(/[03:]+\s*A.?M|tik[- ]?tok|door ?kick|kesha|jedag[- ]jedug|(youtube |#)shorts?|24 hour overnight|challenge|[ck]lic?k[- ]?bait|expose|fortnite|giveaway|go(ne|es)( totally)? wrong|dunia olahraga( (wanita|cewek))?|(wanita|cewek) cantik|(fart|poop)s (a )?(baby|shit|poop?)|life hack|omg|orbeez|prank|wrong heads|noob vs pro|(minecraft|hot) girl|dj sholawat|sholawat versi dj|extreme chewy eating sounds|(devious|despicable|mischievous|absolute|diabolical|righteous)? (steal|lick)|beaning|beaned|(hugg|kiss)y (wugg|miss)y|tide pods|moment? (lucu|hot|panas|memalukan|langka)|berhasil terekam (kamera|cctv)|(hot|panas|girl) (moment?|outfit)| anu(nya)?|(for|with|untuk|animasi|cerita|dongeng|lagu)(kid(do|s|z)?|child(ren)?|ba(bies|by|yi|lita)|toddler|k?anak)|attacked by bacteria|baby shark|barbie|bloody hand|[boiy]{8,8}|(car)?toon|disney|doraemon|elsa|family finger|fingers? family|full episod|gets stabbed|hero|hulk|jigsaw puzzles|kak ros|kartun|learn color|mainan|masha|mi(ckey|nnie)|nerf wars|nursery|paw patrol|peppa|princess|rimas infantiles|roblox|slime (bath|in the pool)|snot rocket|sonic|(spider|iron|bat) ?man|spinning wheel game|spongebob|stuck in an? ?elevator|superzoo|tasmil|tom (and|n|&) jerry|transforms with animation| upin | ipin|venom|webs & tiaras|moba?[ie]le? ?l?e?[jg]end?s?|se?kin ((ter|paling)? ?(murah|mahal|epic|legend|rare|langka)|\d+ ?(ju?t|ri?b|doll?ar))|m[pd]l([- ]?\w\w s(eason )?\d+| (ricuh|playoff))|top[- ]?up|bang[- ]?bang|push[- ]?rank|mlbb|moba|moonton|gat?cha|ragnarok|brawl stars|clash of clans|genshin impact|state of survival|anime|ciwai|naruto|one punch man|pokemon|wibu|waifu|b ?t ?s|black ?pink|bangtan|k(orean?)?[- ]?(pop|drama)|hey( yo)? mama|permission to dance|squid ?game|[\[ ]m\/?v[ \]]|[pm]epe[kx]|doki doki literature club|((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan|s[e3\*](x|ks)[yi]?|b[o0Ѳ]k[e3]p|p[o0Ѳ\*]rn|p[e3]rk[o0Ѳ\*]s[a4]|g[o0Ѳ\*]bl[o0Ѳ\*]k|an?j(in|\*(\*)?)?g|nud(e|ity)|stripper|lgbt|jomblo|berduaan|sensual|aduhai|hentai|nafsuan|gagal fokus|night club|klub malam|xxx|ko?nto?l|pantek|boob|cock|penis|vagina|sperm|retarded|(boy|girl)friend|pregnant|i love you|tfw no gf|(puss|sizz)y|intim|mesum|perkosa|selingkuh|roman(ce|tis)|asmara|cinta|galau|mantan|pacar|gebetan|tawuran|bacot|bajingan|ideologi|justin bieber|murder live|bollywood|dangdut|ngentot|politi[kc]|mantap[- ]mantap| (and|n|&) (roll?)|terr?or|kiss(es|ing)|[sf]ucky [sf]ucky|telanjang|bucin|montok|l[ou]bang pantat|my love|drunk|egirl|fell in love|sange|desah|crush|ome\.tv|superstar|idola|(lagu|musik) (rohani|barat|pop)|christ/ui):upward(ytm-compact-video-renderer,ytm-compact-channel-renderer,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()
-!m.youtube.com#?#span.small-text.ytm-badge-and-byline-item-byline:first-child:has-text(//iu):upward(ytm-rich-item-renderer,ytm-video-with-context-renderer)
+!m.youtube.com#?#span.small-text.ytm-badge-and-byline-item-byline:nth-of-type(1):has-text(//iu):upward(ytm-rich-item-renderer,ytm-video-with-context-renderer)
 
 ! Prevent any shorts video from appearing even if the video does'nt have #shorts in the title by detecting shorts style thumbnail
 m.youtube.com#?#a[href^="/shorts"]:upward(ytm-large-media-item,ytm-compact-video-renderer,ytm-rich-item-renderer,ytm-video-with-context-renderer):remove()

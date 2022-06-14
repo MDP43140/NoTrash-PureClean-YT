@@ -2,7 +2,7 @@
 ! Title			: No-Trash + Pure-Clean YouTube
 ! Author		: MDP43140
 ! OA				: DandelionSprout
-! Version 	: 13.06.2022
+! Version 	: 14.06.2022
 ! GitHub		: mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! ——————————————————————————————
@@ -264,7 +264,7 @@ www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/feed/explore"])
 www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/feed/guide_builder"])
 
 ! Removes "Shorts" Button
-www.youtube.com##ytd-guide-section-renderer:nth-of-type(1) ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(3)
+www.youtube.com##ytd-guide-section-renderer:first-child ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(3)
 www.youtube.com#?#ytd-guide-entry-renderer:has(yt-formatted-string:has-text(Shorts))
 www.youtube.com##ytd-mini-guide-entry-renderer:nth-of-type(3)
 
@@ -308,7 +308,7 @@ www.youtube.com#?#ytd-guide-section-renderer:has-text(/(More from|Lainnya dari) 
 ! Removes "Homepage" button
 !www.youtube.com#?#ytd-guide-entry-renderer:has(a[href="/"])
 !www.youtube.com#?#ytd-mini-guide-entry-renderer:has(a[href="/"])
-!www.youtube.com##ytd-guide-section-renderer:nth-of-type(1) > ytd-guide-entry-renderer:nth-of-type(1)
+!www.youtube.com##ytd-guide-section-renderer:first-child > #items > ytd-guide-entry-renderer:first-child
 
 ! ——————————————————————————————
 
@@ -446,10 +446,10 @@ youtube.com###logo #country-code
 www.youtube.com##ytd-topbar-logo-renderer #country-code
 
 ! Removes YT Bloat [YT/Google App Drawer,Upload video] (dont block last element if not logged in, which is settings)
-www.youtube.com##ytd-masthead #end #buttons > ytd-topbar-menu-button-renderer:nth-of-type(1)
+www.youtube.com##ytd-masthead #end #buttons > ytd-topbar-menu-button-renderer:first-child
 www.youtube.com#?#ytd-masthead #end #buttons:not(:has(ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"])) ytd-topbar-menu-button-renderer.style-default
 youtube.com#?##button:has([aria-label*=app])
-www.youtube.com##ytd-masthead #end #buttons > ytd-button-renderer:nth-of-type(1)
+www.youtube.com##ytd-masthead #end #buttons > ytd-button-renderer:not(:has(a[href^="https://accounts.google.com/ServiceLogin"])):nth-of-type(1)
 
 ! Remove Profile Icon On Login Button
 ! :remove() is required or there will be padding width differences
@@ -527,11 +527,14 @@ www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(f
 www.youtube.com##.ytd-watch-flexy #above-the-fold:style(font-weight:normal!important)
 www.youtube.com##h1.ytd-watch-metadata:style(font-size:1.8rem!important;line-height:2.6rem!important;font-weight:400!important;white-space:normal!important)
 
-! Change Title font in fullscreen from Roboto to YTSans (why u might ask? because its horizontally-compact (like SegoeUI))
-www.youtube.com##.ytp-title:style(font-family:"YouTube Sans"!important)
+! Change Title font in fullscreen from Roboto to YTSans (why u might ask? because its horizontally-compact (like SegoeUI), also this only applies to user that got the new font update (if the font isnt loaded, it wont work))
+www.youtube.com##.ytp-title:style(font-family:"YouTube Sans")
 
 ! Restore the old watch and upload time stat opacity on new design
 www.youtube.com###above-the-fold #description #plain-snippet-text:style(opacity:75%)
+
+! Try to restore the watch-flexy thingy width a little bit (on new design, but causes visual bug if theres no side menu things).
+www.youtube.com##ytd-watch-flexy #columns #primary:style(margin-left:0!important)
 
 ! Below are big button changes —
 
@@ -564,6 +567,9 @@ www.youtube.com##ytd-masthead #center ytd-searchbox #search-form:style(height:32
 www.youtube.com##ytd-masthead #center ytd-searchbox #search-icon-legacy:style(height:32px!important)
 www.youtube.com##ytd-masthead #center ytd-searchbox #search-icon:style(height:32px!important)
 !#endif
+
+! Remove big banner on homepage (specifically the one that promotes shit, and the new "save the earth" thing (its enough to be in the youtube logo, but too much if putting ginormous banner in homepage))
+www.youtube.com##ytd-rich-grid-renderer ytd-statement-banner-renderer
 
 ! Remove channel store (maybe need to reconsider because this is kinda same as join button, maybe block the image only??)
 www.youtube.com##ytd-vertical-product-card-renderer img
