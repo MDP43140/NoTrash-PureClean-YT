@@ -559,6 +559,11 @@ www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-chrome-controls .ytp-bu
 www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-chrome-controls .ytp-play-button:style(width:46px!important;cursor:default!important)
 www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-progress-bar-container:style(bottom:39px!important;height:5px!important)
 www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-time-display:style(line-height:39px!important)
+www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode:style(height:54px!important;padding-top:4px!important)
+www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-button:style(width:54px!important)
+www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-play-button:style(width:60px!important)
+www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-progress-bar-container:style(bottom:52.5px!important;height:8px!important)
+www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode.ytp-time-display:style(line-height:53px!important)
 ! SearchBox
 www.youtube.com##ytd-masthead #center ytd-searchbox #search-form:style(height:32px!important)
 www.youtube.com##ytd-masthead #center ytd-searchbox #search-icon-legacy:style(height:32px!important)
