@@ -2,6 +2,7 @@
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
  . Reduce settings opacity button if it links to (youtube.com/account, aka. login), yeah youtube now started to do this annonying shit where we need our account just for that... why ;(
+ . Update preview image on README.md.
 
 # Changelogs:
 ### 14.06.2022:
@@ -10,6 +11,10 @@
  + (try to) Restore the watch-flexy width a little bit (on new design, but causes visual bug if theres no side menu, but because this had too long reside in dev, i decided to actually push this to main "branch").
  + Removes (some new and different) big banner on homepage (this changes was too long sitting in dev "branch", so i put this on main "branch" too lol).
  + Revert enforcing YTSans font (because some people didnt get that change yet, and because that the "YouTube Sans" font isn't loaded, so wont work even using !important).
+ + Remove useless unclickable button (specifically the useless disabled subtitle button).
+ + Fix normalize big button not working (this might be because YouTube experiment with big button is done, and now applied for everyone, and didnt require special `.ytp-exp-bigger-button-like-mobile, .ytp-larger-tap-buttons, .ytp-big-mode` anymore).
+ + Reduce banwidtheatingnewhdhoverpreviewnonsense message.
+ + Remove different types of bloatchip found in watch ui above video recommendation (well if you even used that recommendation...)
 
 ### 13.06.2022:
  + Replaced :nth-of-type(1) > :first-child (saved 2 byte for each).
@@ -38,9 +43,7 @@
  + [EXTREME] Remove huge grid boxes of "recommended" bloat channel (experiment).
 
 ### 01.06.2022_dev:
- + Remove useless unclickable button (mostly seen in member-only videos).
  + Remove ridicilously nonsense indicator when you search using searchbox (bug: when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon used to be).
- + revert remove sidebar changes (now Side-bar wont be removed if not logged in, also the code is'nt removed, just commented out so if you want to use it just uncomment it).
 
 ### **.05.2022:
  + removed redundant "commit" at the header part.

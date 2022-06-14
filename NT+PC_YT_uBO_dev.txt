@@ -302,7 +302,9 @@ www.youtube.com#?#ytd-guide-section-renderer:has-text(/(More from|Lainnya dari) 
 ! - Save to playlist
 ! - Large grey buttons below description
 ! - Concert Ticket
+! - Bloatchip (if you prefer to see related video recommendations in watch menu, not only homepage)
 ! - Join button (disabled by default)
+! - Fullscreen annoyances (Unnesecary watch later button, some opaque buttons, too much shadows, unnesecary disabled buttons)
 !
 
 ! remove some space-eating icon nonsense
@@ -311,14 +313,7 @@ www.youtube.com##ytd-player .ytp-popup.ytp-settings-menu .ytp-panel .ytp-panel-m
 ! remove sponsored description links inserted by rights holders
 www.youtube.com##ytd-metadata-row-renderer
 
-! Block Quota wasting bloat feature: new hover preview
-! and restore old thumbnail ui (including watch later and save to button, except the lightweight preview thing ;c. why youtube...)
-! Why this added:
-! - Quota-wasting (because playing high quality video automatically when the video is accidentally hovered).
-! - Slowing down (because its loading a full-blown *embed-like* video player which can slowdown lowend devices).
-! - Privacy invasion (you are now watching the actual video itself (which affects history) instead of seeing just the preview).
-! but there are drawbacks if your account/session had this feature: you cannot see previews.
-! accounts/session that did'nt have this feature is in luck because old preview still work.
+! Remove bandwidth-wasting bloat: new FHD++ "hover preview"
 www.youtube.com##ytd-rich-grid-renderer ytd-video-preview:remove()
 www.youtube.com##ytd-thumbnail-overlay-loading-preview-renderer
 www.youtube.com##ytd-thumbnail[now-playing] ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-toggle-button-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-endorsement-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-button-renderer.ytd-thumbnail, ytd-thumbnail[is-preview-loading] ytd-thumbnail-overlay-hover-text-renderer.ytd-thumbnail:style(display:flex!important)
@@ -372,7 +367,7 @@ www.youtube.com##ytd-watch-metadata ytd-menu-renderer ytd-button-renderer.style-
 www.youtube.com##ytd-rich-metadata-renderer.ytd-rich-metadata-row-renderer
 
 ! hide autoplay icon if disabled (you can still hover on same area and enable it back)
-www.youtube.com##.ytp-chrome-bottom .ytp-right-controls button.ytp-button:nth-of-type(1) .ytp-autonav-toggle-button-container .ytp-autonav-toggle-button[aria-checked=false]
+www.youtube.com##.ytp-chrome-bottom .ytp-right-controls button.ytp-button:first-child .ytp-autonav-toggle-button-container .ytp-autonav-toggle-button[aria-checked=false]
 ! bug fix for sponsorblock user
 www.youtube.com##.ytp-chrome-bottom .ytp-right-controls button.ytp-button:nth-of-type(6) .ytp-autonav-toggle-button-container .ytp-autonav-toggle-button[aria-checked=false]
 
@@ -382,7 +377,7 @@ www.youtube.com##ytd-video-secondary-info-renderer ytd-expander:style(max-height
 www.youtube.com##ytd-comments:style(max-height:100vh!important;overflow:auto!important)
 
 ! just DONT give a button if you cant even click it
-!www.youtube.com##.ytp-subtitles-button[aria-pressed=false]
+www.youtube.com##.ytp-subtitles-button:has(svg[fill-opacity="0.3"])
 
 ! Make video-watching experience less-cluttered by tweaking some transparencies
 ! Bug: this makes some disappearing stuff wont dissappear (especially chrome-bottom)
@@ -406,8 +401,14 @@ www.youtube.com##ytp-pyc-player-content html5-ypc-thumbnail
 www.youtube.com##ytp-pyc-player-content html5-ypc-description
 www.youtube.com##ytp-pyc-player-content html5-ypc-purchase
 
+! Remove a different type of "bloatchip" (this one is on watchlist above video recommendation, if its not removed ofcourse...)
+www.youtube.com##yt-chip-cloud-renderer
+
 ! Remove "Join Channel" Button (disabled by default cus then how viewer can support the content creator then? lol, also its not annonying, or huge-banner, or ytpremium-related anyway)
 !youtube.com###sponsor-button
+
+! Remove unnesecary "Watch Later" button (YouTube, that stupid big block should be put in title near like/dislike, not on fullscreen GUI!)
+www.youtube.com##.ytp-chrome-top .ytp-chrome-top-buttons .ytp-watch-later-button
 
 ! ——————————————————————————————
 
@@ -435,7 +436,7 @@ www.youtube.com##ytd-topbar-logo-renderer #country-code
 www.youtube.com##ytd-masthead #end #buttons > ytd-topbar-menu-button-renderer:first-child
 www.youtube.com#?#ytd-masthead #end #buttons:not(:has(ytd-button-renderer a[href^="https://accounts.google.com/ServiceLogin"])) ytd-topbar-menu-button-renderer.style-default
 youtube.com#?##button:has([aria-label*=app])
-www.youtube.com##ytd-masthead #end #buttons > ytd-button-renderer:not(:has(a[href^="https://accounts.google.com/ServiceLogin"])):nth-of-type(1)
+www.youtube.com##ytd-masthead #end #buttons > ytd-button-renderer:not(:has(a[href^="https://accounts.google.com/ServiceLogin"])):first-child
 
 ! Remove Profile Icon On Login Button
 ! :remove() is required or there will be padding width differences
@@ -518,7 +519,7 @@ www.youtube.com##.ytd-watch-flexy #above-the-fold:style(font-weight:normal!impor
 www.youtube.com##h1.ytd-watch-metadata:style(font-size:1.8rem!important;line-height:2.6rem!important;font-weight:400!important;white-space:normal!important)
 
 ! Change Title font in fullscreen from Roboto to YTSans (why u might ask? because its horizontally-compact (like SegoeUI), also this only applies to user that got the new font update (if the font isnt loaded, it wont work))
-www.youtube.com##.ytp-title:style(font-family:"YouTube Sans")
+www.youtube.com##.ytp-chrome-top .ytp-chrome-top-buttons .ytp-title:style(font-family:"YouTube Sans")
 
 ! Restore the old watch and upload time stat opacity on new design
 www.youtube.com###above-the-fold #description #plain-snippet-text:style(opacity:75%)
@@ -535,23 +536,13 @@ www.youtube.com##+js(rc, ytp-exp-bigger-button-like-mobile, ytd-player #containe
 www.youtube.com##+js(rc, ytp-larger-tap-buttons, ytd-player #container #movie_player)
 www.youtube.com##+js(rc, chunked, ytd-masthead)
 ! WatchFlexy
-www.youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom:style(bottom:0!important;height:40px!important;padding-top:3px!important)
-www.youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls:style(height:40px!important;line-height:40px!important)
-www.youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls .ytp-button:style(padding:0!important;width:40px!important;cursor:default!important)
-www.youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-chrome-controls .ytp-play-button:style(width:46px!important;cursor:default!important)
-www.youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-progress-bar-container:style(bottom:39px!important;height:5px!important)
-www.youtube.com##ytd-watch-flexy .ytp-exp-bigger-button-like-mobile .ytp-chrome-bottom .ytp-time-display:style(line-height:39px!important)
-www.youtube.com##ytd-watch-flexy .ytp-larger-tap-buttons .ytp-chrome-bottom:style(bottom:0!important;height:40px!important;padding-top:3px!important)
-www.youtube.com##ytd-watch-flexy .ytp-larger-tap-buttons .ytp-chrome-bottom .ytp-chrome-controls:style(height:40px!important;line-height:40px!important)
-www.youtube.com##ytd-watch-flexy .ytp-larger-tap-buttons .ytp-chrome-bottom .ytp-chrome-controls .ytp-button:style(padding:0!important;width:40px!important;cursor:default!important)
-www.youtube.com##ytd-watch-flexy .ytp-larger-tap-buttons .ytp-chrome-bottom .ytp-chrome-controls .ytp-play-button:style(width:46px!important;cursor:default!important)
-www.youtube.com##ytd-watch-flexy .ytp-larger-tap-buttons .ytp-chrome-bottom .ytp-progress-bar-container:style(bottom:39px!important;height:5px!important)
-www.youtube.com##ytd-watch-flexy .ytp-larger-tap-buttons .ytp-chrome-bottom .ytp-time-display:style(line-height:39px!important)
-www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode:style(height:54px!important;padding-top:4px!important)
-www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-button:style(width:54px!important)
-www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-chrome-controls .ytp-play-button:style(width:60px!important)
-www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode .ytp-progress-bar-container:style(bottom:52.5px!important;height:8px!important)
-www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-big-mode.ytp-time-display:style(line-height:53px!important)
+www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom:style(bottom:0!important;height:40px!important;padding-top:3px!important)
+www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-chrome-controls:style(height:40px!important;line-height:40px!important)
+www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-chrome-controls .ytp-button:style(padding:0!important;cursor:default!important)
+www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-chrome-controls .ytp-button:not(.ytp-chapter-title,.ytp-live-badge):style(width:40px!important;)
+www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-chrome-controls .ytp-play-button:style(width:46px!important;cursor:default!important)
+www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-progress-bar-container:style(bottom:39px!important;height:5px!important)
+www.youtube.com##ytd-watch-flexy .ytp-chrome-bottom .ytp-time-display:style(line-height:39px!important)
 ! SearchBox
 www.youtube.com##ytd-masthead #center ytd-searchbox #search-form:style(height:32px!important)
 www.youtube.com##ytd-masthead #center ytd-searchbox #search-icon-legacy:style(height:32px!important)
@@ -767,7 +758,7 @@ m.youtube.com##ytm-feed-filter-chip-bar-renderer:upward(.rich-grid-renderer-head
 ! Remove disturbing studio,music,kids , ytp,purchasesandsubscriptions,yourdatainyt , and additional nonsense extra button
 m.youtube.com##ytm-multi-page-menu-section-renderer:nth-of-type(5)
 m.youtube.com##ytm-multi-page-menu-section-renderer:nth-of-type(2)
-m.youtube.com##ytm-multi-page-menu-section-renderer:nth-of-type(1) ytm-compact-link-renderer:nth-of-type(2)
+m.youtube.com##ytm-multi-page-menu-section-renderer:first-child ytm-compact-link-renderer:nth-of-type(2)
 
 ! make {channel lists in subscription tab,top bar,and sections tab whatever} floating, 50% transparent, and eats less screen space
 m.youtube.com##ytm-mobile-topbar-renderer:style(background-color:#181b1cdd!important)
