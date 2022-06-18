@@ -5,6 +5,9 @@
  . Update preview image on README.md.
 
 # Changelogs:
+### 18.06.2022:
+ + Visual bugfix on ytp fullscreen big mode normalize (but heres the problem: idk the old real value anymore, so its not really a big difference from normal non-big mode, so its just a "workaround hack" kinda stuff).
+
 ### 14.06.2022:
  + Revert some :first-child changes (it broke some stuff. it actually checks if the element is actually on 1st element, instead of 1st type, i guess im wrong lol)
  + Bug fix home button wasnt removed when theres no login button (disabled by default).
