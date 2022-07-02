@@ -3,8 +3,14 @@
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
  . Reduce settings opacity button if it links to (youtube.com/account, aka. login), yeah youtube now started to do this annonying shit where we need our account just for that... why ;(
  . Update preview image on README.md.
+ . Add mobile version preview on README.md.
 
 # Changelogs:
+### 02.07.2022:
+ + Reordered YTM rules.
+ + Remove that DAMN THICC BLOAT on fullscreen.
+ + Remove nonsense visual updown arrow icon on comments button.
+
 ### 18.06.2022:
  + Visual bugfix on ytp fullscreen big mode normalize (but heres the problem: idk the old real value anymore, so its not really a big difference from normal non-big mode, so its just a "workaround hack" kinda stuff).
 
