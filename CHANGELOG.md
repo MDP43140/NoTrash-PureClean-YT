@@ -6,15 +6,16 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
+### 11.07.2022:
+ + [ContentFilter] Blacklisted more bad channels (see #1f785f8 for the lists).
+
 ### 02.07.2022:
  + Reordered YTM rules.
  + Remove that DAMN THICC BLOAT on fullscreen.
  + Remove nonsense visual updown arrow icon on comments button.
 
-### 18.06.2022:
+### **.06.2022:
  + Visual bugfix on ytp fullscreen big mode normalize (but heres the problem: idk the old real value anymore, so its not really a big difference from normal non-big mode, so its just a "workaround hack" kinda stuff).
-
-### 14.06.2022:
  + Revert some :first-child changes (it broke some stuff. it actually checks if the element is actually on 1st element, instead of 1st type, i guess im wrong lol)
  + Bug fix home button wasnt removed when theres no login button (disabled by default).
  + (try to) Restore the watch-flexy width a little bit (on new design, but causes visual bug if theres no side menu, but because this had too long reside in dev, i decided to actually push this to main "branch").
@@ -24,18 +25,12 @@
  + Fix normalize big button not working (this might be because YouTube experiment with big button is done, and now applied for everyone, and didnt require special `.ytp-exp-bigger-button-like-mobile, .ytp-larger-tap-buttons, .ytp-big-mode` anymore).
  + Reduce banwidtheatingnewhdhoverpreviewnonsense message.
  + Remove different types of bloatchip found in watch ui above video recommendation (well if you even used that recommendation...)
-
-### 13.06.2022:
  + Replaced :nth-of-type(1) > :first-child (saved 2 byte for each).
- + Blacklisted more clickbaity nonsense channels (see #c854256 BlacklistedChannels.txt commit for the lists (its messy i know, but its too much to type here lol)).
-
-### 04.06.2022:
+ + [ContentFilter] Blacklisted more clickbaity nonsense channels (see #c854256 BlacklistedChannels.txt commit for the lists (its messy i know, but its too much to type here lol)).
  + fixed some YTPremium nagging potentially not blocked (because some ytpremium links look like /paid_memberships?whatever=crap_here).
  + remove "Your Clips" nonsense on guide panel.
  + Shorts video removal improved on YT mobile & desktop site.
  + Remove "attention-grabbing" red shining "LIVE" text on live videos (live "indicator" can be seen on watch count, it will say "N is watching", or "N Hour Premiere").
-
-### 01.06.2022:
  + Fix a bug where expanding subscription list on guide panel removes it instead (caused by ##ytd-guide-section-renderer.ytd-guide-renderer:has(a[href="/feed/guide_builder"]))
 	 - but it introduces another another visual annoyances (that blank 2 strip lines... its annonying why, or maybe somehow fixable w/ :only-of-type syntax?)
  + Limit description container maximum height to 100%.
@@ -50,8 +45,6 @@
  + [Ext.MyBlockingPreference] removing some NEWs (lol).
  + [Ext.MyBlockingPreference] now videos in subscription not only hidden, but the hidden bandwidth-consuming part (hidden images) are removed now.
  + [EXTREME] Remove huge grid boxes of "recommended" bloat channel (experiment).
-
-### 01.06.2022_dev:
  + Remove ridicilously nonsense indicator when you search using searchbox (bug: when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon used to be).
 
 ### **.05.2022:
