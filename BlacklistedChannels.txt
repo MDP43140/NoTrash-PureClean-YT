@@ -2,13 +2,8 @@ Block state | Channel name - (Channel link) Description (or other description, c
 -----------------------------------------------------
 ✗ | John Flora							 - Fake video dark web fishes (wont be added because other videos not really a fake video, channel/UCPx3SVYin7OZ4JGVkRjpWbg)
 ✗ | Moe Sargi								 - First 3AM video (c/moesargi, why this isnt blocked? 1. not fake, 2. more of a "MindSeedTV" styled 3. less-looking-clickbait)
-H | tanboy kun							 - Indonesian asmr (eating-disorder?) youtuber (bruh i knew him for long time, and he's not considered bad (at least not as bad as nikocado)), but yeah... just put him on hold list for now just in case his videos starting to affect something...
-H | Cursed Urban						 - (c/CursedUrban) Dark web usual clickbait
-H | Crypto NWO							 - Dark web usual clickbait (atleast at the time of writing..., c/CryptoNWO)
-H | DeltaDie?								 - Copycat 5MC (channel name unconfirmed, fetched from DJ Cook)
-H | Patrick Barnes					 - (channel/UCvH8Qx2bBK3Nd9m5vHne3wg) Fetched from RossSmith featured channel (might be considered to block later...)
-H | Chelcie Lynn						 - (channel/UCgyoQGRhGeyrUKcQaHKT0Zg) Fetched from RossSmith featured channel (might be considered to block later...)
-H | Paige Ginn							 - (channel/UC_imz2_buszi6K_P8CHhKaQ) Fetched from RossSmith featured channel (might be considered to block later...)
+H | Kamguysa(??)						 - () Worst roblox animation (unverified)
+H | Kei [4JapaneseLetters]	 - () Worst animation
 + | 1 MILLION Dance Studio	 - (1MILLIONDanceStudioofficial) might be one of the channel that owns the video that contains 'Hey Mama' in the title?
 + | 5 Minute Crafts					 - (c/5MinuteCraftsYouTube) Copycat Troom Troom
 + | AldosWorld							 - The most childish youtuber
@@ -16,27 +11,32 @@ H | Paige Ginn							 - (channel/UC_imz2_buszi6K_P8CHhKaQ) Fetched from RossSmit
 + | Aphmau									 - Clickbait minecraft stuff (stumbled upon randomly, /AphmauGaming).
 + | [Blackpink,BTS]					 - stupid corean p00p.
 + | BoostyPop								 - (channel/UCrsiAD8zDTqtRdSeuxy5VxA) Fornite scam.
++ | Braso										 - (c/Lanza00) Siphoning views (clickbait) off of someone@s death to make money.
 + | Cam Casey								 - (c/TheMiniatureRanch) worst yt short
 + | Carlaylee HD						 - CarlayleeHD nonsense (c/Carlaylee).
 + | Carlaylee HD Gaming			 - CarlayleeHD nonsense (channel/UC7t7rlZ0nMsSmDPWJm3J0Zw).
 + | Carlaylee Hd Shorts			 - CarlayleeHD nonsense (channel/UCGxymjcbIoObYBJ7eNf9MHw).
 + | Carlie HD								 - CarlayleeHD nonsense (c/CarlieHD).
 + | Carter Sharer						 - (c/cartersharer)
++ | Chelcie Lynn						 - (channel/UCgyoQGRhGeyrUKcQaHKT0Zg) Fetched from RossSmith featured channel (might be considered to block later...)
 + | ClewFix									 - (channel/UCGHVMWyTjDCBXg2-Y49aZCg) Weird Sexual/Fortnite youtuber
 + | Clouds									 - GF Fortnite video (not checked, possibly sexual related)
 + | CocoMelon								 - childish stuffs there
 + | Coin										 - (c/CoinMinecraftFunnyAnimation) Terrible & disgusting Minecraft animation channel
 + | Collins Key							 - (user/CollinsKey) Pranky stuffs
 + | Cracky									 - (channel/UC4WxQSBRG1wPIndKV_psLSw) generic compilation and fake video
-✔ | Creepo									 - (channel/UCl-riarpAj1XLXFBs4EteeQ) idk wut this i didnt check previously, might be fortnite nonsense. now he's didn't do any of that stuff anymore.
-✔ | DaddyOFive							 - (channel/UC437LVcYg3tNXuTtqi51bow) Hated YouTuber for family real-life kids abuse (not banned, bad videos are still up but its couple years ago)
++ | Crypto NWO							 - Dark web usual clickbait (atleast at the time of writing..., c/CryptoNWO)
++ | Cursed Urban						 - (c/CursedUrban) Dark web usual clickbait
++ | Daniel Chin							 - (channel/UCAXQkLCae-nTwU0d6LgqP2Q,channel/UCIgSeOL-x23Iedm8lOo2zZw) P*rn Minecraft animation
 + | DavidsTV								 - (c/DavidsTV) clickbait, and ofcourse the glorious huggy wuggy clickbait.
++ | Dhar Mann								 - (c/DharMannOfficial) looks like a clickbait fake video thingy
 + | Doal										 - fake free Robux streamer, and YouTube Shorts spam.
 + | Dominic Schmidt					 - (channel/UC3cjo_8Q5lOMdmpfPo1wAag) Eww, you dont want to ever see this!
 + | Doritos Reaction				 - (c/DoritosReaction) 3AM Clickbait
-+ | elisocray								 - nasty piece of $#!t
++ | elisocray								 - nasty piece of 0!t
 + | emily is daddy					 - Weird Sexual/Fortnite youtuber
 + | Eystreem								 - (c/eystreem) minecraft clickbait + ytshorts spam
++ | Feedback King						 - (c/Feedback99) Worst Animation
 + | Game Master Network			 - (channel/UCX-EPC5_NsFmRFkfzTFaP9Q_) combination of bad youtubers
 + | Gotcha!									 - (channel/UCtxqQnLgj-1rAVtjpSgPS5A) Copycat 5MC
 + | Guava Juice							 - (aynakoitsroi) 3AM Fake Videos, Fraud, and YTShorts spam.
@@ -44,11 +44,11 @@ H | Paige Ginn							 - (channel/UC_imz2_buszi6K_P8CHhKaQ) Fetched from RossSmit
 + | HLN											 - King of fake news.
 + | HYPELABELS							 - (Kpop ,/c/HYBELABELS | /user/ibighit)
 + | IGN											 - Their (gaming, mostly...) 'reviews' are basically just marketing buzzwords.
-✔ | (Im)JayStation					 - (channel/UCyjn72dikcC7J3WV0_eCM1A) Clickbait 3AM Videos (not banned, bad videos are still up but its couple years ago)
 + | imZarz( x)?							 - Weird Sexual/Fortnite youtuber
 + | itsOwen									 - GodOfClickbait (Gross Sexual youtuber)
 + | ItzDuhMorgan						 - Morgz nonsense (channel/UC17R_dRJCCipEHbJaIwp5Rw).
 + | Jack Wrath							 - (Part of Savetion, channel/UCDwnDUfWDLlNnyLsL2poBmw)
++ | Jenny SlipperyT					 - (channel/UCdTBMZY_EJ5R1YQZ4U59weA) P*rn Minecraft animation
 + | Jester									 - (c/JesseBaron) 3AM Fake Videos
 + | Jimmy Kimmel and Fallon	 - Unlikable b**t*ds
 + | JYP Entertainment				 - (c/JYPEntertainment) kpop Nonsense
@@ -66,6 +66,7 @@ H | Paige Ginn							 - (channel/UC_imz2_buszi6K_P8CHhKaQ) Fetched from RossSmit
 + | LoL Mobile Gaming				 - their fwkang annonying & buggy ads dude. like really?, why not block right?
 + | Matt and Rebecca				 - (c/mattandrebecca) pranking, 24hour nonsense, dumb comparison.
 + | Mia DeLeon Xo						 - (channel/UCrXEZ8zqA6GkjuyiYE40Lcg) worst yt short
++ | Mine Time								 - (channel/UCtjH_DXbbxyNdsi9Y-CZ9gA) P*rn Minecraft animation
 + | (Mini|AnimaSEA -) Monsta - yuno childish channel bruf
 + | More Nikocado						 - (channel/UCM5v93rV1sazitUpB47hVrA) Part of "Nikocado Avocado"
 + | Morgz										 - childish B***ards (c/ItsMorgz).
@@ -90,6 +91,7 @@ H | Paige Ginn							 - (channel/UC_imz2_buszi6K_P8CHhKaQ) Fetched from RossSmit
 + | Norris Nuts Gaming			 - (channel/UCWcly5Teks2uSNsF5hRFNNg) part of nn
 + | Norris Nuts Squat				 - (channel/UCj_obRY5ndoZUPOihGowD5A) part of nn
 + | Oboat										 - (channel/UClQpQYzvYq0mH8M2w3zEdGA) Robux scam
++ | Paige Ginn							 - (c/PaigeGinn13,channel/UC_imz2_buszi6K_P8CHhKaQ, Fetched from RossSmith featured channel) Nonsense fartin pranky sht
 + | Panda Boi 2							 - (channel/UC1jaGiYcpKRJxm5tho4BkQw) part of PB
 + | PANDA BOI								 - (c/PANDABOI) worst yt short
 + | PawZam Dogs							 - (channel/UC0ufW3qv1DDE8ucnwK6jvTA) just as bad as rebecca zamolo itself
@@ -112,11 +114,12 @@ H | Paige Ginn							 - (channel/UC_imz2_buszi6K_P8CHhKaQ) Fetched from RossSmit
 + | Savetion 3							 - (Part of Savetion, channel/UCZCcGZQq15BIei-HAdmtynw)
 + | Savetion								 - (idk, porn?? bot channel, mostly... c/Savetion_-X)
 + | Shaya Jacobs						 - (channel/UC42Wu_Mwdfomf5uNgSKvmfA) more clickbaits, and 3am videos
++ | SixStriker							 - (channel/UCO6rBDzdUamZTyl8o_SJdag) Siphoning views (clickbait) off of someone's death to make money.
 + | That Vegan Teacher			 - (c/ThatVeganTeacherYouTube) idk wut this?? this isnt considered bad channel. btw fetched from DJCook, but details aren't shown. we're gonna wait for the actual info to get shown
 + | The Norris Nuts					 - (channel/UCYd0us2OtW4d4-1cfpT2ktw | c/TheNorrisNuts) clickbait 3am crap
 + | The Prince Family				 - (channel/UC5LGPvoUOfwcLi4Ck8LiR4A) clickbait sh!t
 + | The Prince Family CH		 - (channel/UCqONv8hrKKTd0ELJcxOVNJQ) clubhouse of above
-+ | The (Royalty|ACE) Family - (c/{royaltyfam,TheACEFamily}) Clickbait from richies
++ | The (Royalty|ACE) Family - (c/{royaltyfam,TheACEFamily}) Clickbait from crazy-ass-richies
 + | TIM TIN									 - Copycat 5MC (channel/UCRXJaBvhynZMqVCbHVkzkNw)
 + | Top10Speed							 - (c/Top10Speed) generic compilation and fake video
 + | Troom Oki Toki					 - Copycat 5MC (channel/UChkZElwBp90FQHJZwmhBPxA)
@@ -129,6 +132,9 @@ H | Paige Ginn							 - (channel/UC_imz2_buszi6K_P8CHhKaQ) Fetched from RossSmit
 + | Yode plays							 - (c/YodePlays) Roblox scam and clickbait.
 + | ZOOM GO									 - Copycat 5MC (channel/UCpDZ6GHn0iVscFje6mxU3LA)
 + | ZutiGang								 - (channel/UCNBTflmnht6ZMRNCDNilw9g) worst yt short
+✔ | Creepo									 - (channel/UCl-riarpAj1XLXFBs4EteeQ) idk wut this i didnt check previously, might be fortnite nonsense. now he's didn't do any of that stuff anymore.
+✔ | DaddyOFive							 - (channel/UC437LVcYg3tNXuTtqi51bow) Hated YouTuber for family real-life kids abuse (not banned, bad videos are still up but its couple years ago)
+✔ | (Im)JayStation					 - (channel/UCyjn72dikcC7J3WV0_eCM1A) Clickbait 3AM Videos (not banned, bad videos are still up but its couple years ago)
 ==================================================================
 PS: beware that /c/ can also be /user/ and vice-versa.
 Status:
