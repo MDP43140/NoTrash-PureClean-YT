@@ -6,6 +6,9 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
+### 28.07.2022:
+ + [ContentFilter] added "pink sauce" (bad tiktok trend again and again...).
+
 ### 11.07.2022:
  + [ContentFilter] Blacklisted more bad channels (see #1f785f8 for the lists).
 
