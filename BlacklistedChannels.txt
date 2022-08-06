@@ -4,6 +4,7 @@ Block state | Channel name - (Channel link) Description (or other description, c
 ✗ | Moe Sargi								 - First 3AM video (c/moesargi, why this isnt blocked? 1. not fake, 2. more of a "MindSeedTV" styled 3. less-looking-clickbait)
 H | Kamguysa(??)						 - () Worst roblox animation (unverified)
 H | Kei [4JapaneseLetters]	 - () Worst animation
+H | Quantum TV               - (channel/UCOCH5WuEjNnl9Gk8q2r_hVQ) DMCA Abuser.
 + | 1 MILLION Dance Studio	 - (1MILLIONDanceStudioofficial) might be one of the channel that owns the video that contains 'Hey Mama' in the title?
 + | 5 Minute Crafts					 - (c/5MinuteCraftsYouTube) Copycat Troom Troom
 + | AldosWorld							 - The most childish youtuber
@@ -132,6 +133,7 @@ H | Kei [4JapaneseLetters]	 - () Worst animation
 + | Yode plays							 - (c/YodePlays) Roblox scam and clickbait.
 + | ZOOM GO									 - Copycat 5MC (channel/UCpDZ6GHn0iVscFje6mxU3LA)
 + | ZutiGang								 - (channel/UCNBTflmnht6ZMRNCDNilw9g) worst yt short
+✔ | Afsha tuition vlogs      - Evil indian teacher child abuse (yeeted off).
 ✔ | Creepo									 - (channel/UCl-riarpAj1XLXFBs4EteeQ) idk wut this i didnt check previously, might be fortnite nonsense. now he's didn't do any of that stuff anymore.
 ✔ | DaddyOFive							 - (channel/UC437LVcYg3tNXuTtqi51bow) Hated YouTuber for family real-life kids abuse (not banned, bad videos are still up but its couple years ago)
 ✔ | (Im)JayStation					 - (channel/UCyjn72dikcC7J3WV0_eCM1A) Clickbait 3AM Videos (not banned, bad videos are still up but its couple years ago)
@@ -142,4 +144,4 @@ Status:
 H | Hold, More review required (not blocked yet).
 W | Waiting...
 + | added to ntpcyt
-✔ | Banned (aka. its done for and should be removed), or the channel owner cleans up their channel and promise not to upload trash videos.
+✔ | Banned (aka. its done for and should be removed), or channel owner cleanup their channel and promise not to upload bad stuff.

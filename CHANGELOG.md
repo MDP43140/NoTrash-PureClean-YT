@@ -6,13 +6,13 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
-### 28.07.2022:
+### 06.08.2022:
+ + [ContentFilter] added [anjay+ mabar+,slebew,catwalk,fashion week,price prediction,ripple xrp,daily analysis,#investing,#ripple,#xrp,#bitcoin,#ethereum,#monero] –
+   (some of these are crypto related, and some of these has tiktok relation to "Citayam Fashion Week", "Catwalk", and the WORST that can LITERALLY impact people with CERTAIN NAMES (+toxic), "DAMPS").
+
+### **.07.2022:
  + [ContentFilter] added "pink sauce" (bad tiktok trend again and again...).
-
-### 11.07.2022:
  + [ContentFilter] Blacklisted more bad channels (see #1f785f8 for the lists).
-
-### 02.07.2022:
  + Reordered YTM rules.
  + Remove that DAMN THICC BLOAT on fullscreen.
  + Remove nonsense visual updown arrow icon on comments button.
