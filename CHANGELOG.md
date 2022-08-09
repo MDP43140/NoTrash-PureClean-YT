@@ -6,6 +6,10 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
+### 09.08.2022:
+ + [ContentFilter] Improve "anjay+ mabar+" > "anjay ?mabar".
+ + [ContentFilter] blacklisted [Foodistzen,Quantum TV,RainbowMC] (2 faking someone death for profit, and 1 abusing dmca).
+
 ### 06.08.2022:
  + [ContentFilter] added [anjay+ mabar+,slebew,catwalk,fashion week,price prediction,ripple xrp,daily analysis,#investing,#ripple,#xrp,#bitcoin,#ethereum,#monero] –
    (some of these are crypto related, and some of these has tiktok relation to "Citayam Fashion Week", "Catwalk", and the WORST that can LITERALLY impact people with CERTAIN NAMES (+toxic), "DAMPS").

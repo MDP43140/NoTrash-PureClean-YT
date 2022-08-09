@@ -4,7 +4,6 @@ Block state | Channel name - (Channel link) Description (or other description, c
 ✗ | Moe Sargi								 - First 3AM video (c/moesargi, why this isnt blocked? 1. not fake, 2. more of a "MindSeedTV" styled 3. less-looking-clickbait)
 H | Kamguysa(??)						 - () Worst roblox animation (unverified)
 H | Kei [4JapaneseLetters]	 - () Worst animation
-H | Quantum TV               - (channel/UCOCH5WuEjNnl9Gk8q2r_hVQ) DMCA Abuser.
 + | 1 MILLION Dance Studio	 - (1MILLIONDanceStudioofficial) might be one of the channel that owns the video that contains 'Hey Mama' in the title?
 + | 5 Minute Crafts					 - (c/5MinuteCraftsYouTube) Copycat Troom Troom
 + | AldosWorld							 - The most childish youtuber
@@ -38,6 +37,7 @@ H | Quantum TV               - (channel/UCOCH5WuEjNnl9Gk8q2r_hVQ) DMCA Abuser.
 + | emily is daddy					 - Weird Sexual/Fortnite youtuber
 + | Eystreem								 - (c/eystreem) minecraft clickbait + ytshorts spam
 + | Feedback King						 - (c/Feedback99) Worst Animation
++ | Foodistzen               - (channel/UCXd8ukxwU7vDe5utwoiJsWA) Israeli-dajjal people that do really bad stuff (incl. bullying someone, w/ some symbolism shiit).
 + | Game Master Network			 - (channel/UCX-EPC5_NsFmRFkfzTFaP9Q_) combination of bad youtubers
 + | Gotcha!									 - (channel/UCtxqQnLgj-1rAVtjpSgPS5A) Copycat 5MC
 + | Guava Juice							 - (aynakoitsroi) 3AM Fake Videos, Fraud, and YTShorts spam.
@@ -101,6 +101,8 @@ H | Quantum TV               - (channel/UCOCH5WuEjNnl9Gk8q2r_hVQ) DMCA Abuser.
 + | Plasmonix								 - (c/Plasmonix) 3am clickbait
 + | Preston									 - Clichobaito
 + | PrPnySlr69 (Censord)		 - Very Very Clear Porn Channel
++ | Quantum TV               - (channel/UCOCH5WuEjNnl9Gk8q2r_hVQ) DMCA Abuser.
++ | RainbowMC                - (c/UnknownXx) same basically.
 + | RATATA BRILIANT					 - Copycat 5MC (channel/UC-4XBNXB8hi8SjiljzoqEyA)
 + | RATATA BRILIANT ID			 - Copycat 5MC (channel/UCz7TiLOhZzVLe0XnTZGf17g)
 + | RATATA BRILIANT PT			 - Copycat 5MC (channel/UCuZzv6qPcPYWF_mQQ9GLnlw)
@@ -136,6 +138,7 @@ H | Quantum TV               - (channel/UCOCH5WuEjNnl9Gk8q2r_hVQ) DMCA Abuser.
 ✔ | Afsha tuition vlogs      - Evil indian teacher child abuse (yeeted off).
 ✔ | Creepo									 - (channel/UCl-riarpAj1XLXFBs4EteeQ) idk wut this i didnt check previously, might be fortnite nonsense. now he's didn't do any of that stuff anymore.
 ✔ | DaddyOFive							 - (channel/UC437LVcYg3tNXuTtqi51bow) Hated YouTuber for family real-life kids abuse (not banned, bad videos are still up but its couple years ago)
+✔ | Golgolmois               - faking someone death for money.
 ✔ | (Im)JayStation					 - (channel/UCyjn72dikcC7J3WV0_eCM1A) Clickbait 3AM Videos (not banned, bad videos are still up but its couple years ago)
 ==================================================================
 PS: beware that /c/ can also be /user/ and vice-versa.
