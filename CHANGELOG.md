@@ -1,16 +1,20 @@
 # Bugs/Todos:
  - (Dev) autoplay on channel page still cant be stopped, and if the video is autoplayed, you have to refresh the page, because you would'nt be able to stop the autoplay even if you move away from channel page or playing other video.
  - when clicking search box, instead of not changed anything like we used to, it just renders blank box where the search icon will be put
- . Reduce settings opacity button if it links to (youtube.com/account, aka. login), yeah youtube now started to do this annonying shit where we need our account just for that... why ;(
+ . Reduce settings opacity (or give thin blue border) button if it links to (youtube.com/account, aka. login), yeah youtube now started to do this annonying shit where we need our account just for that... why ;(
  . Update preview image on README.md.
  . Add mobile version preview on README.md.
 
 # Changelogs:
-### 09.08.2022:
+### 09.09.2022:
+ + [ContentFilter] Added [hengker,cap[- ]?cut,byte[- ]?dance,murga ?punishments?( (request|fantasy|interview))?,hand ?canning,ear ?(twisting|pulling),#murga(punishments|interview),#murga,#situps,#femdon,fetish].
+ + [ContentFilter] Replace "anu(nya)?" > "anunya" to reduce false-positives.
+ + [ContentFilter] Remove some unnesecary filters (and remove unnesecary ? at beginning/end)(shaves couple bytes off).
+ + [ContentFilter] Improved "nud(e|ity)" > "nud([e3]|ity)".
+
+### **.08.2022:
  + [ContentFilter] Improve "anjay+ mabar+" > "anjay ?mabar".
  + [ContentFilter] blacklisted [Foodistzen,Quantum TV,RainbowMC] (2 faking someone death for profit, and 1 abusing dmca).
-
-### 06.08.2022:
  + [ContentFilter] added [anjay+ mabar+,slebew,catwalk,fashion week,price prediction,ripple xrp,daily analysis,#investing,#ripple,#xrp,#bitcoin,#ethereum,#monero] –
    (some of these are crypto related, and some of these has tiktok relation to "Citayam Fashion Week", "Catwalk", and the WORST that can LITERALLY impact people with CERTAIN NAMES (+toxic), "DAMPS").
 
