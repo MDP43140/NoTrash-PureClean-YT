@@ -6,6 +6,12 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
+### 13.09.2022:
+ + Now i uploaded the script that i usually use to make modifying such huge lists easier.
+ + [ContentFilter] Blacklisted more bad youtuber (see commit #0ec139b).
+ + [ContentFilter] Added [free ?v-?bucks,(super ?|most )sus,sus emote,(btc|bitcoin|eth(ereum)?|xrp).+(live|signals|predictions),18\+,hot guys,e[ -]?girl,[cs]lapped my cheeks,ena[ -]ena,*****,*****,*****,***** (those 4 ***** is censored to prevent bad people for searching those, also because it was too much)].
+ + [ContentFilter] Improve ((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan > ((bocil|bocah|doyan|sering|betah) )?(nonton|lihat) ((film|video|gambar) )?gituan(gituan|anu).
+
 ### 09.09.2022:
  + [ContentFilter] Added [hengker,cap[- ]?cut,byte[- ]?dance,murga ?punishments?( (request|fantasy|interview))?,hand ?canning,ear ?(twisting|pulling),#murga(punishments|interview),#murga,#situps,#femdon,fetish].
  + [ContentFilter] Replace "anu(nya)?" > "anunya" to reduce false-positives.
