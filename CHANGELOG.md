@@ -7,7 +7,7 @@
 
 # Changelogs:
 ### 27.09.2022_dev:
- + GROUNDBREAKING: Content filter merged (after i randomly tested a filter that looks something like `##a,b:has-text(c)`)(further testing required to mare sure that its not messed up before pushing this change to main version).
+ + GROUNDBREAKING: ContentFilter and channel blacklist filter merged (after i randomly tested a filter that looks something like `##a,b:has(c)`)(further testing required to mare sure that its not messed up before pushing this change to main version).
 
 ### 27.09.2022:
  + Remove shorts video shelf (after i randomly disable ntpcyt to see yt new "material you"?? change, seen in explore page).
