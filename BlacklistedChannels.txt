@@ -2,6 +2,8 @@ Block state | Channel name - (Channel link) Description (or other description, c
 -----------------------------------------------------
 ✗ | John Flora							 - Fake video dark web fishes (wont be added because other videos not really a fake video, channel/UCPx3SVYin7OZ4JGVkRjpWbg)
 ✗ | Moe Sargi								 - First 3AM video (c/moesargi, why this isnt blocked? it's not fake (idk but i dont really check their videos), more of a "MindSeedTV" style (looking from thumbnail) and its less-clickbaity)
+H | Jadyn                    - (channel/UCOyX3_7wjAcXyF4Ge3Ci7VA) Fake clickbait (idk if this considered bad enough to be blocked)
+H | KeidBoi                  - (channel/UCYNvW7bGrVSr0pXMpo7jz8g) Fake clickbait (idk if this considered bad enough to be blocked)
 + | 1 MILLION Dance Studio	 - (1MILLIONDanceStudioofficial) might be one of the channel that owns the video that contains 'Hey Mama' in the title?
 + | 5 Minute Crafts					 - (c/5MinuteCraftsYouTube) Copycat Troom Troom
 + | AldosWorld							 - The most childish youtuber
