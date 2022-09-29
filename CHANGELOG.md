@@ -6,11 +6,14 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
+### 29.09.2022:
+ + Re-Fixed some bloat menu button (clip,thanks,share,saveto,etc...) not removed for certain layouts.
+
 ### 27.09.2022:
  + GROUNDBREAKING: ContentFilter and channel blacklist filter merged (after i randomly tested a filter that looks something like `##a,b:has(c)`)(further testing required to mare sure that its not messed up before pushing this change to main version).
  + Remove shorts video shelf (after i randomly disable ntpcyt to see yt new "material you"?? change, seen in explore page).
  + Remove clip engagement panel.
- + Fixed some bloat menu button (clip,thanks,share,saveto,etc...) not removed for certain layouts.
+ + Fixed bloat clip,thanks,share,saveto menu button not removed for some layout.
  + Remove "Thanks" button (+ fixed clip button randomly appears for users that unluckily get this stupid bloat).
  + Added "others" section, and restructure stuff to make it more cleaner.
  + [ContentFilter] Add [brhbugnbdn,minecraft monster school animation,flirt(ing)?].
