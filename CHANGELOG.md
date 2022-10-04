@@ -6,10 +6,18 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
-### 29.09.2022:
- + Re-Fixed some bloat menu button (clip,thanks,share,saveto,etc...) not removed for certain layouts.
+### 04.10.2022
+ + [ContentFilter] Add [(nyquil|sleepy) chicken,pennywise,hotte(st|r),smooch,cuddle,hotte(r|st),ketika tangan(( si)? (om|mbak?))?( udah)? ((ng)?gak|tidak)? kekontrol,(mulut|pantat) di (mulut|pantat),...] (well well well, yet another ridicilous tiktok trend as arised)
+ + [ContentFilter] Blacklist [Armaani,Jadyn,KeidBoi,Klara Tania,Minecraft World,REDDiamond].
+ + [ContentFilter] Bug fix: "for kids" word not blocked.
+ + [ContentFilter] Bug fix: "shulker" word blocked because "hulk" filter.
+ + [ContentFilter] fixed `flirt(ing)>?<` typo.
+ + [ContentFilter] Added some weird BEGIN/END AUTO_PARSE etc... (that is used by parser script).
+ + [scripts/cleanupChannelLists.sh] uses proper sorting command (now it wont do [b,c,/c,c,d] it should do [/c,/c,a,b,c]).
+ + [scripts/createCleanedFilter.sh] now parses straight from FILTER_SIMPLIFIED.css instead of requiring user to copy paste to new file.
 
-### 27.09.2022:
+### **.09.2022:
+ + Re-Fixed some bloat menu button (clip,thanks,share,saveto,etc...) not removed for certain layouts.
  + GROUNDBREAKING: ContentFilter and channel blacklist filter merged (after i randomly tested a filter that looks something like `##a,b:has(c)`)(further testing required to mare sure that its not messed up before pushing this change to main version).
  + Remove shorts video shelf (after i randomly disable ntpcyt to see yt new "material you"?? change, seen in explore page).
  + Remove clip engagement panel.
@@ -18,14 +26,10 @@
  + Added "others" section, and restructure stuff to make it more cleaner.
  + [ContentFilter] Add [brhbugnbdn,minecraft monster school animation,flirt(ing)?].
  + [ContentFilter] Improve "slebew" > "se?lebew".
-
-### 13.09.2022:
  + Now i uploaded the script that i usually use to make modifying such huge lists easier.
  + [ContentFilter] Blacklisted more bad youtuber (see commit #0ec139b).
  + [ContentFilter] Added [free ?v-?bucks,(super ?|most )sus,sus emote,(btc|bitcoin|eth(ereum)?|xrp).+(live|signals|predictions),18\+,hot guys,e[ -]?girl,[cs]lapped my cheeks,ena[ -]ena,*****,*****,*****,***** (those 4 ***** is censored to prevent bad people for searching those, also because it was too much)].
  + [ContentFilter] Improve ((doyan|sering) )?(nonton|lihat) ((video|gambar) )?gituan > ((bocil|bocah|doyan|sering|betah) )?(nonton|lihat) ((film|video|gambar) )?gituan(gituan|anu).
-
-### 09.09.2022:
  + [ContentFilter] Added [hengker,cap[- ]?cut,byte[- ]?dance,murga ?punishments?( (request|fantasy|interview))?,hand ?canning,ear ?(twisting|pulling),#murga(punishments|interview),#murga,#situps,#femdon,fetish].
  + [ContentFilter] Replace "anu(nya)?" > "anunya" to reduce false-positives.
  + [ContentFilter] Remove some unnesecary filters (and remove unnesecary ? at beginning/end)(shaves couple bytes off).

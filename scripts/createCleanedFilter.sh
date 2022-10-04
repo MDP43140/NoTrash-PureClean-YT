@@ -12,40 +12,30 @@
 #  Usage:
 #  createCleanedFilter.sh somerandomfile.txt <put some random stuff here if you want minified one-line version>
 #
-#  PS: somerandomfile.txt (usually) should look like this:```
-#  ! Clickbait
-#  ! ———————————————————————————————
-#  [03:]+\s*A.?M
-#  |tik[- ]?tok
-#  |cap[- ]?cut
-#  |byte[- ]?dance
-#  ...
-#  ...
-#  ...
-#  ! ———————————————————————————————
-#  ! Other (not added to list yet)
-#  ! ———————————————————————————————
-#  |ome\.tv
-#  |superstar
-#  |idola
-#  |(lagu|musik) (rohani|barat|pop)
-#  |christ
-#  ```
+#  PS: the file MUST contain "!BEGIN AUTO_PARSE" and "!END AUTO_PARSE" for the parser to work
 #
 
 clear
+[ "$1" ] && FILE="$1" || FILE="../FILTER_SIMPLIFIED.css";
+parsedFilter="$(
+	cat $FILE \
+	 | grep '!BEGIN AUTO_PARSE' --after-context=999999 \
+	 | grep '!END AUTO_PARSE' --before-context=999999 \
+	 | sed '/^!/d' \
+	 | mawk '!(c[$0]++)' \
+	 | grep -ve "^[[:space:]]*$"
+)"
+
+
 echo -n /
 if [ "$2" ];then
-	mawk '!(c[$0]++)' $1 \
-	 | sed '/^!/d' \
+	echo "$parsedFilter" \
 	 | mawk '{gsub(/^[ \t]+|[ \t]+$/,"");printf $0}' \
 	 | sed 's/^|//'
 else
-	mawk '!(c[$0]++)' $1 | sed '/^!/d'
+	echo "$parsedFilter"
 fi
 #cant put comment above that piped command, heres what it does:
-#- Remove dupe
-#- Remove comment
 #- Remove tabs (at start & end) and newlines)
 #- Remove | at the start after / to prevent buggy crap
 echo -e "/ui\n\n"

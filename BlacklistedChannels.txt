@@ -2,14 +2,13 @@ Block state | Channel name - (Channel link) Description (or other description, c
 -----------------------------------------------------
 ✗ | John Flora							 - Fake video dark web fishes (wont be added because other videos not really a fake video, channel/UCPx3SVYin7OZ4JGVkRjpWbg)
 ✗ | Moe Sargi								 - First 3AM video (c/moesargi, why this isnt blocked? it's not fake (idk but i dont really check their videos), more of a "MindSeedTV" style (looking from thumbnail) and its less-clickbaity)
-H | Jadyn                    - (channel/UCOyX3_7wjAcXyF4Ge3Ci7VA) Fake clickbait (idk if this considered bad enough to be blocked)
-H | KeidBoi                  - (channel/UCYNvW7bGrVSr0pXMpo7jz8g) Fake clickbait (idk if this considered bad enough to be blocked)
 + | 1 MILLION Dance Studio	 - (1MILLIONDanceStudioofficial) might be one of the channel that owns the video that contains 'Hey Mama' in the title?
 + | 5 Minute Crafts					 - (c/5MinuteCraftsYouTube) Copycat Troom Troom
 + | AldosWorld							 - The most childish youtuber
 + | AlsoTom				           - (channel/UCV2R9AGE3NolRYLwvHxJ6Ig) 1 Amogus + 1 Fortnite Live Scam (please report his videos so those live scam could be taken down)
 + | ALICE SPY NINJAS AT 3AM	 - (channel/UCqI5bEWJUWr9TJ3vv4xNHwg) you know from the names...
 + | Aphmau									 - Clickbait minecraft stuff (stumbled upon randomly, /AphmauGaming).
++ | Armaani                  - (channel/UC7Q0wqZTGBFl8a1TejyiVtw) Fornite pm
 + | [Blackpink,BTS]					 - stupid corean p00p.
 + | BoostyPop								 - (channel/UCrsiAD8zDTqtRdSeuxy5VxA) Fornite scam.
 + | Brani					           - (channel/UCCoGLAH4FPWMxNfHDYGGjuA) Fortnite Clickbait (i heard that the owner apologizes on his doing, kinda...)
@@ -54,11 +53,14 @@ H | KeidBoi                  - (channel/UCYNvW7bGrVSr0pXMpo7jz8g) Fake clickbait
 + | itsOwen									 - GodOfClickbait (Gross Sexual youtuber)
 + | ItzDuhMorgan						 - Morgz nonsense (channel/UC17R_dRJCCipEHbJaIwp5Rw).
 + | Jack Wrath							 - (Part of Savetion, channel/UCDwnDUfWDLlNnyLsL2poBmw)
++ | Jadyn                    - (channel/UCOyX3_7wjAcXyF4Ge3Ci7VA) Fake clickbait (idk if this considered bad enough to be blocked)
 + | Jenny SlipperyT					 - (channel/UCdTBMZY_EJ5R1YQZ4U59weA) P*rn Minecraft animation
 + | Jester									 - (c/JesseBaron) 3AM Fake Videos
 + | Jimmy Kimmel and Fallon	 - Unlikable b**t*ds
 + | JYP Entertainment				 - (c/JYPEntertainment) kpop Nonsense
 + | Kayzz										 - (channel/UCieJKtFIpVmbGjC8pBIxReA) Fornite scam, same as BoostyPop.
++ | KeidBoi                  - (channel/UCYNvW7bGrVSr0pXMpo7jz8g) Fake clickbait (idk if this considered bad enough to be blocked)
++ | Klara Tania              - (channel/UC4rHBMP2rGPuFk9F-JlGzbQ) idk, some "Indonesian peoples" stuff that is mostly bad (contains love nonsense, some **s in mouth sy1t)
 + | Labrant Fam							 - (channel/UC4-CH0epzZpD_ARhxCx6LaQ)
 + | La Familia Diamond			 - (c/FamiliaDiamond)
 + | La La Life							 - Copycat 5MC (c/LaLaLife)
@@ -73,6 +75,7 @@ H | KeidBoi                  - (channel/UCYNvW7bGrVSr0pXMpo7jz8g) Fake clickbait
 + | Matt and Rebecca				 - (c/mattandrebecca) pranking, 24hour nonsense, dumb comparison.
 + | Mia DeLeon Xo						 - (channel/UCrXEZ8zqA6GkjuyiYE40Lcg) worst yt short
 + | Mine Time								 - (channel/UCtjH_DXbbxyNdsi9Y-CZ9gA) P*rn Minecraft animation
++ | Minecraft World          - (channel/UCWNq31M-q8FwerAugm7KuuA) Pm "kids" channel that uses Minecraft animation
 + | (Mini|AnimaSEA -) Monsta - yuno childish channel bruf
 + | More Nikocado						 - (channel/UCM5v93rV1sazitUpB47hVrA) Part of "Nikocado Avocado"
 + | Morgz										 - childish B***ards (c/ItsMorgz).
@@ -118,6 +121,7 @@ H | KeidBoi                  - (channel/UCYNvW7bGrVSr0pXMpo7jz8g) Fake clickbait
 + | Rebecca Zamolo					 - (c/rebeccazamolo1) pregnant clickbait ridicilous nonsense
 + | Rebecca Zamolo Shorts		 - (channel/UCAHXKUBO1FSNsvWv9D8vLIg) worst yt short
 + | Rebelq				           - (channel/UC7fWM8TWFsl1OCFeE_cRGUg) Fortnite Shorts Spam + 1 Live Scam (please report his videos so those live scam could be taken down)
++ | REDDiamond               - (channel/UCv1dEku83ANWZWTgMf8aqew) Pm channel that uses Minecraft animation
 + | Ross Smith							 - (channel/UCqYlcD2MurA9YWe7D911w7A) weird grandma channel involving pm stuff for clickbait.
 + | Savetion 2							 - (Part of Savetion, channel/UCPXSNPhsfKKJGLmxYqfkvXg)
 + | Savetion 3							 - (Part of Savetion, channel/UCZCcGZQq15BIei-HAdmtynw)
@@ -149,7 +153,7 @@ H | KeidBoi                  - (channel/UCYNvW7bGrVSr0pXMpo7jz8g) Fake clickbait
 ✔ | (Im)JayStation					 - (channel/UCyjn72dikcC7J3WV0_eCM1A) Clickbait 3AM Videos (not banned, bad videos are still up but its couple years ago)
 ==================================================================
 PS: beware that /c/ can also be /user/ and vice-versa.
-Status (2✗,0H,0W,138+,5✔):
+Status (2✗,0H,0W,143+,5✔):
 ✗ | not blocked (wont be added to ntpcyt because certain makes-sense reason).
 H | Hold, More review required (not blocked yet).
 W | Waiting...

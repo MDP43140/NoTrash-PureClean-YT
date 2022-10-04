@@ -5,9 +5,12 @@
 #  Warning: the output cannot be piped to other programs because it uses \e modification thingy
 #
 
+echo Sorting...
+parsedInput="$(LC_ALL=C sort -ui $1)"
 clear
+echo "$parsedInput" > $1
 echo -n "youtube.com##"
-for i in $(sed 's/^\///g' $1 | sort -ui);do
+for i in $(echo "$parsedInput" | sed 's/^\///g');do
 	echo -n 'a[href^="/'$i'"],'
 done
 echo -e "\e[D:upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer,ytm-rich-item-renderer):remove()"
