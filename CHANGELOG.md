@@ -6,7 +6,17 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
-### 04.10.2022
+### 10.10.2022:
+ + Quite a big Contentfilter update... i might reconsider a separate content filtering rule/file, realizing how big each contentfilter commits was
+ + [EXTREME] code layout cleanup and little bit of update.
+ + [EXTREME] Improved emoji blocking (in fact, i made it block EVERYTHING THAT HAD EMOJIS IN IT).
+ + Added new script to help parse urls from blacklisted channel text file.
+ + some modification to blacklisted channel txt file (just for the parser to work).
+ + [ContentFilter] Blacklist [_alex_,Adventure,Chamello,eleven gacha,fresh roblox,juan,surfnboy (and other subchannels),luca roblox (and other subchannels),lututu (and other subchannels),maizen (and other subchannels),mir mir,nehema rahman].
+ + [ContentFilter] Add [24hr overnight,forgot to stop stream (and related),vtuber,mesra,babe,hubungan...] (list here is oversimplified).
+ + [ContentFilter] Improve `s[e3\*](x|ks)` > `[s$][e3\*](x|ks)`.
+
+### 04.10.2022:
  + [ContentFilter] Add [(nyquil|sleepy) chicken,pennywise,hotte(st|r),smooch,cuddle,hotte(r|st),ketika tangan(( si)? (om|mbak?))?( udah)? ((ng)?gak|tidak)? kekontrol,(mulut|pantat) di (mulut|pantat),...] (well well well, yet another ridicilous tiktok trend as arised)
  + [ContentFilter] Blacklist [Armaani,Jadyn,KeidBoi,Klara Tania,Minecraft World,REDDiamond].
  + [ContentFilter] Bug fix: "for kids" word not blocked.

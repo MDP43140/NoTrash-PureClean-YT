@@ -1,28 +1,28 @@
 !
 ! Title      : NT+PC_YT: EXTREME
 ! Author     : MDP43140
-! Version    : 04.06.2022
+! Version    : 09.10.2022
 ! Description: This 📄️ 🛑️ EVEN MORE 🗑️ 📺️ (eg. all K-Pop, K-Drama, 🎵️er, 📷️gram, F😀️B📘️er, Politicians (mostly 🇮🇩️. rest of the list which may include 🇺🇸️ is fetched from DandelionSprout/🐦️AntiPolitic), names) (and will 🛑️ some features)
 ! Warning    : May overblock contents, works best on desktop website, no mobile compatibility, and buggy (for other blocking).
 ! ______________________________
 
-! EXTREME Content blocker thats advanced and blocks literally EVERYTHING BAD (BETA)
-youtube.com###video-title:has-text(/((jung|mon)kook|(ren|xiao)jun|bbylino|loona|jaehyun|yohwin|hongjoong|ryujicy|juyeon|manoban|jennie|NCT|Jaemin|Jaehyun|Haechan|Enhypen|Jimin|Renjun|j(-| ?)hope)|(rrq|evos|alter ego)|khaby lame|(biden|trump|(vladimir )?putin)|isis/iu):upward(ytd-compact-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
-youtube.com###description-text:has-text(/((jung|mon)kook|(ren|xiao)jun|bbylino|loona|jaehyun|yohwin|hongjoong|ryujicy|juyeon|manoban|jennie|NCT|Jaemin|Jaehyun|Haechan|Enhypen|Jimin|Renjun|j(-| ?)hope)|(rrq|evos|alter ego)|khaby lame|(biden|trump|(vladimir )?putin)|isis/iu):upward(ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
+! EXTREME Content blocker (EXPERIMENTAL, may include false positives). Blocks:
+! + literally EVERYTHING BAD.
+! + those tiktok nonsense trends, even if they're not shorts ["Flip Bottle ❌ Flip galon ✅"]
+! + any video/channel with potentially bad emojis
+! + any video/channel with korean,chinese character
+! + any video/channel with emojis (EXTREMELY EXPERIMENTAL, MAY BE TOO MUCH FALSE POSITIVE !!!)
+www.youtube.com#?##video-title,#description-text:has-text(((jung|mon)kook|(ren|xiao)jun|bbylino|loona|jaehyun|yohwin|hongjoong|ryujicy|juyeon|manoban|jennie|NCT|Jaemin|Jaehyun|Haechan|Enhypen|Jimin|Renjun|j(-| ?)hope)|(rrq|evos|alter ego)|khaby lame|(biden|trump|(vladimir )?putin)|isis/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
 !youtube.com##ytd-grid-video-renderer:has(.ytd-channel-name:has-text(/[TRASH STRING HERE]/iu)):upward(ytd-channel-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer,ytd-video-renderer):remove()
 !youtube.com##ytd-channel-name:has-text(/[TRASH STRING HERE]/iu):upward(ytd-channel-renderer, ytd-video-renderer):remove()
-
-! Blocks those tiktok nonsense trends, even if they're not shorts ["Flip Bottle ❌ Flip galon ✅"]
-youtube.com###video-title:has-text(/❌️.+✅️$/ui):upward(ytd-compact-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
-youtube.com###description-text:has-text(/❌️.+✅️$/ui):upward(ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
-
-! blocks any video/channel with korean,chinese character
-www.youtube.com#?##video-title:has-text(/[\uAC00–\uD7AF\u1100-\u11FF\u3130-\uD7FF]/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
-www.youtube.com#?##description-text:has-text(/[\uAC00–\uD7AF\u1100-\u11FF\u3130-\uD7FF]/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
-
-! EXPERIMENTAL: blocks any video/channel with potentially bad emojis
-www.youtube.com#?##video-title:has-text(/[방탄소년단|💋|🍑|🍆|☄️|🔞|💖|💜️|ᗷᗩᑎǤ丅ᗩᑎ|🥵|💦]/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
-www.youtube.com#?##description-text:has-text(/[방탄소년단|💋|🍑|🍆|☄️|🔞|💖|💜️|ᗷᗩᑎǤ丅ᗩᑎ|🥵|💦]/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
+!
+www.youtube.com#?##video-title,#description-text:has-text(/❌️.+✅️$/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
+!
+www.youtube.com#?##video-title,#description-text:has-text(/(방탄소년단|💋|🍑|🍆|☄️|🔞|💖|💜️|ᗷᗩᑎǤ丅ᗩᑎ|🥵|💦)/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
+!
+www.youtube.com#?##video-title,#description-text:has-text(/[\uAC00–\uD7AF\u1100-\u11FF\u3130-\uD7FF]/ui):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
+!
+www.youtube.com#?##video-title,#description-text:has-text(/[\u1f300-\u1f5ff\u1f900-\u1f9ff\u1f600-\u1f64f\u1f680-\u1f6ff\u2600-\u26ff\u2700-\u27bf\u1f1e6-\u1f1ff\u1f191-\u1f251\u1f004\u1f0cf\u1f170-\u1f171\u1f17e-\u1f17f\u1f18e\u3030\u2b50\u2b55\u2934-\u2935\u2b05-\u2b07\u2b1b-\u2b1c\u3297\u3299\u303d\u00a9\u00ae\u2122\u23f3\u24c2\u23e9-\u23ef\u25b6\u23f8-\u23fa]/ug):upward(ytd-compact-video-renderer,ytd-grid-video-renderer,ytd-video-renderer,ytd-movie-renderer,ytd-rich-item-renderer,ytd-show-renderer,ytd-playlist-renderer):remove()
 
 ! Removes the homepage link from the upper-left YouTube logo (Not supported by ABP, DEPRECATED. because its useless to block it since its not a visual disturbance, its just a link)
 www.youtube.com#?#logo:style(pointer-events:none!important;cursor:default!important)
