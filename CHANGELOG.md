@@ -6,6 +6,21 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
+### 18.10.2022:
+ + [ContentFilter] Add [wik ?wik,ahh ?ahh,jojo siwa,jadi perhatian \w+ nakal,begini pesona kecantikan,giliran dipegang malah kesakitan,(cewek|wanita) basah,(cewek|cowok) bisa berubah jadi (cewek|cowok),t[e3]t[e3],kesakitan itunya].
+ + [ContentFilter] Improve "hubungan... + luar nikah".
+ + Remove "shorts" mention on /handle url (cuz we all hate shorts (or any tiktoky shit) so bad).
+ + Remove Copyright music nonsense below description.
+ + Remove "Flexible" Buttons.
+ + Now also removes "flex-menu-enabled" attribute from "ytd-watch-metadata".
+ + Restore description transparent bg and clickable shit
+ + Remove those annoying clip/thanks button on the popup menu.
+ + Urgent Blacklist "The Purpose With Josiah G. M" (promoting bad stuff, and youtube isnt even blocking it yet? ill do it the faster way)
+ + Removes new "Meta"panel.
+ + Added whats included on "Design Changes" section
+ + Bring rounded corner to older ui (only media player options)
+ + Fix new dislike pill (set width to auto & read margin, just like the counterpart like button).
+
 ### 10.10.2022:
  + Quite a big Contentfilter update... i might reconsider a separate content filtering rule/file, realizing how big each contentfilter commits was
  + [EXTREME] code layout cleanup and little bit of update.
