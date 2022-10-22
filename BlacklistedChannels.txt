@@ -164,7 +164,6 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | Techy										 - (channel/UCc_Fp7yud9FkBDHkzmzCNlA) Sexual fortnite youtuber
 + | That Vegan Teacher			 - (c/ThatVeganTeacherYouTube) idk wut this?? this isnt considered bad channel. btw fetched from DJCook, but details aren't shown. we're gonna wait for the actual info to get shown
 + | The Norris Nuts					 - (channel/UCYd0us2OtW4d4-1cfpT2ktw | c/TheNorrisNuts) clickbait 3am crap
-+ | The Purpose W/ J.G.M*    - (channel/UCA8qkE8c6SiWpyeDF0Nof0Q) Promoting EXTREMELY bad & illegal stuff (incest, pedophilia, sexuality, zoophilia, bestiality, atheism), SO BAD IT VIOLATES YT TOS!!, hopefully soon to be banished by yt, see youtu.be/s9fDXKAiRMo for more.
 + | TIM TIN									 - Copycat 5MC (channel/UCRXJaBvhynZMqVCbHVkzkNw)
 + | Top10Speed							 - (c/Top10Speed) generic compilation and fake video
 + | Troom Oki Toki					 - Copycat 5MC (channel/UChkZElwBp90FQHJZwmhBPxA)
@@ -182,12 +181,13 @@ Block state | Channel name - (Channel link) Description (or other description, c
 ✔ | DaddyOFive							 - (channel/UC437LVcYg3tNXuTtqi51bow) Hated YouTuber for family real-life kids abuse (not banned, bad videos are still up but its couple years ago)
 ✔ | Golgolmois							 - faking someone death for money.
 ✔ | (Im)JayStation					 - (channel/UCyjn72dikcC7J3WV0_eCM1A) Clickbait 3AM Videos (not banned, bad videos are still up but its couple years ago)
+✔ | The Purpose W/ J.G.M*    - (channel/UCA8qkE8c6SiWpyeDF0Nof0Q) Promoting EXTREMELY bad & illegal stuff SO BAD IT VIOLATES YT TOS, see youtu.be/s9fDXKAiRMo for more.
 // --- | --- - (---) --- // B ==================================================
 PS: beware that /c/ can also be /user/ and vice-versa.
 PS: Channel names that ends with * means the name is "truncated"/shortened while abot to be found using search
-Status (2✗,0H,0W,143+,5✔):
+Status (2✗,0H,0W,142+,6✔):
 ✗ | not blocked (wont be added to ntpcyt because certain makes-sense reason).
 H | Hold, More review required (not blocked yet).
 W | Waiting...
-+ | added to ntpcyt
-✔ | Banned (aka. its done for and should be removed), or channel owner cleanup their channel and promise not to upload bad stuff.
++ | Added to NT+PC_YT
+✔ | Banned (aka. its done for and should be removed), or channel owner cleanup their channel and promised not to upload bad stuff (if required, for longer time).

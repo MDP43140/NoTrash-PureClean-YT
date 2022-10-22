@@ -6,6 +6,10 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
+### 22.10.2022:
+ + [ContentFilter] Add [senggol don[gk],hot date,(suami|istri) telanjang].
+ + [ContentFilter] Remove "ThePurposeWJGM"* from channel blacklist (Channel FINALLY Banned!).
+
 ### 18.10.2022:
  + [ContentFilter] Add [wik ?wik,ahh ?ahh,jojo siwa,jadi perhatian \w+ nakal,begini pesona kecantikan,giliran dipegang malah kesakitan,(cewek|wanita) basah,(cewek|cowok) bisa berubah jadi (cewek|cowok),t[e3]t[e3],kesakitan itunya].
  + [ContentFilter] Improve "hubungan... + luar nikah".
