@@ -53,12 +53,14 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | HD Fam									 - CarlayleeHD nonsense (channel/UC62zYQbJExfrC1owto9AN9A).
 + | HLN											 - King of fake news.
 + | HYPELABELS							 - (Kpop ,/c/HYBELABELS | /user/ibighit)
++ | HypeMike 								 - (channel/UCvG-3yOLfVD8ETddTa_6fpw) fake 3am video
 + | IGN											 - Their (gaming, mostly...) 'reviews' are basically just marketing buzzwords.
 + | imZarz( x)?							 - Weird Sexual/Fortnite youtuber
 + | itsOwen									 - GodOfClickbait (Gross Sexual youtuber)
 + | ItzDuhMorgan						 - Morgz nonsense (channel/UC17R_dRJCCipEHbJaIwp5Rw).
 + | Jack Wrath							 - (Part of Savetion, channel/UCDwnDUfWDLlNnyLsL2poBmw)
 + | Jadyn										 - (channel/UCOyX3_7wjAcXyF4Ge3Ci7VA) Fake clickbait (idk if this considered bad enough to be blocked)
++ | Jay Hills 							 - (channel/UC-oyHeiWz44JASTnRnikfyg) (chk his video, why he looks like crypto nwo?) 3am clickbait
 + | Jenny SlipperyT					 - (channel/UCdTBMZY_EJ5R1YQZ4U59weA) P*rn Minecraft animation
 + | Jester									 - (c/JesseBaron) 3AM Fake Videos
 + | Jimmy Kimmel and Fallon	 - Unlikable b**t*ds
@@ -66,7 +68,8 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | Just Surfnboy						 - (channel/UC0fRnp9Q2SFH0M-l3McV7rQ) prank clickbait
 + | JYP Entertainment				 - (c/JYPEntertainment) kpop Nonsense
 + | Kayzz										 - (channel/UCieJKtFIpVmbGjC8pBIxReA) Fornite scam, same as BoostyPop.
-+ | KeidBoi									 - (channel/UCYNvW7bGrVSr0pXMpo7jz8g) Fake clickbait (idk if this considered bad enough to be blocked)
++ | KeidBoi									 - (channel/UCYNvW7bGrVSr0pXMpo7jz8g) Fake clickbait involving influencers.
++ | KeidShorts							 - (channel/UCD9ZXxRi7cqxKok8MYwD1Uw) Fake clickbait involving influencers.
 + | Klara Tania							 - (channel/UC4rHBMP2rGPuFk9F-JlGzbQ) idk, some "Indonesian peoples" stuff that is mostly bad (contains love nonsense, some **s in mouth sy1t)
 + | Labrant Fam							 - (channel/UC4-CH0epzZpD_ARhxCx6LaQ)
 + | La Familia Diamond			 - (c/FamiliaDiamond)
@@ -135,10 +138,11 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | PawZam Dogs							 - (channel/UC0ufW3qv1DDE8ucnwK6jvTA) just as bad as rebecca zamolo itself
 + | Perplexify							 - (c/Perplexify) generic compilation and fake video
 + | Piper Rockelle					 - (c/PiperRockelle) Lazy and ridicilous p*rn youtuber
-+ | Plasmonix								 - (c/Plasmonix) 3am clickbait
++ | Plasmonix								 - (channel/UCEuGUL5_dBCuodrTCZUV1LQ | c/Plasmonix) 3am clickbait
 + | Preston									 - Clichobaito
 + | Prince Family*					 - (channel/UC5LGPvoUOfwcLi4Ck8LiR4A) clickbait sh!t
 + | Prince Family CH*	 			 - (channel/UCqONv8hrKKTd0ELJcxOVNJQ) clubhouse of above
++ | PrkrS 									 - (channel/UCSigKbqMLMtJdLsov-m_XlA) Shorts clickbait
 + | PrPnySlr69 (Censord)		 - Very Very Clear Porn Channel
 + | Quantum TV							 - (channel/UCOCH5WuEjNnl9Gk8q2r_hVQ) DMCA Abuser.
 + | RainbowMC								 - (c/UnknownXx) same basically.
