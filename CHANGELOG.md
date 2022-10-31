@@ -6,11 +6,26 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
-### 22.10.2022:
+### 01.11.2022:
+ + Welcome November, i have TONS of UI-related updates!
+ + [ContentFilter] Add [l[a4]y[a4]n[i1],n[a4]psu,mantan \w+ membayangi,nikahan didatangi mantan,menyimpan (perasaan|rasa),si dia].
+ + [ContentFilter] Couple improvements.
+ + [ContentFilter] Blacklist [B**OT TELEVISION,KeidShorts,Plasmonix,Jay Hills,PrkrS,HypeMike].
+ + Now yt pushed shorts EVEN HARDER by straight removing "Explore" button, which hides the sublist btn (caused by ytd-guide-section-renderer:first-child ytd-guide-entry-renderer.ytd-guide-section-renderer:nth-of-type(3)).
+ + Updated code that removes 2nd bloat search result panel (also fixes result not showing anything).
+ + Remove newly added shorts+live tab (both Mobile & Desktop).
+ + Remove new thiCCker margin/padding (maybe? cuz idk wut this class does other than thiCCening the padding/margin)
+ + Remove resource-wasting blur + gradient bloat in the /playlist UI (is this the alleged "Ambient Mode"?).
+ + Normalize THICC Font that was spotted in /playlist menu.
+ + Now removes brand new "Unified Share Panel".
+ + Remove new giant nagging bloat on mobile homepage.
+ + Remove "Playback not available" when hovering over videos.
+ + Bug fix login button (in top-header menu) looking buggyish.
+ + Remove only upload button on ytd-topbar-menu-button-renderer.
+
+### **.10.2022:
  + [ContentFilter] Add [senggol don[gk],hot date,(suami|istri) telanjang].
  + [ContentFilter] Remove "ThePurposeWJGM"* from channel blacklist (Channel FINALLY Banned!).
-
-### 18.10.2022:
  + [ContentFilter] Add [wik ?wik,ahh ?ahh,jojo siwa,jadi perhatian \w+ nakal,begini pesona kecantikan,giliran dipegang malah kesakitan,(cewek|wanita) basah,(cewek|cowok) bisa berubah jadi (cewek|cowok),t[e3]t[e3],kesakitan itunya].
  + [ContentFilter] Improve "hubungan... + luar nikah".
  + Remove "shorts" mention on /handle url (cuz we all hate shorts (or any tiktoky shit) so bad).
@@ -24,8 +39,6 @@
  + Added whats included on "Design Changes" section
  + Bring rounded corner to older ui (only media player options)
  + Fix new dislike pill (set width to auto & read margin, just like the counterpart like button).
-
-### 10.10.2022:
  + Quite a big Contentfilter update... i might reconsider a separate content filtering rule/file, realizing how big each contentfilter commits was
  + [EXTREME] code layout cleanup and little bit of update.
  + [EXTREME] Improved emoji blocking (in fact, i made it block EVERYTHING THAT HAD EMOJIS IN IT).
@@ -34,8 +47,6 @@
  + [ContentFilter] Blacklist [_alex_,Adventure,Chamello,eleven gacha,fresh roblox,juan,surfnboy (and other subchannels),luca roblox (and other subchannels),lututu (and other subchannels),maizen (and other subchannels),mir mir,nehema rahman].
  + [ContentFilter] Add [24hr overnight,forgot to stop stream (and related),vtuber,mesra,babe,hubungan...] (list here is oversimplified).
  + [ContentFilter] Improve `s[e3\*](x|ks)` > `[s$][e3\*](x|ks)`.
-
-### 04.10.2022:
  + [ContentFilter] Add [(nyquil|sleepy) chicken,pennywise,hotte(st|r),smooch,cuddle,hotte(r|st),ketika tangan(( si)? (om|mbak?))?( udah)? ((ng)?gak|tidak)? kekontrol,(mulut|pantat) di (mulut|pantat),...] (well well well, yet another ridicilous tiktok trend as arised)
  + [ContentFilter] Blacklist [Armaani,Jadyn,KeidBoi,Klara Tania,Minecraft World,REDDiamond].
  + [ContentFilter] Bug fix: "for kids" word not blocked.
