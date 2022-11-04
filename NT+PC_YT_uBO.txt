@@ -2,7 +2,7 @@
 ! Title			: No-Trash + Pure-Clean YouTube
 ! Author		: MDP43140
 ! OA				: DandelionSprout
-! Version 	: 01.11.2022
+! Version 	: 04.11.2022
 ! GitHub		: mdp43140/NoTrash-PureClean-YT
 ! GitHub_OA : [DandelionSprout/adfilt,WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists]
 ! ——————————————————————————————
@@ -156,6 +156,7 @@ www.youtube.com#?#ytd-guide-section-renderer:has-text(/(More from|Lainnya dari) 
 ! - New Metapanel (Not 100% working)
 ! - Copyright music nonsense below description
 ! - "Flexible" buttons (those had clip and thanks button, but sone will be hidden when resizing which sucks so the whole thing had to be removed)
+! - fine scrub hint
 !
 
 ! remove some space-eating icon nonsense
@@ -279,6 +280,9 @@ www.youtube.com##ytd-watch-metadata #description.ytd-watch-metadata > #descripti
 ! (Painstakingly) Remove those annoying clip/thanks button on the popup menu (cuz of annoying again "flexible" buttons)
 www.youtube.com##ytd-menu-popup-renderer > tp-yt-paper-listbox > ytd-menu-service-item-renderer:nth-last-of-type(n+3):has(yt-formatted-string:has-text(/terima kasih|thanks|clip|klip/i))
 
+! Remove new viewing obstructing "hint" when hovering seekbar.
+www.youtube.com##+js(rc, ytp-fine-scrubbing-exp, ytd-player #container #movie_player)
+
 ! ——————————————————————————————
 
 
@@ -382,10 +386,11 @@ www.youtube.com##ytd-watch-metadata #description-and-actions #actions:style(widt
 ! Fix overflow on subscription page for some user with "engagement-panel tag"
 www.youtube.com##ytd-two-column-browse-results-renderer#primary ytd-section-list-renderer[engagement-panel] #contents.ytd-section-list-renderer:style(overflow-y:inherit!important)
 
-! Change "Netflix × TikTok Styled" Bold/THICC & HUGE Video title back to Normalized regular-sized title like old ones (if you want old Roboto font look, add `font-family:Roboto!important` to css style below))
+! Change "Netflix × TikTok Styled" Bold/THICC & HUGE Video title back to Normalized regular-sized title like old ones
 www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(font-weight:400!important)
 www.youtube.com##.ytd-watch-flexy #above-the-fold:style(font-weight:normal!important)
 www.youtube.com##h1.ytd-watch-metadata:style(font-size:1.8rem!important;line-height:2.6rem!important;font-weight:400!important;white-space:normal!important)
+www.youtube.com##ytd-playlist-panel-renderer[collapsible] .title.ytd-playlist-panel-renderer:style(font-family:"Roboto","Arial",sans-serif!important;font-size:1.4rem!important;line-height:2rem!important;font-weight:500!important;max-height:2rem!important;display:block!important)
 
 ! Change Title font in fullscreen from Roboto to YTSans (why u might ask? because its horizontally-compact (like SegoeUI), also this only applies to user that got the new font update (if the font isnt loaded, it wont work))
 www.youtube.com##.ytp-chrome-top .ytp-title:style(font-family:"YouTube Sans")

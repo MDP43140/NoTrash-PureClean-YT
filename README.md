@@ -1,6 +1,7 @@
+![NTPCYT Icon](https://https://raw.githubusercontent.com/MDP43140/NoTrash-PureClean-YT/main/.img/NTPC_YT_SimpleLogo.png)
 # No Trash + Pure Clean YouTube
 Makes YouTube Less trashy by removing distracting features, and trash videos/channels
-![No Trash + Pure Clean YouTube](https://repository-images.githubusercontent.com/386935074/dbf15c90-6bab-4d34-880c-1103c16ee50d)
+![NoTrash+PureClean_YouTube-PreviewImage (Temporarily not available for now...)](https://repository-images.githubusercontent.example.com/386935074/dbf15c90-6bab-4d34-880c-1103c16ee50d)
 
 Type | Without NT+PC YT | With NT+PC YT
 -|-|-

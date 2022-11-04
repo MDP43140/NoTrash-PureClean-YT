@@ -6,6 +6,14 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
+### 04.11.2022:
+ + (Finally) Update Desktop Preview Image (mobile preview images will take longer time to process).
+ + Remove new view-obstructing-bloat "hint" text when hovering seekbar.
+ + Normalize Playlist Panel Text.
+ + Update README file.
+	 + Use the new NTPCYT Icon/Logo above the big title.
+	 + Temporarily remove preview image (will update preview image soon).
+
 ### 01.11.2022:
  + Welcome November, i have TONS of UI-related updates!
  + [ContentFilter] Add [l[a4]y[a4]n[i1],n[a4]psu,mantan \w+ membayangi,nikahan didatangi mantan,menyimpan (perasaan|rasa),si dia].
