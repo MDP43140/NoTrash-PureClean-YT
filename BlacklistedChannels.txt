@@ -9,6 +9,7 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | Adventure								 - (channel/UCwuSAGL3vknuXtPRPrXXkTA) Bunch of fake videos
 + | ALICE SPY NINJAS AT 3AM	 - (channel/UCqI5bEWJUWr9TJ3vv4xNHwg) you know from the names...
 + | AlsoTom									 - (channel/UCV2R9AGE3NolRYLwvHxJ6Ig) 1 Amogus + 1 Fortnite Live Scam (please report his videos so those live scam could be taken down)
++ | AMIO TALIO               - (channel/UC2qHW6oYx1vrSLmlC7RIXHA) crypto scam & live crime
 + | Aphmau									 - Clickbait minecraft stuff (stumbled upon randomly, /AphmauGaming).
 + | Armaani									 - (channel/UC7Q0wqZTGBFl8a1TejyiVtw) Fornite pm
 + | B**OT TELEVISION				 - (channel/UCXCYzg2bjx750w4voLcRRfg) Indonesian porn channel eww (YouTube PLEASE TERMINATE This channel, cuz it violates your TOS!!).
@@ -59,6 +60,7 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | imZarz( x)?							 - Weird Sexual/Fortnite youtuber
 + | itsOwen									 - GodOfClickbait (Gross Sexual youtuber)
 + | ItzDuhMorgan						 - Morgz nonsense (channel/UC17R_dRJCCipEHbJaIwp5Rw).
++ | IShowSpeed               - (channel/UCWsDFcIhY2DBi3GB5uykGXA) clickbait & crypto scam? (i forgot what this channel was)
 + | Jack Wrath							 - (Part of Savetion, channel/UCDwnDUfWDLlNnyLsL2poBmw)
 + | Jadyn										 - (channel/UCOyX3_7wjAcXyF4Ge3Ci7VA) Fake clickbait (idk if this considered bad enough to be blocked)
 + | Jay Hills 							 - (channel/UC-oyHeiWz44JASTnRnikfyg) (chk his video, why he looks like crypto nwo?) 3am clickbait
@@ -169,6 +171,7 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | Techy										 - (channel/UCc_Fp7yud9FkBDHkzmzCNlA) Sexual fortnite youtuber
 + | That Vegan Teacher			 - (c/ThatVeganTeacherYouTube) idk wut this?? this isnt considered bad channel. btw fetched from DJCook, but details aren't shown. we're gonna wait for the actual info to get shown
 + | The Norris Nuts					 - (channel/UCYd0us2OtW4d4-1cfpT2ktw | c/TheNorrisNuts) clickbait 3am crap
++ | The Paradox Metaverse    - (channel/UCBru9GvyZh0EQBvddSQwuWA) owned by Amio Talio, "Metaverse Crypto NFT" Scam.
 + | TIM TIN									 - Copycat 5MC (channel/UCRXJaBvhynZMqVCbHVkzkNw)
 + | Top10Speed							 - (c/Top10Speed) generic compilation and fake video
 + | Troom Oki Toki					 - Copycat 5MC (channel/UChkZElwBp90FQHJZwmhBPxA)
