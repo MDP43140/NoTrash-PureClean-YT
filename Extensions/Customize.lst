@@ -1,4 +1,4 @@
-!
+! ——————————————————————————————
 ! Title      : NT+PC_YT: "Include"
 ! Author     : MDP43140
 ! Version    : 07.09.2021_dev
@@ -7,13 +7,14 @@
 !              "https://subscribe.adblockplus.org/?location=https://github.com/MDP43140/NoTrash-PureClean-YT/raw/main/Extensions/"
 !              on every "!#include >put it here<FileName"
 !              and ofcourse dont put this header.
-!              Or you can just subscribe to each one in here "https://github.com/MDP43140/NoTrash-PureClean-YT/blob/main/Extensions"
+!              Or you can just add each one in here "https://github.com/MDP43140/NoTrash-PureClean-YT/blob/main/Extensions"
 ! ——————————————————————————————
 !#if env_mobile
 	!#include YTMobileWeb.txt
 !endif
 
 !#include ContentFilter.txt
+!#include ChannelBlacklists.txt
 !#include LeftHandMenu.txt
 !#include TopMastheaderMenu.txt
 !#include VideoPlayer.txt
