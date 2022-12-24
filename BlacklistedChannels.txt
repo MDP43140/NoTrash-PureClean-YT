@@ -14,6 +14,7 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | Armaani									 - (channel/UC7Q0wqZTGBFl8a1TejyiVtw) Fornite pm
 + | B**OT TELEVISION				 - (channel/UCXCYzg2bjx750w4voLcRRfg) Indonesian porn channel eww (YouTube PLEASE TERMINATE This channel, cuz it violates your TOS!!).
 + | [Blackpink,BTS]					 - stupid corean p00p.
++ | BoaziBuns                - (channel/UCjz1tFNeyPMVty8YS50Wubg) Dirty anime gacha pm channel.
 + | BoostyPop								 - (channel/UCrsiAD8zDTqtRdSeuxy5VxA) Fornite scam.
 + | BraniBot								 - (channel/UCvgQ-RRIAoWXfgnRH_15O8w) Fortnite Clickbait
 + | Brani										 - (channel/UCCoGLAH4FPWMxNfHDYGGjuA) Fortnite Clickbait (i heard that the owner apologizes on his doing, kinda...)
@@ -65,7 +66,7 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | Jadyn										 - (channel/UCOyX3_7wjAcXyF4Ge3Ci7VA) Fake clickbait (idk if this considered bad enough to be blocked)
 + | Jay Hills 							 - (channel/UC-oyHeiWz44JASTnRnikfyg) (chk his video, why he looks like crypto nwo?) 3am clickbait
 + | Jenny SlipperyT					 - (channel/UCdTBMZY_EJ5R1YQZ4U59weA) P*rn Minecraft animation
-+ | Jester									 - (c/JesseBaron) 3AM Fake Videos
++ | Jester									 - (c/JesseBaron | channel/UCKIL4dMp2qbWElEEZHK-aug) 3AM Fake Videos
 + | Jimmy Kimmel and Fallon	 - Unlikable b**t*ds
 + | Juan.										 - (channel/UCp29ssiS2zXOoiSkvBkVtOA) Roblox,etc... clickbait
 + | Just Surfnboy						 - (channel/UC0fRnp9Q2SFH0M-l3McV7rQ) prank clickbait
@@ -105,6 +106,7 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | Maizen Shorts						 - (channel/UCS79iNbQdnXIiTAvVNlt7dQ) part of Maizen
 + | Martinez Twins					 - (channel/UCQ_RJNjvGLGLoxU6pPodvkQ) prn prank
 + | Matt and Rebecca				 - (c/mattandrebecca) pranking, 24hour nonsense, dumb comparison.
++ | Matt Slays               - (channel/UCvo9oZCTg_UaTQbhyXkXX3w) Fake clickbait 3AM Video.
 + | Mia DeLeon Xo						 - (channel/UCrXEZ8zqA6GkjuyiYE40Lcg) worst yt short
 + | Mikey JJ Maizen*				 - (channel/UC21fekI6TnD5J1Ies8LjzNA) roblox clickbait
 + | Minecraft World					 - (channel/UCWNq31M-q8FwerAugm7KuuA) Pm "kids" channel that uses Minecraft animation
@@ -121,7 +123,8 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | Multi Do Challenge ID		 - Copycat 5MC (channel/UCPSHYrLBml2qEv4xyUBbnnA)
 + | My Two Earthlings				 - (c/MyTwoEarthlings) Kids clickbait
 + | N&A Production					 - The most childish youtuber
-+ | NCT											 - (c/nctsmtown) even more korean nonsense
++ | NCT											 - (c/nctsmtown | channel/UCwgtORdDtUKhpjE1VBv6XfA) even more korean nonsense
++ | NCT 127                  - (channel/UCk2E0dbAyEJWnrN2bbQOcbg) even more korean nonsense
 + | Nehema Rahman*					 - (channel/UCXI4uHQghFs1qzGxNbBAPWQ) clickbait
 + | Nikocado Avocado 2			 - (user/OmaDesalasOrlin) Part of "Nikocado Avocado"
 + | Nikocado Avocado 3			 - (channel/UCBzE8s7espH9Esy0FO_iTSg) Part of "Nikocado Avocado"
@@ -138,6 +141,7 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | Paige Ginn							 - (c/PaigeGinn13,channel/UC_imz2_buszi6K_P8CHhKaQ, Fetched from RossSmith featured channel) Nonsense fartin pranky sht
 + | Panda Boi 2							 - (channel/UC1jaGiYcpKRJxm5tho4BkQw) part of PB
 + | PANDA BOI								 - (c/PANDABOI) worst yt short
++ | Party of 4tv             - (channel/UCj15c9pKqHP0sht75gEnwTQ) Fake clickbait 3AM Video.
 + | PawZam Dogs							 - (channel/UC0ufW3qv1DDE8ucnwK6jvTA) just as bad as rebecca zamolo itself
 + | Perplexify							 - (c/Perplexify) generic compilation and fake video
 + | Piper Rockelle					 - (c/PiperRockelle) Lazy and ridicilous p*rn youtuber
@@ -165,6 +169,7 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | Savetion 2							 - (Part of Savetion, channel/UCPXSNPhsfKKJGLmxYqfkvXg)
 + | Savetion 3							 - (Part of Savetion, channel/UCZCcGZQq15BIei-HAdmtynw)
 + | Savetion								 - (idk, porn?? bot channel, mostly... c/Savetion_-X)
++ | ScaryMaryTV              - (channel/UC7ncBw9RRPBjagW3NF3SmtA) Weird Families that does fake clickbait 3 AM video.
 + | Shaya Jacobs						 - (channel/UC42Wu_Mwdfomf5uNgSKvmfA) more clickbaits, and 3am videos
 + | SixStriker							 - (channel/UCO6rBDzdUamZTyl8o_SJdag) Siphoning views (clickbait) off of someone's death to make money.
 + | Surfnboy Shorts					 - (channel/UCMhD97ZasArNEhc7oOsE75A) shorts nonsense
@@ -172,6 +177,7 @@ Block state | Channel name - (Channel link) Description (or other description, c
 + | That Vegan Teacher			 - (c/ThatVeganTeacherYouTube) idk wut this?? this isnt considered bad channel. btw fetched from DJCook, but details aren't shown. we're gonna wait for the actual info to get shown
 + | The Norris Nuts					 - (channel/UCYd0us2OtW4d4-1cfpT2ktw | c/TheNorrisNuts) clickbait 3am crap
 + | The Paradox Metaverse    - (channel/UCBru9GvyZh0EQBvddSQwuWA) owned by Amio Talio, "Metaverse Crypto NFT" Scam.
++ | The Wow                  - (channel/UCWK1rhFCU9Xhs2zghMyB00w) Fake clickbait compiilation video.
 + | TIM TIN									 - Copycat 5MC (channel/UCRXJaBvhynZMqVCbHVkzkNw)
 + | Top10Speed							 - (c/Top10Speed) generic compilation and fake video
 + | Troom Oki Toki					 - Copycat 5MC (channel/UChkZElwBp90FQHJZwmhBPxA)
