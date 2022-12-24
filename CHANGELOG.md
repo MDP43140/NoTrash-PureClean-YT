@@ -6,6 +6,19 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
+### 24.12.2022:
+ + Removed GitHub_OA and OA metadata (OA can still be found on README.md).
+ + Prevent unnesecary ambient bloat script from being loaded.
+ + Remove use-color-palette from ytd-playlist-panel-video-renderer.
+ + Moved Channel blacklist rule to its own file (because every changes made to it was deemed "Too big" by GitHub, and also starts to get really confusing to manage those growing numbers of bad channels).
+ + [ContentFilter] Blacklist [BoaziBuns,Jester,Matt Slays,NCT,NCT 127,Party of 4tv,ScaryMaryTV,The Wow].
+ + [ContentFilter] Add [p4s4ng4n,ketemu (wanita|cewek),(white|black) supremac(y|ist),call(ing)? \w+ on facetime,order(ing|ed) a? \w+ potion from the dark web,tidur bareng].
+ + [ContentFilter] Improve "si dia" > "(si|sama|mau) (dia|kamu)".
+ + Normalized font used on "eNGAGEment panel".
+ + Fixed obstructing "hint" when hovering seekbar not removed (by FORCIBLY RIPping the hint text straight instead of removing classes which often wont work).
+ + Fixed 2 scrollbar appearing in subscription page.
+ + [dev] Normalize video title on YT Mobile.
+
 ### 01.12.2022:
  + [ContentFilter] Block [mengandung bawang,putus sama,hole girl,duet,goyang pargoy,sing[- ]off,g4d1s]
  + [ContentFilter] Blacklist [IShowSpeed,AMIO TALIO,The Paradox Metaverse]

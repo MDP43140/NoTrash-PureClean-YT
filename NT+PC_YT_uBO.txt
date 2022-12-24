@@ -1,7 +1,7 @@
 ! ——————————————————————————————
 ! Title			: No-Trash + Pure-Clean YouTube
 ! Author		: MDP43140
-! Version 	: 30.11.2022
+! Version 	: 24.12.2022
 ! GitHub		: mdp43140/NoTrash-PureClean-YT
 ! ——————————————————————————————
 
@@ -269,6 +269,7 @@ www.youtube.com##ytd-menu-popup-renderer > tp-yt-paper-listbox > ytd-menu-servic
 
 ! Remove new viewing obstructing "hint" when hovering seekbar.
 www.youtube.com##+js(rc, ytp-fine-scrubbing-exp, ytd-player #container #movie_player)
+www.youtube.com##.ytp-preview:not(.ytp-text-detail) .ytp-tooltip-edu
 
 ! ——————————————————————————————
 
@@ -340,7 +341,7 @@ youtube.com###offer-module
 !
 ! + Remove any shorts
 ! + revert mobile-like design
-! + Apply good UI changes (rounded corner, though not really enforced)
+! + Apply good UI changes (rounded corner, though not really enforced, and not rounding too much things)
 !
 
 ! Remove ANY form of shorts player (basically TikTok + IG Reels + YouTube Shorts Mobile design combined)
@@ -373,14 +374,24 @@ www.youtube.com##ytd-watch-metadata #description-and-actions #actions:style(widt
 ! Fix overflow on subscription page for some user with "engagement-panel tag"
 www.youtube.com##ytd-two-column-browse-results-renderer#primary ytd-section-list-renderer[engagement-panel] #contents.ytd-section-list-renderer:style(overflow-y:inherit!important)
 
-! Change "Netflix × TikTok Styled" Bold/THICC & HUGE Video title back to Normalized regular-sized title like old ones
+! Change "Netflix × TikTok Styled" Bold/THICC & HUGE text back to Normalized regular-sized title like old ones
 www.youtube.com##.ytd-watch-flexy .ytd-video-primary-info-renderer.title:style(font-weight:400!important)
 www.youtube.com##.ytd-watch-flexy #above-the-fold:style(font-weight:normal!important)
 www.youtube.com##h1.ytd-watch-metadata:style(font-size:1.8rem!important;line-height:2.6rem!important;font-weight:400!important;white-space:normal!important)
 www.youtube.com##ytd-playlist-panel-renderer[collapsible] .title.ytd-playlist-panel-renderer:style(font-family:"Roboto","Arial",sans-serif!important;font-size:1.4rem!important;line-height:2rem!important;font-weight:500!important;max-height:2rem!important;display:block!important)
+! for engagement panel
+www.youtube.com##ytd-engagement-panel-title-header-renderer #title-text.ytd-engagement-panel-title-header-renderer:style(
+	font-family:Roboto,Arial,sans-serif!important;
+	font-size:1.6rem!important;
+	font-weight:400!important;
+	line-height:2.2rem!important;
+)
 
 ! Change Title font in fullscreen from Roboto to YTSans (why u might ask? because its horizontally-compact (like SegoeUI), also this only applies to user that got the new font update (if the font isnt loaded, it wont work))
 www.youtube.com##.ytp-chrome-top .ytp-title:style(font-family:"YouTube Sans")
+
+! Disable the use of new auto color pallete
+www.youtube.com##+js(ra, use-color-palette, ytd-playlist-panel-video-renderer)
 
 ! Restore the old watch and upload time stat opacity on new design
 www.youtube.com###above-the-fold #description #plain-snippet-text:style(opacity:75%)
@@ -467,6 +478,7 @@ www.youtube.com##.yt-dynamic-sizing-formatted-string:style(font-weight:normal!im
 ! - New dislike pill design fix (especially for RYD)
 ! - Remove shorts mention on /handle url
 ! - Remove "Playback not available" when hovering over videos
+! - Fix Subscription 2 scroll bars
 !
 
 ! Remove "enable history" nudge on homepage
@@ -545,6 +557,9 @@ www.youtube.com##ytd-handles-claiming-title-images-section-renderer > div#image-
 
 ! Remove "Playback not available" when hovering over videos
 www.youtube.com##ytd-thumbnail ytd-thumbnail-overlay-inline-unplayable-renderer
+
+! Fix 2 scroll bars appearing in subscription page
+www.youtube.com###contents.ytd-section-list-renderer:style(overflow:hidden!important)
 
 ! Removes the Trending button in the top bar. At least I think it's the Trending button.
 youtube.com##div.top-nav-tab:nth-of-type(2)
@@ -660,6 +675,9 @@ m.youtube.com##ytm-horizontal-card-list-renderer:remove()
 m.youtube.com##ytm-browse > ytm-single-column-browse-results-renderer > .scbrr-tabs > .scbrr-tab[href$="shorts"]
 
 ! — Watch UI ———————————————————
+! Normalize title
+m.youtube.com##.slim-video-metadata-title-modern.slim-video-information-title:style(font-weight:normal!important)
+
 ! remove that giant text of likes,watches,upload time nonsense that comes from "engagement panel" (its already below video title w/o engagement panell)ll))l
 m.youtube.com##ytm-video-description-header-renderer .factoids
 
