@@ -6,7 +6,15 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
-### 24.12.2022:
+### 23.01.2022:
+ + First of all: Happy new year 2023! (even though i'm late to the party).
+ + Add user handle variation of the blacklisted channels (not yet added to channelLists, also i cant list all BlacklistedChannels here because there is just too many).
+ + Removed some terminated channels from blacklist.
+ + [main,dev] Changed ContentFilter regex from //ui to //i (because it seems like my uBO wont block anything that should be filtered lately).
+ + [channelLists.txt] remove /user/(id) and (id) prefix (useless, mostly only /c/(id) is used)
+ . `##ytd-browse [page-subtype="WEB_PAGE_TYPE_SETTINGS"] ytd-item-section-renderer:has(> #contents > ytd-page-introduction-renderer)` remove big unnecesary visual bloat on settings page.
+
+### **.12.2022:
  + Removed GitHub_OA and OA metadata (OA can still be found on README.md).
  + Prevent unnesecary ambient bloat script from being loaded.
  + Remove use-color-palette from ytd-playlist-panel-video-renderer.
@@ -18,8 +26,6 @@
  + Fixed obstructing "hint" when hovering seekbar not removed (by FORCIBLY RIPping the hint text straight instead of removing classes which often wont work).
  + Fixed 2 scrollbar appearing in subscription page.
  + [dev] Normalize video title on YT Mobile.
-
-### 01.12.2022:
  + [ContentFilter] Block [mengandung bawang,putus sama,hole girl,duet,goyang pargoy,sing[- ]off,g4d1s]
  + [ContentFilter] Blacklist [IShowSpeed,AMIO TALIO,The Paradox Metaverse]
  + [ContentFilter] Change "[ -]" > "[- ]" (so it will be consistent with other rules and having slightly better compression result c:, yeah minor stuff)
