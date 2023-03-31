@@ -21,8 +21,8 @@ www.youtube.com###search > .ytd-searchbox #search-icon-legacy
 ! Workaround:
 ! tp-yt-paper-toast: disabling animation makes toast on bottom-left >stays in the place< but invisible (makes scrubbing the start harder)
 ! tp-yt-paper-spinner, ytp-spinner: loading animation, should be enabled by default.
-www.youtube.com##ytd-app *:not(.ytp-spinner,tp-yt-paper-spinner,tp-yt-paper-toast):style(transition:none!important;animation:none!important;animation-delay:0!important;animation-duration:0!important;animation-timing-function:none!important;animation-play-state:paused!important;animation-iteration-count:0!important)
-m.youtube.com##ytm-app *:style(transition:none!important;animation:none!important;animation-delay:0!important;animation-duration:0!important;animation-timing-function:none!important;animation-play-state:paused!important;animation-iteration-count:0!important)
+www.youtube.com##ytd-app *:not(.ytp-spinner,tp-yt-paper-spinner,tp-yt-paper-toast):style(animation:none!important;animation-delay:0!important;animation-duration:0!important;animation-timing-function:none!important;animation-play-state:paused!important;animation-iteration-count:0!important;transition:none!important)
+m.youtube.com##ytm-app *:style(animation:none!important;animation-delay:0!important;animation-duration:0!important;animation-timing-function:none!important;animation-play-state:paused!important;animation-iteration-count:0!important;transition:none!important)
 /web-animations-next-lite.min.js$script,domain=youtube.com
 www.youtube.com##+js(ra,animate-miniplayer,ytd-miniplayer)
 www.youtube.com##+js(ra,split-subtitle,ytd-miniplayer)
