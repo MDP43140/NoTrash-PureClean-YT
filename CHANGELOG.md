@@ -6,8 +6,13 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
-### 23.01.2022:
+### 01.04.2023:
+ + "Hotfix" update for YTM users: Remove really annoying "Ready to shop?" popup on yt mobile (try to open Lofi Hip Hop, or any yt video that has merch on youtube).
+ + Update remove "new bandwidth-wasting FHD++ hover preview" code.
+
+### **.01.2023:
  + First of all: Happy new year 2023! (even though i'm late to the party).
+ + This update only affects BlacklistedChannels.txt, and channelLists.txt.
  + Add user handle variation of the blacklisted channels (not yet added to channelLists, also i cant list all BlacklistedChannels here because there is just too many).
  + Removed some terminated channels from blacklist.
  + [main,dev] Changed ContentFilter regex from //ui to //i (because it seems like my uBO wont block anything that should be filtered lately).
