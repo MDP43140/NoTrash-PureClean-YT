@@ -7,6 +7,7 @@
 
 # Changelogs:
 ### 09.08.2023:
+ + [ContentFilter] changed some stuff.
  + Long time since i updated this, so here we go, some more changes and additions...
  + YTM: Remove New unnnesecary bloat below engagement video description panel (channel name, sub count, big video & about button, LITERally a video that links to current video).
  + Fixed autoplay not hidden when turned off (for SB users).

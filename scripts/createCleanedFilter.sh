@@ -38,4 +38,4 @@ fi
 #cant put comment above that piped command, heres what it does:
 #- Remove tabs (at start & end) and newlines)
 #- Remove | at the start after / to prevent buggy crap
-echo -e "/ui\n\n"
+echo -e "/i\n\n"
