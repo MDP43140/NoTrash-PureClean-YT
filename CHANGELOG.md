@@ -7,6 +7,7 @@
 
 # Changelogs:
 ### 09.08.2023:
+ + [ContentFilter] Fix "updating" filtered because "dating".
  + [ContentFilter] changed some stuff.
  + Long time since i updated this, so here we go, some more changes and additions...
  + YTM: Remove New unnnesecary bloat below engagement video description panel (channel name, sub count, big video & about button, LITERally a video that links to current video).
@@ -293,8 +294,6 @@
 ###  **.10.2021:
  + Remove Universal Big Card on search result (mobile).
  + Fixed media player buttons getting bigger again (block .ytp-larger-tap-buttons)
- + [ContentFilter] Improve "s[e3]x > s[e3\*] (also blocks comment bot: s*x)"
- + [ContentFilter] Add [sensual,dating].
  + Adding feature to remove bad comment (Im REALLY SICK of S*XUAL COMMENT BOTS WHYYYY YOUTUBE ?!?!??!).
  + added some commit from adfilt/yt.
 	 + Remove sponsored description links inserted by right holders (ytd-metadata-row-renderer).
