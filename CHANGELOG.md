@@ -6,7 +6,14 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
-### 01.04.2023:
+### 09.08.2023:
+ + Long time since i updated this, so here we go, some more changes and additions...
+ + YTM: Remove New unnnesecary bloat below engagement video description panel (channel name, sub count, big video & about button, LITERally a video that links to current video).
+ + Fixed autoplay not hidden when turned off (for SB users).
+ + Fixed uBO syntax error.
+ + [Mobile] Remove new "Open in app" button (more invasive than "Sign in" button).
+
+### **.04.2023:
  + "Hotfix" update for YTM users: Remove really annoying "Ready to shop?" popup on yt mobile (try to open Lofi Hip Hop, or any yt video that has merch on youtube).
  + Update remove "new bandwidth-wasting FHD++ hover preview" code.
 
