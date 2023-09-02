@@ -6,7 +6,11 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
-### 09.08.2023:
+### 02.09.2023:
+ + [ContentFilter] Add [cikini gondamdia,pargoy,funkot,borg,devoius] (all of this was a stupid tiktok garbage).
+ + [ContentFilter] Improve "mlbb" filtering to also detect "emel bebe" (shows up a lot in search result too)
+
+### **.08.2023:
  + [ContentFilter] Fix "updating" filtered because "dating".
  + [ContentFilter] changed some stuff.
  + Long time since i updated this, so here we go, some more changes and additions...
