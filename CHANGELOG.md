@@ -6,9 +6,19 @@
  . Add mobile version preview on README.md.
 
 # Changelogs:
+### 08.11.2023:
+ + [ContentFilter] Simplify tiktok trend filtering by blocking every content that has "gondangdia" word in it.
+ + Make close button on anti-adblock popup clickable, essentially bypassing waiting time
+ + Remove more bloated sections on homepage.
+ + Blocked more unnecessary resources (Shorts-related icons, tracking (youtubei/v1/feedback, youtubei/v1/log_event), Animated like icons, voice search (prefetched even if you don't use voice search feature))
+ + Blocked "anti-tampering checks" script (might be related to anti-adblock? hopefully this didn't affect anti-adblock stuff, because i didn't test this).
+ + Remove new premium bloat on quality settings.
+ + Remove "Your Clips" section.
+ + Remove undismissable popup background.
+
 ### 02.09.2023:
  + [ContentFilter] Add [cikini gondamdia,pargoy,funkot,borg,devoius] (all of this was a stupid tiktok garbage).
- + [ContentFilter] Improve "mlbb" filtering to also detect "emel bebe" (shows up a lot in search result too)
+ + [ContentFilter] Improve "mlbb" filtering to also detect "emel bebe" (shows up a lot in search result too).
 
 ### **.08.2023:
  + [ContentFilter] Fix "updating" filtered because "dating".
